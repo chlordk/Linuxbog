@@ -223,15 +223,6 @@ kigge i det configure har skrevet for at finde årsagen. Eksempelvis
 finder jeg følgende linie:
 </para>
 
-<screen>
-checking for plucker-build... nej - det er ikke muligt at lave PALM udgaven
-</screen>
-
-<para>
-og ud fra det kan jeg altså regne ud at jeg skal bruge programmet
-"plucker-build" for at kunne bygge bøgerne til palmpilot.
-</para>
-
 <para>
 Hvis du mangler nogen værktøjer må du installere dem, og køre
 configure igen. Hvis du har vanskeligt ved at finde ud af hvorfor du
