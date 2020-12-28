@@ -52,20 +52,6 @@ pakket_html: html
 	zip -yourDT9 $(targetname)-$(version)-html.zip    $(targetname)-$(version)-html
 	rm -rf $(targetname)-$(version)-html
 
-pakket_palm: html
-	mkdir -p $(targetname)-$(version)-palm
-	cp -p palm/home.html      $(targetname)-$(version)-palm/
-	cp -p palm/external.html  $(targetname)-$(version)-palm/
-	cp -p ../misc/*.prc       $(targetname)-$(version)-palm/
-	cp -p ../misc/*.pdb       $(targetname)-$(version)-palm/
-	cp -p ../misc/gpl.txt     $(targetname)-$(version)-palm/
-	cp -p ../misc/plucker.txt $(targetname)-$(version)-palm/
-	(cd $(targetname)-$(version)-palm/; plucker-build -v -P . -f $(targetname))
-	zip $(targetname)-$(version)-palm.zip $(targetname)-$(version)-palm/*.prc \
-	                                      $(targetname)-$(version)-palm/*.pdb \
-	                                      $(targetname)-$(version)-palm/*.txt
-	rm -rf $(targetname)-$(version)-palm
-
 kildetekst:
 	mkdir -p $(targetname)-$(version)-source/images
 	cp -p Makefile.XML         $(targetname)-$(version)-source/Makefile
