@@ -48,9 +48,6 @@ eksfiler:=$(filter-out eksempler/CVS,$(alleeksfiles))
 # Har vi Perl-modulet Image::Size installeret
 imagesize:=$(wildcard /usr/lib/perl5/site_perl/5.005/Image/Size.pm)
 
-# Har vi Plucker inde
-plucker:=$(wildcard /usr/bin/plucker-build)
-
 # Har vi tidy installeret?
 tidy:=$(wildcard /usr/bin/tidy)
 
@@ -104,29 +101,6 @@ $(targetname)-sgml-$(version).tar.gz: $(sgmlfiler)
 	(cd ..;tar cvzf $(targetshortname)/$(targetname)-sgml-$(version).tar.gz $(targetshortname)/*.{sgml,xml} $(targetshortname)/linuxbog.css $(targetshortname)/Makefile)
 	(cd ..;ln -sf $(targetshortname)/$(targetname)-sgml-$(version).tar.gz $(targetshortname)/$(targetname).sgml.tar.gz)
 	(cd ..;zip $(targetshortname)/$(targetname)-sgml-$(version).zip -r $(targetshortname)/*.{sgml,xml} $(targetshortname)/linuxbog.css $(targetshortname)/Makefile)
-
-
-################################################################################
-# Byg Palm Pilot udgaven
-################################################################################
-
-palmpilot: $(targetname)-$(version).palm.zip
-$(targetname)-$(version).palm.zip: $(sgmlfiler) html
-	@echo ".........................................."
-	@echo "Target $(targetshortname):palmpilot"
-	@echo ".........................................."
-ifneq   ("$(plucker)","")
-	rm -f $(targetname)-$(version).palm.zip $(targetname)-$(version).palm.tar.gz
-	rm -f palm/*.prc palm/*.pdb
-	(cd palm;plucker-build -V 0  -P . -f $(targetname) `pwd`/home.html)
-	cp ../misc/*.prc palm
-	cp ../misc/*.pdb palm
-	cp ../misc/gpl.txt palm
-	cp ../misc/plucker.txt palm
-	(zip $(targetname)-palm-$(version).zip palm/*.prc palm/*.pdb palm/*txt )
-else
-	@echo "Du bør installere plucker for at kunne lave palm-udgaven"
-endif
 
 
 ################################################################################

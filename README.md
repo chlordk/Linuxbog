@@ -120,13 +120,7 @@ configure:  Kan HTML bygges    : ja
 configure:  Kan PAKHTML bygges : ja
 
 Hvis det format du gerne vil bygge til, ikke understøttes, kan du
-kigge i det configure har skrevet for at finde årsagen. Eksempelvis
-finder jeg følgende linie:
-
-checking for plucker-build... nej - det er ikke muligt at lave PALM udgaven
-
-og ud fra det kan jeg altså regne ud at jeg skal bruge programmet
-"plucker-build" for at kunne bygge bøgerne til palmpilot.
+kigge i det configure har skrevet for at finde årsagen.
 
 Hvis du mangler nogen værktøjer må du installere dem, og køre
 configure igen. Hvis du har vanskeligt ved at finde ud af hvorfor du
