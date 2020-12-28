@@ -40,8 +40,8 @@ User Group" (SSLUG; http://www.sslug.dk/).
 FTAV udgives med jævne mellemrum på http://www.linuxbog.dk/ . Her kan
 du downloade færdige udgaver af bøgerne, i flere forskellige
 formater. Nogen formater er velegnet til online brug, f.eks. HTML,
-andre egner sig bedre til tryk, f.eks. PDF, ligesom der er formater
-til palmpilot, mv. Endeligt er kildeteksten til bøgerne, svarende til
+andre egner sig bedre til tryk, f.eks. PDF.
+Endeligt er kildeteksten til bøgerne, svarende til
 de færdige udgaver også tilgængeligt her.
 
 Udviklingen af bøgerne -- rettelser, opdateringer, mv -- foregår på
@@ -134,7 +134,7 @@ skrive f.eks.
 $make html
 
 for at lave html udgaven. Eller, make pdf for at lave pdf udgaven,
-osv. Bemærk at palm formatet hedder palmpilot.
+osv.
 
 
 -------------------------------------------------------------------------------
@@ -357,7 +357,7 @@ er at
 a) Det skal være nemt for folk at bidrage til de enkelte bøger, _uden_
    at have skriveadgang til CVS.
 
-b) Alle bøger skal kunne bygges til html, palmpilot, mv, afhængigheder
+b) Alle bøger skal kunne bygges til html, mv, afhængigheder
    skal fungere korrekt
 
 c) Alle bogen skal kunne bygges
