@@ -994,7 +994,7 @@ Indrykning af tekst eller image i forhold til widgets ydre kant (border).
 </para>
 <para>
 relief</para><para>
-Kant dekoration (Border decoration). Den forvalgte værdi er  FLAT.  Andre mulige værdier er SUNKEN, RAISED, GROOVE, and RIDGE. BEMÆRK: For at ændre kantdekorationen fra dets forvalgte værdi (FLAT), er det nødvendigt at ændre dens borderwidth fra dens forvalgte værdi 0 (ingen kantbredde). eks.  borderwidth = 2, relief = RIDGE
+Kant dekoration (Border decoration). Den forvalgte værdi er  FLAT.  Andre mulige værdier er SUNKEN, RAISED, GROOVE, and RIDGE. BEM&AElig;RK: For at ændre kantdekorationen fra dets forvalgte værdi (FLAT), er det nødvendigt at ændre dens borderwidth fra dens forvalgte værdi 0 (ingen kantbredde). eks.  borderwidth = 2, relief = RIDGE
 </para>
 <para>
 Scan metoderne kan implementere hurtige museoperationer (de er tilknyttet midterste museknap, hvis en sådan er tilgængelig), hvor xview metoden anvendes sammen med en standard scrollbar widget.

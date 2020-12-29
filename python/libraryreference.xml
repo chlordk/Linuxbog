@@ -84,9 +84,9 @@ Velkommen til Python! Velkommen til Python! Velkommen til Python!
 </para>
 <para>
 Strenge kan sammenlignes:
->>> "æøå" < "ÆØÅ"
+>>> "æøå" < "&AElig;&Oslash;&Aring;"
 False
->>> "ÆØÅ" < "æøå"
+>>> "&AElig;&Oslash;&Aring;" < "æøå"
 True
 >>>
 >>> 'Python' < 'Pascal'<'ABC' < 'C'
@@ -269,7 +269,7 @@ Rødgrød med fløde er godt.
 </para>
 <para>
 De fleste af de mange andre tekstfunktioner anvendes svarende til eksempel
-1 og 2 ovenfor. BEMÆRK hvordan de danske specialtegn erstattes med
+1 og 2 ovenfor. BEM&AElig;RK hvordan de danske specialtegn erstattes med
 hexadecimale værdier i den første udskrift. Det skyldes, at Python
 benytter 2 forskellige funktioner i immediate mode ved returneringen
 str() og repr(), hvad følgende kan vise:
@@ -315,7 +315,7 @@ i streng.
 <para>
 <screen>
 >>> import string
->>> streng = "Rønne og Åkirkeby er to bornholmske byer."
+>>> streng = "Rønne og &Aring;kirkeby er to bornholmske byer."
 >>> # Da der ikke er angivet hverken start- eller slutpunkt
 >>> # tælles der op i hele strengen.
 >>> streng.count("e")
@@ -328,7 +328,7 @@ i streng.
 <screen>
 Eller:
 >>> import string
->>> "Rønne og Åkirkeby er to bornholmske byer.".count("e")
+>>> "Rønne og &Aring;kirkeby er to bornholmske byer.".count("e")
 5
 </screen>
 </para>
@@ -763,7 +763,7 @@ rjust(bredde) svarer til center(bredde) og ljust(bredde) bortset fra at delstren
 </para>
 <para>
 eks. 24//
-rstrip() fjerner tomme (ASCII 32) i HØJRE side af en streng.
+rstrip() fjerner tomme (ASCII 32) i H&Oslash;JRE side af en streng.
 </para>
 <para>
 <screen>
@@ -916,7 +916,7 @@ eller:
 >>> "var forfatteren nexø fra nexø?".upper()
 'VAR FORFATTEREN NEX\xd8 FRA NEX\xd8?'
 >>> print "var forfatteren nexø fra nexø?".upper()
-VAR FORFATTEREN NEXØ FRA NEXØ?
+VAR FORFATTEREN NEX&Oslash; FRA NEX&Oslash;?
 </para>
 <para>
 Brødmaskinen (slicing):
@@ -1251,7 +1251,7 @@ udfil.close()
 print "Udfilen er lukket."
 </programlisting>
 <para>
-BEMÆRK:  str funktionen kræves a.h.t. dansk/norske specialtegn.
+BEM&AElig;RK:  str funktionen kræves a.h.t. dansk/norske specialtegn.
 </para>
 <para>
 Kørselsresultat:
@@ -1393,7 +1393,7 @@ print "Filen er lukket."
 Kørselsresultat (ganske kort uddrag af returgodset)
 <screen>
 python indfilBytes3.py
-ÿØÿàJFIFHHÿþLEAD Technologies Inc. V1.01ÿÛC
+ÿ&Oslash;ÿàJFIFHHÿþLEAD Technologies Inc. V1.01ÿUC
 </screen>
 </para>
 </sect2>

@@ -237,7 +237,7 @@ print "simpelt eksempel " + "simpelt eksempel " + "simpelt eksempel "
 En variabel er en pegepind, der peger på et antal adresser i computerens
 arbejdslager (RAM), hvor data, der kan være flere ting f.eks. tal og
 tekststrenge, placeres. Variablen skal tildeles et navn, der ikke må
-indeholde de "ikke-engelske" specialtegn ÆØÅ og æøå. Det skal lige
+indeholde de "ikke-engelske" specialtegn &AElig;&Oslash;&Aring; og æøå. Det skal lige
 bemærkes, at der i visse underversioner af version 2.3 har været
 muligheder for at bruge de nævte tegn.
 </para>
@@ -245,7 +245,7 @@ muligheder for at bruge de nævte tegn.
 <sect2 id="python-variabler1">
 <title>Erklæring af variabler</title>
 <!-- Makholm:
-     Undlad at gentage problemerne med ÆØÅ og hiv konventioner om
+     Undlad at gentage problemerne med &AElig;&Oslash;&Aring; og hiv konventioner om
      speciel navngivning ud i et selvstændigt afsnit.
 
      Er Dask relevant og er der overhovedet noget belæg for kommentaren
@@ -258,11 +258,11 @@ for mennesker så tallene blev erstattet med ord - i første omgang ord på
 3 bogstaver. Det var en stor lettelse for programmørerne. Nu kan
 variabel- og andre navne normalt have op til 256 bogstaver eller tal
 blot bør første tegn i et variabelnavn være et bogstav, der ikke må være
-et dansk/norsk specialtegn æøå og ÆØÅ. I Python er der for så vidt ikke
+et dansk/norsk specialtegn æøå og &AElig;&Oslash;&Aring;. I Python er der for så vidt ikke
 noget i vejen, for at første tegn kan være et understreg tegn, men det
 kan være en rigtig dårlig løsning, da fordefinerede navne m.v. herved
 let vil kunne overskrives.  I Python skal variabler ikke erklæres.
-Erklæringen sker automatisk. MEN BEMÆRK Python gør forskel på store og små bogstaver,
+Erklæringen sker automatisk. MEN BEM&AElig;RK Python gør forskel på store og små bogstaver,
 d.v.s. at variablerne a og A er to  forskellige variabler og vil blive
 fortolket som sådanne. Det samme gælder naturligvis også alle andre
 navne (på lister, tuples m.v.)
@@ -279,7 +279,7 @@ navne (på lister, tuples m.v.)
 0
 </screen>
 
-BEMÆRK: I Python anvendes  == for lig med  og = for tildel. Der er
+BEM&AElig;RK: I Python anvendes  == for lig med  og = for tildel. Der er
 således markant forskel på  x == y og x = y
 </para>
 </sect2>
@@ -896,10 +896,10 @@ if sum == 7 or sum == 11:
 elif sum == 2 or sum == 3 or sum == 12:
    gameStatus = "TABTE"
 else:                                     # husker points
-   gameStatus = "FORTSÆT"
+   gameStatus = "FORTS&AElig;T"
    minePoints = sum
    print "Spillers points er ", minePoints
-while gameStatus == "FORTSÆT":   # fortsæt spillet
+while gameStatus == "FORTS&AElig;T":   # fortsæt spillet
    sum = kastMed2()
    if sum == minePoints:             # vandt med følgende resultat
       gameStatus = "VANDT"
@@ -1400,9 +1400,9 @@ def OK(prompt, rundgang=4, svar='Svar ja eller nej!'):
         if rundgang < 0: raise IOError, 'vanskelig bruger'
         print svar
 Kan kaldes med eksempelvis:
-OK('Ønsker du at afslutte?')
+OK('&Oslash;nsker du at afslutte?')
 og:
-OK('Ønskes filen lukket?', 2)
+OK('&Oslash;nskes filen lukket?', 2)
 </screen>
 </para>
 <para>
@@ -3453,7 +3453,7 @@ faldende orden:
 <para>
 I sorteringrutiner er hastighed ofte et vigtigt parameter, så i
 sorteringer i stigende orden er det bedst at bruge sort uden parametre.
-Ønsker du sortering i faldende orden bliver ekspeditionstiden kortest
+&Oslash;nsker du sortering i faldende orden bliver ekspeditionstiden kortest
 ved at udføre operationen i to omgange. Først foretages en sortering i
 stigende orden med sort() og derefter anvendes funktionen reverse():
 <screen>
@@ -3690,14 +3690,14 @@ Sådan skulle ord funktionen anvendes i Python med lavere versionsnummer end 2.3
 </para>
 <para>
 Fordi:
->>> ord("Æ")
+>>> ord("&AElig;")
 </para>
 <para>
 UnicodeError: ASCII encoding error: ordinal not in range(128)
 </para>
 <para>
 Og sådan nu (med Python version 2.3):
->>> ord("Æ")
+>>> ord("&AElig;")
 198
 </para>
 <para>
@@ -3710,7 +3710,7 @@ u'Computersproget Python er fra 1991'
 </para>
 <para>
 Konverter unicode streng til gammeldags 8-bit streng
->>> u"æøåÆØÅ".encode('utf-8')
+>>> u"æøå&AElig;&Oslash;&Aring;".encode('utf-8')
 '\xc3\xa6\xc3\xb8\xc3\xa5\xc3\x86\xc3\x98\xc3\x85'
 >>>
 </para>
@@ -3719,7 +3719,7 @@ Konverter unicode streng til gammeldags 8-bit streng
 <sect1 id="python-try-except">
 <title>Prøv ... Ellers</title>
 <para>
-BEMÆRK Pythons indrykninger SKAL bevares, ellers KAN eksemplet ikke afvikles:
+BEM&AElig;RK Pythons indrykninger SKAL bevares, ellers KAN eksemplet ikke afvikles:
 </para>
 <para>
 <screen>
@@ -3761,7 +3761,7 @@ næste Python skal gøre er at melde klar til mere aktiv kommunikation med
 brugeren, hvilket som bekendt meldes med  \>>>
 </para>
 <para>
-Men en gang mere PAS PÅ INDRYKNINGERNE. De SKAL ubetinget være korrekte,
+Men en gang mere PAS P&Aring; INDRYKNINGERNE. De SKAL ubetinget være korrekte,
 ellers kan Python-fortolkeren jo ikke afgøre, hvor en blok begynder og
 slutter.
 </para>
@@ -3941,7 +3941,7 @@ def opretArvinger(root):
     arbejdsplads.pack(side=LEFT, expand=YES, fill=BOTH)
     tilslutAfbryd = Button(root, text='Start', command=onStart)
     tilslutAfbryd.pack(fill=BOTH)
-    Button(root, text='Åbn',  command=onOpen).pack(fill=BOTH)
+    Button(root, text='&Aring;bn',  command=onOpen).pack(fill=BOTH)
     Button(root, text='Klokke',  command=onBeep).pack(fill=BOTH)
     Button(root, text='Afbryd',  command=onQuit).pack(fill=BOTH)
 def onStart():
@@ -4001,7 +4001,7 @@ def opretArvinger(root):
     arbejdsplads.pack(side=LEFT, expand=YES, fill=BOTH)
     tilslutAfbryd = Button(root, text='Start', command=onStart)
     tilslutAfbryd.pack(fill=BOTH)
-    Button(root, text='Åbn',  command=onOpen).pack(fill=BOTH)
+    Button(root, text='&Aring;bn',  command=onOpen).pack(fill=BOTH)
     Button(root, text='Klokke',  command=onBeep).pack(fill=BOTH)
     Button(root, text='Afbryd',  command=onQuit).pack(fill=BOTH)
 def onStart():
