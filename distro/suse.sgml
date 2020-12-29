@@ -28,9 +28,14 @@ SUSE er i dag tilgængelig til 32-bit (i586) og 64-bit computere (x86_64).
 <para>
 Novell. Her kan man købe support m.m. fra Novell, det er også Novell der står får at udgive sikkerhedsopdateringer m.m.
 Under SUSE Linux Enterprise mærket er der to under udgaver:
-<li>SUSE Linux Enterprise Desktop (SLED), som er specifikt til arbejdsstationer og bærbare computere.</li>
-<li>SUSE Linux Enterprise Server (SLES), som er specifikt til server brug. <li>
 </para>
+<itemizedlist mark="bullet">
+  <listitem>
+    <para>SUSE Linux Enterprise Desktop (SLED), som er specifikt til arbejdsstationer og bærbare computere.</para>
+  </listitem><listitem>
+    <para>SUSE Linux Enterprise Server (SLES), som er specifikt til server brug.</para>
+  </listitem>
+</itemizedlist>
 
 <!--openSUSE sektion -->
 <para>
