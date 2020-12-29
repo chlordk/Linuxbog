@@ -3,11 +3,11 @@
 <title>Teksteditorer</title>
 <indexterm><primary>Teksteditorer</primary></indexterm>
 <para>
-I Linux er tekstbehandling ofte nødvendig. F.eks. når
-opsætningsfiler skal tilrettes. Derfor er det vigtigt at vide noget om,
+I Linux er tekstbehandling ofte nÃ¸dvendig. F.eks. nÃ¥r
+opsÃ¦tningsfiler skal tilrettes. Derfor er det vigtigt at vide noget om,
 hvordan tekster kan manipuleres med forskellige teksteditorer. Hvilke
-muligheder giver de forskellige teksteditorer? Hvilke begrænsninger har
-de enkelte teksteditorer? Hvornår skal jeg bruge <command>vi</command>?
+muligheder giver de forskellige teksteditorer? Hvilke begrÃ¦nsninger har
+de enkelte teksteditorer? HvornÃ¥r skal jeg bruge <command>vi</command>?
 Hvilke andre editorer kan benyttes?
 </para>
 
@@ -15,9 +15,9 @@ Hvilke andre editorer kan benyttes?
 <title>pico</title>
 <para>
 Editoren <command>pico</command> installeres som en del af pine
-RPM-pakken. Med <command>pico</command> får du en ret nem teksteditor
-som også er en integreret del af postprogrammet
-<command>pine</command>. På <xref linkend="pico-fig"/> er vist et
+RPM-pakken. Med <command>pico</command> fÃ¥r du en ret nem teksteditor
+som ogsÃ¥ er en integreret del af postprogrammet
+<command>pine</command>. PÃ¥ <xref linkend="pico-fig"/> er vist et
 terminal-vindue, hvor <command>pico</command> er startet op med en tekst-fil.
 </para>
 
@@ -27,9 +27,9 @@ terminal-vindue, hvor <command>pico</command> er startet op med en tekst-fil.
 </figure>
 
 <para>
-Du skal ikke lære ret mange kommandoer med <command>pico</command> og
-de står endda i bunden af vinduet. Her betyder ^ at du skal holde
-Ctrl-tasten nede og samtidig trykke den efterfølgende tast.
+Du skal ikke lÃ¦re ret mange kommandoer med <command>pico</command> og
+de stÃ¥r endda i bunden af vinduet. Her betyder ^ at du skal holde
+Ctrl-tasten nede og samtidig trykke den efterfÃ¸lgende tast.
 </para>
 
 </sect1>
@@ -40,26 +40,26 @@ Ctrl-tasten nede og samtidig trykke den efterfølgende tast.
 <indexterm><primary>mc</primary></indexterm>
 <para>
 
-Programmet <command>mcedit</command> er teksteditoren som hører til
-filhåndteringsprogrammet Midnight Commander (en Norton Commander
+Programmet <command>mcedit</command> er teksteditoren som hÃ¸rer til
+filhÃ¥ndteringsprogrammet Midnight Commander (en Norton Commander
 efterligning, som kaldes med <command>mc</command>).
-For en tidligere DOS-bruger er <command>mcedit</command> let at gå
-til og den har indbygget en simpel syntaksfremhævning til en hel del sprog.
+For en tidligere DOS-bruger er <command>mcedit</command> let at gÃ¥
+til og den har indbygget en simpel syntaksfremhÃ¦vning til en hel del sprog.
 </para>
 
 <para>
 Hvis <command>mcedit</command> skal kunne vise de danske
-tegn æ, ø og å, skal det ikke sættes op i
+tegn Ã¦, Ã¸ og Ã¥, skal det ikke sÃ¦ttes op i
 <command>mcedit</command>, men i selve Midnight Commander. I
-<command>mc</command> vælges "F9, Options, Display Bits, Full 8 bits
+<command>mc</command> vÃ¦lges "F9, Options, Display Bits, Full 8 bits
 output og Full 8 bits input". Derefter gemmes indstillingen med
 "Options, Save setup".
 </para>
 
 <para>
-Den naturlige måde at benytte <command>mcedit</command> er at starte den
-inde fra Midnight Commander. Det gøres ved at placere markørbjælken på
-den ønskede fil og trykke F4 (Edit).
+Den naturlige mÃ¥de at benytte <command>mcedit</command> er at starte den
+inde fra Midnight Commander. Det gÃ¸res ved at placere markÃ¸rbjÃ¦lken pÃ¥
+den Ã¸nskede fil og trykke F4 (Edit).
 </para>
 
 </sect1>
@@ -68,29 +68,29 @@ den ønskede fil og trykke F4 (Edit).
 <title>nedit</title>
 <indexterm><primary>nedit</primary></indexterm>
 <para>
-Hvis du er ude efter en enkel editor, som ikke kræver ret meget
-tilvænning, bør du se på <command>nedit</command>, som følger med
-SuSE, men ikke Red Hat. (Begge kører RPM-format, så det er
-ofte muligt at installere fra en SuSE-cd-rom på en Red Hat maskine).
+Hvis du er ude efter en enkel editor, som ikke krÃ¦ver ret meget
+tilvÃ¦nning, bÃ¸r du se pÃ¥ <command>nedit</command>, som fÃ¸lger med
+SuSE, men ikke Red Hat. (Begge kÃ¸rer RPM-format, sÃ¥ det er
+ofte muligt at installere fra en SuSE-cd-rom pÃ¥ en Red Hat maskine).
 </para>
 
 <para>
-Programmet <command>nedit</command> kan, som det er vist på <xref
- linkend="nedit-fig"/>, lave syntaksfremhævning (eng. highlight). 
+Programmet <command>nedit</command> kan, som det er vist pÃ¥ <xref
+ linkend="nedit-fig"/>, lave syntaksfremhÃ¦vning (eng. highlight). 
 Der er en del muligheder
-i <command>nedit</command>, og alligevel er den nem at gå til, så vi
-kan varmt anbefale den. Der er dog også grund til at lære
+i <command>nedit</command>, og alligevel er den nem at gÃ¥ til, sÃ¥ vi
+kan varmt anbefale den. Der er dog ogsÃ¥ grund til at lÃ¦re
 f.eks. <command>vi</command>, <command>pico</command> og/eller
 <command>emacs</command> senere, idet <command>nedit</command> ikke
-kan køre uden X-vinduesystemet. Med andre ord, hvis du skal redigere en
+kan kÃ¸re uden X-vinduesystemet. Med andre ord, hvis du skal redigere en
 fil i Linux teksttilstand, er det godt at kunne lidt andet. Desuden er
-<command>nedit</command> normalt ikke installeret på andre
+<command>nedit</command> normalt ikke installeret pÃ¥ andre
 Unix-systemer, men <command>emacs</command> er ofte og
 <command>vi</command> er altid.
 </para>
 
 <figure id="nedit-fig" float="1">
-<title><command>nedit</command> med en C-fil læst ind</title>
+<title><command>nedit</command> med en C-fil lÃ¦st ind</title>
 <graphic fileref="nedit.&magic;"  scale="40"></graphic>
 </figure>
 
@@ -104,13 +104,13 @@ Indtil videre har du set, hvordan du kan manipulere filer, men det er
 ofte meget nyttigt at kunne redigere i en tekstfil.
 <!--  Bogen handler ikke om (X) Windows
 Der er nok mange,
-som har vænnet sig til at bruge simple teksteditorer til Windows som
-WordPad, og installeres <command>nedit</command>, har man næsten samme
+som har vÃ¦nnet sig til at bruge simple teksteditorer til Windows som
+WordPad, og installeres <command>nedit</command>, har man nÃ¦sten samme
 enkle brugerflade, men <command>nedit</command> kan mere end WordPad, 
-bl.a. syntaksfremhævning af C-kode, så du nemt kan finde rundt i dine
+bl.a. syntaksfremhÃ¦vning af C-kode, sÃ¥ du nemt kan finde rundt i dine
 programmer. I KDE findes KWrite (skriv <command>kwrite</command>) som
-bl.a. har syntakfremhævning og er meget enkel at bruge. Til Gnome
-findes <command>gedit</command> og <command>gnp</command>. Sidstnævnte
+bl.a. har syntakfremhÃ¦vning og er meget enkel at bruge. Til Gnome
+findes <command>gedit</command> og <command>gnp</command>. SidstnÃ¦vnte
 minder nok mest om Microsoft Windows Notepad, men den er samtidig en
 simpel HTML-editor. -->
 </para>
@@ -118,24 +118,24 @@ simpel HTML-editor. -->
 <para>
 En editor, som man ikke kan komme uden om er
 <command>vi</command>. Som gamle Unix-folk vil vi forfattere
-give dig det råd, at du lærer at bruge <command>vi</command> og bruger
+give dig det rÃ¥d, at du lÃ¦rer at bruge <command>vi</command> og bruger
 editoren til at foretage mindre rettelser i filer. Editoren
-<command>vi</command> (som udtales vi-aj) har eksisteret i mange år, og
+<command>vi</command> (som udtales vi-aj) har eksisteret i mange Ã¥r, og
 det er nok en af de mest udbredte editorer i verden. Grunden er
-bl.a., at <command>vi</command> findes på alle Unix-systemer og er så
-lille, at den næsten altid startes op uanset belastning af
-maskinen. En anden meget god grund til (også) at lære en tekstbaseret
+bl.a., at <command>vi</command> findes pÃ¥ alle Unix-systemer og er sÃ¥
+lille, at den nÃ¦sten altid startes op uanset belastning af
+maskinen. En anden meget god grund til (ogsÃ¥) at lÃ¦re en tekstbaseret
 editor som <command>vi</command> er at den dag din Linux-maskine har
-f.eks. et hardware-problem og du måske ikke kan starte i grafiktilstand
-eller skal køre i enkeltbrugertilstand (kun som systemadministrator), så er det editorer
+f.eks. et hardware-problem og du mÃ¥ske ikke kan starte i grafiktilstand
+eller skal kÃ¸re i enkeltbrugertilstand (kun som systemadministrator), sÃ¥ er det editorer
 som <command>vi</command> du skal kunne bruge sikkert.
 </para>
 
 <para>
-Du skal vide at <command>vi</command> nok kan være en pine for
+Du skal vide at <command>vi</command> nok kan vÃ¦re en pine for
 nybegynderen, men for den erfarne er <command>vi</command> en
 ganske kraftig teksteditor, med mulighed for kald af
-makroer/funktioner.  <command>vi</command> findes også til andre
+makroer/funktioner.  <command>vi</command> findes ogsÃ¥ til andre
 styresystemer end Linux/Unix.
 </para>
 
@@ -143,29 +143,29 @@ styresystemer end Linux/Unix.
 <para>
 Lad os antage, at du vil skrive en eller anden tekst, og du vil
 have, at filen skal hedde <filename>minFil.txt</filename>. Editoren
-<command>vi</command> startes på følgende måde:</para>
+<command>vi</command> startes pÃ¥ fÃ¸lgende mÃ¥de:</para>
 
 <screen>
 <prompt>[tyge@hven MitKatalog]$ </prompt> <userinput>vi minFil.txt</userinput>
 </screen>
 
-<para>Til at begynde med står der intet andet end en masse
-~-tegn (kaldet tilde) &ndash; ét ~-tegn på hver linje. Det betyder, at disse
+<para>Til at begynde med stÃ¥r der intet andet end en masse
+~-tegn (kaldet tilde) &ndash; Ã©t ~-tegn pÃ¥ hver linje. Det betyder, at disse
 linjer ikke eksisterer i filen endnu. <command>vi</command> arbejder i
-et af to modi: indsæt- eller kommando-modus. Trykker du på
-<emphasis>i</emphasis>, når du er i kommando-modus, går du over i
-indsæt-modus, mens du skal trykke på Escape, hvis du ønsker at komme i
-kommando-modus. Du kan se, hvilket modus du er i nederst på
-skærmen: Når der står <emphasis>-- INSERT --</emphasis>, er du i
-indsæt-modus.
+et af to modi: indsÃ¦t- eller kommando-modus. Trykker du pÃ¥
+<emphasis>i</emphasis>, nÃ¥r du er i kommando-modus, gÃ¥r du over i
+indsÃ¦t-modus, mens du skal trykke pÃ¥ Escape, hvis du Ã¸nsker at komme i
+kommando-modus. Du kan se, hvilket modus du er i nederst pÃ¥
+skÃ¦rmen: NÃ¥r der stÃ¥r <emphasis>-- INSERT --</emphasis>, er du i
+indsÃ¦t-modus.
 </para>
 
 <para>
-En god måde at komme i gang med <command>vi</command> er at køre
-hjælplektionen (eng. tutor) igennem. Du finder
+En god mÃ¥de at komme i gang med <command>vi</command> er at kÃ¸re
+hjÃ¦lplektionen (eng. tutor) igennem. Du finder
 <filename>tutor</filename>-filen under dokumentationen for
-<command>vi</command> og kopierer den over i dit eget katalog, så du
-ikke ødelægger den oprindelige, når du gennemgår lektionerne.
+<command>vi</command> og kopierer den over i dit eget katalog, sÃ¥ du
+ikke Ã¸delÃ¦gger den oprindelige, nÃ¥r du gennemgÃ¥r lektionerne.
 Placeringen af <filename>tutor</filename>-filen kan variere lidt alt
 efter Linux-distribution og version af <command>vi</command> (5.6
 nedenfor er versionnummeret).
@@ -176,7 +176,7 @@ nedenfor er versionnummeret).
 </screen>
 
 <para>
-<command>vi</command> har en række funktioner, som du kan
+<command>vi</command> har en rÃ¦kke funktioner, som du kan
 bruge i kommando-modus. Her er de mest almindelige.</para>
 
 <table id="vi-kommandoer">
@@ -188,21 +188,21 @@ bruge i kommando-modus. Her er de mest almindelige.</para>
 
 <tbody>
 
-<row><entry>:help </entry> <entry> Hjælp. Tast :q for at komme
+<row><entry>:help </entry> <entry> HjÃ¦lp. Tast :q for at komme
  tilbage.</entry></row>
 
-<row><entry>i </entry> <entry> Skift til indsæt-modus. Nu kan der føjes til
-filen, fra hvor man står.</entry></row>
-<row><entry>a </entry> <entry> Skift til indsæt-modus for at tilføje. Nu
-kan der føjes til filen, efter der hvor man står.</entry></row>
-<row><entry>A </entry> <entry> Gå til slutning af linjen og skift til
- indsæt-modus.</entry></row>
+<row><entry>i </entry> <entry> Skift til indsÃ¦t-modus. Nu kan der fÃ¸jes til
+filen, fra hvor man stÃ¥r.</entry></row>
+<row><entry>a </entry> <entry> Skift til indsÃ¦t-modus for at tilfÃ¸je. Nu
+kan der fÃ¸jes til filen, efter der hvor man stÃ¥r.</entry></row>
+<row><entry>A </entry> <entry> GÃ¥ til slutning af linjen og skift til
+ indsÃ¦t-modus.</entry></row>
 <row><entry>R </entry> <entry> Skift til overskrivnings-modus.</entry></row>
 
-<row><entry>o </entry> <entry> Skift til indsæt-modus (open line) og indsæt ny
- linje under markør.</entry></row>
-<row><entry>O </entry> <entry> Skift til indsæt-modus (open line) og indsæt ny
- linje over markør.</entry></row>
+<row><entry>o </entry> <entry> Skift til indsÃ¦t-modus (open line) og indsÃ¦t ny
+ linje under markÃ¸r.</entry></row>
+<row><entry>O </entry> <entry> Skift til indsÃ¦t-modus (open line) og indsÃ¦t ny
+ linje over markÃ¸r.</entry></row>
 
 <row><entry>ESC </entry> <entry> Skift tilbage til kommando-modus.</entry></row>
 
@@ -210,64 +210,64 @@ kan der føjes til filen, efter der hvor man står.</entry></row>
 piletasterne til at flytte rundt i filen.</entry></row>
 <row><entry>Piletaster</entry> <entry> Bruges til at flytte rundt i filen.</entry></row>
 
-<row><entry>_ </entry> <entry> Gå til første tegn på linjen.</entry></row>
-<row><entry>$ </entry> <entry> Gå til slutning af linjen.</entry></row>
-<row><entry>w </entry> <entry> Gå et ord frem.</entry></row>
-<row><entry>b </entry> <entry> Gå et ord tilbage.</entry></row>
+<row><entry>_ </entry> <entry> GÃ¥ til fÃ¸rste tegn pÃ¥ linjen.</entry></row>
+<row><entry>$ </entry> <entry> GÃ¥ til slutning af linjen.</entry></row>
+<row><entry>w </entry> <entry> GÃ¥ et ord frem.</entry></row>
+<row><entry>b </entry> <entry> GÃ¥ et ord tilbage.</entry></row>
 
-<row><entry>gg</entry> <entry> Gå til første linje i filen.</entry></row>
-<row><entry>G</entry> <entry> Gå til sidste linje i filen.</entry></row>
-<row><entry>&lt;n&gt;G</entry> <entry> Gå til n'te linje i filen.</entry></row>
-<row><entry>}</entry> <entry> Gå et tekstafsnit frem.</entry></row>
-<row><entry>{</entry> <entry> Gå et tekstafsnit tilbage.</entry></row>
+<row><entry>gg</entry> <entry> GÃ¥ til fÃ¸rste linje i filen.</entry></row>
+<row><entry>G</entry> <entry> GÃ¥ til sidste linje i filen.</entry></row>
+<row><entry>&lt;n&gt;G</entry> <entry> GÃ¥ til n'te linje i filen.</entry></row>
+<row><entry>}</entry> <entry> GÃ¥ et tekstafsnit frem.</entry></row>
+<row><entry>{</entry> <entry> GÃ¥ et tekstafsnit tilbage.</entry></row>
 
-<row><entry>ma</entry> <entry> Sæt mærke med tegnet 'a'.</entry></row>
-<row><entry>'a</entry> <entry> Gå til mærket 'a'.</entry></row>
-<row><entry>tA</entry> <entry> Gå fremad til tegnet 'A'.</entry></row>
+<row><entry>ma</entry> <entry> SÃ¦t mÃ¦rke med tegnet 'a'.</entry></row>
+<row><entry>'a</entry> <entry> GÃ¥ til mÃ¦rket 'a'.</entry></row>
+<row><entry>tA</entry> <entry> GÃ¥ fremad til tegnet 'A'.</entry></row>
 
 <row><entry>x </entry> <entry> Slet bogstav.</entry></row>
 <row><entry>X </entry> <entry> Slet bogstav til venstre for
- markør.</entry></row>
+ markÃ¸r.</entry></row>
 <row><entry>J </entry> <entry> Slet linjeskift (join).</entry></row>
 
 <row><entry>dw </entry> <entry> Slet ord (delete word).</entry></row>
 
 <row><entry>dd </entry> <entry> Slet linje.</entry></row>
-<row><entry>D </entry> <entry> Slet resten af linjen fra markøren.</entry></row>
+<row><entry>D </entry> <entry> Slet resten af linjen fra markÃ¸ren.</entry></row>
 
-<row><entry>3dd </entry> <entry> Slet tre linjer startende med linjen, du står
+<row><entry>3dd </entry> <entry> Slet tre linjer startende med linjen, du stÃ¥r
  i.</entry></row>
-<row><entry>d} </entry> <entry> Slet tekstafsnit fremad (frem til næste blanke
+<row><entry>d} </entry> <entry> Slet tekstafsnit fremad (frem til nÃ¦ste blanke
  linje).</entry></row>
 <row><entry>dtA </entry> <entry> Slet frem til tegnet 'A'.</entry></row>
 
-<row><entry>u </entry> <entry> Fortryd sidste ændring (undo).</entry></row>
-<row><entry>Ctrl-R </entry> <entry> Gentag sidste ændring (redo).</entry></row>
+<row><entry>u </entry> <entry> Fortryd sidste Ã¦ndring (undo).</entry></row>
+<row><entry>Ctrl-R </entry> <entry> Gentag sidste Ã¦ndring (redo).</entry></row>
 
-<row><entry>/tekst </entry> <entry> Søg fremad efter "tekst". Tryk <filename>/
+<row><entry>/tekst </entry> <entry> SÃ¸g fremad efter "tekst". Tryk <filename>/
  ENTER</filename>
-eller <filename>n</filename> for at søge videre.</entry></row>
-<row><entry>?tekst </entry> <entry> Søg bagud efter "tekst". Tryk <filename>?
+eller <filename>n</filename> for at sÃ¸ge videre.</entry></row>
+<row><entry>?tekst </entry> <entry> SÃ¸g bagud efter "tekst". Tryk <filename>?
  ENTER</filename>
-eller <filename>n</filename> for at søge videre.</entry></row>
-<row><entry>: %s/STR1/STR2/g</entry> <entry>Søg i alle linjer og erstat STR1
+eller <filename>n</filename> for at sÃ¸ge videre.</entry></row>
+<row><entry>: %s/STR1/STR2/g</entry> <entry>SÃ¸g i alle linjer og erstat STR1
 med  STR2.</entry></row>
 
-<row><entry>Y </entry> <entry>Kopiér linjen du står i (yank).</entry></row>
+<row><entry>Y </entry> <entry>KopiÃ©r linjen du stÃ¥r i (yank).</entry></row>
 
-<row><entry>4Y </entry> <entry>Kopiér 4 linjer til buffer startende med linjen,
- du står i (yank).</entry></row>
+<row><entry>4Y </entry> <entry>KopiÃ©r 4 linjer til buffer startende med linjen,
+ du stÃ¥r i (yank).</entry></row>
 
-<row><entry>p </entry> <entry>  Indsæt fra buffer (put). Dette virker
-både efter yank- og delete-ordrerne.</entry></row>
+<row><entry>p </entry> <entry>  IndsÃ¦t fra buffer (put). Dette virker
+bÃ¥de efter yank- og delete-ordrerne.</entry></row>
 
 
 <row><entry>:set number</entry> <entry>Vis linjenumre.</entry></row>
 <row><entry>:set nonumber</entry> <entry>Vis ikke linjenumre.</entry></row>
-<row><entry>&lt;n&gt;G</entry> <entry>Gå til linje &lt;n&gt;.</entry></row>
-<row><entry>Ctrl-f</entry> <entry>Gå en side frem.</entry></row>
-<row><entry>Ctrl-b</entry> <entry>Gå en side tilbage.</entry></row>
-<row><entry>Ctrl-g</entry> <entry>Viser nuværende linjenummer</entry></row>
+<row><entry>&lt;n&gt;G</entry> <entry>GÃ¥ til linje &lt;n&gt;.</entry></row>
+<row><entry>Ctrl-f</entry> <entry>GÃ¥ en side frem.</entry></row>
+<row><entry>Ctrl-b</entry> <entry>GÃ¥ en side tilbage.</entry></row>
+<row><entry>Ctrl-g</entry> <entry>Viser nuvÃ¦rende linjenummer</entry></row>
 
 <row><entry>:w </entry> <entry> Gem filen.</entry></row>
 <row><entry>:w! </entry> <entry> Gem filen ubetinget.</entry></row>
@@ -283,9 +283,9 @@ både efter yank- og delete-ordrerne.</entry></row>
 <row><entry>:e &lt;NAVN&gt; </entry> <entry> Hent filen
  &lt;NAVN&gt;.</entry></row>
 
-<row><entry>:set wrap </entry> <entry> Sæt linjeombrydning til.</entry></row>
-<row><entry>:set nowrap </entry> <entry> Slå linjeombrydning fra.</entry></row>
-<row><entry>:set ts=2</entry> <entry> Sæt tab-stop til 2
+<row><entry>:set wrap </entry> <entry> SÃ¦t linjeombrydning til.</entry></row>
+<row><entry>:set nowrap </entry> <entry> SlÃ¥ linjeombrydning fra.</entry></row>
+<row><entry>:set ts=2</entry> <entry> SÃ¦t tab-stop til 2
  mellemrum.</entry></row>
 
 
@@ -294,31 +294,31 @@ både efter yank- og delete-ordrerne.</entry></row>
 </table>
 
 <para>
-En lidt nemmere måde at styre blok-markeringer i
+En lidt nemmere mÃ¥de at styre blok-markeringer i
 <command>vi</command>
 (eller rettere <command>vim</command>) er ved at bruge
 <emphasis>visuel modus</emphasis>.
 Tast <command>v</command>, <command>V</command> eller
 <command>Ctrl-v</command> og brug derefter piletasterne.
-Tast dernæst <command>d</command> for at klippe og
+Tast dernÃ¦st <command>d</command> for at klippe og
 <command>y</command> for at kopiere.
-Jump-kommandoer såsom <command>G</command> virker også.
+Jump-kommandoer sÃ¥som <command>G</command> virker ogsÃ¥.
 </para>
 
 <para>
 Nok er <command>vi</command> en teksteditor, som er meget udbredt i
-Unix-verdenen, men du kan også læse lidt frem; der er alternativer, som
-er nemmere, såsom <command>pico</command> og <command>mcedit</command>
+Unix-verdenen, men du kan ogsÃ¥ lÃ¦se lidt frem; der er alternativer, som
+er nemmere, sÃ¥som <command>pico</command> og <command>mcedit</command>
 samt nogle, der kan meget mere,
-såsom <command>emacs</command>. <!--Alle tre omtales i <xref
+sÃ¥som <command>emacs</command>. <!--Alle tre omtales i <xref
  linkend="editorer"/>.-->
 </para>
 
 <para>
-Se mere om <command>vi</command> og udvidede versioner på
+Se mere om <command>vi</command> og udvidede versioner pÃ¥
 <ulink url="http://www.vim.org">http://www.vim.org</ulink>. En ting
 man kan finde her, er at den udvidede <command>vi</command>, kaldet
-<command>vim</command> har syntaksfremhævning :)
+<command>vim</command> har syntaksfremhÃ¦vning :)
 </para>
 
 <para>
@@ -357,62 +357,62 @@ Mastering the VI editor
 <indexterm><primary>Emacs</primary></indexterm>
 <para>
 I en klasse for sig selv er Emacs (<command>emacs</command>) og
-søsterprogrammet XEmacs (<command>xemacs</command>), som begge kan
-utroligt mange ting, men kræver meget hukommelse (den kørbare fil
-i X-udgave er på ca. 2,3 Mb). XEmacs er relativt enkel at bruge, idet
-der er både menuer og kommandoer &ndash; Emacs har ikke helt så smarte knapper,
-men kun tekstmenuer. Desværre følger kun Emacs og ikke XEmacs med de
+sÃ¸sterprogrammet XEmacs (<command>xemacs</command>), som begge kan
+utroligt mange ting, men krÃ¦ver meget hukommelse (den kÃ¸rbare fil
+i X-udgave er pÃ¥ ca. 2,3 Mb). XEmacs er relativt enkel at bruge, idet
+der er bÃ¥de menuer og kommandoer &ndash; Emacs har ikke helt sÃ¥ smarte knapper,
+men kun tekstmenuer. DesvÃ¦rre fÃ¸lger kun Emacs og ikke XEmacs med de
 fleste udgaver af Red Hat, men XEmacs findes som Red Hat-pakker, og
 det er let at installere den.
 </para>
 
 <para>
-Emacs og XEmacs har syntaksfremhævning til næsten alle
-programmeringssprog (også Matlab og LaTeX), hvilket gør dem meget
-lækre at arbejde med. Syntaksen i koden forstås, så indrykning af
+Emacs og XEmacs har syntaksfremhÃ¦vning til nÃ¦sten alle
+programmeringssprog (ogsÃ¥ Matlab og LaTeX), hvilket gÃ¸r dem meget
+lÃ¦kre at arbejde med. Syntaksen i koden forstÃ¥s, sÃ¥ indrykning af
 f.eks. C-kode sker automatisk, og koder vises med enten forskellige
 skrifttyper og/eller farver.
 </para>
 
 <para>
-XEmacs og Emacs kan sættes op gennem et meget slagkraftigt
-makrosystem, så programmering eller tekstbehandling kan tilpasses ud
-fra næsten alle ønsker. Hvis det måtte ønskes, kan Emacs styre næsten
-alt. Du kan fra Emacs oversætte C-programmer, du har redigeret, og køre
+XEmacs og Emacs kan sÃ¦ttes op gennem et meget slagkraftigt
+makrosystem, sÃ¥ programmering eller tekstbehandling kan tilpasses ud
+fra nÃ¦sten alle Ã¸nsker. Hvis det mÃ¥tte Ã¸nskes, kan Emacs styre nÃ¦sten
+alt. Du kan fra Emacs oversÃ¦tte C-programmer, du har redigeret, og kÃ¸re
 en debugger direkte fra Emacs. Du kan sende og modtage elektronisk post
 gennem Emacs. Der er endvidere mulighed for at starte en kommandofortolker
-op i Emacs, hvorfra programmer kan udføres. Alt dette kan køres
-samtidig med redigering af et vilkårligt antal filer.  Mange siger tit
-"Emacs kan bl.a. alt", og pånær at lave kaffe er det ikke
+op i Emacs, hvorfra programmer kan udfÃ¸res. Alt dette kan kÃ¸res
+samtidig med redigering af et vilkÃ¥rligt antal filer.  Mange siger tit
+"Emacs kan bl.a. alt", og pÃ¥nÃ¦r at lave kaffe er det ikke
 modsagt. Til teksteditering og programmering er Emacs en Rolls Royce.
 </para>
 
 <figure id="Emacs-fig" float="1">
-<title>Emacs med to filer åbne</title>
+<title>Emacs med to filer Ã¥bne</title>
 <graphic fileref="emacs.&magic;"  scale="40"></graphic>
 </figure>
 
 <para>
 <indexterm><primary>buffer</primary></indexterm>
-Filer redigeres ikke direkte på harddisken, men arbejdes på i såkaldte
-buffere, altså kopieres filens indhold til hukommelsen, hvor Emacs så
-behandler den. Således forhindrer man de mest alvorlige fejl, der
+Filer redigeres ikke direkte pÃ¥ harddisken, men arbejdes pÃ¥ i sÃ¥kaldte
+buffere, altsÃ¥ kopieres filens indhold til hukommelsen, hvor Emacs sÃ¥
+behandler den. SÃ¥ledes forhindrer man de mest alvorlige fejl, der
 skyldes at to programmer vil bruge samme fil samtidigt. Det er dog i
-daglig brug ikke til at skelne fra anden redigering af tekstfiler, så
-man taler normalt om buffere og åbne filer i flæng. Der er én buffer som er helt
-speciel, nemlig minibufferen, der altid er åben. Den er altid den
+daglig brug ikke til at skelne fra anden redigering af tekstfiler, sÃ¥
+man taler normalt om buffere og Ã¥bne filer i flÃ¦ng. Der er Ã©n buffer som er helt
+speciel, nemlig minibufferen, der altid er Ã¥ben. Den er altid den
 nederste linje, og den bruges af Emacs til at vise dig forskellige
 beskeder i, og det er den, man skriver kommandoer mv. i.
 </para>
 
 <para>
 Start Emacs op ved at skrive <command>emacs</command>, hvad enten du
-er i en tekst-tilstand eller i en grafisk brugergrænseflade. Emacs har
+er i en tekst-tilstand eller i en grafisk brugergrÃ¦nseflade. Emacs har
 menuer, hvorfra mange af funktionerne kan styres. Ud for hver funktion
-står også en tastaturkode. Derfor lærer du hurtigt at styre Emacs,
-også hvis du foretrækker tastaturkoder. Her gives en kort oversigt
-over de mest anvendte tastaturkoder. Ctrl står for kontroltasten, og
-Meta står for Meta-tasten, der i Linux er lig med Alt-tasten (eller
+stÃ¥r ogsÃ¥ en tastaturkode. Derfor lÃ¦rer du hurtigt at styre Emacs,
+ogsÃ¥ hvis du foretrÃ¦kker tastaturkoder. Her gives en kort oversigt
+over de mest anvendte tastaturkoder. Ctrl stÃ¥r for kontroltasten, og
+Meta stÃ¥r for Meta-tasten, der i Linux er lig med Alt-tasten (eller
 Escape).
 </para>
 
@@ -435,19 +435,19 @@ Forklaring
 </thead>
 
 <tbody>
-<row><entry>Ctrl-h ?</entry> <entry> Hjælp om hjælpesystemet. Den
-indbyggede hjælp er enormt god, når man lige lærer at bruge
+<row><entry>Ctrl-h ?</entry> <entry> HjÃ¦lp om hjÃ¦lpesystemet. Den
+indbyggede hjÃ¦lp er enormt god, nÃ¥r man lige lÃ¦rer at bruge
 den.</entry></row>
 
 <row><entry>Ctrl-x Ctrl-f</entry> <entry> Find fil (til
- indlæsning). Indtast navnet på den ønskede fil, eller
- anvend tabulator til at få fil-liste, og brug musen (midterste knap) til
- at vælge. Hvis filen ikke findes i forvejen, vil den blive
- oprettet. Bemærk, at <command>Ctrl-x f</command> er noget helt andet!
+ indlÃ¦sning). Indtast navnet pÃ¥ den Ã¸nskede fil, eller
+ anvend tabulator til at fÃ¥ fil-liste, og brug musen (midterste knap) til
+ at vÃ¦lge. Hvis filen ikke findes i forvejen, vil den blive
+ oprettet. BemÃ¦rk, at <command>Ctrl-x f</command> er noget helt andet!
 </entry></row>
 
-<row><entry>Ctrl-x k</entry> <entry> Dræb buffer. Anvendes til at fjerne den
- indlæste fil.
+<row><entry>Ctrl-x k</entry> <entry> DrÃ¦b buffer. Anvendes til at fjerne den
+ indlÃ¦ste fil.
 </entry></row>
 
 <row><entry>Ctrl-x Ctrl-s</entry> <entry> Gem fil med samme filnavn.
@@ -456,26 +456,26 @@ den.</entry></row>
 <row><entry>Ctrl-x Ctrl-w</entry> <entry> Gem fil med nyt filnavn.
 </entry></row>
 
-<row><entry>Ctrl-s</entry> <entry> Søg efter det, du angiver. Der skal
- ikke trykkes return til sidst. Tryk Ctrl-s for at søge til næste
- fremkomst af det valgte mønster.
+<row><entry>Ctrl-s</entry> <entry> SÃ¸g efter det, du angiver. Der skal
+ ikke trykkes return til sidst. Tryk Ctrl-s for at sÃ¸ge til nÃ¦ste
+ fremkomst af det valgte mÃ¸nster.
 </entry></row>
 
-<row><entry>Meta-%</entry> <entry> Søg og erstat (tryk Alt-Shift-5). Til de enkelte
+<row><entry>Meta-%</entry> <entry> SÃ¸g og erstat (tryk Alt-Shift-5). Til de enkelte
  steder, hvor der kan
  erstattes, kan der tastes y for erstat, n for spring videre og endelig kan
- tastes ! (udråbstegn) for at erstatte alle kommende forekomster.
+ tastes ! (udrÃ¥bstegn) for at erstatte alle kommende forekomster.
 </entry></row>
 
 <row><entry>Markering af tekst</entry> <entry> Dette kan ske ved at
- trykke venstre museknap ned og trække ned over teksten. Teksten er nu
+ trykke venstre museknap ned og trÃ¦kke ned over teksten. Teksten er nu
  i en redigerings-buffer.
 </entry></row>
 
 <row><entry>Ctrl-_</entry> <entry> Undo.
 </entry></row>
 
-<row><entry>Ctrl-x 1</entry> <entry>Vis kun én ramme i vindue.
+<row><entry>Ctrl-x 1</entry> <entry>Vis kun Ã©n ramme i vindue.
 </entry></row>
 
 <row><entry>Ctrl-x 2</entry> <entry>Del aktuelle vindue i to rammer,
@@ -487,19 +487,19 @@ f.eks. linjeskift Ctrl-M (Skriv Ctrl-q Ctrl-M).
 </entry></row>
 
 <row><entry>Ctrl-w</entry> <entry> Klipper markeret tekst til
- redigeringsbuffer. Sker hurtigere med et dobbeltklik på højre museknap.
+ redigeringsbuffer. Sker hurtigere med et dobbeltklik pÃ¥ hÃ¸jre museknap.
 </entry></row>
 
-<row><entry>Ctrl-y</entry> <entry> Yank text, dvs. indsæt
- tekst. Bemærk, at dette kan ske hurtigere med midterste museknap.
+<row><entry>Ctrl-y</entry> <entry> Yank text, dvs. indsÃ¦t
+ tekst. BemÃ¦rk, at dette kan ske hurtigere med midterste museknap.
 </entry></row>
 
-<row><entry>Meta-q</entry> <entry> Formatér tekst til at fylde
+<row><entry>Meta-q</entry> <entry> FormatÃ©r tekst til at fylde
  linjerne ud. Meget anvendelig til almindelig tekst, hvis linjerne er
- delt meget skævt. Emacs kan også genkende formler, som ikke vil blive
+ delt meget skÃ¦vt. Emacs kan ogsÃ¥ genkende formler, som ikke vil blive
  ombrudt.</entry></row>
 
-<row><entry>Meta-x</entry> <entry> Kør en kommando. Man skriver
+<row><entry>Meta-x</entry> <entry> KÃ¸r en kommando. Man skriver
 kommandoens navn i minibufferen og trykker enter.</entry></row>
 
 </tbody>
@@ -508,20 +508,20 @@ kommandoens navn i minibufferen og trykker enter.</entry></row>
 </para>
 
 <para>
-Det kan også nævnes, at Ctrl-venstre museknap giver en oversigt over
-filer, der er indlæst. På den måde kan du hoppe mellem filerne, du har
-indlæst. Med Ctrl-højre museknap kan skærmens skrift ændres. Bemærk, at
-Emacs kan og bør sættes op til brugeren. Det gøres i en
+Det kan ogsÃ¥ nÃ¦vnes, at Ctrl-venstre museknap giver en oversigt over
+filer, der er indlÃ¦st. PÃ¥ den mÃ¥de kan du hoppe mellem filerne, du har
+indlÃ¦st. Med Ctrl-hÃ¸jre museknap kan skÃ¦rmens skrift Ã¦ndres. BemÃ¦rk, at
+Emacs kan og bÃ¸r sÃ¦ttes op til brugeren. Det gÃ¸res i en
 <filename>.emacs</filename>-fil, der gemmes i hjemmekataloget. Her er
-et eksempel på indholdet af en <filename>.emacs</filename>-fil. Du kan
-nøjes med de første fire linjer til at begynde med. Senere kan du
-bygge videre på standardindstillingerne &ndash; alt efter dine ønsker.
+et eksempel pÃ¥ indholdet af en <filename>.emacs</filename>-fil. Du kan
+nÃ¸jes med de fÃ¸rste fire linjer til at begynde med. Senere kan du
+bygge videre pÃ¥ standardindstillingerne &ndash; alt efter dine Ã¸nsker.
 </para>
 
 <indexterm><primary>.emacs fil</primary></indexterm>
 
 <programlisting>
-;;De første fire linjer vil gøre, at de danske bogstaver virker rigtigt.
+;;De fÃ¸rste fire linjer vil gÃ¸re, at de danske bogstaver virker rigtigt.
 (set-language-environment "Latin-1")
 (set-input-mode (car (current-input-mode))
   (nth 1 (current-input-mode))
@@ -529,10 +529,10 @@ bygge videre på standardindstillingerne &ndash; alt efter dine ønsker.
 
 
 ;;Bind nogle gode funktioner til Ctrl- og musetasterne
-;;Ctrl-venstre mus giver menu over åbne filer
+;;Ctrl-venstre mus giver menu over Ã¥bne filer
 ;;Ctrl-midterste mus viser afsnit i filen som der kan hoppes til
 ;;    For C-filer er det alle funktioner (cool).
-;;Ctrl-højre mus for at vælge skrifttype
+;;Ctrl-hÃ¸jre mus for at vÃ¦lge skrifttype
 (global-set-key [\C-down-mouse-1] 'mouse-buffer-menu)
 (global-set-key [\C-down-mouse-2] 'imenu)
 (global-set-key [\C-down-mouse-3] 'mouse-set-font)
@@ -544,8 +544,8 @@ bygge videre på standardindstillingerne &ndash; alt efter dine ønsker.
 (define-key global-map [C-right] 'forward-sexp)
 (define-key global-map [delete] 'delete-char)
 
-;;Følgende kommando gør at emacs virker (dvs. backspace virker), i teksttilstand
-;;(hvilket man i X kan opnå ved at skrive "emacs -nw").
+;;FÃ¸lgende kommando gÃ¸r at emacs virker (dvs. backspace virker), i teksttilstand
+;;(hvilket man i X kan opnÃ¥ ved at skrive "emacs -nw").
 
 (keyboard-translate ?\C-h ?\C-?)
 (define-key global-map "\C-x?" 'help)
@@ -561,13 +561,13 @@ bygge videre på standardindstillingerne &ndash; alt efter dine ønsker.
 (setq c-mode-hook 'font-lock-mode)
 (setq html-mode-hook 'font-lock-mode)
 
-;; Udkommenter følgende linjer hvis du ikke vil
+;; Udkommenter fÃ¸lgende linjer hvis du ikke vil
 ;; have menu-linjer med
 ;(menu-bar-mode 'nil)
 ;(tool-bar-mode 'nil)
 
 
-;;Filer der ender på .c og .h er C-filer og .html er HTML-filer
+;;Filer der ender pÃ¥ .c og .h er C-filer og .html er HTML-filer
 (setq auto-mode-alist
   (append '(("\\.c$"  . c-mode)
             ("\\.h$"  . c-mode)
@@ -578,35 +578,35 @@ bygge videre på standardindstillingerne &ndash; alt efter dine ønsker.
 
 <para>
 <indexterm><primary>major mode</primary></indexterm>
-Emacs kan som sagt alt på nær at lave kaffe (hvilket er forkert, da
-adskillige i tidens løb har fået Emacs til netop dette). Det betyder
-dog ikke at Emacs kan alt samtidigt på samme buffer; hver buffer
-tilpasser sig filtypen, således at hvis man redigerer en C-fil,
-optimerer Emacs sig til sådan brug, og hvis man skriver et
+Emacs kan som sagt alt pÃ¥ nÃ¦r at lave kaffe (hvilket er forkert, da
+adskillige i tidens lÃ¸b har fÃ¥et Emacs til netop dette). Det betyder
+dog ikke at Emacs kan alt samtidigt pÃ¥ samme buffer; hver buffer
+tilpasser sig filtypen, sÃ¥ledes at hvis man redigerer en C-fil,
+optimerer Emacs sig til sÃ¥dan brug, og hvis man skriver et
 LaTeX-dokument, tilpasser Emacs sig dette. Ved at Emacs tilpasser sig
-forstås, at menuerne, syntaksfremhævning, tastaturbindinger/genvejstaster,
-tilgængelige kommandoer osv. ændres
-således, at det, man skal bruge, altid er let tilgængeligt. Dette er
-såkaldte major modes, altså tilstande der i væsentlig grad ændrer den
-måde, hvorpå Emacs virker. Lige nu har jeg ca. 12 aktive buffere i
+forstÃ¥s, at menuerne, syntaksfremhÃ¦vning, tastaturbindinger/genvejstaster,
+tilgÃ¦ngelige kommandoer osv. Ã¦ndres
+sÃ¥ledes, at det, man skal bruge, altid er let tilgÃ¦ngeligt. Dette er
+sÃ¥kaldte major modes, altsÃ¥ tilstande der i vÃ¦sentlig grad Ã¦ndrer den
+mÃ¥de, hvorpÃ¥ Emacs virker. Lige nu har jeg ca. 12 aktive buffere i
 Emacs, hvor den, jeg netop nu skriver i bruger SGML major mode, en
 anden dired major mode, nogle stykker fundamental mode (den allermest
-grundlæggende, der ingen specielle muligheder har) osv. I denne
-buffers nuværende tilstand, kunne jeg trykke Ctrl-c Ctrl-c, og Emacs
-ville kalde et program, der validerer den nuværende buffer, men hvis
-det havde været et LaTeX-dokument, jeg havde skrevet på, ville Ctrl-c
-Ctrl-c have kaldt <command>latex</command> på bufferen. Prøv at trykke
-Ctrl-h m i Emacs; det vil få en beskrivelse af den aktuelle major mode
+grundlÃ¦ggende, der ingen specielle muligheder har) osv. I denne
+buffers nuvÃ¦rende tilstand, kunne jeg trykke Ctrl-c Ctrl-c, og Emacs
+ville kalde et program, der validerer den nuvÃ¦rende buffer, men hvis
+det havde vÃ¦ret et LaTeX-dokument, jeg havde skrevet pÃ¥, ville Ctrl-c
+Ctrl-c have kaldt <command>latex</command> pÃ¥ bufferen. PrÃ¸v at trykke
+Ctrl-h m i Emacs; det vil fÃ¥ en beskrivelse af den aktuelle major mode
 frem.
 </para>
 
 <para>
-Man skal normalt ikke bekymre sig om, hvordan man får fremkaldt en
-ønsket major mode, da Emacs selv holder styr på filtyper
-ved hjælp af "efternavne" eller specielt indhold (eksempelvis kan Emacs se, at
+Man skal normalt ikke bekymre sig om, hvordan man fÃ¥r fremkaldt en
+Ã¸nsket major mode, da Emacs selv holder styr pÃ¥ filtyper
+ved hjÃ¦lp af "efternavne" eller specielt indhold (eksempelvis kan Emacs se, at
 filer, der begynder med #!/bin/sh altid er shell-scripts). Er man dog
 ikke tilfreds med den major mode, man befinder sig i, kan man sagtens
-ændre den. Det gøres med <command>Meta-x
+Ã¦ndre den. Det gÃ¸res med <command>Meta-x
 [tilstandsnavn]-mode</command> (f.eks. <command>Meta-x
 sgml-mode</command>).
 </para>
@@ -614,59 +614,59 @@ sgml-mode</command>).
 <para>
 <indexterm><primary>minor mode</primary></indexterm>
 Hvor major modes tilbyder funktionalitet, der er specielt rettet mod
-visse filtyper, er der også minor modes, der er mere generelt
-anvendelige, og virker på tværs af major modes. Altså kan en minor
-mode som f.eks. <command>flyspell-mode</command>, der foretager løbende
+visse filtyper, er der ogsÃ¥ minor modes, der er mere generelt
+anvendelige, og virker pÃ¥ tvÃ¦rs af major modes. AltsÃ¥ kan en minor
+mode som f.eks. <command>flyspell-mode</command>, der foretager lÃ¸bende
 stavekontrol, bruges i <command>sgml-mode</command>,
-<command>LaTeX-mode</command> og så fremdeles. Når der foretages
-automatisk linjebrydning og syntaksfremhævning, er det faktisk en minor
+<command>LaTeX-mode</command> og sÃ¥ fremdeles. NÃ¥r der foretages
+automatisk linjebrydning og syntaksfremhÃ¦vning, er det faktisk en minor
 mode, der laver arbejdet, om end mange minor modes virker lidt
-forskelligt fra major mode til major mode. Syntaksfremhævningen skal f.eks.
+forskelligt fra major mode til major mode. SyntaksfremhÃ¦vningen skal f.eks.
 ikke farve de samme elementer i et LaTeX-dokument som i C-kode. Minor
-modes kaldes på samme måde som major modes.
+modes kaldes pÃ¥ samme mÃ¥de som major modes.
 </para>
 
 <para>
-Nu et lille sidespring. Historien går, at der i 1980'erne var mange
-Unix-folk, som var stærke <command>vi</command>-fanatikere, og der var
-måske lige så mange <command>emacs</command>-fans. For at få
-afklaret én gang for alle, hvilken editor der var bedst, blev der
+Nu et lille sidespring. Historien gÃ¥r, at der i 1980'erne var mange
+Unix-folk, som var stÃ¦rke <command>vi</command>-fanatikere, og der var
+mÃ¥ske lige sÃ¥ mange <command>emacs</command>-fans. For at fÃ¥
+afklaret Ã©n gang for alle, hvilken editor der var bedst, blev der
 afholdt en dyst i paintball, hvor <command>vi</command>-holdet
-fik en kneben sejr. Dette bør naturligvis efterprøves en dag, da
+fik en kneben sejr. Dette bÃ¸r naturligvis efterprÃ¸ves en dag, da
 <command>emacs</command> har udviklet sig meget siden da.
 </para>
 
 <para>
-Vi kan endvidere anbefale at købe en bog om Emacs, f.eks. <emphasis>SAMS Teach
+Vi kan endvidere anbefale at kÃ¸be en bog om Emacs, f.eks. <emphasis>SAMS Teach
 yourself Emacs in 24 hours</emphasis> af Jesper Pedersen, fra forlaget
 SAMS.
 </para>
 
 <indexterm><primary>tastaturgenveje</primary></indexterm>
 <para>
-I øvrigt kan det nævnes, at det ikke bare er i Emacs at de fleste
-viste tastaturgenveje kan anvendes, men også i bash, tcsh,
+I Ã¸vrigt kan det nÃ¦vnes, at det ikke bare er i Emacs at de fleste
+viste tastaturgenveje kan anvendes, men ogsÃ¥ i bash, tcsh,
 tekstindtastningsfelter i Netscape mv.
 </para>
 
 <indexterm><primary>.emacs</primary></indexterm>
 <para>
-Er du ude på at finde bedre tricks til <filename>.emacs</filename>
-dvs. opsætningen af Emacs, så er et godt sted at starte
-på <ulink url="http://www.dotemacs.de/">http://www.dotemacs.de/</ulink>.
+Er du ude pÃ¥ at finde bedre tricks til <filename>.emacs</filename>
+dvs. opsÃ¦tningen af Emacs, sÃ¥ er et godt sted at starte
+pÃ¥ <ulink url="http://www.dotemacs.de/">http://www.dotemacs.de/</ulink>.
 Et eksempel er <ulink url="http://www.dotemacs.de/dotfiles/BenjaminRutt.emacs.html">http://www.dotemacs.de/dotfiles/BenjaminRutt.emacs.html</ulink>.
 </para>
 
 <para>
-<emphasis>Tip:</emphasis> Skal man søge efter en tekst i Emacs og
-gerne vil have et overblik over de linjer hvor teksten optræder, så
+<emphasis>Tip:</emphasis> Skal man sÃ¸ge efter en tekst i Emacs og
+gerne vil have et overblik over de linjer hvor teksten optrÃ¦der, sÃ¥
 kan <command>Alt-x occur</command> anvendes. Man indtaster derefter
-søgestrengen og alle linjer med søgestrengen vises.
+sÃ¸gestrengen og alle linjer med sÃ¸gestrengen vises.
 </para>
 
 <para>
 <emphasis>Tip:</emphasis> I bogen "Linux &ndash; Friheden til at programme"
-står der under CVS et afsnit om hvordan man smart kan sammenligne
+stÃ¥r der under CVS et afsnit om hvordan man smart kan sammenligne
 filer med hinanden med Emacs.
 </para>
 
@@ -676,9 +676,9 @@ filer med hinanden med Emacs.
 For at benytte hjulet til at rulle op og ned i Emacs laves en Emacs
 Lisp-fil (en el-fil).  Som root kan den placeres sammen med de andre
 el-filer i <filename>/usr/share/emacs/20.2/lisp</filename>. Dette
-muliggør lettere adgang, idet Emacs' "library-path" umiddelbart finder
-filen, når den skal indlæses.  Man kan f.eks. kalde filen
-<filename>mwheel.el</filename>, og den kan se ud som følger:
+muliggÃ¸r lettere adgang, idet Emacs' "library-path" umiddelbart finder
+filen, nÃ¥r den skal indlÃ¦ses.  Man kan f.eks. kalde filen
+<filename>mwheel.el</filename>, og den kan se ud som fÃ¸lger:
 </para>
 
 <programlisting>
@@ -713,8 +713,8 @@ filen, når den skal indlæses.  Man kan f.eks. kalde filen
 </programlisting>
 
 <para>
-Filen kan også byte-oversættes med Emacs.
-Emacs kan så læse filen, når du skriver følgende linje ind i 
+Filen kan ogsÃ¥ byte-oversÃ¦ttes med Emacs.
+Emacs kan sÃ¥ lÃ¦se filen, nÃ¥r du skriver fÃ¸lgende linje ind i 
 <filename>~/.emacs</filename>:
 </para>
 
@@ -732,31 +732,31 @@ Emacs kan så læse filen, når du skriver følgende linje ind i
 <indexterm><primary>vim</primary></indexterm>
 <indexterm><primary>gedit</primary></indexterm>
 <para>
-Til Linux findes også <command>vim</command>, som er en udvidelse af
-<command>vi</command> bl.a. med farver, når du redigerer C-kode.
+Til Linux findes ogsÃ¥ <command>vim</command>, som er en udvidelse af
+<command>vi</command> bl.a. med farver, nÃ¥r du redigerer C-kode.
 </para>
 
 <para>
-Lidt større editorer er <command>joe</command> og
-<command>jed</command>.  Joe har et par aliases, når den er
+Lidt stÃ¸rre editorer er <command>joe</command> og
+<command>jed</command>.  Joe har et par aliases, nÃ¥r den er
 installeret, som hedder <command>jstar</command>,
 <command>jpico</command> og <command>jmacs</command>, og som standard
-er joe sat til at være <command>jstar</command>.  Jstar er
+er joe sat til at vÃ¦re <command>jstar</command>.  Jstar er
 wordstar-kompatibel, og kommandoer ligner dem som blandt andet Borland
-anvendte i Turbo Pascal/Turbo C-oversætternes IDE.  Jpico og Jmacs er
-selvfølgelig beregnet til at ligne hhv. pico og emacs i tastatur og
+anvendte i Turbo Pascal/Turbo C-oversÃ¦tternes IDE.  Jpico og Jmacs er
+selvfÃ¸lgelig beregnet til at ligne hhv. pico og emacs i tastatur og
 funktioner.
 </para>
 
 <para>
-En anden brugt editor som i øvrigt også findes til andet end Linux/Unix er Jed.
-Jed kan lave syntaksfremhævning og sættes til at emulere blandt andet Emacs,
+En anden brugt editor som i Ã¸vrigt ogsÃ¥ findes til andet end Linux/Unix er Jed.
+Jed kan lave syntaksfremhÃ¦vning og sÃ¦ttes til at emulere blandt andet Emacs,
 Wordstar, EDT og Brief.
 </para>
 
 <para>
-Både Joe og Jed kan i øvrigt sættes op via
-hhv. <filename>~/.joerc</filename> og <filename>~/.jedrc</filename> så de
+BÃ¥de Joe og Jed kan i Ã¸vrigt sÃ¦ttes op via
+hhv. <filename>~/.joerc</filename> og <filename>~/.jedrc</filename> sÃ¥ de
 mere eller mindre kan emulere ens foretrukne teksteditor.
 </para>
  </sect1>

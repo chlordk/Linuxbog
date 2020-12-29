@@ -5,7 +5,7 @@
 
   <indexterm>
    <primary>Slrn</primary>
-   <secondary>som nyhedslæser</secondary>
+   <secondary>som nyhedslÃ¦ser</secondary>
   </indexterm>
 
   <indexterm>
@@ -14,31 +14,31 @@
   </indexterm>
 
   <indexterm>
-   <primary>nyhedslæsere</primary>
+   <primary>nyhedslÃ¦sere</primary>
    <secondary>Slrn</secondary>
   </indexterm>
 
   <para>
-   Der er mange forskellige nyhedslæsere. Én af dem er
-   <command>slrn</command> og den kommer med så godt som alle
+   Der er mange forskellige nyhedslÃ¦sere. &Eacute;n af dem er
+   <command>slrn</command> og den kommer med sÃ¥ godt som alle
    Linux-distributioner. Den startes ved at skrive
-   <command>slrn</command> på kommandolinjen og er en ikke-grafisk
-   newsreader, men det gør den nu ikke dårligere, snarere
-   tværtimod. Den er nemlig lynhurtig.
+   <command>slrn</command> pÃ¥ kommandolinjen og er en ikke-grafisk
+   newsreader, men det gÃ¸r den nu ikke dÃ¥rligere, snarere
+   tvÃ¦rtimod. Den er nemlig lynhurtig.
   </para>
 
   <sect2 id="slrn-config">
-   <title>Opsætning af slrn</title>
+   <title>OpsÃ¦tning af slrn</title>
 
    <indexterm>
-    <primary>opsætning af</primary>
+    <primary>opsÃ¦tning af</primary>
     <secondary>Slrn</secondary>
    </indexterm>
 
    <para>
     For at <command>slrn</command> kan starte skal den vide hvilken
-    NNTP-server den skal læse fra. Systemvariablen NNTPSERVER
-    bestemmer hvilken server slrn læser fra; i dette eksempel egen
+    NNTP-server den skal lÃ¦se fra. Systemvariablen NNTPSERVER
+    bestemmer hvilken server slrn lÃ¦ser fra; i dette eksempel egen
     maskine:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>export NNTPSERVER=localhost</userinput>
@@ -51,15 +51,15 @@
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>touch News/Score</userinput>
 </screen>
-    hvorefter <command>slrn</command> startes første gang:
+    hvorefter <command>slrn</command> startes fÃ¸rste gang:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>slrn -create</userinput>
 </screen>
    </para>
 
    <para>
-    Det første indtryk af <command>slrn</command> er at det er et
-    uindbydende nyheds-læseprogram, med grupper strøet efter
+    Det fÃ¸rste indtryk af <command>slrn</command> er at det er et
+    uindbydende nyheds-lÃ¦seprogram, med grupper strÃ¸et efter
     forgodtbefindende.
 
 <figure id="slrn1-fig" float="1">
@@ -71,22 +71,22 @@
 
    <para>
     Fortvivl ikke! <command>slrn</command>'s display styres med
-    opsætningsfilen <filename>~/.slrnrc</filename>. En god
-    opsætningsfil (som kan hentes under
-    <filename>eksempler</filename> på <ulink
+    opsÃ¦tningsfilen <filename>~/.slrnrc</filename>. En god
+    opsÃ¦tningsfil (som kan hentes under
+    <filename>eksempler</filename> pÃ¥ <ulink
     url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>) kan se
-    således ud:
+    sÃ¥ledes ud:
 
 <programlisting>
-% Opsætningsfil til slrn - gemmes i <filename>~/.slrnrc</filename>
-% sørger for at poste med rigtig e-post-adresse. 
+% OpsÃ¦tningsfil til slrn - gemmes i <filename>~/.slrnrc</filename>
+% sÃ¸rger for at poste med rigtig e-post-adresse. 
 % Username og hostname bliver sat sammen til afsenderadressse.
 
 set username "tyge"
 set hostname "hven.sslug.dk"
 set realname "Tyge Brahe"
 
-% replies skal også se ordentligt ud.
+% replies skal ogsÃ¥ se ordentligt ud.
 
 set quote_string "&gt; "
 
@@ -151,14 +151,14 @@ set use_mime 1
 % that slrn does not handle
 set use_metamail 1
 
-% En sidste ting der kunne være interessant er:
+% En sidste ting der kunne vÃ¦re interessant er:
 editor_command    "jed %s -g %d -tmp"
-% Denne sætter slrn til at bruge jed som editor i 
-% stedet for default (vi). Her putter man så bare 
+% Denne sÃ¦tter slrn til at bruge jed som editor i 
+% stedet for default (vi). Her putter man sÃ¥ bare 
 % sin favorit editor ind i stedet for.
 </programlisting>
 
-    Filen kan findes under eksempler på bogens hjemmeside <ulink
+    Filen kan findes under eksempler pÃ¥ bogens hjemmeside <ulink
     url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
    </para>
 
@@ -168,32 +168,32 @@ editor_command    "jed %s -g %d -tmp"
     dette:
 
     <figure id="slrn2-fig" float="1">
-     <title>Slrn efter opsætning</title>
+     <title>Slrn efter opsÃ¦tning</title>
      <graphic fileref="slrn2.&magic;" scale="60"></graphic>
     </figure>
    </para>
 
    <para>
     Lidt mere brugervenlig. Derefter afmeldes de grupper man ikke
-    ønsker at vise. Dette sker ved at trykke <keysym>u</keysym> og
-    afslutte med <keysym>g</keysym>. Så giver man sig til at tilmelde
+    Ã¸nsker at vise. Dette sker ved at trykke <keysym>u</keysym> og
+    afslutte med <keysym>g</keysym>. SÃ¥ giver man sig til at tilmelde
     grupper. Dette sker ved <keysym>a</keysym> + gruppens navn, men
-    da man ikke lige kender det altid, ville det være skønnere med en
-    liste. Det gøres med <command>"L" + sslug*</command> og så
+    da man ikke lige kender det altid, ville det vÃ¦re skÃ¸nnere med en
+    liste. Det gÃ¸res med <command>"L" + sslug*</command> og sÃ¥
     trykkes der bare <command>"s"</command> ud for de grupper man
-    ønsker at abonnere på. Når man så læser et indlæg, så farver slrn
+    Ã¸nsker at abonnere pÃ¥. NÃ¥r man sÃ¥ lÃ¦ser et indlÃ¦g, sÃ¥ farver slrn
     efter den formatering der er markeret for i ASCII-teksten.
    </para>
 
    <figure id="slrn3-fig" float="1">
-    <title>Nyhedslæseren slrn</title>
+    <title>NyhedslÃ¦seren slrn</title>
     <graphic fileref="slrn3.&magic;" scale="60"></graphic>
    </figure>
 
    <para>
-    Ydermere er alle basis-kommandoerne lagt på "?", så de er lige
-    ved hånden hvis der er noget man ikke lige kan få slrn
-    til. Derudover, så god fornøjelse med slrn.
+    Ydermere er alle basis-kommandoerne lagt pÃ¥ "?", sÃ¥ de er lige
+    ved hÃ¥nden hvis der er noget man ikke lige kan fÃ¥ slrn
+    til. Derudover, sÃ¥ god fornÃ¸jelse med slrn.
    </para>
   </sect2>
  </sect1>

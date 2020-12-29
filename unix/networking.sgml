@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 
 <chapter id="Linux-netvaerk-klient">
- <title>Linux og netværk &ndash; klientsiden</title>
+ <title>Linux og netvÃ¦rk &ndash; klientsiden</title>
 
  <indexterm>
-  <primary>netværk</primary>
+  <primary>netvÃ¦rk</primary>
   <secondary>klienter</secondary>
  </indexterm>
 
  <para>
-  I dette kapitel vil vi se på klientsiden af netværk.  <!-- Det skal
-  bemærkes at i xref linkend="Linux-netvaerk-server" er det en masse
-  information tilsvarende om server opsætning.--> <!-- Vil du vide
-  mere om netværksadresser og hvorfor og hvordan netværk kobles
-  sammen, så se mere i xref linkend="tcp-ip".-->
+  I dette kapitel vil vi se pÃ¥ klientsiden af netvÃ¦rk.  <!-- Det skal
+  bemÃ¦rkes at i xref linkend="Linux-netvaerk-server" er det en masse
+  information tilsvarende om server opsÃ¦tning.--> <!-- Vil du vide
+  mere om netvÃ¦rksadresser og hvorfor og hvordan netvÃ¦rk kobles
+  sammen, sÃ¥ se mere i xref linkend="tcp-ip".-->
  </para>
 
  <para>
@@ -22,12 +22,12 @@
    <secondary>problem med net-tilkobling</secondary>
   </indexterm>
 
-  En vigtig start-kommentar, som kunne stå mange steder i denne bog er
+  En vigtig start-kommentar, som kunne stÃ¥ mange steder i denne bog er
   at der med Linux-kerne 2.4 (f.eks. Red Hat 7.3 og Mandrake 8.2) er
-  problemer med at få tilgang til alle hjemmesider &ndash; det er et problem
-  som er forstået nu, se f.eks. <ulink
+  problemer med at fÃ¥ tilgang til alle hjemmesider &ndash; det er et problem
+  som er forstÃ¥et nu, se f.eks. <ulink
   url="http://eltoday.com/article.php3?ltsn=2001-04-17-001-14-PS">http://eltoday.com/article.php3?ltsn=2001-04-17-001-14-PS</ulink>.
-  Løsningen er simpel. Tilføj følgende til f.eks.
+  LÃ¸sningen er simpel. TilfÃ¸j fÃ¸lgende til f.eks.
   <filename>/etc/rc.d/rc.local</filename>:
 
 <programlisting>
@@ -35,7 +35,7 @@ echo "0" &gt; /proc/sys/net/ipv4/tcp_ecn
 </programlisting>
  </para>
 
-<!--  Dette afsnit hører til i admin- eller friheden-bøgerne:
+<!--  Dette afsnit hÃ¸rer til i admin- eller friheden-bÃ¸gerne:
  <sect1 id="modeminternet">
   <title>Modemforbindelse til internettet</title>
 
@@ -44,25 +44,25 @@ echo "0" &gt; /proc/sys/net/ipv4/tcp_ecn
 
   <para>
    Hvis du er en typisk hjemmebruger eller sidder i en mindre
-   virksomhed og vil have din computer på internettet, vil du som
-   regel have brug for at gøre det via en modemforbindelse.
+   virksomhed og vil have din computer pÃ¥ internettet, vil du som
+   regel have brug for at gÃ¸re det via en modemforbindelse.
   </para>
 
   <para>
-   Langt den mest almindelige måde at gøre det på i Linux er ved hjælp
+   Langt den mest almindelige mÃ¥de at gÃ¸re det pÃ¥ i Linux er ved hjÃ¦lp
    af PPP, Point-to-Point-protokollen. PPP tilbyder en hel del flere
-   faciliteter og mere fleksibilitet, end vi her vil komme ind på. Vi
-   vil nøjes med at beskrive den typiske og helt basale opsætning, der
-   vil sætte dig i stand til at få en TCP/IP-forbindelse til din
-   internetudbyder op at køre.
+   faciliteter og mere fleksibilitet, end vi her vil komme ind pÃ¥. Vi
+   vil nÃ¸jes med at beskrive den typiske og helt basale opsÃ¦tning, der
+   vil sÃ¦tte dig i stand til at fÃ¥ en TCP/IP-forbindelse til din
+   internetudbyder op at kÃ¸re.
   </para>
 
   <para>
-   Hvis du får brug for at sætte en server op til at modtage
-   PPP-opkald, eller hvis du har problemer med at få PPP til at
+   Hvis du fÃ¥r brug for at sÃ¦tte en server op til at modtage
+   PPP-opkald, eller hvis du har problemer med at fÃ¥ PPP til at
    fungere mellem Linux og Windows NT eller har andre specielle behov,
-   skulle du overveje at tage et kig på følgende bog, der går ganske
-   grundigt til værks inden for sit emne:
+   skulle du overveje at tage et kig pÃ¥ fÃ¸lgende bog, der gÃ¥r ganske
+   grundigt til vÃ¦rks inden for sit emne:
   </para>
 
   <para>
@@ -71,41 +71,41 @@ echo "0" &gt; /proc/sys/net/ipv4/tcp_ecn
   </para>
 
   <sect2 id="PPP">
-   <title>Opsætning af PPP</title>
+   <title>OpsÃ¦tning af PPP</title>
 
    <indexterm><primary>PPP</primary></indexterm>
 
    <para>
-    Med Red Hat Linux følger der et grafisk baseret opsætningsprogram,
-    der gør det forholdsvis enkelt at få PPP i gang. Hvis du har en
-    konto hos en internetudbyder (ISP), har du forhåbentlig modtaget
-    de sæt oplysninger, der skal bruges for at få din forbindelse til
-    at køre. Du skal fra din ISP som minimum have
+    Med Red Hat Linux fÃ¸lger der et grafisk baseret opsÃ¦tningsprogram,
+    der gÃ¸r det forholdsvis enkelt at fÃ¥ PPP i gang. Hvis du har en
+    konto hos en internetudbyder (ISP), har du forhÃ¥bentlig modtaget
+    de sÃ¦t oplysninger, der skal bruges for at fÃ¥ din forbindelse til
+    at kÃ¸re. Du skal fra din ISP som minimum have
 
     <itemizedlist mark="bullet" spacing="compact">
      <listitem><para>Et dial-in brugernavn</para></listitem>
-     <listitem><para>En tilhørende adgangskode</para></listitem>
+     <listitem><para>En tilhÃ¸rende adgangskode</para></listitem>
      <listitem><para>Et telefonnummer til ISP'ens dial-in</para></listitem>
-     <listitem><para>IP-numre på én eller to navneservere hos din ISP</para></listitem>
+     <listitem><para>IP-numre pÃ¥ Ã©n eller to navneservere hos din ISP</para></listitem>
     </itemizedlist>
 
     Har du sat modemforbindelse til din ISP op under f.eks. Windows
-    95, står de oplysninger du skal have, under de menuer, hvor
-    internettet via modem konfigureres. Er du i tvivl, spørg din ISP
+    95, stÃ¥r de oplysninger du skal have, under de menuer, hvor
+    internettet via modem konfigureres. Er du i tvivl, spÃ¸rg din ISP
     om disse informationer.
    </para>
 
    <para>
-    Du skal være systemadministrator ("root") for at kunne sætte din
-    internetforbindelse op, så skriv <command>su -</command> i en
-    <command>xterm</command>, og gør følgende:
+    Du skal vÃ¦re systemadministrator ("root") for at kunne sÃ¦tte din
+    internetforbindelse op, sÃ¥ skriv <command>su -</command> i en
+    <command>xterm</command>, og gÃ¸r fÃ¸lgende:
    </para>
 
    <para>
     Start med at finde ud af, hvor dit modem sidder.  COM1 i
     DOS/Windows svarer til <filename>/dev/ttyS0</filename> i Linux.
     COM2 svarer til <filename>/dev/ttyS1</filename> osv.  Som root
-    skal du lave en modemenhed, som er en symbolsk lænke til den rette
+    skal du lave en modemenhed, som er en symbolsk lÃ¦nke til den rette
     seriel-port. Hvis du anvender COM2, skal du skrive:
 
 <screen>
@@ -121,7 +121,7 @@ echo "0" &gt; /proc/sys/net/ipv4/tcp_ecn
 lrwxrwxrwx   1 root root 5 Sep  5 04:37 /dev/modem -> /dev/ttyS1
 </screen>
 
-    Det ser godt ud. Nu peger <filename>/dev/modem</filename> på den
+    Det ser godt ud. Nu peger <filename>/dev/modem</filename> pÃ¥ den
     anden serielport.
    </para>
   </sect2>
@@ -131,10 +131,10 @@ lrwxrwxrwx   1 root root 5 Sep  5 04:37 /dev/modem -> /dev/ttyS1
 
    <para>
     Som root starter du <command>linuxconf</command> og finder
-    "Config->Networking->Client tasks->PPP/SLIP/PLIP". Vælg i højre
+    "Config->Networking->Client tasks->PPP/SLIP/PLIP". VÃ¦lg i hÃ¸jre
     side "Add" (se <xref linkend="linuxconf-ppp1-fig"/>). Derefter
-    "PPP". I næste skærmbillede udfylder du telefonnummer (modemport
-    har vi sat op, så brug <filename>/dev/modem</filename>), vælg "PAP
+    "PPP". I nÃ¦ste skÃ¦rmbillede udfylder du telefonnummer (modemport
+    har vi sat op, sÃ¥ brug <filename>/dev/modem</filename>), vÃ¦lg "PAP
     Authentication" og skriv til sidst dit brugernavn og adgangskode
     til din internetudbyder.
    </para>
@@ -145,20 +145,20 @@ lrwxrwxrwx   1 root root 5 Sep  5 04:37 /dev/modem -> /dev/ttyS1
    </figure>
 
    <para>
-    Efter at have trykket "Accept", bør du nok lige dobbeltklikke på
-    din nye forbindelse "ppp0". Du kan nu ændre lidt i
-    opsætningen. F.eks. er du måske interesseret i at vælge
+    Efter at have trykket "Accept", bÃ¸r du nok lige dobbeltklikke pÃ¥
+    din nye forbindelse "ppp0". Du kan nu Ã¦ndre lidt i
+    opsÃ¦tningen. F.eks. er du mÃ¥ske interesseret i at vÃ¦lge
     "Hardware->Allow any user to (de)activate the interface" &ndash; for at
     almindelige brugere kan starte internetopkoblingen op selv uden
-    systemadministratorens adgangskode. Du kan nok også være
-    interesseret i at få valgt "Networking->No Connection" til
+    systemadministratorens adgangskode. Du kan nok ogsÃ¥ vÃ¦re
+    interesseret i at fÃ¥ valgt "Networking->No Connection" til
     f.eks. 30 sekunder.
    </para>
 
    <para>
-    Hop ud af PPP-delen ved i højre side af vinduet at trykke "Accept"
-    -> "Quit". Derefter "Act/Changes" i venstre side &ndash; så "Activate
-    the changes" og til sidste "Quit". Før vi starter
+    Hop ud af PPP-delen ved i hÃ¸jre side af vinduet at trykke "Accept"
+    -> "Quit". Derefter "Act/Changes" i venstre side &ndash; sÃ¥ "Activate
+    the changes" og til sidste "Quit". FÃ¸r vi starter
     internet-forbindelsen skal du lige tjekke at du har dine
     nameservere skrevet ind i
     <filename>/etc/resolv.conf</filename>.  Se <xref
@@ -167,11 +167,11 @@ lrwxrwxrwx   1 root root 5 Sep  5 04:37 /dev/modem -> /dev/ttyS1
 
    <para>
     Nu starter du som almindelig bruger <command>rp3</command>, som
-    vist på <xref linkend="rp3-fig"/>. Her er der allerede en
-    netværksforbindelse med <filename>eth0</filename>, og loopback
-    (lo) er til Linux-kernen på den lokale maskine. Vælg
+    vist pÃ¥ <xref linkend="rp3-fig"/>. Her er der allerede en
+    netvÃ¦rksforbindelse med <filename>eth0</filename>, og loopback
+    (lo) er til Linux-kernen pÃ¥ den lokale maskine. VÃ¦lg
     <filename>ppp0</filename> og tryk OK til at starte. Nu burde det
-    køre.
+    kÃ¸re.
    </para>
 
    <figure id="rp3-fig" float="1">
@@ -180,25 +180,25 @@ lrwxrwxrwx   1 root root 5 Sep  5 04:37 /dev/modem -> /dev/ttyS1
    </figure>
 
    <para>
-    Når du har hul igennem til internettet, kan du jo passende prøve
+    NÃ¥r du har hul igennem til internettet, kan du jo passende prÃ¸ve
     <ulink url="http://www.sslug.dk/">http://www.sslug.dk/</ulink> -
     dvs. SSLUG's hjemmeside.
    </para>
 
    <para>
-    Du kunne have opnået det samme resultat ved at bruge
+    Du kunne have opnÃ¥et det samme resultat ved at bruge
     <command>netcfg</command> som er en del af
     <command>control-panel</command>, der er et Red Hat-program til at
-    opsætte net. I virkeligheden er <command>netcfg</command> og
-    <command>linuxconf</command> blot behagelige og nemme måder at
-    redigere det sæt tekstfiler, der bestemmer, hvordan pppd opfører
+    opsÃ¦tte net. I virkeligheden er <command>netcfg</command> og
+    <command>linuxconf</command> blot behagelige og nemme mÃ¥der at
+    redigere det sÃ¦t tekstfiler, der bestemmer, hvordan pppd opfÃ¸rer
     sig. Disse filer ligger i <filename>/etc/ppp</filename>.
    </para>
 
    <para>
-    Vi kan i øvrigt anbefale, at du læser <ulink
+    Vi kan i Ã¸vrigt anbefale, at du lÃ¦ser <ulink
     url="http://www.sslug.dk/artikler/ppp-info.html">http://www.sslug.dk/artikler/ppp-info.html</ulink>,
-    hvis du har problemer med at få din modem-opkobling til at virke.
+    hvis du har problemer med at fÃ¥ din modem-opkobling til at virke.
    </para>
   </sect2>
 
@@ -209,7 +209,7 @@ lrwxrwxrwx   1 root root 5 Sep  5 04:37 /dev/modem -> /dev/ttyS1
 <para>
 Et godt program til at styre en internet-opkobling i X er KPPP
 (<command>kppp</command>). Programmet kommer som del af KDE, men
-det kan også køres under andre grafiske brugergrænseflader.
+det kan ogsÃ¥ kÃ¸res under andre grafiske brugergrÃ¦nseflader.
 </para>
 
 <figure id="kppp-fig" float="1">
@@ -220,12 +220,12 @@ det kan også køres under andre grafiske brugergrænseflader.
 
 <para>
 Du vil i Red Hat se at du skal indtaste root-adgangskoden for at komme
-i gang. Det er irriterende og vi skal her vise hvordan man undgår
-dette. Først lidt forklaring: Programmet
+i gang. Det er irriterende og vi skal her vise hvordan man undgÃ¥r
+dette. FÃ¸rst lidt forklaring: Programmet
 <command>/usr/bin/kppp</command> er i Red Hat et link til
 <command>/usr/bin/consolehelper</command>.
 <filename>/usr/bin/consolehelper</filename> er en "pam.d"-wrapper. Den
-finder sin opsætningsfil i
+finder sin opsÃ¦tningsfil i
 <filename>/etc/security/console.apps/kppp</filename>:
 </para>
 
@@ -236,19 +236,19 @@ session=true
 </programlisting>
 
 <para>
-Heraf ses, at det program der rent faktisk skal køres er
+Heraf ses, at det program der rent faktisk skal kÃ¸res er
 <command>/usr/sbin/kppp</command>, som root, og der skal registreres
 en "session" for at det virker.
 </para>
 
 <para>
-Det er imidlertid ikke så vigtigt. Hvad der er vigtigt er filen
-<filename>/etc/pam.d/kppp</filename> som efterfølgende anvendes af
+Det er imidlertid ikke sÃ¥ vigtigt. Hvad der er vigtigt er filen
+<filename>/etc/pam.d/kppp</filename> som efterfÃ¸lgende anvendes af
 <command>consolehelper</command> for at godkende starten af kppp:
 </para>
 
 <para>
-Den originale <filename>/etc/pam.d/kppp</filename> ser således ud.
+Den originale <filename>/etc/pam.d/kppp</filename> ser sÃ¥ledes ud.
 </para>
 
 <programlisting>
@@ -260,13 +260,13 @@ account required /lib/security/pam_permit.so
 </programlisting>
 
 <para>
-Den første linje er en kommentar. 
-Den næste linje siger at mht. autorisation, er det
-<emphasis>tilstrækkeligt</emphasis> at 
-brugeren er "root". Hvis det er tilfældet, vil linje 3
+Den fÃ¸rste linje er en kommentar. 
+Den nÃ¦ste linje siger at mht. autorisation, er det
+<emphasis>tilstrÃ¦kkeligt</emphasis> at 
+brugeren er "root". Hvis det er tilfÃ¦ldet, vil linje 3
 <emphasis>ikke</emphasis> blive brugt,
 ellers vil linje 3 blive brugt; da brugeren er "root" og auth med pwdb.so
-kræves, skal man give root-adgangskoden.
+krÃ¦ves, skal man give root-adgangskoden.
 </para>
 
 <para>
@@ -276,8 +276,8 @@ stort set alle rettigheder, og derfor anvendes tilladelse (permit).
 </para>
 
 <para>
-Hvis du ønsker at give alle brugere, der er logget ind på
-konsollen mulighed for at foretage en internet-opkobling, kan du ændre
+Hvis du Ã¸nsker at give alle brugere, der er logget ind pÃ¥
+konsollen mulighed for at foretage en internet-opkobling, kan du Ã¦ndre
 filen til:
 </para>
 
@@ -293,14 +293,14 @@ account required /lib/security/pam_permit.so
 <para>
 Her er tjekket:
 <itemizedlist mark="bullet">
-<listitem> <para> a) root? Ja: Ok &mdash; nej: næste tjek.</para></listitem>
-<listitem> <para> b) ved konsol? Ja: O.k. &mdash; nej: næste tjek.</para></listitem>
+<listitem> <para> a) root? Ja: Ok &mdash; nej: nÃ¦ste tjek.</para></listitem>
+<listitem> <para> b) ved konsol? Ja: O.k. &mdash; nej: nÃ¦ste tjek.</para></listitem>
 <listitem> <para> c) Kan man give root-adgangskode? Ja: O.k. &mdash; nej, fejl..</para></listitem>
 </itemizedlist>
 </para>
 
 <para>
-Hvis du ønsker at lave hvad der svarer til "suid root", kan du lave:
+Hvis du Ã¸nsker at lave hvad der svarer til "suid root", kan du lave:
 </para>
 
 <programlisting>
@@ -311,24 +311,24 @@ account required /lib/security/pam_permit.so
 </programlisting>
 
 <para>
-Vil du vide mere, så prøv <command>man consolehelper</command>,
-<command>man userhelper</command> og se måske også
+Vil du vide mere, sÃ¥ prÃ¸v <command>man consolehelper</command>,
+<command>man userhelper</command> og se mÃ¥ske ogsÃ¥
 <filename>/usr/doc/pam..../html</filename>.
 </para>
 
 <para>
-Desværre ser det ud til at Red Hat 6.2 ikke kan klare sig alene med
-dette og kræver at man f.eks. laver <command>chmod +s
+DesvÃ¦rre ser det ud til at Red Hat 6.2 ikke kan klare sig alene med
+dette og krÃ¦ver at man f.eks. laver <command>chmod +s
 /usr/sbin/pppd</command> og kalder <command>/usr/sbin/kppp</command>.
-Du kan også blive nødt til at krydse fluebenet af i "Autoconfigure
-hostname from this IP" i kppp-opsætningen.
+Du kan ogsÃ¥ blive nÃ¸dt til at krydse fluebenet af i "Autoconfigure
+hostname from this IP" i kppp-opsÃ¦tningen.
 </para>
 
 <para>
-Når man sætter kppp op som root, findes opsætningen i
+NÃ¥r man sÃ¦tter kppp op som root, findes opsÃ¦tningen i
 <filename>/root/.kde/share/config/kppprc</filename>, men da filen
 findes i roots home-folder, har andre usere ingen adgang og kan dermed
-kun bruge opsætningen hvis de har systemadministratorens adgangskode. Genialt ikke!
+kun bruge opsÃ¦tningen hvis de har systemadministratorens adgangskode. Genialt ikke!
 </para>
 </sect2>
 
@@ -336,20 +336,20 @@ kun bruge opsætningen hvis de har systemadministratorens adgangskode. Genialt ik
 <title>Modem og internettet med brug af wvdial</title>
 <indexterm><primary>internet-opkobling</primary><secondary>wvdial</secondary></indexterm>
 <para>
-Programmet <command>wvdial</command> følger med SuSE og Red
+Programmet <command>wvdial</command> fÃ¸lger med SuSE og Red
 Hat. Programmet
-kan konfigureres fra YaST, SuSE's opsætningsværktøj eller
+kan konfigureres fra YaST, SuSE's opsÃ¦tningsvÃ¦rktÃ¸j eller
 direkte
 vha. <command>wvdialconf</command>. <command>wvdialconf</command> vil
-forsøge at detektere dit modem, sætte de optimale
-initialiseringsstrenge op, osv. Efter du har kørt programmet, skal du
+forsÃ¸ge at detektere dit modem, sÃ¦tte de optimale
+initialiseringsstrenge op, osv. Efter du har kÃ¸rt programmet, skal du
 redigere filen <filename>/etc/wvdial.conf</filename>, f.eks. skal du
-indsætte telefonnummeret til din internetudbyder.
+indsÃ¦tte telefonnummeret til din internetudbyder.
 </para>
 
 <para>
-Når du har fået sat din opkobling op, kan du ringe op ved at taste
-<command>wvdial</command> på en kommandolinje.
+NÃ¥r du har fÃ¥et sat din opkobling op, kan du ringe op ved at taste
+<command>wvdial</command> pÃ¥ en kommandolinje.
 </para>
 
 </sect2>
@@ -360,28 +360,28 @@ Når du har fået sat din opkobling op, kan du ringe op ved at taste
 <indexterm><primary>Diald</primary></indexterm>
 
 <para>
-Når du har en fungerende PPP installeret, kan <command>diald</command>
-muligvis være interessant for dig. Ideen er, at
-<command>diald</command> åbner PPP-forbindelsen, når der er brug for
-den, og lukker den, når der ikke er. På den måde kan du få
+NÃ¥r du har en fungerende PPP installeret, kan <command>diald</command>
+muligvis vÃ¦re interessant for dig. Ideen er, at
+<command>diald</command> Ã¥bner PPP-forbindelsen, nÃ¥r der er brug for
+den, og lukker den, nÃ¥r der ikke er. PÃ¥ den mÃ¥de kan du fÃ¥
 fornemmelsen af at have en fast forbindelse, der altid er
-åben. Virkningen er specielt overbevisende, hvis du har et ISDN-modem,
-der åbner forbindelsen på et kort øjeblik, for et almindeligt analogt
-modem bruger en del tid på at ringe op.
+Ã¥ben. Virkningen er specielt overbevisende, hvis du har et ISDN-modem,
+der Ã¥bner forbindelsen pÃ¥ et kort Ã¸jeblik, for et almindeligt analogt
+modem bruger en del tid pÃ¥ at ringe op.
 </para>
 
 <para>
-Der er rige muligheder for at finindstille <command>diald</command>, så
-programmet opfører sig præcis, som du ønsker det. Vi vil nøjes med at
-gøre opmærksom på dets eksistens og i øvrigt henvise til de
+Der er rige muligheder for at finindstille <command>diald</command>, sÃ¥
+programmet opfÃ¸rer sig prÃ¦cis, som du Ã¸nsker det. Vi vil nÃ¸jes med at
+gÃ¸re opmÃ¦rksom pÃ¥ dets eksistens og i Ã¸vrigt henvise til de
 glimrende manual-sider om emnet.
 </para>
 
 <para>
-Læs mere om <command>diald</command> på
+LÃ¦s mere om <command>diald</command> pÃ¥
 <ulink
 url="http://www.ctv.es/USERS/andressh/linux/Diald-Howto.html">http://www.ctv.es/USERS/andressh/linux/Diald-Howto.html</ulink>.
-Se i øvrigt <ulink
+Se i Ã¸vrigt <ulink
 url="http://www.sslug.dk/artikler/ppp/diald.shtml#links">http://www.sslug.dk/artikler/ppp/diald.shtml#links</ulink>
 og diald hjemmesiden <ulink url="http://diald.sourceforge.net/">http://diald.sourceforge.net/</ulink>.
 </para>
@@ -389,7 +389,7 @@ og diald hjemmesiden <ulink url="http://diald.sourceforge.net/">http://diald.sou
  </sect1>
 -->
 
-<!--  Dette afsnit hører til i admin- eller friheden-bøgerne
+<!--  Dette afsnit hÃ¸rer til i admin- eller friheden-bÃ¸gerne
  <sect1 id="ethernet">
   <title>Ethernet-kort</title>
 
@@ -400,18 +400,18 @@ og diald hjemmesiden <ulink url="http://diald.sourceforge.net/">http://diald.sou
    <primary>netkort</primary>
   </indexterm>
   <indexterm>
-   <primary>netværk</primary>
+   <primary>netvÃ¦rk</primary>
    <secondary>Ethernet</secondary>
   </indexterm>
 
   <para>
    Hvis du har behov for at koble et mindre antal computere sammen i
-   et lokalnetværk, vil du oftest benytte netværkskort af
+   et lokalnetvÃ¦rk, vil du oftest benytte netvÃ¦rkskort af
    Ethernet-typen.
   </para>
 
   <para>
-   Langt de fleste Ethernet-kort fungerer upåklageligt under Linux. De
+   Langt de fleste Ethernet-kort fungerer upÃ¥klageligt under Linux. De
    fleste billige kort er kloner af Novells NE2000 og fungerer
    glimrende sammen med driveren til det kort.
   </para>
@@ -420,79 +420,79 @@ og diald hjemmesiden <ulink url="http://diald.sourceforge.net/">http://diald.sou
    Installerede Ethernet-kort hedder i Linux
    <filename>eth0</filename>, <filename>eth1</filename>,
    <filename>eth2</filename> etc. Normalt vil du kun have et enkelt
-   kort, der så naturligvis hedder <filename>eth0</filename>.
+   kort, der sÃ¥ naturligvis hedder <filename>eth0</filename>.
   </para>
 
   <para>
-   Netværkskort kan sættes op i forbindelse med at du installerer
-   Linux eller senere ved hjælp af programmet
+   NetvÃ¦rkskort kan sÃ¦ttes op i forbindelse med at du installerer
+   Linux eller senere ved hjÃ¦lp af programmet
    <command>linuxconf</command> eller <command>netcfg</command> under
    Red Hat &ndash; tilsvarende er det <command>yast</command> med SuSE.  De
-   parametre, som optræder på billedet, skal du have af din
-   netværksansvarlige.
+   parametre, som optrÃ¦der pÃ¥ billedet, skal du have af din
+   netvÃ¦rksansvarlige.
   </para>
 
   <figure id="ethercfg" float="1">
-   <title>Opsætning af ethernet-interface</title>
+   <title>OpsÃ¦tning af ethernet-interface</title>
    <graphic fileref="linuxconf-eth0.&magic;" scale="40"></graphic>
   </figure>
  </sect1>
 -->
 
-<!--  Dette afsnit hører til i admin- eller friheden-bøgerne:
+<!--  Dette afsnit hÃ¸rer til i admin- eller friheden-bÃ¸gerne:
 <sect1 id="wavelan">
 <title>Wavelan</title>
 <indexterm><primary>Wavelan</primary></indexterm>
 <indexterm><primary>Wireless</primary></indexterm>
 <indexterm><primary>/etc/pcmcia/config</primary></indexterm>
-<indexterm><primary>Trådløst net</primary></indexterm>
+<indexterm><primary>TrÃ¥dlÃ¸st net</primary></indexterm>
 <indexterm><primary>802.11b</primary></indexterm>
-<indexterm><primary>laptop</primary><secondary>Trådløst net</secondary></indexterm>
-<indexterm><primary>Netværk</primary><secondary>Wavelan</secondary></indexterm>
+<indexterm><primary>laptop</primary><secondary>TrÃ¥dlÃ¸st net</secondary></indexterm>
+<indexterm><primary>NetvÃ¦rk</primary><secondary>Wavelan</secondary></indexterm>
 
 <para>
-Har du en laptop kan wavelan trådløst net være noget
-du kunne være interesseret i.
-De fleste løsninger er for tiden et PCMCIA (pc-card)
+Har du en laptop kan wavelan trÃ¥dlÃ¸st net vÃ¦re noget
+du kunne vÃ¦re interesseret i.
+De fleste lÃ¸sninger er for tiden et PCMCIA (pc-card)
 indstikskort, eller direkte indbygget i computeren.
-Den standard der er den gængse og som virker med alle
+Den standard der er den gÃ¦ngse og som virker med alle
 wavelan kort idag er 802.11b, hvilket betyder at kort
 fra forskellige producenter virker sammen.
 </para>
 
 <para>
-Opsætning foregår ved først at sætte en ethernet-enhed op.
+OpsÃ¦tning foregÃ¥r ved fÃ¸rst at sÃ¦tte en ethernet-enhed op.
 Hvis eth0 er brugt til almindeligt ethernet med UTP-kabel,
-kan det for eksempel være eth1.
-Som kernemodul vælges <literal>wavelan</literal>
-og så enten DHCP eller manuelt IP-nummer.
-Dernæst sættes PCMCIA-kortet i og netværket genstartes
+kan det for eksempel vÃ¦re eth1.
+Som kernemodul vÃ¦lges <literal>wavelan</literal>
+og sÃ¥ enten DHCP eller manuelt IP-nummer.
+DernÃ¦st sÃ¦ttes PCMCIA-kortet i og netvÃ¦rket genstartes
 med <command>/etc/init.d/network restart</command> .
 </para>
 
 <para>
-For nogle netkort kan det være en fordel at skifte
-driver. Typisk vil driveren være <literal>wvlan_cs</literal>,
-og alternativt kan den sættes <literal>orinoco_cs</literal>
+For nogle netkort kan det vÃ¦re en fordel at skifte
+driver. Typisk vil driveren vÃ¦re <literal>wvlan_cs</literal>,
+og alternativt kan den sÃ¦ttes <literal>orinoco_cs</literal>
 i filen <filename>/etc/pcmcia/config</filename> .
 </para>
 
 <para>
 Som access point til din laptop, kan enten bruges en anden
-pc med et wavelan kort og routing, eller du må ud og købe
-en færdigbygget basestation.
+pc med et wavelan kort og routing, eller du mÃ¥ ud og kÃ¸be
+en fÃ¦rdigbygget basestation.
 Mange steder findes der allerede access-points hvor man kan
-få adgang gratis eller mod mindre betaling, så der er mange
+fÃ¥ adgang gratis eller mod mindre betaling, sÃ¥ der er mange
 der blot har et wavelan-kort uden eget access-point.
 </para>
 
 <para>
-Et godt værktøj til monitorering af den trådløse
+Et godt vÃ¦rktÃ¸j til monitorering af den trÃ¥dlÃ¸se
 trafik er wavemon. Her kan man se hvor godt signalet
-er (dæmpning), MAC-adresser og lignende ting.
-wavemon kan findes på 
+er (dÃ¦mpning), MAC-adresser og lignende ting.
+wavemon kan findes pÃ¥ 
 <ulink url="http://freshmeat.net/projects/wavemon/">Freshmeat</ulink>
-og RPM-pakker med det kan findes på
+og RPM-pakker med det kan findes pÃ¥
 <ulink url="http://rpmfind.net/">rpmfind.net</ulink> .
 </para>
 
@@ -502,47 +502,47 @@ og RPM-pakker med det kan findes på
 </figure>
 
 <figure id="wavemon-lav" float="1">
-<title>Wavemon med dårlig forbindelse</title>
+<title>Wavemon med dÃ¥rlig forbindelse</title>
 <graphic fileref="wavemon-lav.&magic;" scale="40"></graphic>
 </figure>
 
 </sect1>
 -->
 
-<!--  Dette afsnit hører til i admin- eller friheden-bøgerne:
+<!--  Dette afsnit hÃ¸rer til i admin- eller friheden-bÃ¸gerne:
 <sect1 id="ADSL">
 <title>ADSL-opkobling</title>
 <indexterm><primary>ADSL</primary></indexterm>
-<indexterm><primary>Netværk</primary><secondary>ADSL</secondary></indexterm>
+<indexterm><primary>NetvÃ¦rk</primary><secondary>ADSL</secondary></indexterm>
 
 <para>
-ADSL under Linux kan være meget enkelt eller meget svært. Flere udbydere
-tilbyder en router-løsning, hvor man får installeret en router
+ADSL under Linux kan vÃ¦re meget enkelt eller meget svÃ¦rt. Flere udbydere
+tilbyder en router-lÃ¸sning, hvor man fÃ¥r installeret en router
 hjemme (f.eks. TDC Netexpress II, TDC ProAccess eller Cybercity). 
 Routeren kobles direkte til en pc eller til en hub/switch hvorfra man kan
-koble flere maskiner på. Denne løsning er glimrende, idet man kun har
-brug for ét ethernet-kort og evt. en hub for at komme i gang.
-Normalt laver man et hjemmenetværk (med IP-adresser 192.168.0.X) og
-routeren har endda ofte en DHCP-server med &ndash; så går det rigtig nemt.
+koble flere maskiner pÃ¥. Denne lÃ¸sning er glimrende, idet man kun har
+brug for Ã©t ethernet-kort og evt. en hub for at komme i gang.
+Normalt laver man et hjemmenetvÃ¦rk (med IP-adresser 192.168.0.X) og
+routeren har endda ofte en DHCP-server med &ndash; sÃ¥ gÃ¥r det rigtig nemt.
 </para>
 
 <para>
-Andre udbydere (TDC netexpress) tilbyder ATM-kort, som skal sættes i
-din pc. Her skal man være omhyggelig med at tjekke om der findes
-drivere til netop det kort du får. 
+Andre udbydere (TDC netexpress) tilbyder ATM-kort, som skal sÃ¦ttes i
+din pc. Her skal man vÃ¦re omhyggelig med at tjekke om der findes
+drivere til netop det kort du fÃ¥r. 
 </para>
 
 <para>
 Orange (tidligere Mobilix) har tidligere tilbudt ADSL, med en speciel boks,
-der sættes på USB-porten. Mange har haft problemer med manglende
-drivere, men nu er der i hvert fald én, som har fået det til at virke
+der sÃ¦ttes pÃ¥ USB-porten. Mange har haft problemer med manglende
+drivere, men nu er der i hvert fald Ã©n, som har fÃ¥et det til at virke
 under Linux. Orange har nu stoppet salget af ADSL-opkoblinger.
 </para>
 
 <orderedlist>
 
 <listitem><para>
-Indsæt IP med et hostnavn i <filename>/etc/hosts</filename> 
+IndsÃ¦t IP med et hostnavn i <filename>/etc/hosts</filename> 
 </para>
 <programlisting>
 10.0.0.138	router
@@ -550,13 +550,13 @@ Indsæt IP med et hostnavn i <filename>/etc/hosts</filename>
 </listitem>
 
 <listitem><para>
-Sikrede mig at jeg kan lave ping til den, og så sikre mig at der er
+Sikrede mig at jeg kan lave ping til den, og sÃ¥ sikre mig at der er
 ppp enablet i kernen, samt at pppd er installeret. Jeg har brugt
 RedHat 7.1, og der virker det i standard-udgaven.
 </para></listitem>
 
 <listitem><para>
-Indsætte mit brugernavn og min adgangskode i <filename>/etc/ppp/pap-secrets</filename>
+IndsÃ¦tte mit brugernavn og min adgangskode i <filename>/etc/ppp/pap-secrets</filename>
 </para>
 
 <programlisting>
@@ -568,13 +568,13 @@ username	server	password
 
  <listitem>
   <para>
-   Oversættelse af pptp-klienten fra dette websted <ulink
+   OversÃ¦ttelse af pptp-klienten fra dette websted <ulink
    url="http://cag.lcs.mit.edu/~cananian/Projects/PPTP/">http://cag.lcs.mit.edu/~cananian/Projects/PPTP/</ulink>.
   </para>
  </listitem>
 
 <listitem><para>
-Kør programmet pptp
+KÃ¸r programmet pptp
 </para>
 
 <programlisting>
@@ -583,12 +583,12 @@ Kør programmet pptp
 </programlisting>
 
 <para>
-local IP og remote IP kan man se ved at vælge egenskaber på sin
-connection, når der kører en windows session over forbindelsen.
+local IP og remote IP kan man se ved at vÃ¦lge egenskaber pÃ¥ sin
+connection, nÃ¥r der kÃ¸rer en windows session over forbindelsen.
 </para></listitem>
 
 <listitem><para>
-Opsætte default route via den oprettede VPN-PPP
+OpsÃ¦tte default route via den oprettede VPN-PPP
 </para>
 
 <programlisting>
@@ -599,8 +599,8 @@ route add default ppp0
 </orderedlist>
 
 <para>
-Håber dette kan være til hjælp, og husk at ADSL med en åben router kan
-være et kæmpe sikkerhedshul &ndash; læs derfor <xref linkend="sikkerhed"/>.
+HÃ¥ber dette kan vÃ¦re til hjÃ¦lp, og husk at ADSL med en Ã¥ben router kan
+vÃ¦re et kÃ¦mpe sikkerhedshul &ndash; lÃ¦s derfor <xref linkend="sikkerhed"/>.
 </para>
 
 </sect1>
@@ -613,11 +613,11 @@ være et kæmpe sikkerhedshul &ndash; læs derfor <xref linkend="sikkerhed"/>.
    <primary>webbrowsere</primary>
   </indexterm>
 
-<!-- Kræver X
+<!-- KrÃ¦ver X
 <indexterm><primary>Netscape</primary></indexterm>
 <para>
 Et specielt godt program er Netscape Communicator, som er kendt af de
-fleste. Programmet har været kommercielt, men stærkt inspireret af
+fleste. Programmet har vÃ¦ret kommercielt, men stÃ¦rkt inspireret af
 Linux-verdenen er det nu blevet et "Open Source"-udviklingsprojekt ved
 navn Mozilla. Netscape findes nu som version 6.2, og den svarer til
 Mozilla version 1.0.
@@ -632,20 +632,20 @@ Mozilla version 1.0.
 <indexterm><primary>Konqueror</primary></indexterm>
 
 <para>
-Et alternativ til Netscape er det filhåndteringsprogram der følger med
-KDE. Det kan både lave filoversigter på din harddisk (med flytte- og
+Et alternativ til Netscape er det filhÃ¥ndteringsprogram der fÃ¸lger med
+KDE. Det kan bÃ¥de lave filoversigter pÃ¥ din harddisk (med flytte- og
 kopiere-muligheder), men <command>konqueror</command> kan meget mere &ndash; den
-kan også vise hjemmesider. Se bogen "Linux &ndash; Friheden til at vælge
-programmer" på <ulink
+kan ogsÃ¥ vise hjemmesider. Se bogen "Linux &ndash; Friheden til at vÃ¦lge
+programmer" pÃ¥ <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>. 
 </para>
 
 <para>
-En anden web-browser, som er på vej frem er Opera &ndash; se mere på <ulink
+En anden web-browser, som er pÃ¥ vej frem er Opera &ndash; se mere pÃ¥ <ulink
 url="http://www.opera.com/linux/">http://www.opera.com/linux/</ulink>.
 For tiden er Opera stadig i en beta-udgave, men det er klart, at Opera
-bliver en hurtig browser, som kræver meget mindre hukommelse end
-Netscape. Du kan se hvordan Opera ser ud på <xref linkend="opera-fig"/>.
+bliver en hurtig browser, som krÃ¦ver meget mindre hukommelse end
+Netscape. Du kan se hvordan Opera ser ud pÃ¥ <xref linkend="opera-fig"/>.
 </para>
 
 <indexterm><primary>Opera</primary></indexterm>
@@ -669,7 +669,7 @@ Netscape. Du kan se hvordan Opera ser ud på <xref linkend="opera-fig"/>.
 
    <para>
     Normalt er TrueType-skriftsnit ikke anvendt under
-    X-vinduesystemet, men du kan få f.eks. din Netscape til at bruge
+    X-vinduesystemet, men du kan fÃ¥ f.eks. din Netscape til at bruge
     de skrifter. Du skal have installeret
     <filename>freetype-1.2-6.i386.rpm</filename> eller en lignende
     version. Man skal blot "finde" programmet
@@ -688,7 +688,7 @@ Netscape. Du kan se hvordan Opera ser ud på <xref linkend="opera-fig"/>.
 
     <listitem>
      <para>
-      Kopiér ttf-skriftsnittene derned fra en Windows-installation,
+      KopiÃ©r ttf-skriftsnittene derned fra en Windows-installation,
       eller hent de gratis ttf-filer fra Microsofts webside (de har en
       gratis samling af de mest almindelige TrueType-skriftsnit).
      </para>
@@ -707,9 +707,9 @@ Netscape. Du kan se hvordan Opera ser ud på <xref linkend="opera-fig"/>.
 <listitem> 
 
 <para>
- Ret din X11 config så den indeholder TrueType-kataloget.
- FontPath entries i <filename>/etc/X11/fs/config</filename> (kan evt. være i
- <filename>/etc/X11/XF86Config</filename>) kan se således ud:
+ Ret din X11 config sÃ¥ den indeholder TrueType-kataloget.
+ FontPath entries i <filename>/etc/X11/fs/config</filename> (kan evt. vÃ¦re i
+ <filename>/etc/X11/XF86Config</filename>) kan se sÃ¥ledes ud:
 </para>
 
   <programlisting>
@@ -726,12 +726,12 @@ Netscape. Du kan se hvordan Opera ser ud på <xref linkend="opera-fig"/>.
 
 <para>
  Start X, og se om "<command>xlsfonts</command>" udskriver en liste
- med de forskellige TrueType-skriftsnit &ndash; prøv for eksempel
+ med de forskellige TrueType-skriftsnit &ndash; prÃ¸v for eksempel
  "<command>xlsfonts|grep microsoft</command>".
 </para>
 
 <para>
-I din Netscape-opsætning ("Edit"->"Preferences") kan du vælge
+I din Netscape-opsÃ¦tning ("Edit"->"Preferences") kan du vÃ¦lge
 </para>
 <programlisting>
   Variable width font:  Arial (Monotype)              Size: 0
@@ -741,39 +741,39 @@ I din Netscape-opsætning ("Edit"->"Preferences") kan du vælge
 </programlisting>
 
 <para>
-Endvidere kan du klikke på "Use document-specified fonts, but
+Endvidere kan du klikke pÃ¥ "Use document-specified fonts, but
 disable Dynamic fonts" (den midterste af de tre muligheder).
 </para>
 </sect2>
 -->
 
-<!--  Dette afsnit hører til i admin- eller friheden-bøgerne:
+<!--  Dette afsnit hÃ¸rer til i admin- eller friheden-bÃ¸gerne:
 <sect2 id="mime-types">
 <title>mime-types</title>
 <indexterm><primary>mime-typer</primary></indexterm>
 
 <para>
-På internettet er der en måde at koble overførsel af data sammen med en
-datatype, således at modtager af data har mulighed for at starte det
+PÃ¥ internettet er der en mÃ¥de at koble overfÃ¸rsel af data sammen med en
+datatype, sÃ¥ledes at modtager af data har mulighed for at starte det
 rette program til at vise data. Dette kaldes "mime-types" og for
-Netscape kan vi f.eks. vise, hvordan man får OpenOffice.org startet op for
+Netscape kan vi f.eks. vise, hvordan man fÃ¥r OpenOffice.org startet op for
 automatisk at vise et Word-dokument. Der er trods alt nogle, der
 finder dette af interesse :-)
 </para>
 
 <para>
-I Netscape skal du åbne "Edit"->"Preferences", derefter vælge
-"Navigator"->"Applications". Vælg "Microsoft Word Document" og tryk
-"Edit". Vælg "Application" og sæt denne til
+I Netscape skal du Ã¥bne "Edit"->"Preferences", derefter vÃ¦lge
+"Navigator"->"Applications". VÃ¦lg "Microsoft Word Document" og tryk
+"Edit". VÃ¦lg "Application" og sÃ¦t denne til
 <filename>/home/tyge/OpenOffice.org1.0/soffice "%s"</filename>.  Hvis
-du alternativt ønsker at anvende tekstbehandlingsprogrammet
-<command>abiword</command> så skrives
+du alternativt Ã¸nsker at anvende tekstbehandlingsprogrammet
+<command>abiword</command> sÃ¥ skrives
 <filename>abiword "%s"</filename>
 </para>
 
 <para>
-Efter genstart af Netscape, bør du både i web-browseren og i
-e-post-delen af Netscape kunne trykke direkte på Word-filer og se dem i 
+Efter genstart af Netscape, bÃ¸r du bÃ¥de i web-browseren og i
+e-post-delen af Netscape kunne trykke direkte pÃ¥ Word-filer og se dem i 
 OpenOffice.org eller abiword.
 </para>
 </sect2>
@@ -790,7 +790,7 @@ OpenOffice.org eller abiword.
  hentede en cd-rom fra internettet. Derfor er der ofte en fil man kan hente
  der hedder noget med <emphasis>md5sum</emphasis>, f.eks.
  <filename>md5sums</filename> eller lign.  Programmet <command>md5sum</command>
- kan udregne en tjeksum for en fil &ndash; og dermed også for et helt
+ kan udregne en tjeksum for en fil &ndash; og dermed ogsÃ¥ for et helt
  ISO-cd-rom-billede.  At to cd-rom'er eller to filer skulle have samme
  MD5-tjeksum er ekstremt usandsynligt.
 </para>
@@ -801,8 +801,8 @@ OpenOffice.org eller abiword.
 </screen>
 
 <para>
- Har man en fil med MD5-tjeksummer, kan med nemt få tjekket alle de filer der
- står i den:
+ Har man en fil med MD5-tjeksummer, kan med nemt fÃ¥ tjekket alle de filer der
+ stÃ¥r i den:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cat md5sums</userinput>
@@ -818,8 +818,8 @@ Mandrake91-cd3-i18n.i586.iso: OK
 
 <para>
 Hvis man f.eks. retter en smule i filen <filename>Mandrake91-cd1-inst.i586.iso</filename>
-så vil man få en helt anden tjeksum og anvender man igen <command>md5sum --check md5sums</command>
-vil man få beskeden <command>FAILED</command> som indikation for at det gik galt.
+sÃ¥ vil man fÃ¥ en helt anden tjeksum og anvender man igen <command>md5sum --check md5sums</command>
+vil man fÃ¥ beskeden <command>FAILED</command> som indikation for at det gik galt.
 </para>
 </sect2>
 </sect1>
@@ -831,15 +831,15 @@ vil man få beskeden <command>FAILED</command> som indikation for at det gik galt
 <indexterm><primary>Email</primary></indexterm>
 <indexterm><primary>E-post</primary></indexterm>
 <para>
-Til at læse e-breve kan du på næsten alle Unix-systemer finde
+Til at lÃ¦se e-breve kan du pÃ¥ nÃ¦sten alle Unix-systemer finde
 programmet <command>mail</command>, som er meget simpelt. Skrives f.eks.
 
 <screen>
-<prompt>[tyge@hven ~]$  </prompt><userinput>mail BRUGERNAVN@MASKINE.DOMÆNE</userinput> <userinput>help</userinput>
+<prompt>[tyge@hven ~]$  </prompt><userinput>mail BRUGERNAVN@MASKINE.DOM&AElig;NE</userinput> <userinput>help</userinput>
 </screen>
 
-og afsluttes med <keysym>Ctrl-D</keysym> så er der sendt et
-brev til <filename>BRUGERNAVN@MASKINE.DOMÆNE</filename> med indholdet
+og afsluttes med <keysym>Ctrl-D</keysym> sÃ¥ er der sendt et
+brev til <filename>BRUGERNAVN@MASKINE.DOM&AElig;NE</filename> med indholdet
 <filename>help</filename>.
 </para>
 
@@ -852,14 +852,14 @@ muligheder, men ELM bliver ikke videreudviklet mere.
 <indexterm><primary>Elm</primary></indexterm>
 <indexterm><primary>Mutt</primary></indexterm>
 <para>
-Til tekstbaseret læsning og skrivning af e-breve er der to gode
+Til tekstbaseret lÃ¦sning og skrivning af e-breve er der to gode
 valg. Mutt (<command>mutt</command>) er hurtig og har mange
 funktioner. 
 </para>
 
 <para>
-Det skal også nævnes, at Netscape har indbygget post-håndtering,
-som foretrækkes af mange. Det er grafisk og ret enkelt at bruge.
+Det skal ogsÃ¥ nÃ¦vnes, at Netscape har indbygget post-hÃ¥ndtering,
+som foretrÃ¦kkes af mange. Det er grafisk og ret enkelt at bruge.
 </para>
 
 <figure id="netscapemail-fig" float="1">
@@ -872,11 +872,11 @@ som foretrækkes af mange. Det er grafisk og ret enkelt at bruge.
    <title>Vise nye e-breve</title>
 
    <para>
-    ... kan man ikke sætte en systemvariabel i sin kommandofortolker,
-    så man får besked, når der er ny post? ...
+    ... kan man ikke sÃ¦tte en systemvariabel i sin kommandofortolker,
+    sÃ¥ man fÃ¥r besked, nÃ¥r der er ny post? ...
    </para>
 
-<!--  Kræver X:
+<!--  KrÃ¦ver X:
 <indexterm><primary>xbiff</primary></indexterm>
 
 <para>
@@ -905,7 +905,7 @@ minuttet, hvis det ikke konfigureres anderledes.
 <command>fetchmail</command> bruges til at hente e-breve fra en
 postserver hos din internetudbyder. Programmet styres gennem filen
 <filename>.fetchmailrc</filename> i dit hjemmebibliotek. Den kan f.eks. se
-sådan her ud:
+sÃ¥dan her ud:
 
 <programlisting>
 poll post.fiktiv.dk
@@ -914,33 +914,33 @@ user tyge
 pass McMombo
 </programlisting>
 
-Når du kører <command>fetchmail</command>, vil den i dette eksempel
-forsøge at hente post fra serveren <filename>post.fiktiv.dk</filename>
+NÃ¥r du kÃ¸rer <command>fetchmail</command>, vil den i dette eksempel
+forsÃ¸ge at hente post fra serveren <filename>post.fiktiv.dk</filename>
 med protokollen POP3 (som er den mest almindelige)
-og logge på serveren med brugernavnet "tyge" og adgangskoden "McMombo". Hvis
+og logge pÃ¥ serveren med brugernavnet "tyge" og adgangskoden "McMombo". Hvis
 der er post til "tyge", leverer fetchmail den videre til det lokale
-postsystem, der så lægger brevene i Tyges postkasse.
+postsystem, der sÃ¥ lÃ¦gger brevene i Tyges postkasse.
 </para>
 
 <para>
-De første gange, du kører <command>fetchmail</command>, vil du
-som regel gerne se, om tingene går, som de skal, når posten hentes. Hvis
-<command>fetchmail</command> køres med parameteren
-<filename>-v</filename>, skriver den, hvad der foregår undervejs.
+De fÃ¸rste gange, du kÃ¸rer <command>fetchmail</command>, vil du
+som regel gerne se, om tingene gÃ¥r, som de skal, nÃ¥r posten hentes. Hvis
+<command>fetchmail</command> kÃ¸res med parameteren
+<filename>-v</filename>, skriver den, hvad der foregÃ¥r undervejs.
 </para>
 
 <para>
-Hvis du er til grafisk baserede opsætningsværktøjer, kan du redigere din
+Hvis du er til grafisk baserede opsÃ¦tningsvÃ¦rktÃ¸jer, kan du redigere din
 <filename>.fetchmailrc</filename>
-ved hjælp af programmet <command>fetchmailconf</command>.
+ved hjÃ¦lp af programmet <command>fetchmailconf</command>.
 </para>
 
 <para>
 <emphasis>Tip:</emphasis>Nogle post-servere vil ikke tillade at du
 bruger POP3 fra andre maskiner og tillader kun Secure shell som login-metode.
 Her er et mere avanceret trick til at hente e-post via en
-POP3-server sat op til at køre alene på localhost. Først skal du lave
-en <filename>.fetchmailrc</filename> med følgende indhold.
+POP3-server sat op til at kÃ¸re alene pÃ¥ localhost. FÃ¸rst skal du lave
+en <filename>.fetchmailrc</filename> med fÃ¸lgende indhold.
 </para>
 
 <programlisting>
@@ -949,30 +949,30 @@ poll localhost with proto pop3 port 1234
 pass8bits mimedecode limit 100000 fetchall
 </programlisting>
 
-<para>Opsætningen er til at "tyge" på klient og server med adgangskode
-"hemmeligt" på serveren kan hente e-post op til maksimalt 100000
+<para>OpsÃ¦tningen er til at "tyge" pÃ¥ klient og server med adgangskode
+"hemmeligt" pÃ¥ serveren kan hente e-post op til maksimalt 100000
 oktetter (ca. 80 kb per e-post-besked).
 </para>
 
 <para>
 Du skal nu lave en kommando eller alias <command>ssh -L
 1234:mailserver:110 -v mailserver</command>, som du starter i et
-terminalvindue. Du kan se at du faktisk logger ind på mailservermaskinen
+terminalvindue. Du kan se at du faktisk logger ind pÃ¥ mailservermaskinen
 ved dette. 
 </para>
 <para>
-I et andet vindue på lokalmaskinen (klienten) skriver du nu
+I et andet vindue pÃ¥ lokalmaskinen (klienten) skriver du nu
 <command>fetchmail</command>, hvorefter din e-post hentes via POP3 med
 <command>ssh</command> som krypteret tunnel mellem de to maskiner.
 </para>
 
 <para>
-<indexterm><primary>fetchmail</primary><secondary>Tømme alle mails ud af POP3-server</secondary></indexterm>
+<indexterm><primary>fetchmail</primary><secondary>TÃ¸mme alle mails ud af POP3-server</secondary></indexterm>
 <indexterm><primary>POP3-server</primary></indexterm>
-<emphasis>Tip:</emphasis> Hvad gør man hvis man har en mail-konto, som
-skal tømmes men man ikke skal gemme alle de emails? Det kan være
+<emphasis>Tip:</emphasis> Hvad gÃ¸r man hvis man har en mail-konto, som
+skal tÃ¸mmes men man ikke skal gemme alle de emails? Det kan vÃ¦re
 relevant hvis man sender emails videre til en webmail-konto. Man skal
-have en <filename>.fetchmailrc</filename>-fil som gør det muligt at
+have en <filename>.fetchmailrc</filename>-fil som gÃ¸r det muligt at
 hente post fra POP3-serveren.
 </para>
 
@@ -984,8 +984,8 @@ pass <prompt>DIN_ADGANGSKODE</prompt>
 </screen>
 
 <para>
-Derefter kan man køre <command>fetchmail --bsmtp /dev/null</command>
-for at tømme alle emails ud i <filename>/dev/null</filename> dvs. 
+Derefter kan man kÃ¸re <command>fetchmail --bsmtp /dev/null</command>
+for at tÃ¸mme alle emails ud i <filename>/dev/null</filename> dvs. 
 de smides ud.
 </para>
 </sect2>
@@ -998,13 +998,13 @@ de smides ud.
 <indexterm><primary>email</primary><secondary>sortering</secondary></indexterm>
 
 <para>
-Hvis du får mange e-breve ind pr. dag, så vil du nok hurtigt lave
+Hvis du fÃ¥r mange e-breve ind pr. dag, sÃ¥ vil du nok hurtigt lave
 forskellige foldere til forskellige emner. F.eks. kan du lave en
-folder til hver af de diskussionslister på SSLUG, som du deltager i.
-Et program, som du kan have meget glæde af, er
+folder til hver af de diskussionslister pÃ¥ SSLUG, som du deltager i.
+Et program, som du kan have meget glÃ¦de af, er
 <command>procmail</command>, der kan sortere e-breve automatisk ned
 til de e-post-foldere, du har oprettet. Henter du breve med fetchmail,
-så kan procmail lave sorteringen ud fra opsætningsfilen
+sÃ¥ kan procmail lave sorteringen ud fra opsÃ¦tningsfilen
 <filename>~/.procmailrc</filename>.  I eksemplet har vi post liggende
 i <filename>~/mail</filename>-kataloget, og herunder har vi
 forskellige filer som er brevfoldere.
@@ -1015,12 +1015,12 @@ path=$HOME/bin:/usr/bin:/bin:/usr/local/bin:.
 maildir=$HOME/mail      # Her _skal_ procmail kunne aflevere din mail.
 default=$MAILDIR/mbox   # Forvalgt folder til af aflevere e-breve i
 logfile=$MAILDIR/.from   # Her gemmer vi en log over hvilke e-breve der kom
-lockfile=$HOME/.lockmail  # Fil til at lave lås med.
+lockfile=$HOME/.lockmail  # Fil til at lave lÃ¥s med.
 
 # REJECT: sikkert spam e-post
 # Filen ~/.procmailrc.spam indeholder da regexps der 
-# matches på brevets headere.
-# I ~/.procmailrc.spam kan således indsættes linjer
+# matches pÃ¥ brevets headere.
+# I ~/.procmailrc.spam kan sÃ¥ledes indsÃ¦ttes linjer
 # ^Subject: .*(\$\$|sex|adult|offer)
 # som matcher det du vil slippe for. E-post, der
 # fanges af reglen gemmes i spam post-mappen
@@ -1028,14 +1028,14 @@ lockfile=$HOME/.lockmail  # Fil til at lave lås med.
 * ? egrep -q -f $HOME/.procmailrc.spam
 spam
 
-# Første liste er mgp-listen for Magic Point programmet
+# FÃ¸rste liste er mgp-listen for Magic Point programmet
 # Vi tjekker efter To eller Cc feltet er til listen mgp-users@mew.org
 # og gemmer i ~/mail/mgp
 :0
 * ^(To:|Cc:).*mgp-users@mew.org
 mgp 
 
-# Dernæst har vi sslug-teknik som altid sætter "Reply-To" feltet
+# DernÃ¦st har vi sslug-teknik som altid sÃ¦tter "Reply-To" feltet
 :0
 * ^Reply-To:.sslug-teknik@sslug.dk
 sslug-teknik
@@ -1045,9 +1045,9 @@ sslug-teknik
 * ^From:.*@imm.dtu.dk
 IMM
 
-# Vi kan også gemme en ekstra kopi af breve &ndash; dvs. brevet bliver 
-# også processeret af de efterfølgende regler.
-# Kommer der et e-brev fra statsministeren stm@stm.dk så gemmer vi lige
+# Vi kan ogsÃ¥ gemme en ekstra kopi af breve &ndash; dvs. brevet bliver 
+# ogsÃ¥ processeret af de efterfÃ¸lgende regler.
+# Kommer der et e-brev fra statsministeren stm@stm.dk sÃ¥ gemmer vi lige
 # en ekstra kopi i stats-folderen
 :0c
 * ^From:.*stm@stm.dk
@@ -1060,9 +1060,9 @@ stats
 * ^From:.*stm@stm.dk
 ! redaktionen@ekstrabladet.dk
 
-# Endelig kan vi faktisk også udføre kommandoer via mail
-# Her lader vi e-breve med emnet EJECT udføre kommandoen eject
-# og da det kun er en kopi vi udtager, så vil brevet også gå til 
+# Endelig kan vi faktisk ogsÃ¥ udfÃ¸re kommandoer via mail
+# Her lader vi e-breve med emnet EJECT udfÃ¸re kommandoen eject
+# og da det kun er en kopi vi udtager, sÃ¥ vil brevet ogsÃ¥ gÃ¥ til 
 # det forvalgte brevfolder.
 
 :0c
@@ -1073,7 +1073,7 @@ stats
 </programlisting>
 
 <para>
-En langt mere restriktiv <filename>.procmailrc</filename>-fil kan være 
+En langt mere restriktiv <filename>.procmailrc</filename>-fil kan vÃ¦re 
 </para>
 
 <programlisting>
@@ -1081,7 +1081,7 @@ path=$HOME/bin:/usr/bin:/bin:/usr/local/bin:.
 maildir=$HOME/mail      # Her _skal_ procmail kunne aflevere din e-post.
 default=$MAILDIR/mbox   # Default folder til at aflevere ebreve i
 logfile=$MAILDIR/.from   # Her gemmer vi en log over hvilke ebreve der kom
-lockfile=$HOME/.lockmail  # Fil til at lave lås med.
+lockfile=$HOME/.lockmail  # Fil til at lave lÃ¥s med.
 
 :0
 * ? egrep -q -f $HOME/.procmailrc.allow
@@ -1107,29 +1107,29 @@ indeholder f.eks.
 </programlisting>
 
 <para>
-I dette tilfælde er det kun e-post til tyge@sslug.dk (tilsvarende
-også root og postmaster), og de e-post-lister, som brugeren tyge kender, der
+I dette tilfÃ¦lde er det kun e-post til tyge@sslug.dk (tilsvarende
+ogsÃ¥ root og postmaster), og de e-post-lister, som brugeren tyge kender, der
 ender i <filename>$MAILDIR/mbox</filename> &ndash; alt andet ender i
 spam-folderen. Det kan anbefales at tjekke sin spam-folder fra tid til
-anden for at være sikker på at e-post ikke er gået galt i
-procmail-reglerne. Er du helt sikker på dine spam-regler, så kan du
+anden for at vÃ¦re sikker pÃ¥ at e-post ikke er gÃ¥et galt i
+procmail-reglerne. Er du helt sikker pÃ¥ dine spam-regler, sÃ¥ kan du
 sende mail direkte til <filename>/dev/null</filename> i stedet for
 spam-folderen.
 </para>
 
 <para>
-Procmail er guld værd, og <command>man procmail</command>, 
+Procmail er guld vÃ¦rd, og <command>man procmail</command>, 
 <command>man procmailex</command> og
-<command>man procmailrc</command> er værd at
-læse. Du kan også være glad for at lave et alias <command>alias ms
-"mailstat ~/mail/.from"</command>, idet du så kan skrive
-<command>ms</command> efter at have kørt fetchmail, og du vil så få
-vist hvor mange breve og størrelsen af disse som er blevet fordelt til
+<command>man procmailrc</command> er vÃ¦rd at
+lÃ¦se. Du kan ogsÃ¥ vÃ¦re glad for at lave et alias <command>alias ms
+"mailstat ~/mail/.from"</command>, idet du sÃ¥ kan skrive
+<command>ms</command> efter at have kÃ¸rt fetchmail, og du vil sÃ¥ fÃ¥
+vist hvor mange breve og stÃ¸rrelsen af disse som er blevet fordelt til
 de forskellige foldere. 
 </para>
 
 <para>
-Et smart procmail-filter er følgende, som retter subject af
+Et smart procmail-filter er fÃ¸lgende, som retter subject af
 brevet til en advarsel om et potentielt virus-angreb hvis attachment
 kan indeholde en virus.
 </para>
@@ -1153,12 +1153,12 @@ kan indeholde en virus.
 
 
 <para>
-Et andet smart trick er følgende spam-filter, som tjekker om en 
+Et andet smart trick er fÃ¸lgende spam-filter, som tjekker om en 
 afsender er black-listet i filen <filename>/home/dig/black.lst</filename>.
-Hvis dette er tilfældet så sendes automatisk en email til afsenderen
+Hvis dette er tilfÃ¦ldet sÃ¥ sendes automatisk en email til afsenderen
 om at man mener det er spam. Samme trick kan bruges til mere
-venlige svar til ens venner om at man lige er væk, og at man kan 
-prøve at ringe i stedet eller lign. 
+venlige svar til ens venner om at man lige er vÃ¦k, og at man kan 
+prÃ¸ve at ringe i stedet eller lign. 
 </para>
 
 <programlisting>
@@ -1191,7 +1191,7 @@ reklame@jatak.dk
 </programlisting>
 
 <para>
-Der er under bogens eksempler på <ulink url="http://&linuxbogurl;/unix/eksempler/procmail">&linuxbogurl;/unix/eksempler/procmail</ulink> et meget stort eksempel på hvordan en <filename>.procmailrc</filename>-fil kan
+Der er under bogens eksempler pÃ¥ <ulink url="http://&linuxbogurl;/unix/eksempler/procmail">&linuxbogurl;/unix/eksempler/procmail</ulink> et meget stort eksempel pÃ¥ hvordan en <filename>.procmailrc</filename>-fil kan
 se ud hvis den skal filtrere en masse spam fra og samtidig sortere
 SSLUG's lister fornuftigt.
 </para>
@@ -1200,49 +1200,49 @@ SSLUG's lister fornuftigt.
 <sect2 id="spam">
 <title>spam-filtering med spamassasin</title>
 <para>
-Har du længe haft din e-post-adresse liggende på en web-server
-et sted, eller har du blot én gang sendt en besked til
-en offentlig nyhedsgruppe, så har du sikkert også fået en del
-"uimodståelige" tilbud
+Har du lÃ¦nge haft din e-post-adresse liggende pÃ¥ en web-server
+et sted, eller har du blot Ã©n gang sendt en besked til
+en offentlig nyhedsgruppe, sÃ¥ har du sikkert ogsÃ¥ fÃ¥et en del
+"uimodstÃ¥elige" tilbud
 - eller <ulink url="http://www.ironworks.com/comedy/python/spam.htm">spam</ulink>
 som det rettelig hedder.
 </para>
 
 <para>
-Der har været mange løsninger på hvad der kunne gøres ved det.
+Der har vÃ¦ret mange lÃ¸sninger pÃ¥ hvad der kunne gÃ¸res ved det.
 Man kan offentligt
-<ulink url="http://www.petemoss.com/spamflames/ShifmanIsAMoronSpammer.html">hænge</ulink>
+<ulink url="http://www.petemoss.com/spamflames/ShifmanIsAMoronSpammer.html">hÃ¦nge</ulink>
 spammeren ud,
-skrive til postmesteren ((postmaster) det hjælper sjældent),
+skrive til postmesteren ((postmaster) det hjÃ¦lper sjÃ¦ldent),
 installere <ulink url="http://razor.sourceforge.net/">razor</ulink>,
 installere <ulink url="http://mail-abuse.org/rbl/">Realtime Blackhole List</ulink>
-eller det sidste nye skud på stammen,
+eller det sidste nye skud pÃ¥ stammen,
 <ulink url="http://spamassassin.org/">SpamAssassin</ulink>.
 </para>
 
 <para>
-SpamAssassin installeres på en klient-maskine, eller hos
-en internetudbyder. Her kigger SpamAssassin så den indkommende post igennem og
-kigger efter mønstre, der tyder på at brevene er spam.
-Hver ting der testes for i et brev, får så et point.
-Skulle der optræde et par "$" (dollartegn) i emnelinjen,
-giver det 2,4 point, et enkelt udråbstegn giver kun 0,1 point.
-Når der så er opsamlet 5 point, bliver brevet klassificeret
+SpamAssassin installeres pÃ¥ en klient-maskine, eller hos
+en internetudbyder. Her kigger SpamAssassin sÃ¥ den indkommende post igennem og
+kigger efter mÃ¸nstre, der tyder pÃ¥ at brevene er spam.
+Hver ting der testes for i et brev, fÃ¥r sÃ¥ et point.
+Skulle der optrÃ¦de et par "$" (dollartegn) i emnelinjen,
+giver det 2,4 point, et enkelt udrÃ¥bstegn giver kun 0,1 point.
+NÃ¥r der sÃ¥ er opsamlet 5 point, bliver brevet klassificeret
 som spam.
-Tærsklen kan selvfølgelig ændres, hvis man er mere eller mindre tolerant end SpamAssassins forfattere.
+TÃ¦rsklen kan selvfÃ¸lgelig Ã¦ndres, hvis man er mere eller mindre tolerant end SpamAssassins forfattere.
 </para>
 
 <para>
-Har du før brugt
+Har du fÃ¸r brugt
 procmail (se <xref linkend="procmail"/>),
 er SpamAssassin en nem lille ekstra ting at installere.
-Programpakken der skal installeres fås både som
+Programpakken der skal installeres fÃ¥s bÃ¥de som
 <ulink url="http://spamassassin.taint.org/downloads.html">tar.gz</ulink>,
 <ulink url="http://www.hughes-family.org/spamassassin/">RPM</ulink> og debian-pakke.
-Skulle der være afhængigheder af andre RPM-pakker, kan disse
-findes på <ulink url="http://rpmfind.net/">rpmfind.net</ulink>.
-Og <command>apt-get</command> skal nok løse sådanne problemer for debian-brugere.
-I din <filename>~/.procmailrc</filename> tilføjes så blot nedenstående linjer:
+Skulle der vÃ¦re afhÃ¦ngigheder af andre RPM-pakker, kan disse
+findes pÃ¥ <ulink url="http://rpmfind.net/">rpmfind.net</ulink>.
+Og <command>apt-get</command> skal nok lÃ¸se sÃ¥danne problemer for debian-brugere.
+I din <filename>~/.procmailrc</filename> tilfÃ¸jes sÃ¥ blot nedenstÃ¥ende linjer:
 </para>
 
 <screen>
@@ -1261,11 +1261,11 @@ caughtspam
 </screen>
 
 <para>
-Det vil typisk være passende at placere ovenstående i den
+Det vil typisk vÃ¦re passende at placere ovenstÃ¥ende i den
 slutningen af <filename>~/.procmailrc</filename>-filen, hvis du har andre
 regler i forvejen.
-SpamAssassin bruger en del CPU-kraft, så det er en fordel
-først at filtrere lukkede postlisterlister som for eksempel 
+SpamAssassin bruger en del CPU-kraft, sÃ¥ det er en fordel
+fÃ¸rst at filtrere lukkede postlisterlister som for eksempel 
 <literal>&lt;sslug-teknik@sslug.dk&gt;</literal> fra:
 </para>
 
@@ -1286,8 +1286,8 @@ caughtspam
 
 <para>
 SpamAssassin vil nu tage det brev der kommer igennem,
-og undersøge om der er noget der minder om spam.
-Hvis det opnår under 5 point,
+og undersÃ¸ge om der er noget der minder om spam.
+Hvis det opnÃ¥r under 5 point,
 bliver der indsat en linje i brevhovedet om at det ikke er spam:
 </para>
 
@@ -1296,10 +1296,10 @@ X-Spam-Status: No
 </screen>
 
 <para>
-Hvis der derimod findes lidt "underlige" ting, så ændres emnelinjen
-til <literal>*****SPAM*****</literal>, der indsættes en forklaring
+Hvis der derimod findes lidt "underlige" ting, sÃ¥ Ã¦ndres emnelinjen
+til <literal>*****SPAM*****</literal>, der indsÃ¦ttes en forklaring
 i toppen af brevet med en beskrivelse af hvorfor det blev
-kategoriseret som spam, og der indsættes en linje i brevhovedet 
+kategoriseret som spam, og der indsÃ¦ttes en linje i brevhovedet 
 om at det er spam:
 </para>
 
@@ -1308,12 +1308,12 @@ X-Spam-Status: Yes
 </screen>
 
 <para>
-Og med ovenstående <filename>~/.procmailrc</filename>-fil 
+Og med ovenstÃ¥ende <filename>~/.procmailrc</filename>-fil 
 bliver brevet lagt i folderen <filename>caughtspam</filename>,
-som man så en gang imellem kan kigge lidt i for at se om
-der skulle være nogle smuttere.
+som man sÃ¥ en gang imellem kan kigge lidt i for at se om
+der skulle vÃ¦re nogle smuttere.
 SpamAssassin fanger rundt regnet 98% af den rigtige
-spam og enkelte bliver ikke fanget, men det er meget få.
+spam og enkelte bliver ikke fanget, men det er meget fÃ¥.
 Her er et grelt eksempel med 16.70 point:
 </para>
 
@@ -1355,7 +1355,7 @@ it, it may be safer to save it to a file and open it with an editor.
 </screen>
 
 <para>
-Resten af ovenstående mail er klippet væk, da du sikkert ikke er
+Resten af ovenstÃ¥ende mail er klippet vÃ¦k, da du sikkert ikke er
 interesseret i selve indholdet.
 </para>
 
@@ -1371,44 +1371,44 @@ interesseret i selve indholdet.
 
 <para>
 I takt med internettets udbredelse er der kommet flere og flere mindre 
-venligsindede mennesker på nettet. Elektronisk post er desværre meget
-let at aflytte, og ønsker du brev-hemmelighed, må du kryptere din
+venligsindede mennesker pÃ¥ nettet. Elektronisk post er desvÃ¦rre meget
+let at aflytte, og Ã¸nsker du brev-hemmelighed, mÃ¥ du kryptere din
 post. Kryptering er en proces hvor dine data bliver skrevet i
-kode. Krypterede breve kan kun læses af den person, de er stilet til.
+kode. Krypterede breve kan kun lÃ¦ses af den person, de er stilet til.
 </para>
 
 <para>
 I Linux-verdenen finder der flere programmer til kryptering af
-post. Heldigvis findes der en standard for hvordan post bør krypteres, 
+post. Heldigvis findes der en standard for hvordan post bÃ¸r krypteres, 
 og det er derfor ligegyldigt hvilket krypteringsprogram, du
 benytter. Vi har valgt at introducere GNU Privacy Guard (GPG), idet
-GPG kommer under en ægte fri licens (GNU General Public
+GPG kommer under en Ã¦gte fri licens (GNU General Public
 License). Samtidig kan GPG arbejde sammen med det anerkendte Pretty
 Good Privacy (PGP).
 </para>
 
 <para>
-GPG kan også bruges til at signere breve. En digital signatur er mere
-end en underskrift. Den digitale signatur fortæller, ud over hvem der
-er afsender, også hvornår brevet blev signeret. Endvidere bruges den
-digitale signatur til at tjekke om brevet er blevet ændret under dets
+GPG kan ogsÃ¥ bruges til at signere breve. En digital signatur er mere
+end en underskrift. Den digitale signatur fortÃ¦ller, ud over hvem der
+er afsender, ogsÃ¥ hvornÃ¥r brevet blev signeret. Endvidere bruges den
+digitale signatur til at tjekke om brevet er blevet Ã¦ndret under dets
 rejse fra afsender til modtager. I skrivende stund kender forfatterne
 ikke det officielle Danmarks holdning til GPG.
 </para>
 
 <para>
-Ideen bag GPG er, at du har en offentlig og en privat nøgle. Den
-offentlige nøgle gør det muligt for alle at tjekke din signatur, som
-du fremstiller vha. din private nøgle. Når du skal kryptere post, skal 
-du først udveksle nøglepar med den person, som du ønsker at
-kommunikere med. Udvekslingen sker ofte i forbindelse med møder i
+Ideen bag GPG er, at du har en offentlig og en privat nÃ¸gle. Den
+offentlige nÃ¸gle gÃ¸r det muligt for alle at tjekke din signatur, som
+du fremstiller vha. din private nÃ¸gle. NÃ¥r du skal kryptere post, skal 
+du fÃ¸rst udveksle nÃ¸glepar med den person, som du Ã¸nsker at
+kommunikere med. Udvekslingen sker ofte i forbindelse med mÃ¸der i
 Linux-brugerforeninger.
 </para>
 
 <para>
 Du kan hente GPG fra GPG's ftp-server 
 <ulink url="ftp://ftp.gnupg.org">ftp://ftp.gnupg.org</ulink>. Selve
-installationen er lige til at gå til &ndash; nedenfor ser du hvordan.
+installationen er lige til at gÃ¥ til &ndash; nedenfor ser du hvordan.
 </para>
 
 <screen>
@@ -1416,9 +1416,9 @@ installationen er lige til at gå til &ndash; nedenfor ser du hvordan.
 <prompt>[tyge@hven ~]$ </prompt><userinput>tar xzvf gnupg-1.0.1.tar.gz</userinput>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cd gnupg-1.0.1</userinput>
 <prompt>[tyge@hven gnupg-1.0.1]$ </prompt><userinput>./configure</userinput>
-[en masse klippet væk]
+[en masse klippet vÃ¦k]
 <prompt>[tyge@hven gnupg-1.0.1]$ </prompt><userinput>make</userinput>
-[en masse klippet væk]
+[en masse klippet vÃ¦k]
 <prompt>[tyge@hven gnupg-1.0.1]$ </prompt><userinput>su</userinput>
 Password: <userinput>hemlig</userinput>
 <prompt>[root@hven gnupg-1.0.1]$ </prompt><userinput>make install</userinput>
@@ -1428,8 +1428,8 @@ Password: <userinput>hemlig</userinput>
 </screen>
 
 <para>
-Efter installationen er du klar til at bruge GPG. Det første, du skal
-gøre, er at generere et nøglepar.
+Efter installationen er du klar til at bruge GPG. Det fÃ¸rste, du skal
+gÃ¸re, er at generere et nÃ¸glepar.
 </para>
 
 <screen>
@@ -1502,26 +1502,26 @@ public and secret key created and signed
 </screen>
 
 <para>
-Du bør med det samme fremstille en nøgle, som kan bruges til at
+Du bÃ¸r med det samme fremstille en nÃ¸gle, som kan bruges til at
 tilbagekalde den, du netop har fremstillet. Det er vigtig, idet det kan
-ske at en eller anden finder ud af din private nøgle. En
-tilbagekaldelsesnøgle genereres vha. kommandoen <command>gpg
---gen-revoke tyge@sslug.dk</command> (vælg option 1 og gem hvad du ser
-på skærmen i en fil). Tilbagekaldelsesnøglen (gemt i en fil)
-bør opbevares et andet sted end dit hjemmekatalog, f.eks. kan du have
-den liggende på en diskette i dit pengeskab.
+ske at en eller anden finder ud af din private nÃ¸gle. En
+tilbagekaldelsesnÃ¸gle genereres vha. kommandoen <command>gpg
+--gen-revoke tyge@sslug.dk</command> (vÃ¦lg option 1 og gem hvad du ser
+pÃ¥ skÃ¦rmen i en fil). TilbagekaldelsesnÃ¸glen (gemt i en fil)
+bÃ¸r opbevares et andet sted end dit hjemmekatalog, f.eks. kan du have
+den liggende pÃ¥ en diskette i dit pengeskab.
 </para>
 
 <para>
-Når du nu har fået genereret nøgler, er du klar til at signere
-breve. Til at begynde med vil vi antage, at du skriver brevet først,
-signerer det og til sidst indlæser det signerede brev i dit
-postprogram. Nedenstående kommandosekvens viser dig hvordan.
+NÃ¥r du nu har fÃ¥et genereret nÃ¸gler, er du klar til at signere
+breve. Til at begynde med vil vi antage, at du skriver brevet fÃ¸rst,
+signerer det og til sidst indlÃ¦ser det signerede brev i dit
+postprogram. NedenstÃ¥ende kommandosekvens viser dig hvordan.
 </para>
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cat brev</userinput>
-Kære Otto,
+KÃ¦re Otto,
 
 Du kan tro, at vi har det sjovt med GNU!
 
@@ -1532,7 +1532,7 @@ Tyge
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-Kære Otto,
+KÃ¦re Otto,
 
 Du kan tror at vi har det sjovt ned GNU!
 
@@ -1548,14 +1548,14 @@ H9uEQNpfPp+afnkp86snovo=
 </screen>
 
 <para>
-Den opmærksomme læser bemærker at det signerede brev ligger i filen
-<filename>brev.asc</filename>, dvs. der er blevet tilføjet
+Den opmÃ¦rksomme lÃ¦ser bemÃ¦rker at det signerede brev ligger i filen
+<filename>brev.asc</filename>, dvs. der er blevet tilfÃ¸jet
 <filename>.asc</filename> til det oprindelige navn.
 </para>
 
 <para>
-For at få det største udbytte af GPG bør du læse den glimrende
-brugervejledning. Den finder du på 
+For at fÃ¥ det stÃ¸rste udbytte af GPG bÃ¸r du lÃ¦se den glimrende
+brugervejledning. Den finder du pÃ¥ 
 <ulink url="http://www.gnupg.org/docs.html">http://www.gnupg.org/docs.html</ulink>.
 </para>
 
@@ -1564,9 +1564,9 @@ brugervejledning. Den finder du på
 <indexterm><primary>GnuPG</primary><secondary>Pine</secondary></indexterm>
 <indexterm><primary>Pine</primary><secondary>GnuPG</secondary></indexterm>
 <para>
-Skal du benytte pine sammen med GPG, så læs <ulink url="http://www.linuxsecurity.com/feature_stories/feature_story-83.html">http://www.linuxsecurity.com/feature_stories/feature_story-83.html</ulink>. Vær opmærksom på om <command>pinegpg-install</command> rent faktisk indsætter
+Skal du benytte pine sammen med GPG, sÃ¥ lÃ¦s <ulink url="http://www.linuxsecurity.com/feature_stories/feature_story-83.html">http://www.linuxsecurity.com/feature_stories/feature_story-83.html</ulink>. VÃ¦r opmÃ¦rksom pÃ¥ om <command>pinegpg-install</command> rent faktisk indsÃ¦tter
 de rigtige linjer i <filename>~/.pinerc</filename> &ndash; i forhold til 
-hvor dine GPG-programmer ligger. Måske skal man editere <filename>/bin/filnavn</filename> til
+hvor dine GPG-programmer ligger. MÃ¥ske skal man editere <filename>/bin/filnavn</filename> til
 <filename>/usr/bin/filnavn</filename>.
 </para>
 
@@ -1578,12 +1578,12 @@ hvor dine GPG-programmer ligger. Måske skal man editere <filename>/bin/filnavn</
 <title>Hent e-post fra en Exchange-server</title>
 <indexterm><primary>Exchange</primary></indexterm>
 <para>
-Microsoft har været så venlige at lave en nyere type e-post-server, MS
+Microsoft har vÃ¦ret sÃ¥ venlige at lave en nyere type e-post-server, MS
 Exchange, som uheldigvis ikke er dokumenteret for godt. Heldigvis kan
 man bruge serveren fra f.eks. Netscapes e-post-funktion. I Netscape skal
 du under "preferences"->"mail" angive at du henter e-breve fra en "IMAP"
-server &ndash; ikke POP &ndash; og sætte serveren til at være exchange-serveren.
-Det er ikke den fulde funktionalitet, du får, men det kan
+server &ndash; ikke POP &ndash; og sÃ¦tte serveren til at vÃ¦re exchange-serveren.
+Det er ikke den fulde funktionalitet, du fÃ¥r, men det kan
 bruges. 
 </para>
 </sect2>
@@ -1594,36 +1594,36 @@ bruges.
 <indexterm><primary>Outlook epost konvertering</primary></indexterm>
 <para>
 En metode til at give Linux-brugeren adgang til e-post som ligger i
-Outlook koblet til en Exchange-server er følgende. Det kræver dog en
-Exchange-server med imap-understøttelse:
+Outlook koblet til en Exchange-server er fÃ¸lgende. Det krÃ¦ver dog en
+Exchange-server med imap-understÃ¸ttelse:
 </para>
 
 <itemizedlist mark="bullet">
 <listitem>
  <para>
-  (I Windows) kopiér indholdet af Outlook-folder (.pst filen) over på
+  (I Windows) kopiÃ©r indholdet af Outlook-folder (.pst filen) over pÃ¥
   Exchange-serveren.
  </para>
 </listitem>
 <listitem> 
  <para>
-opret en ny IMAP mail-server i Netscape og konfigurér den til at bruge
-din Exchange-server. Tjek: Indholdet af Outlook-folderen burde nu være
-tilgængeligt fra Netscape Messenger.
+opret en ny IMAP mail-server i Netscape og konfigurÃ©r den til at bruge
+din Exchange-server. Tjek: Indholdet af Outlook-folderen burde nu vÃ¦re
+tilgÃ¦ngeligt fra Netscape Messenger.
  </para>
 </listitem>
 <listitem> 
  <para>
-kopiér foldere fra Exchange-serveren til local mail.
+kopiÃ©r foldere fra Exchange-serveren til local mail.
  </para>
 </listitem>
 </itemizedlist>
 
 
 <para>
-En anden måde er at benytte KDEs program <command>kmailcvt</command>, som
-kan oversætte dine gamle Outlook 4 og 5 postbokse til Unix-postfiler. Efter
-sigende skulle dette være uden problemer, dog kan adressebøger stadig give
+En anden mÃ¥de er at benytte KDEs program <command>kmailcvt</command>, som
+kan oversÃ¦tte dine gamle Outlook 4 og 5 postbokse til Unix-postfiler. Efter
+sigende skulle dette vÃ¦re uden problemer, dog kan adressebÃ¸ger stadig give
 problemer.
 </para>
 
@@ -1634,26 +1634,26 @@ problemer.
 En tredie metode, er at konvertere din *.pst-fil til *.mbx (eller
 *.dbx) format, som Outlook Express bruger. Derefter bruges
 <command>oe2mbx</command> til at konvertere til mbox-format, der kan
-læses af de fleste post-programmer på Linux-boksen. Du skal hente
-Linux-versionen af oe2mbx på adressen: <ulink
+lÃ¦ses af de fleste post-programmer pÃ¥ Linux-boksen. Du skal hente
+Linux-versionen af oe2mbx pÃ¥ adressen: <ulink
 url="http://ftp.sslug.dk/oe2mbx-1.21.tar.gz">http://ftp.sslug.dk/oe2mbx-1.21.tar.gz</ulink>.
 Den officielle side (<ulink
 url="http://www.micropop.com/code/">http://www.micropop.com/code/</ulink>)
-er umiddelbart lukket, men prøv at søge på <ulink
+er umiddelbart lukket, men prÃ¸v at sÃ¸ge pÃ¥ <ulink
 url="http://www.google.com">http://google.com</ulink>.
 </para>
 
 <para>
 Det skal lige siges, at under konvertering fra MS Exchange til MS
 Outlook Express mister man alle "mail headers", dvs. at information om
-hvordan e-posten kom til din maskine går tabt. Dette kan være en
-Exchange-bug, eller der kan være overset en opsætningsmulighed.
+hvordan e-posten kom til din maskine gÃ¥r tabt. Dette kan vÃ¦re en
+Exchange-bug, eller der kan vÃ¦re overset en opsÃ¦tningsmulighed.
 </para>
 
 <para>
-Før vi går i gang, så afsæt tiden til dette projekt &ndash; det tager mange
-timer at komme igennem. Det kan også anbefales at have ca. 3 gange så
-meget ledig diskplads som den post-mængde man har i Outlook Express.
+FÃ¸r vi gÃ¥r i gang, sÃ¥ afsÃ¦t tiden til dette projekt &ndash; det tager mange
+timer at komme igennem. Det kan ogsÃ¥ anbefales at have ca. 3 gange sÃ¥
+meget ledig diskplads som den post-mÃ¦ngde man har i Outlook Express.
 </para>
 
 <para>
@@ -1662,19 +1662,19 @@ meget ledig diskplads som den post-mængde man har i Outlook Express.
 
 
 <para>
-Konvertering fra Exchange kræver at du går via MS Outlook
+Konvertering fra Exchange krÃ¦ver at du gÃ¥r via MS Outlook
 Express. Hvis du ikke bruger Exchange kan du hoppe dette skridt over.
 Du kan importere din post direkte fra Exchange til Outlook Express via
-en Wizard. Start Outlook Express, vælg "File"->"Import"->
-"Microsoft Exchange". Derefter vælger du Profil og siger Næste -
+en Wizard. Start Outlook Express, vÃ¦lg "File"->"Import"->
+"Microsoft Exchange". Derefter vÃ¦lger du Profil og siger NÃ¦ste -
 venter &ndash; OK.
 </para>
 
 <para>
 Hvis du har lavet en <filename>.pst</filename>-fil i Exchange til
-offline-læsning kan du skabe en ny profil, når du kommer til det punkt.
-Du skal så vælge manuel opsætning og tilføj <filename>*.pst</filename>
-fil. (Dette kan gøres uden kontakt til Exchange-serveren).
+offline-lÃ¦sning kan du skabe en ny profil, nÃ¥r du kommer til det punkt.
+Du skal sÃ¥ vÃ¦lge manuel opsÃ¦tning og tilfÃ¸j <filename>*.pst</filename>
+fil. (Dette kan gÃ¸res uden kontakt til Exchange-serveren).
 Resten er som beskrevet ovenfor.
 </para>
 
@@ -1684,11 +1684,11 @@ Resten er som beskrevet ovenfor.
 
 <para>
 <emphasis>Windows:</emphasis>
-Læg <command>oe2mbx.exe</command> i roden (c:\) og kopiér eller flyt alle <filename>*.dbx</filename>-filer
+LÃ¦g <command>oe2mbx.exe</command> i roden (c:\) og kopiÃ©r eller flyt alle <filename>*.dbx</filename>-filer
 til mappen <filename>c:\mail</filename>.
-Åben en MS-DOS-prompt og skriv: <command>c:\oe2mbx c:\mail*.dbx</command>.
-Voila, du har nu én eller flere mbox-filer, klar til at kopieres
-over på din Linux-maskine.
+&Aring;ben en MS-DOS-prompt og skriv: <command>c:\oe2mbx c:\mail*.dbx</command>.
+Voila, du har nu Ã©n eller flere mbox-filer, klar til at kopieres
+over pÃ¥ din Linux-maskine.
 </para>
 
 <para>
@@ -1714,7 +1714,7 @@ som hedder <command>mbox2maildir</command> fra
 </para>
 
 <para>
-Tak til: "Outlook -> Netscape"-tråden på sslug-teknik den 21. dec. 2000.
+Tak til: "Outlook -> Netscape"-trÃ¥den pÃ¥ sslug-teknik den 21. dec. 2000.
 Se:     <ulink url="http://www.sslug.dk/emailarkiv/teknik/2000_12/msg00776.html">http://www.sslug.dk/emailarkiv/teknik/2000_12/msg00776.html</ulink> og
 <ulink url="http://www.sslug.dk/emailarkiv/teknik/2000_12/msg00779.html">http://www.sslug.dk/emailarkiv/teknik/2000_12/msg00779.html</ulink>.
 </para>
@@ -1726,13 +1726,13 @@ Se:     <ulink url="http://www.sslug.dk/emailarkiv/teknik/2000_12/msg00776.html"
 <sect1 id="sikkerhed">
 <title>Internet-sikkerhed</title>
 <indexterm><primary>Sikkerhed</primary></indexterm>
-<indexterm><primary>Netværkssikkerhed</primary></indexterm>
+<indexterm><primary>NetvÃ¦rkssikkerhed</primary></indexterm>
 <para>
-Da man designede internettet for mange år siden, fandtes crackere ikke,
+Da man designede internettet for mange Ã¥r siden, fandtes crackere ikke,
 og man havde ikke fantasi til at forestille sig nutidens avancerede
 internet-kriminalitet. Fakta er, at det meste internet-kommunikation
-sendes i klar tekst &ndash; inklusiv login-navne og tilhørende adgangskoder.
-Derfor skal man passe på, hvis man skal lave login på Linux-maskinen
+sendes i klar tekst &ndash; inklusiv login-navne og tilhÃ¸rende adgangskoder.
+Derfor skal man passe pÃ¥, hvis man skal lave login pÃ¥ Linux-maskinen
 fra et fjernt sted i verden via internettet. Der er sikre systemer med
 stor fleksibilitet, som ikke transmitterer adgangskoder i klar tekst. Den
 bedste implementering er "Secure Shell" (ssh). 
@@ -1740,23 +1740,23 @@ bedste implementering er "Secure Shell" (ssh).
 
 <para>
 Emnet er meget vanskeligt, idet de kriminelle ofte ved uhyre meget om
-netværk og sikkerhedsfejl. Der er dog et par generelle kommentarer,
-som bør følges nøje, hvis din maskine skal stå på et usikkert netværk.
+netvÃ¦rk og sikkerhedsfejl. Der er dog et par generelle kommentarer,
+som bÃ¸r fÃ¸lges nÃ¸je, hvis din maskine skal stÃ¥ pÃ¥ et usikkert netvÃ¦rk.
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
 
 <listitem>
-<para>Følg med i, hvilke programmer der kommer med opdateringer. Se
+<para>FÃ¸lg med i, hvilke programmer der kommer med opdateringer. Se
 f.eks. <ulink url="http://www.cert.dk">http://www.cert.dk</ulink>.
 </para>
 </listitem>
 
 <listitem>
 <para>Luk af for programmer, du ikke bruger. Bliver det kendt, at der
-er en sikkerhedsbrist i bare ét af de kørende programmer, kan du
-rammes. I store træk, så indsæt <literal>disable = yes</literal> i
-samtlige filer i <filename>/etc/xinetd.d/</filename> og kør:
+er en sikkerhedsbrist i bare Ã©t af de kÃ¸rende programmer, kan du
+rammes. I store trÃ¦k, sÃ¥ indsÃ¦t <literal>disable = yes</literal> i
+samtlige filer i <filename>/etc/xinetd.d/</filename> og kÃ¸r:
 </para>
 
 <screen>
@@ -1767,21 +1767,21 @@ samtlige filer i <filename>/etc/xinetd.d/</filename> og kør:
 </screen>
 
 <para>
-Med "portmap" stoppet (og ikke startet sidenhen) får du ikke ubrugte 
-stand-alone dæmoner, der kan ramme dig sidenhen.
-Åbn kun for services som du ved du skal bruge.
-Lad være med at køre en web-server eller X-server, hvis du ikke
+Med "portmap" stoppet (og ikke startet sidenhen) fÃ¥r du ikke ubrugte 
+stand-alone dÃ¦moner, der kan ramme dig sidenhen.
+&Aring;bn kun for services som du ved du skal bruge.
+Lad vÃ¦re med at kÃ¸re en web-server eller X-server, hvis du ikke
 bruger det.
 </para>
 </listitem>
 
 <listitem>
-<para>Installér overvågningssystemer (såsom Tripwire og LogWatch).
+<para>InstallÃ©r overvÃ¥gningssystemer (sÃ¥som Tripwire og LogWatch).
 </para>
 </listitem>
 
 <listitem>
-<para>Installér Secure Shell eller OpenSSH (Se 
+<para>InstallÃ©r Secure Shell eller OpenSSH (Se 
 <ulink url="http://www.openssh.com">http://www.openssh.com</ulink>), og lad
 dette erstatte <command>telnet</command> og <command>ftp</command>.
 </para>
@@ -1789,36 +1789,36 @@ dette erstatte <command>telnet</command> og <command>ftp</command>.
 
 <listitem>
 <para>
-Installér og konfigurér en brandmur (eng. firewall) (ipchains).
+InstallÃ©r og konfigurÃ©r en brandmur (eng. firewall) (ipchains).
 Det er en del af Linux-kernen og dermed gratis. Der er gode
 HOWTO-dokumenter om dette.
 </para>
 </listitem>
 
 <listitem>
-<para>Lær mere om netværk og Linux, og brug dit system med omtanke!
+<para>LÃ¦r mere om netvÃ¦rk og Linux, og brug dit system med omtanke!
 </para>
 </listitem>
 
 </itemizedlist>
 
 <para>
-Listen ser dramatisk ud og er ikke så relevant for dem, som lige logger på
+Listen ser dramatisk ud og er ikke sÃ¥ relevant for dem, som lige logger pÃ¥
 internettet via modem for at tjekke epost og surfe lidt. For dem, som
-vil lave missionskritiske forretningssystemer på internettet, er
+vil lave missionskritiske forretningssystemer pÃ¥ internettet, er
 det <emphasis>ekstremt</emphasis> relevant. 
-Du kan læse meget mere i bogen "Linux &ndash; Friheden
-til sikkerhed på internettet", der findes på 
+Du kan lÃ¦se meget mere i bogen "Linux &ndash; Friheden
+til sikkerhed pÃ¥ internettet", der findes pÃ¥ 
 <ulink
 url="http://&linuxbogurl;/">&linuxbogurl;/</ulink>.
 </para>
 
 <para>
-Tilsvarende bør du læse <ulink url="http://www.sslug.dk/sikkerhed/">http://www.sslug.dk/sikkerhed/</ulink>.
+Tilsvarende bÃ¸r du lÃ¦se <ulink url="http://www.sslug.dk/sikkerhed/">http://www.sslug.dk/sikkerhed/</ulink>.
 </para>
 
 <para>
-Det kan anbefales at købe en god bog om netværkssikkerhed, såsom:
+Det kan anbefales at kÃ¸be en god bog om netvÃ¦rkssikkerhed, sÃ¥som:
 </para>
 
 <itemizedlist mark="bullet" spacing="compact">
@@ -1836,25 +1836,25 @@ O'Reilly &amp; Associates, Inc., ISBN 1-56592-148-8, 971 sider.
 <sect1 id="nem-firewall">
 <title>Nem brandmur med Red Hat</title>
 <para>
- Er din maskine på internettet i lang tid ad gangen, så bør du have en brandmur
- på din maskine. Vil du vide mere, så læs "Linux &ndash; Friheden til sikkerhed på
+ Er din maskine pÃ¥ internettet i lang tid ad gangen, sÃ¥ bÃ¸r du have en brandmur
+ pÃ¥ din maskine. Vil du vide mere, sÃ¥ lÃ¦s "Linux &ndash; Friheden til sikkerhed pÃ¥
  internettet".
 </para>
 
 <para>
-I Red Hat (7.0 og senere) er der et godt program med til at sætte en
+I Red Hat (7.0 og senere) er der et godt program med til at sÃ¦tte en
 brandmur op.  Der er ingen garanti for at alt bliver sikkert bagefter,
-men modsat, så er det et glimrende udgangspunkt. Program-pakken hedder
-<filename>gnome-lokkit*.rpm</filename>. Du skal som root køre
-<command>/usr/sbin/gnome-lokkit</command> for at sætte brandmuren op eller 
-<command>lokkit</command> hvis det skal være i tekstmodus.
-Vælg "høj sikkerhed". Dernæst om hvilke
+men modsat, sÃ¥ er det et glimrende udgangspunkt. Program-pakken hedder
+<filename>gnome-lokkit*.rpm</filename>. Du skal som root kÃ¸re
+<command>/usr/sbin/gnome-lokkit</command> for at sÃ¦tte brandmuren op eller 
+<command>lokkit</command> hvis det skal vÃ¦re i tekstmodus.
+VÃ¦lg "hÃ¸j sikkerhed". DernÃ¦st om hvilke
 maskiner man skal tillade lav sikkerhed overfor (evt. til internt
-netværk). Du spørges om følgende skal tillades: DHCP (vælg ofte nej),
-ekstern adgang til egen webserver (normalt nej), indgående e-post (ofte
-nej), ssh (ofte nej), telnet (altid nej). Dernæst laver programmet
-hele brandmuropsætningen og den aktiveres automatisk ved næste
-systemopstart. Du kan også selv genstarte brandmuren ved at køre
+netvÃ¦rk). Du spÃ¸rges om fÃ¸lgende skal tillades: DHCP (vÃ¦lg ofte nej),
+ekstern adgang til egen webserver (normalt nej), indgÃ¥ende e-post (ofte
+nej), ssh (ofte nej), telnet (altid nej). DernÃ¦st laver programmet
+hele brandmuropsÃ¦tningen og den aktiveres automatisk ved nÃ¦ste
+systemopstart. Du kan ogsÃ¥ selv genstarte brandmuren ved at kÃ¸re
 <command>/etc/init.d/ipchains restart</command>.
 </para>
 
@@ -1867,7 +1867,7 @@ systemopstart. Du kan også selv genstarte brandmuren ved at køre
 </sect1>
 
  <sect1 id="news-reader">
-  <title>Nyhedslæsere/NNTP-klienter</title>
+  <title>NyhedslÃ¦sere/NNTP-klienter</title>
 
   <indexterm>
    <primary>news</primary>
@@ -1878,37 +1878,37 @@ systemopstart. Du kan også selv genstarte brandmuren ved at køre
   </indexterm>
 
   <para>
-   Vi prøver her at give en introduktion til en række tekstbaserede
-   nyhedslæsere (eng. »news readers), altså programmer til at læse
-   nyhedsgrupper &ndash; både på Usenet og organisationer som SSLUG's
+   Vi prÃ¸ver her at give en introduktion til en rÃ¦kke tekstbaserede
+   nyhedslÃ¦sere (eng. Â»news readers), altsÃ¥ programmer til at lÃ¦se
+   nyhedsgrupper &ndash; bÃ¥de pÃ¥ Usenet og organisationer som SSLUG's
    egne nyhedsgrupper.
   </para>
 
-<!--  Dette afsnit hører til i applikationer-bogen:
+<!--  Dette afsnit hÃ¸rer til i applikationer-bogen:
 <sect2 id="pan">
 <title>Pan</title>
 <indexterm><primary>pan</primary></indexterm>
 <indexterm><primary>News</primary><secondary>pan</secondary></indexterm>
 <para>
 Programmet <command>pan</command> er nok noget af det nemmeste, man
-kan få til at læse nyhedsgrupper. Pan er en GTK-baseret nyhedslæser
-til Gnome. Når du starter Pan føste gang skal du lige indtaste
-relevant information om dig selv (på dansk) i grafiske menuer &ndash; det er
-meget let at komme igennem hvis du har styr på hvilken news-server du
-skal tilgå. Du kan anvende 
-<ulink url="news:news.sslug.dk">news:news.sslug.dk</ulink> for at tilgå
+kan fÃ¥ til at lÃ¦se nyhedsgrupper. Pan er en GTK-baseret nyhedslÃ¦ser
+til Gnome. NÃ¥r du starter Pan fÃ¸ste gang skal du lige indtaste
+relevant information om dig selv (pÃ¥ dansk) i grafiske menuer &ndash; det er
+meget let at komme igennem hvis du har styr pÃ¥ hvilken news-server du
+skal tilgÃ¥. Du kan anvende 
+<ulink url="news:news.sslug.dk">news:news.sslug.dk</ulink> for at tilgÃ¥
 SSLUG-nyhedsgrupperne.
 </para>
 
 <figure id="pan-fig" float="1">
-<title>Pan læser nyhedsgrupper</title>
+<title>Pan lÃ¦ser nyhedsgrupper</title>
 <graphic fileref="pan.&magic;" scale="40"></graphic>
 </figure>
 
 </sect2>
 -->
 
-<!--  Dette afsnit hører til i applikationer-bogen:
+<!--  Dette afsnit hÃ¸rer til i applikationer-bogen:
 <sect2 id="knode">
  <title>knode</title>
 
@@ -1916,13 +1916,13 @@ SSLUG-nyhedsgrupperne.
  <indexterm><primary>News</primary><secondary>pan</secondary></indexterm>
 
  <para>
-  Programmet <command>knode</command> er KDEs svar på PAN. 
-  Det er også en glimrende grafisk måde at læse nyhedsgrupper
-  på.
+  Programmet <command>knode</command> er KDEs svar pÃ¥ PAN. 
+  Det er ogsÃ¥ en glimrende grafisk mÃ¥de at lÃ¦se nyhedsgrupper
+  pÃ¥.
  </para>
 
 <figure id="knod-fig" float="1">
-<title>Knode læser nyhedsgrupper</title>
+<title>Knode lÃ¦ser nyhedsgrupper</title>
 <graphic fileref="knode.&magic;" scale="40"></graphic>
 </figure>
 
@@ -1934,7 +1934,7 @@ SSLUG-nyhedsgrupperne.
 
    <indexterm>
     <primary>Pine</primary>
-    <secondary>som nyhedslæser</secondary>
+    <secondary>som nyhedslÃ¦ser</secondary>
    </indexterm>
 
    <indexterm>
@@ -1943,12 +1943,12 @@ SSLUG-nyhedsgrupperne.
    </indexterm>
 
    <indexterm>
-    <primary>nyhedslæser</primary>
+    <primary>nyhedslÃ¦ser</primary>
     <secondary>Pine</secondary>
    </indexterm>
 
    <para>
-    ... lidt om Pine som nyhedslæser ...
+    ... lidt om Pine som nyhedslÃ¦ser ...
    </para>
   </sect2>
  </sect1>
@@ -1960,19 +1960,19 @@ SSLUG-nyhedsgrupperne.
 
   <para>
    Der findes en del programmer til at sende og modtage FAX under
-   Linux. Se mere på <ulink
+   Linux. Se mere pÃ¥ <ulink
    url="http://www.ibiblio.org/pub/Linux/apps/serialcomm/fax/">org/pub/Linux/apps/serialcomm/fax/</ulink>.
   </para>
  </sect1>
 
 <sect1 id="netbooks">
-<title>Bøger om netværk</title>
-<indexterm><primary>Netværk</primary><secondary>Bøger om</secondary></indexterm>
+<title>BÃ¸ger om netvÃ¦rk</title>
+<indexterm><primary>NetvÃ¦rk</primary><secondary>BÃ¸ger om</secondary></indexterm>
 
 <para>
-Netværk er et stort og kompliceret emne, som det ikke er muligt at dække på
-andet end den mest nødtørftige måde på den plads, der er brugt her. Hvis du
-har lyst til at lære mere, kan nedenstående bøger anbefales.
+NetvÃ¦rk er et stort og kompliceret emne, som det ikke er muligt at dÃ¦kke pÃ¥
+andet end den mest nÃ¸dtÃ¸rftige mÃ¥de pÃ¥ den plads, der er brugt her. Hvis du
+har lyst til at lÃ¦re mere, kan nedenstÃ¥ende bÃ¸ger anbefales.
 </para>
 
 <para>
@@ -1984,18 +1984,18 @@ O'Reilly &amp; Associates, Inc., ISBN 1-56592-087-2, 335 sider.
 </para>
 
 <para>
-Dette er en indføring og praktisk vejledning i TCP/IP, UUCP, DNS, PPP,
-mail, news osv., altså stort set alt, hvad der har at gøre med at
-køre netværk under Linux. Det forudsættes, at man er i stand til at
+Dette er en indfÃ¸ring og praktisk vejledning i TCP/IP, UUCP, DNS, PPP,
+mail, news osv., altsÃ¥ stort set alt, hvad der har at gÃ¸re med at
+kÃ¸re netvÃ¦rk under Linux. Det forudsÃ¦ttes, at man er i stand til at
 redigere en tekstfil og generelt "komme omkring" i systemet.
 </para>
 
 <para>
 Da bogen oprindeligt er udsprunget af The Linux Documentation Project, kan
-den hentes frit på internettet, f.eks. på
+den hentes frit pÃ¥ internettet, f.eks. pÃ¥
 <ulink
 url="ftp://metalab.unc.edu/pub/Linux/docs/LDP/network-guide">ftp://metalab.unc.edu/pub/Linux/docs/LDP/network-guide</ulink>.
-Ganske ofte er filen på Linux-cd-rom'erne.
+Ganske ofte er filen pÃ¥ Linux-cd-rom'erne.
      </para>
     </listitem>
 
@@ -2006,8 +2006,8 @@ Ganske ofte er filen på Linux-cd-rom'erne.
      </para>
 
      <para>
-      Denne bog handler om TCP/IP under Unix generelt i modsætning til
-      Linux Network Administrator's Guide og går nok også lidt mere i dybden med
+      Denne bog handler om TCP/IP under Unix generelt i modsÃ¦tning til
+      Linux Network Administrator's Guide og gÃ¥r nok ogsÃ¥ lidt mere i dybden med
       tingene.
      </para>
     </listitem>
@@ -2019,13 +2019,13 @@ Ganske ofte er filen på Linux-cd-rom'erne.
      </para>
 
      <para>
-      Hvis du vil have en endnu dybere og mere teknisk betonet viden om netværk
-      generelt, er denne bog et glimrende valg og fungerer godt både som lærebog
-      og opslagsværk.
+      Hvis du vil have en endnu dybere og mere teknisk betonet viden om netvÃ¦rk
+      generelt, er denne bog et glimrende valg og fungerer godt bÃ¥de som lÃ¦rebog
+      og opslagsvÃ¦rk.
      </para>
 
      <para>
-      Det kan i øvrigt være interessant at følge 
+      Det kan i Ã¸vrigt vÃ¦re interessant at fÃ¸lge 
       <ulink url="http://users.dhp.com/~whisper/mason/">http://users.dhp.com/~whisper/mason/</ulink> og 
       <ulink url="http://www.opensource.firewall.com/">http://www.opensource.firewall.com/</ulink>.
      </para>

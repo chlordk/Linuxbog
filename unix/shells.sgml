@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!-- Jacob mener at en shell skal hedde kommandofortolker -->
-<!-- Peter mener at en shell bør være kendt af læseren -->
+<!-- Peter mener at en shell bÃ¸r vÃ¦re kendt af lÃ¦seren -->
 <!-- Peter og Jacob er ikke altid enige om sprog-brug :-) -->
 
 <chapter id="kommandofortolkere-linux">
@@ -13,45 +13,45 @@
 
  <para>
   Linux er et unix-lignende styresystem.
-  Unix' historie går tilbage til slutningen af 1960'erne,
+  Unix' historie gÃ¥r tilbage til slutningen af 1960'erne,
   hvor en gruppe forskere ved AT&amp;T's forskningslaboratorium
   eksperimenterede med computerens uanede muligheder.
-  En af de grundlæggende ideer i Unix er at det skal være let at
-  kombinere mange små programmer til større løsninger.
+  En af de grundlÃ¦ggende ideer i Unix er at det skal vÃ¦re let at
+  kombinere mange smÃ¥ programmer til stÃ¸rre lÃ¸sninger.
  </para>
 
  <para>
   Dengang Unix var ungt var der ikke noget, der hed grafiske
-  brugergrænseflader og mus. Brugeren havde udelukkende adgang til at styre
+  brugergrÃ¦nseflader og mus. Brugeren havde udelukkende adgang til at styre
   computeren gennem en tekstterminal. Med tiden udvikledes der meget
-  effektive kommandofortolkere til både interaktiv brug og programmering af
-  disse systemer. Denne udvikling fortsætter den dag idag (blandt andet ud
-  fra en anerkendelse af at det er lettere at udtrykke sig præcist med ord
-  end ved at pege, nikke og ryste på hovedet). Disse kommandofortolkere
-  findes stort set alle i linux-udgaver, så du også kan styre dit
-  linux-system med præcise og effektive kommandoer.
-  Begynder du at bruge Linux seriøst, vil du forhåbentlig også finde ud af
+  effektive kommandofortolkere til bÃ¥de interaktiv brug og programmering af
+  disse systemer. Denne udvikling fortsÃ¦tter den dag idag (blandt andet ud
+  fra en anerkendelse af at det er lettere at udtrykke sig prÃ¦cist med ord
+  end ved at pege, nikke og ryste pÃ¥ hovedet). Disse kommandofortolkere
+  findes stort set alle i linux-udgaver, sÃ¥ du ogsÃ¥ kan styre dit
+  linux-system med prÃ¦cise og effektive kommandoer.
+  Begynder du at bruge Linux seriÃ¸st, vil du forhÃ¥bentlig ogsÃ¥ finde ud af
   at kommandofortolkere er et effektivt redskab til at automatisere
-  løsningen af rutineprægede opgaver.
+  lÃ¸sningen af rutineprÃ¦gede opgaver.
  </para>
 
  <para>
-  Nu må du ikke tro, at det kun er af gammel vane, at unix-brugere
-  taster deres kommandoer ind på en kommandolinje; faktisk er det
-  muligt at udføre endda meget komplekse opgaver med meget lidt
-  tastearbejde. Det skyldes, at der med Unix altid følger et hav af
-  hjælpeprogrammer. Lad os give dig et eksempel &ndash; bare rolig, vi
+  Nu mÃ¥ du ikke tro, at det kun er af gammel vane, at unix-brugere
+  taster deres kommandoer ind pÃ¥ en kommandolinje; faktisk er det
+  muligt at udfÃ¸re endda meget komplekse opgaver med meget lidt
+  tastearbejde. Det skyldes, at der med Unix altid fÃ¸lger et hav af
+  hjÃ¦lpeprogrammer. Lad os give dig et eksempel &ndash; bare rolig, vi
   forventer ikke, at du allerede nu kan gennemskue, hvordan det
   fungerer, men vi vil bare vise dig, hvor lidt tastearbejde der skal
-  til for at udføre store opgaver. Lad os antage, at du har en
-  hjemmeside liggende på maskinen
+  til for at udfÃ¸re store opgaver. Lad os antage, at du har en
+  hjemmeside liggende pÃ¥ maskinen
   <filename>www.hven.sslug.dk</filename>. Du er en produktiv person med
-  mange interesser, så din hjemmeside består af mange HTML-filer. En
+  mange interesser, sÃ¥ din hjemmeside bestÃ¥r af mange HTML-filer. En
   dag flytter du, og din hjemmeside skal skifte maskine &ndash; din nye
   maskine hedder <filename>www.saltholm.sslug.dk</filename>. Dit problem er,
-  at du skal rette alle henvisninger på dine sider. I Unix (og dermed
-  også Linux) kan det gøres ganske let ved at udføre kommandoen (du
-  skal ikke gøre det):
+  at du skal rette alle henvisninger pÃ¥ dine sider. I Unix (og dermed
+  ogsÃ¥ Linux) kan det gÃ¸res ganske let ved at udfÃ¸re kommandoen (du
+  skal ikke gÃ¸re det):
 
   <indexterm>
    <primary>find</primary>
@@ -84,12 +84,12 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
  </para>
 
  <para>
-  Når du udfører kommandoen, bliver alle filer, som ender på "html"
-  (bl.a. også "HTML" og "htm"), fundet (<command>find</command>). Du
+  NÃ¥r du udfÃ¸rer kommandoen, bliver alle filer, som ender pÃ¥ "html"
+  (bl.a. ogsÃ¥ "HTML" og "htm"), fundet (<command>find</command>). Du
   benytter et program ved navn <command>sed</command> til at foretage
-  selve søg-og-erstat-proceduren. Dette eksempel er nok lidt for
-  avanceret til vores bog her, men vi håber, at du nu kan se, hvor
-  kraftfuld en enkel kommandolinje kan være i Unix.
+  selve sÃ¸g-og-erstat-proceduren. Dette eksempel er nok lidt for
+  avanceret til vores bog her, men vi hÃ¥ber, at du nu kan se, hvor
+  kraftfuld en enkel kommandolinje kan vÃ¦re i Unix.
  </para>
 
  <sect1 id="virtuel-konsol">
@@ -109,44 +109,44 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
   </indexterm>
 
   <para>
-   Når du vil styre Linux ved at skrive kommandoer i stedet for at
-   være afhængig af en grafisk brugergrænseflade er det en mulighed at
-   logge direkte ind med skærmen i ren teksttilstand.  Hvis du sidder
-   ved en linux-maskine der er i grafiktilstand, kan du typisk gå over
+   NÃ¥r du vil styre Linux ved at skrive kommandoer i stedet for at
+   vÃ¦re afhÃ¦ngig af en grafisk brugergrÃ¦nseflade er det en mulighed at
+   logge direkte ind med skÃ¦rmen i ren teksttilstand.  Hvis du sidder
+   ved en linux-maskine der er i grafiktilstand, kan du typisk gÃ¥ over
    til ren teksttilstand ved at taste Ctrl-Alt-F1.  Det tastetryk
-   bringer dig over til et helt andet skærmbillede, der er uafhængigt
-   af det du så før (et tryk på Ctrl-Alt-F7 eller Ctrl-Alt-F8 burde
-   bringe dig tilbage igen).  Over på ren-tekst-skærmbilledet burde
-   der stå noget i stil med "login:" efterfulgt af en blinkende cursor
-   (prøv ellers at taste Return eller Enter en enkelt gang for at få
-   det frem).  Her kan du ganske som ovre på det grafikbaserede
-   skærmbillede logge ind på maskinen ved at indtaste dit brugernavn
-   og din adgangskode, men når du logger ind på det tekstbaserede
-   skærmbillede er det eneste du får en såkaldt "prompt" eller
-   "kommandolinje".  Afhængig af opsætningen af din konto vil den
+   bringer dig over til et helt andet skÃ¦rmbillede, der er uafhÃ¦ngigt
+   af det du sÃ¥ fÃ¸r (et tryk pÃ¥ Ctrl-Alt-F7 eller Ctrl-Alt-F8 burde
+   bringe dig tilbage igen).  Over pÃ¥ ren-tekst-skÃ¦rmbilledet burde
+   der stÃ¥ noget i stil med "login:" efterfulgt af en blinkende cursor
+   (prÃ¸v ellers at taste Return eller Enter en enkelt gang for at fÃ¥
+   det frem).  Her kan du ganske som ovre pÃ¥ det grafikbaserede
+   skÃ¦rmbillede logge ind pÃ¥ maskinen ved at indtaste dit brugernavn
+   og din adgangskode, men nÃ¥r du logger ind pÃ¥ det tekstbaserede
+   skÃ¦rmbillede er det eneste du fÃ¥r en sÃ¥kaldt "prompt" eller
+   "kommandolinje".  AfhÃ¦ngig af opsÃ¦tningen af din konto vil den
    kunne se lidt forskellig ud, men dette er en mulighed:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt>
 </screen>
 
-   Her kan du skrive kommandoer til systemet.  I første omgang er den
+   Her kan du skrive kommandoer til systemet.  I fÃ¸rste omgang er den
    vigtigste kommando nok <command>logout</command>, som du bruger til
-   at logge ud igen, så skærmbilledet er klart til en anden bruger
+   at logge ud igen, sÃ¥ skÃ¦rmbilledet er klart til en anden bruger
    (eller bare til en anden gang).  Alternativt kan man i nogle
-   tilfælde bruge kommandoen <command>exit</command> eller
+   tilfÃ¦lde bruge kommandoen <command>exit</command> eller
    tastekombinationen Ctrl-D.
   </para>
 
   <para>
-   På et typisk linux-system vil Ctrl-Alt-F1, Ctrl-Alt-F2, og så
+   PÃ¥ et typisk linux-system vil Ctrl-Alt-F1, Ctrl-Alt-F2, og sÃ¥
    videre indtil til Ctrl-Alt-F6 bringe dig til seks forskellig
-   tekstbaserede skærmbilleder, mens Ctrl-Alt-F7 og nogle gange også
-   Ctrl-Alt-F8 vil bringe dig til grafikbaserede skærmbilleder.  Disse
-   syv eller otte forskellige skærmbilleder kaldes systemets virtuelle
+   tekstbaserede skÃ¦rmbilleder, mens Ctrl-Alt-F7 og nogle gange ogsÃ¥
+   Ctrl-Alt-F8 vil bringe dig til grafikbaserede skÃ¦rmbilleder.  Disse
+   syv eller otte forskellige skÃ¦rmbilleder kaldes systemets virtuelle
    konsoller.  En fordel ved at have flere virtuelle konsoller er at
-   forskellige brugere kan bruge den samme skærm uden at de behøver at
-   lukke de programmer de har i gang når de bytter.
+   forskellige brugere kan bruge den samme skÃ¦rm uden at de behÃ¸ver at
+   lukke de programmer de har i gang nÃ¥r de bytter.
   </para>
  </sect1>
 
@@ -156,9 +156,9 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
   <para>
    Hvis du ikke er meget for kun at arbejde med tekstbaserede
    programmer (de er for eksempel ikke praktiske til at vise billeder)
-   har du brug for at kunne få en kommandolinje frem inde i det
-   grafikbaserede system (der hedder "X" eller "X Window System" på et
-   almindeligt linux-system).  Når du er logget ind gør du det ved at
+   har du brug for at kunne fÃ¥ en kommandolinje frem inde i det
+   grafikbaserede system (der hedder "X" eller "X Window System" pÃ¥ et
+   almindeligt linux-system).  NÃ¥r du er logget ind gÃ¸r du det ved at
    starte et terminalemuleringsprogram.  Det mest udbredte er
    <command>xterm</command> men hvis du bruger KDE eller Gnome kan du
    med fordel benytte henholdsvis <command>konsole</command> eller
@@ -167,9 +167,9 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
   </para>
 
   <para>
-   Man får typisk startet et terminalemuleringsprogram ved at klikke
-   på en ikon med en muslingeskal eller en sort skærm, eller ved at
-   vælge et menupunkt der hedder noget i stil med "Konsole",
+   Man fÃ¥r typisk startet et terminalemuleringsprogram ved at klikke
+   pÃ¥ en ikon med en muslingeskal eller en sort skÃ¦rm, eller ved at
+   vÃ¦lge et menupunkt der hedder noget i stil med "Konsole",
    "Terminal" eller "xterm".
   </para>
 
@@ -183,18 +183,18 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
    </indexterm>
 
    <figure id="xterm-fig" float="1">
-    <title>Eksempel på <command>xterm</command></title>
+    <title>Eksempel pÃ¥ <command>xterm</command></title>
     <graphic fileref="xterm.&magic;" scale="40"></graphic>
    </figure>
 
-   Hvis du bruger <command>xterm</command> kan det være nyttigt at
-   vide at man med et tryk på Ctrl-tasten og en af de tre museknapper
-   får tre forskellige menuer til at justere opsætningen af
-   terminalvinduet. Ctrl-venstre musetast vil man sjældent få brug
+   Hvis du bruger <command>xterm</command> kan det vÃ¦re nyttigt at
+   vide at man med et tryk pÃ¥ Ctrl-tasten og en af de tre museknapper
+   fÃ¥r tre forskellige menuer til at justere opsÃ¦tningen af
+   terminalvinduet. Ctrl-venstre musetast vil man sjÃ¦ldent fÃ¥ brug
    for, men Ctrl-midterste musetast giver blandt andet mulighed for
-   (de)aktivere vinduets rullebjælke og at nulstille terminalvinduet
-   ("Reset") og Ctrl-højre musetast giver mulighed for at vælge
-   skriftstørrelse.
+   (de)aktivere vinduets rullebjÃ¦lke og at nulstille terminalvinduet
+   ("Reset") og Ctrl-hÃ¸jre musetast giver mulighed for at vÃ¦lge
+   skriftstÃ¸rrelse.
   </para>
 
   <para>
@@ -206,69 +206,69 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
     <secondary>konsole</secondary>
    </indexterm>
 
-   Hvis du bruger <command>konsole</command> kan det være nyttigt at
+   Hvis du bruger <command>konsole</command> kan det vÃ¦re nyttigt at
    vide at du kan have flere forskellige aktive kommandofortolkere i
    samme vindue.  Du kan starte en ekstra kommandofortolker med
-   Ctrl-Alt-N, og du kan skifte mellem de kommandofortolkere der kører i
-   vinduet med Shift-Pil-til-venstre og Shift-Pil-til-højre.
+   Ctrl-Alt-N, og du kan skifte mellem de kommandofortolkere der kÃ¸rer i
+   vinduet med Shift-Pil-til-venstre og Shift-Pil-til-hÃ¸jre.
   </para>
  </sect1>
 
 <!--
   <para>
-   Når du indtaster kommandoer på en kommandolinje, benytter du dig af
+   NÃ¥r du indtaster kommandoer pÃ¥ en kommandolinje, benytter du dig af
    et program, som i daglig tale omtales kommandofortolkeren, skallen
-   eller (på danglish) shellen. Der findes mange forskellige
+   eller (pÃ¥ danglish) shellen. Der findes mange forskellige
    kommandofortolkere, men BASH (Bourne Again SHell) er den mest
    udbredte under Linux. Kommandofortolkere fortolker hvad du skriver,
-   og udfører de kommandoer, du ønsker.
+   og udfÃ¸rer de kommandoer, du Ã¸nsker.
   </para>
 
 ... terminalvinduer
 
- Typisk vil <command>bash</command> være sat til
-   at være din standard-kommandofortolker.  Senere i dette kapitel ser
-   vi nærmere på alternativerne.
+ Typisk vil <command>bash</command> vÃ¦re sat til
+   at vÃ¦re din standard-kommandofortolker.  Senere i dette kapitel ser
+   vi nÃ¦rmere pÃ¥ alternativerne.
   </para>
 
 
 , hvor du kan arbejde med forskellige ting i teksttilstand.
- i tekst på maskinens konsol.
+ i tekst pÃ¥ maskinens konsol.
 
-   Nu skal du til at lære kommandoer til Linux. I starten af dette
+   Nu skal du til at lÃ¦re kommandoer til Linux. I starten af dette
    kapitel har du faktisk benyttet to kommandoer uden at vide det -
    nemlig <command>touch</command> og <command>rm</command> (mere om
    dem senere i kapitlet).  Det sted, hvor du i den simple tekstmode
    skrev disse kommandoer, kalder vi for konsollen. Linux-konsollen er
-   i virkeligheden ikke så primitiv, som den umiddelbart ser ud til.
+   i virkeligheden ikke sÃ¥ primitiv, som den umiddelbart ser ud til.
   </para>
 
   <para>
    <indexterm><primary>Alt-F1</primary></indexterm>
    <indexterm><primary>Ctrl-Alt-F1</primary></indexterm>
 
-   Der er faktisk mere end én konsol. Konsolsystemet består af en
-   række virtuelle konsoller. Du skifter mellem dem ved at trykke på
+   Der er faktisk mere end Ã©n konsol. Konsolsystemet bestÃ¥r af en
+   rÃ¦kke virtuelle konsoller. Du skifter mellem dem ved at trykke pÃ¥
    Alt og en funktionstast mellem F1 og F7, hvor "Alt-F7" dog er
-   tilbage til den grafiske X skærmflade, hvis den er startet op. Hvis
-   du står i X og skal tilbage til de tekstbaserede konsoller, skal du
-   bruge "Ctrl-Alt-F1" op til "Ctrl-Alt-F6". Linux er et ægte
-   multitasking-system, så du kan bare logge ind på flere terminaler
-   og arbejde. I hver konsol kører der en skal, som fortolker dine
+   tilbage til den grafiske X skÃ¦rmflade, hvis den er startet op. Hvis
+   du stÃ¥r i X og skal tilbage til de tekstbaserede konsoller, skal du
+   bruge "Ctrl-Alt-F1" op til "Ctrl-Alt-F6". Linux er et Ã¦gte
+   multitasking-system, sÃ¥ du kan bare logge ind pÃ¥ flere terminaler
+   og arbejde. I hver konsol kÃ¸rer der en skal, som fortolker dine
    kommandoer. Linux er &ndash; som vi allerede har sagt mange gange &ndash; meget
-   fleksibelt, så faktisk kan du have forskellige kommandofortolkere
-   kørende i forskellige konsoller!
+   fleksibelt, sÃ¥ faktisk kan du have forskellige kommandofortolkere
+   kÃ¸rende i forskellige konsoller!
   </para>
  </sect1>
 -->
 
 <!--
    <para>
-    Vi kan også fra starten fortælle dig, at store og små bogstaver
-    ikke er det samme for filnavne.  Du kan også godt bruge meget
+    Vi kan ogsÃ¥ fra starten fortÃ¦lle dig, at store og smÃ¥ bogstaver
+    ikke er det samme for filnavne.  Du kan ogsÃ¥ godt bruge meget
     lange filnavne, og der er ikke den samme DOS-opbygning med
-    fil-endelser på maksimalt tre bogstaver
-    (<filename>CONFIG.SYS</filename> osv.). I modsætning til Microsoft
+    fil-endelser pÃ¥ maksimalt tre bogstaver
+    (<filename>CONFIG.SYS</filename> osv.). I modsÃ¦tning til Microsoft
     Windows vises alle filer med <filename>*</filename> og ikke
     <filename>*.*</filename> &ndash; dertil kommer skjulte filer, som
     starter med et punktum <filename>.*</filename> &ndash; det er ret
@@ -283,23 +283,23 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
    En kommandofortolker er et program som brugeren kan bruge til at
    kommunikere med styresystemet.  Den vil typisk kunne bruges til at
    starte andre programmer, til at styre hvordan data skal kanaliseres
-   fra program til program og til at undersøge systemets tilstand.
+   fra program til program og til at undersÃ¸ge systemets tilstand.
   </para>
 
   <para>
-   Man kan se hvilke godkendte kommandofortolkere som findes på systemet 
+   Man kan se hvilke godkendte kommandofortolkere som findes pÃ¥ systemet 
    i filen <filename>/etc/shells</filename>. Hvis man
-   efterinstallerer en kommandofortolker på systemet, er det vigtigt
-   at man husker at føje den fulde sti til den nye
+   efterinstallerer en kommandofortolker pÃ¥ systemet, er det vigtigt
+   at man husker at fÃ¸je den fulde sti til den nye
    kommandofortolker til <filename>/etc/shells</filename>, da de
-   brugere der vil bruge den kommandofortolker ellers kan få
+   brugere der vil bruge den kommandofortolker ellers kan fÃ¥
    problemer.
   </para>
 
   <para>
-   På en SuSE-maskine kan <filename>/etc/shells</filename> se ud som
-   følger &ndash; om de alle rent faktisk er installerede er ikke garanteret.
-   Oftest følger alle med Linux-distributionerne.
+   PÃ¥ en SuSE-maskine kan <filename>/etc/shells</filename> se ud som
+   fÃ¸lger &ndash; om de alle rent faktisk er installerede er ikke garanteret.
+   Oftest fÃ¸lger alle med Linux-distributionerne.
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>cat /etc/shells</userinput>
@@ -347,17 +347,17 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
     <secondary>zsh</secondary>
    </indexterm>
 
-   I det følgende går vi nærmere ind i flere af de kommandofortolkere
+   I det fÃ¸lgende gÃ¥r vi nÃ¦rmere ind i flere af de kommandofortolkere
    man typisk anvender.  De mest anvendte kommandofortolkere er
    <command>bash</command> og <command>tcsh</command> (i den
-   rækkefølge), mens det er sjældnere at folk bruger de ældre
+   rÃ¦kkefÃ¸lge), mens det er sjÃ¦ldnere at folk bruger de Ã¦ldre
    kommandofortolkere <command>csh</command> og
    <command>ksh</command>, eller den forholdsvis nye
    <command>zsh</command>.
   </para>
 
   <para>
-   Man kan afprøve en kommandofortolker ved simpelt hen at starte den
+   Man kan afprÃ¸ve en kommandofortolker ved simpelt hen at starte den
    som ethvert andet program:
 
 <screen>
@@ -374,15 +374,15 @@ xargs -0 sed -i 's/www\.hven\.sslug\.dk/www.saltholm.sslug.dk/gi'</userinput>
 <prompt>[tyge@hven ~]$ </prompt>
 </screen>
 
-   Bemærk at de forskellige kommandofortolkeres kommandolinjer
-   almindeligvis ser forskellige ud, så det er enkelt at se lige netop
+   BemÃ¦rk at de forskellige kommandofortolkeres kommandolinjer
+   almindeligvis ser forskellige ud, sÃ¥ det er enkelt at se lige netop
    hvilken kommandofortolker man bruger.  Men man kan selv justere
-   kommandolinjens udseende, så den giver de oplysninger man har brug
+   kommandolinjens udseende, sÃ¥ den giver de oplysninger man har brug
    for.
   </para>
 
   <para>
-   Man vælger sin standard-kommandofortolker med programmet
+   Man vÃ¦lger sin standard-kommandofortolker med programmet
    <command>chsh</command> (kort for "<emphasis>ch</emphasis>ange
    <emphasis>sh</emphasis>ell"):
 
@@ -401,12 +401,12 @@ Password: <userinput>din adgangskode skrives her</userinput>
 Shell changed.
 </screen>
 
-   (det kan godt ske at teksten er på dansk).  Ændringen træder i
-   kraft næste gang du logger ind på maskinen.
+   (det kan godt ske at teksten er pÃ¥ dansk).  &AElig;ndringen trÃ¦der i
+   kraft nÃ¦ste gang du logger ind pÃ¥ maskinen.
 <!-- For avanceret:
 
-   Du kan også se i <filename>/etc/passwd</filename> at der er indsat
-   en ny kommandofortolker yderst til højre i den linje, hvor dit
+   Du kan ogsÃ¥ se i <filename>/etc/passwd</filename> at der er indsat
+   en ny kommandofortolker yderst til hÃ¸jre i den linje, hvor dit
    login-navn er vist (dette virker dog ikke med NIS).
 
 <screen>
@@ -421,50 +421,50 @@ tyge:x:500:100:Tyge Brahe:/home/tyge:/bin/tcsh
    <title>GNU Bourne Again Shell (bash)</title>
 
    <para>
-    Bash er den klart mest populære kommandofortolker i
-    linux-verdenen.  Det er ikke en tilfældighed, da den er forvalgt som
-    kommandofortolker for nye brugere på de fleste linux-systemer, og da den
-    er ret tæt på at have den syntaks som Unix-standarden specificerer for
+    Bash er den klart mest populÃ¦re kommandofortolker i
+    linux-verdenen.  Det er ikke en tilfÃ¦ldighed, da den er forvalgt som
+    kommandofortolker for nye brugere pÃ¥ de fleste linux-systemer, og da den
+    er ret tÃ¦t pÃ¥ at have den syntaks som Unix-standarden specificerer for
     kommandofortolkere.
    </para>
 
    <para>
-    Ved login læses filen <filename>~/.bash_profile</filename> (eller
+    Ved login lÃ¦ses filen <filename>~/.bash_profile</filename> (eller
     <filename>~/bash_login</filename> eller
     <filename>~/.profile</filename>), og hver gang et terminalvindue
-    startes vil filen <filename>~/.bashrc</filename> blive læst og
-    udført.  Endelig er det muligt at få filen
-    <filename>~/.bash_logout</filename> udført når man stopper en
-    kommandofortolker &ndash; her er det muligt at indlægge kommandoer som
+    startes vil filen <filename>~/.bashrc</filename> blive lÃ¦st og
+    udfÃ¸rt.  Endelig er det muligt at fÃ¥ filen
+    <filename>~/.bash_logout</filename> udfÃ¸rt nÃ¥r man stopper en
+    kommandofortolker &ndash; her er det muligt at indlÃ¦gge kommandoer som
     rydder op etc.
    </para>
 
    <para>
-    Bash udmærker sig dels ved at være kompatibel med den gamle
-    unix-kommandofortolker, <command>sh</command>, men i høj grad på
-    dens rigdom på både programmeringmuligheder og til en vis grad
-    også på dens funktioner som interaktiv kommandofortolker.
+    Bash udmÃ¦rker sig dels ved at vÃ¦re kompatibel med den gamle
+    unix-kommandofortolker, <command>sh</command>, men i hÃ¸j grad pÃ¥
+    dens rigdom pÃ¥ bÃ¥de programmeringmuligheder og til en vis grad
+    ogsÃ¥ pÃ¥ dens funktioner som interaktiv kommandofortolker.
    </para>
 
    <para>
     Med pil-op/ned kan med genfinde de forrige kommandoer og man kan
-    endda søge sig tilbage til en kommando man engang har udført i
+    endda sÃ¸ge sig tilbage til en kommando man engang har udfÃ¸rt i
     Bash ved at trykke <command>Ctrl-r
-    STARTEN-AF-DEN-GAMLE-KOMMANDO</command>.  Med yderligere tryk på
-    <command>Ctrl-r</command> vil man gense andre ældre kommandoer der
-    også passer med starten af den kommando man har skrevet.
+    STARTEN-AF-DEN-GAMLE-KOMMANDO</command>.  Med yderligere tryk pÃ¥
+    <command>Ctrl-r</command> vil man gense andre Ã¦ldre kommandoer der
+    ogsÃ¥ passer med starten af den kommando man har skrevet.
    </para>
 
    <para>
-    Med tabulator-tasten kan man få ekspanderet fil/katalog-navne
-    svarende til den begyndelse af navnet man skriver. Man kan således
+    Med tabulator-tasten kan man fÃ¥ ekspanderet fil/katalog-navne
+    svarende til den begyndelse af navnet man skriver. Man kan sÃ¥ledes
     med <command>cat /e&lt;tabulator&gt;/sh&lt;tabulator&gt;</command>
-    få ekspanderet sig til <command>cat /etc/shells</command> uden at
-    få skrevet ret meget.
+    fÃ¥ ekspanderet sig til <command>cat /etc/shells</command> uden at
+    fÃ¥ skrevet ret meget.
    </para>
 
    <para>
-    Aliaser er nemme at sætte op i Bash. Opret filen
+    Aliaser er nemme at sÃ¦tte op i Bash. Opret filen
     <filename>~/.alias</filename> og indskriv aliaser efter skemaet
     <literal>alias ALIAS-navn="kommando"</literal>. Hvis man senere
     vil se hvilke aliaser man anvender kan <command>alias</command>
@@ -477,12 +477,12 @@ alias sa="ssh-add ~/.ssh/id_dsa"
    </para>
 
    <para>
-    Kommandoprompten kan sættes nøjagtig efter egen smag efter et
-    stort udbud af muligheder. I denne bog har vi valgt at få vist
-    brugernavn (\u), maskinnavn (\h) og nuværende katalog (\w), men
-    man kan nemt vælge om som vist nedenfor.  Udseende af prompten
-    ændres direkte ved at sætte variablen <literal>PS1</literal>.  Her
-    ændrer vi til at vise brugernavn (\u) og tidspunktet (\T).
+    Kommandoprompten kan sÃ¦ttes nÃ¸jagtig efter egen smag efter et
+    stort udbud af muligheder. I denne bog har vi valgt at fÃ¥ vist
+    brugernavn (\u), maskinnavn (\h) og nuvÃ¦rende katalog (\w), men
+    man kan nemt vÃ¦lge om som vist nedenfor.  Udseende af prompten
+    Ã¦ndres direkte ved at sÃ¦tte variablen <literal>PS1</literal>.  Her
+    Ã¦ndrer vi til at vise brugernavn (\u) og tidspunktet (\T).
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>echo $PS1</userinput>
@@ -493,7 +493,7 @@ alias sa="ssh-add ~/.ssh/id_dsa"
    </para>
 
    <para>
-    <emphasis>Tip:</emphasis> Vil du have farver på din promt, så læs
+    <emphasis>Tip:</emphasis> Vil du have farver pÃ¥ din promt, sÃ¥ lÃ¦s
     <ulink
     url="http://www-106.ibm.com/developerworks/linux/library/l-tip-prompt/">http://www-106.ibm.com/developerworks/linux/library/l-tip-prompt/</ulink>.
    </para>
@@ -502,9 +502,9 @@ alias sa="ssh-add ~/.ssh/id_dsa"
     <title>Fiduser til mere effektiv brug af Bash</title>
 
     <para>
-     Du skal også lege lidt med tasterne pil-op og pil-ned, som løber
+     Du skal ogsÃ¥ lege lidt med tasterne pil-op og pil-ned, som lÃ¸ber
      igennem de gamle kommandoer igen. Ctrl-A og Ctrl-E bruges til at
-     gå til starten og slutningen af en linje.
+     gÃ¥ til starten og slutningen af en linje.
     </para>
 
     <para>
@@ -512,11 +512,11 @@ alias sa="ssh-add ~/.ssh/id_dsa"
 
      Kommando- og filudvidelsesfunktionerne er utroligt rare, hvis man
      vil slippe for at skrive lange program- og filnavne igen og igen.
-     Når man har skrevet starten på et program- eller filnavn kan man
-     ved at trykke på tabulatortasten få kommandofortolkeren til at
-     gætte hvad man mener.  Hvis der kun er én mulighed fylder
-     kommandofortolkeren resten af navnet på. Er der flere muligheder,
-     kan du trykke endnu en gang på tabulatortasten for at få vist
+     NÃ¥r man har skrevet starten pÃ¥ et program- eller filnavn kan man
+     ved at trykke pÃ¥ tabulatortasten fÃ¥ kommandofortolkeren til at
+     gÃ¦tte hvad man mener.  Hvis der kun er Ã©n mulighed fylder
+     kommandofortolkeren resten af navnet pÃ¥. Er der flere muligheder,
+     kan du trykke endnu en gang pÃ¥ tabulatortasten for at fÃ¥ vist
      alle mulighederne.
     </para>
 
@@ -551,7 +551,7 @@ alias sa="ssh-add ~/.ssh/id_dsa"
 </screen>
 
     <para>
-     Det fungerer i øvrigt ved, at kommandofortolkeren i første "ord"
+     Det fungerer i Ã¸vrigt ved, at kommandofortolkeren i fÃ¸rste "ord"
      leder efter en kommando eller et program den kender gennem
      systemvariablen <literal>PATH</literal> eller i den sti, som
      angives foran selve kommandoen.  Efter kommandoen ledes der efter
@@ -564,11 +564,11 @@ alias sa="ssh-add ~/.ssh/id_dsa"
    <title>Csh</title>
 
    <para>
-    En af de gamle kommandofortolkere som i praksis findes på alle
+    En af de gamle kommandofortolkere som i praksis findes pÃ¥ alle
     unix-systemer er <command>csh</command> &ndash; "the Berkeley UNIX C
     shell".  Tcsh skal ses som en naturlig videreudvikling af Csh, og
-    er i praksis bagudkompatibel med Csh.  Til alle praktiske formål
-    er Tcsh at foretrække fremfor Csh, hvorfor vi ikke skal beskæftige
+    er i praksis bagudkompatibel med Csh.  Til alle praktiske formÃ¥l
+    er Tcsh at foretrÃ¦kke fremfor Csh, hvorfor vi ikke skal beskÃ¦ftige
     os videre med Csh.
    </para>
   </sect2>
@@ -577,13 +577,13 @@ alias sa="ssh-add ~/.ssh/id_dsa"
    <title>Tcsh</title>
 
    <para>
-    Tcsh er en af de meget populære kommandofortolkere i
+    Tcsh er en af de meget populÃ¦re kommandofortolkere i
     unix-verdenen, da den giver stort set alle de samme muligheder som
     bash (omend med en anden syntaks), er bagudkompatibel med den
     aldrende csh-kommandofortolker, og har en lidt mere raffineret
     kommando- og filnavnsekspansionsfunktion, som man som bruger selv
-    kan indstille så det kun er de relevante filer der bliver
-    foreslået.  Et eksempel:
+    kan indstille sÃ¥ det kun er de relevante filer der bliver
+    foreslÃ¥et.  Et eksempel:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>ls</userinput>
@@ -600,8 +600,8 @@ linuxbog-unix.ps
 </screen>
 
     hvis brugeren (eller systemadministratoren) har indstillet
-    <command>tcsh</command> så den går ud fra at programmet
-    <command>gv</command> kun bruger filer der ender på
+    <command>tcsh</command> sÃ¥ den gÃ¥r ud fra at programmet
+    <command>gv</command> kun bruger filer der ender pÃ¥
     "<filename>.ps</filename>".  Lige netop denne indstilling laves
     med linjen:
 
@@ -609,20 +609,20 @@ linuxbog-unix.ps
 complete gv       'p/*/f:*.{ps,pdf,eps}/'
 </programlisting>
 
-    (filnavne der ender på "<filename>.pdf</filename>" og
-    "<filename>.eps</filename>" kan også bruges).  Som bruger føjer
+    (filnavne der ender pÃ¥ "<filename>.pdf</filename>" og
+    "<filename>.eps</filename>" kan ogsÃ¥ bruges).  Som bruger fÃ¸jer
     man den til filen "<filename>~/.tcshrc</filename>", mens man som
-    systemadministrator kan føje den til
+    systemadministrator kan fÃ¸je den til
     "<filename>/etc/csh.cshrc</filename>", hvorved alle der bruger
-    Tcsh vil få fornøjelse af det.
+    Tcsh vil fÃ¥ fornÃ¸jelse af det.
    </para>
 
    <para>
-    Selvom der er masser af andre filer, så vil
+    Selvom der er masser af andre filer, sÃ¥ vil
     <command>tcsh</command> filtrere filerne intelligent, da den ved
-    at første argument efter <command>gv</command> kun kan være en
-    Postscript-fil &ndash; evt. i et af underkatalogerne. Tcsh kan sættes op
-    til at genkende alle programmers filtyper. I bogens eksempler på
+    at fÃ¸rste argument efter <command>gv</command> kun kan vÃ¦re en
+    Postscript-fil &ndash; evt. i et af underkatalogerne. Tcsh kan sÃ¦ttes op
+    til at genkende alle programmers filtyper. I bogens eksempler pÃ¥
     <ulink
     url="http://&linuxbogurl;/unix/eksempler/shells/tcsh">&linuxbogurl;/unix/eksempler/shells/tcsh</ulink>
     kan findes <filename>dot.complete.tcsh</filename>, som viser
@@ -630,49 +630,49 @@ complete gv       'p/*/f:*.{ps,pdf,eps}/'
    </para>
 
    <para>
-    I eksemplet er vist hvordan man ikke behøver at skrive hele
-    filnavnet.  Skulle der være flere filer som passer med starten af
-    det man skriver, vil alle muligheder blive vist og man må fylde
-    lidt flere bogstaver på før kommandofortolkeren automatisk kan
-    gætte resten.  Tricket med at trykke tabulator kan anvendes hele
+    I eksemplet er vist hvordan man ikke behÃ¸ver at skrive hele
+    filnavnet.  Skulle der vÃ¦re flere filer som passer med starten af
+    det man skriver, vil alle muligheder blive vist og man mÃ¥ fylde
+    lidt flere bogstaver pÃ¥ fÃ¸r kommandofortolkeren automatisk kan
+    gÃ¦tte resten.  Tricket med at trykke tabulator kan anvendes hele
     tiden.
    </para>
 
    <para>
-    Skulle man få brug for at udføre en af de forrige kommandoer igen,
-    da trykker man blot på pil op (eller ned) for at gå igennem de
+    Skulle man fÃ¥ brug for at udfÃ¸re en af de forrige kommandoer igen,
+    da trykker man blot pÃ¥ pil op (eller ned) for at gÃ¥ igennem de
     forrige mange kommandoer. Det er i praksis en funktion man
-    anvender meget. Hvis man skal til starten eller slutningen på den
+    anvender meget. Hvis man skal til starten eller slutningen pÃ¥ den
     kommando man er ved at skrive bruger man henholdsvis Ctrl-A og
     Ctrl-E.
    </para>
 
    <para>
-    Hvis man vil lave genveje til kommandoer med aliaser kan man sætte
-    dem ind i filen "<filename>~/.tcshrc</filename>", der bliver læst
-    når Tcsh starter.  Skemaet er <literal>alias navn
+    Hvis man vil lave genveje til kommandoer med aliaser kan man sÃ¦tte
+    dem ind i filen "<filename>~/.tcshrc</filename>", der bliver lÃ¦st
+    nÃ¥r Tcsh starter.  Skemaet er <literal>alias navn
     "kommando"</literal>.  Hvis man senere vil se hvilke aliaser man
     har defineret bruger man kommandoen <command>alias</command>.
    </para>
 
    <para>
     Hvis <command>tcsh</command> startes som login-kommandofortolker
-    vil den (udover nogle systemopsætningsfiler) læse filerne
+    vil den (udover nogle systemopsÃ¦tningsfiler) lÃ¦se filerne
     "<filename>~/.tcshrc</filename>",
     "<filename>~/.history</filename>", "<filename>~/.login</filename>"
     og "<filename>~/.cshdirs</filename>".  Hvis
     <command>tcsh</command> ikke startes som login-kommandofortolker
-    vil den (udover nogle systemopsætningsfiler) kun læse
-    "<filename>~/.tcshrc</filename>".  Det er altså i filen
-    "<filename>~/.tcshrc</filename>" man som bruger kan vælge sin
-    personlige opsætning af Tcsh.
+    vil den (udover nogle systemopsÃ¦tningsfiler) kun lÃ¦se
+    "<filename>~/.tcshrc</filename>".  Det er altsÃ¥ i filen
+    "<filename>~/.tcshrc</filename>" man som bruger kan vÃ¦lge sin
+    personlige opsÃ¦tning af Tcsh.
    </para>
 
    <para>
-    Systemvariable sættes i Tcsh med <command>setenv VARIABELNAVN
-    VÆRDI</command>.  Bemærk at der bare er et mellemrum mellem
-    variablens navn og den værdi den skal tildeles. Man kan se om en
-    variabel er defineret ved at se på indholdet af
+    Systemvariable sÃ¦ttes i Tcsh med <command>setenv VARIABELNAVN
+    V&AElig;RDI</command>.  BemÃ¦rk at der bare er et mellemrum mellem
+    variablens navn og den vÃ¦rdi den skal tildeles. Man kan se om en
+    variabel er defineret ved at se pÃ¥ indholdet af
     <literal>${?VARIABELNAVN}</literal>:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>echo ${?PRINTER}</userinput>
@@ -682,8 +682,8 @@ complete gv       'p/*/f:*.{ps,pdf,eps}/'
    </para>
 
    <para>
-    Til sammenligning kan vi så prøve at tildele variablen
-<literal>PRINTER</literal> navnet på vores foretrukne printer:
+    Til sammenligning kan vi sÃ¥ prÃ¸ve at tildele variablen
+<literal>PRINTER</literal> navnet pÃ¥ vores foretrukne printer:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>setenv PRINTER lp1</userinput>
 <prompt>[tyge@hven ~]$ </prompt><userinput>echo ${PRINTER}</userinput>
@@ -694,38 +694,38 @@ printer=lp1
    </para>
 
    <para>
-    Tcsh har i øvrigt et lille irritationsmoment i forbindelse med at der
+    Tcsh har i Ã¸vrigt et lille irritationsmoment i forbindelse med at der
     bliver installeret nye programmer. De instanser af Tcsh der blev
-    startet før et program blev installeret, kan først finde det, når man
-    har kørt kommandoen <command>rehash</command> i dem.
+    startet fÃ¸r et program blev installeret, kan fÃ¸rst finde det, nÃ¥r man
+    har kÃ¸rt kommandoen <command>rehash</command> i dem.
    </para>
 
    <para>
-    På <ulink
+    PÃ¥ <ulink
     url="http://&linuxbogurl;/unix/eksempler/shells/tcsh">&linuxbogurl;/unix/eksempler/shells/tcsh</ulink>
-    kan findes et forslag til følgende <filename>~/.tcshrc</filename>.
-    På samme URL kan findes et forslag til
+    kan findes et forslag til fÃ¸lgende <filename>~/.tcshrc</filename>.
+    PÃ¥ samme URL kan findes et forslag til
     <filename>~/.login</filename>.
    </para>
 
 <example id="eks-dot-tcshrc">
-<title>Eksempel på en .tcshrc-fil</title>
+<title>Eksempel pÃ¥ en .tcshrc-fil</title>
 <screen>
 #!/bin/tcsh
 # User .tcshrc file (/bin/tcsh initialization).
 # Peter Toft 2002 
 
-# Omgåelse af en fejl i Red Hat 7.X
+# OmgÃ¥else af en fejl i Red Hat 7.X
 unset dspmbyte
 
 # Anvend ssh til rsync
 setenv RSYNC_RSH ssh
 
-#Dansk tastaturopsætning og danske tekster i programmerne
+#Dansk tastaturopsÃ¦tning og danske tekster i programmerne
 setenv LC_ALL da_DK
 setenv LANG da
 
-# Led efter programmer i de følgende steder.
+# Led efter programmer i de fÃ¸lgende steder.
 set path = ( /bin /usr/bin /usr/local/bin /usr/X11R6/bin )
 
 if ( ! $?prompt ) exit  # Kommandofortolkeren er interaktiv
@@ -738,17 +738,17 @@ set correct = cmd       # Checks spelling of commands
 # Kommando-prompt med login-navn maskine og sti
 set prompt  = "%{^[[1m%}${user}@`hostname`%/>%{^[[0m%} " 
 
-# Findes en ~/.alias-fil med aliaser, da køres denne
+# Findes en ~/.alias-fil med aliaser, da kÃ¸res denne
 if ( -e ~/.alias ) source ~/.alias
 
-# Findes en ~/.complete.tcsh-fil, da køres denne
+# Findes en ~/.complete.tcsh-fil, da kÃ¸res denne
 if ( -e ~/.complete.tcsh ) source ~/.complete.tcsh
 </screen>
 </example>
 
    <para>
     Flere forslag til at skrive en <filename>~/.tcshrc</filename> kan
-    findes på <ulink
+    findes pÃ¥ <ulink
     url="http://tcshrc.sourceforge.net">http://tcshrc.sourceforge.net</ulink>.
    </para>
   </sect2>
@@ -758,7 +758,7 @@ if ( -e ~/.complete.tcsh ) source ~/.complete.tcsh
 
    <para>
     En af de halv-gamle kommandofortolkere med et ret avancerede
-    scripting-muligheder er Korn Shell (ksh). Denne følger typisk med
+    scripting-muligheder er Korn Shell (ksh). Denne fÃ¸lger typisk med
     de kommercielle UNIX-varianter, men ikke med Linux. Der er
     udviklet en erstatning for <command>ksh</command> til Linux med
     navnet <command>pdksh</command> (Public Domain ksh). Denne
@@ -778,7 +778,7 @@ if ( -e ~/.complete.tcsh ) source ~/.complete.tcsh
     betyder at man kan nyde alle Zshs fordele som interaktiv
     kommandofortolker og bagefter kopiere de kommandoer man er kommet
     frem til direkte ind i et kommandofortolkerprogram, der i de fleste
-    tilfælde vil kunne køre uændret på et vilkårligt unix-system.
+    tilfÃ¦lde vil kunne kÃ¸re uÃ¦ndret pÃ¥ et vilkÃ¥rligt unix-system.
 
 <screen>
 <prompt>tyge@hven:~% </prompt><userinput>ls -al /etc/sh&lt;TAB&gt;</userinput>
@@ -789,20 +789,20 @@ if ( -e ~/.complete.tcsh ) source ~/.complete.tcsh
    <para>
     En rigtig smart ting som ingen af de andre kommandofortolkere har
     er et specielt jokertegn, <literal>**</literal>, der betyder
-    underkataloger i en vilkårlig dybde:
+    underkataloger i en vilkÃ¥rlig dybde:
 
 <screen>
 <prompt>tyge@hven:~% </prompt><userinput>ls **/*.png</userinput>
-foldere/linux_på_dansk/friheden.png  foldere/sslug-folder/tux.png
+foldere/linux_pÃ¥_dansk/friheden.png  foldere/sslug-folder/tux.png
 images/tyge.png                      linuxbog/front.png
 images/hanne.png                     linuxbog/sslug.png
 </screen>
    </para>
 
    <para>
-    Systemvariable sættes med <command>export
-    variabelnavn=VÆRDI</command>, mens almindelige variable bare
-    sættes med <command>variabelnavn=VÆRDI</command>:
+    Systemvariable sÃ¦ttes med <command>export
+    variabelnavn=V&AElig;RDI</command>, mens almindelige variable bare
+    sÃ¦ttes med <command>variabelnavn=V&AElig;RDI</command>:
 
 <screen>
 <prompt>tyge@hven:~% </prompt><userinput>export printer=minlpr</userinput>
@@ -815,62 +815,62 @@ minlpr
    </para>
 
    <para>
-    Zsh bruger op til otte opsætningsfiler, hvoraf de fire ligger i
+    Zsh bruger op til otte opsÃ¦tningsfiler, hvoraf de fire ligger i
     ens eget hjemmekatalog, og de fire andre ligger i
-    systemopsætningskataloget:
+    systemopsÃ¦tningskataloget:
 
 <orderedlist>
  <listitem><para>
-  <filename>/etc/zshenv</filename>   (læses altid)
+  <filename>/etc/zshenv</filename>   (lÃ¦ses altid)
  </para></listitem>
 
  <listitem><para>
-  <filename>~/.zshenv</filename>     (læses altid)
+  <filename>~/.zshenv</filename>     (lÃ¦ses altid)
  </para></listitem>
 
  <listitem><para>
-  <filename>/etc/zprofile</filename> (læses ved login)
+  <filename>/etc/zprofile</filename> (lÃ¦ses ved login)
  </para></listitem>
 
  <listitem><para>
-  <filename>~/.zprofile</filename>   (læses ved login)
+  <filename>~/.zprofile</filename>   (lÃ¦ses ved login)
  </para></listitem>
 
  <listitem><para>
-  <filename>/etc/zshrc</filename> (læses ved login og ved interaktiv brug)
+  <filename>/etc/zshrc</filename> (lÃ¦ses ved login og ved interaktiv brug)
  </para></listitem>
 
  <listitem><para>
-  <filename>~/.zshrc</filename> (læses ved login og ved interaktiv brug)
+  <filename>~/.zshrc</filename> (lÃ¦ses ved login og ved interaktiv brug)
  </para></listitem>
 
  <listitem><para>
-  <filename>/etc/zlogin</filename> (læses ved login)
+  <filename>/etc/zlogin</filename> (lÃ¦ses ved login)
  </para></listitem>
 
  <listitem><para>
-  <filename>~/.zlogin</filename>   (læses ved login)
+  <filename>~/.zlogin</filename>   (lÃ¦ses ved login)
  </para></listitem>
 </orderedlist>
    </para>
 
    <para>
-    Første gang man starter Zsh, har man overhovedet ingen regler for
-    fuldstændiggørelse af kommandoer og filnavne. Det kan man ændre på
-    ved at køre den indbyggede kommando <command>compinstall</command>
-    (det kan være nødvendigt først at køre kommandoen <command>autoload -U
-    compinstall</command>). Du bliver så præsenteret for et
+    FÃ¸rste gang man starter Zsh, har man overhovedet ingen regler for
+    fuldstÃ¦ndiggÃ¸relse af kommandoer og filnavne. Det kan man Ã¦ndre pÃ¥
+    ved at kÃ¸re den indbyggede kommando <command>compinstall</command>
+    (det kan vÃ¦re nÃ¸dvendigt fÃ¸rst at kÃ¸re kommandoen <command>autoload -U
+    compinstall</command>). Du bliver sÃ¥ prÃ¦senteret for et
     primitivt menusystem, hvor du kan konfigurere
-    fuldstændiggørelsen. I første omgang vil du nok kunne klare dig
+    fuldstÃ¦ndiggÃ¸relsen. I fÃ¸rste omgang vil du nok kunne klare dig
     med standardindstillingerne.
    </para>
 
    <para>
-    Hvis de 500-600 fuldstændiggørelsesregler zsh kommer med som
-    standard ikke er nok, kan man selvfølgelig lave flere. Hvis man
-    f.eks. vil have zsh til kun at foreslå <filename>.ogg</filename>-
-    og <filename>.mp3</filename>-filer når man har skrevet
-    <command>music123</command>, kan man lægge en fil med indholdet:
+    Hvis de 500-600 fuldstÃ¦ndiggÃ¸relsesregler zsh kommer med som
+    standard ikke er nok, kan man selvfÃ¸lgelig lave flere. Hvis man
+    f.eks. vil have zsh til kun at foreslÃ¥ <filename>.ogg</filename>-
+    og <filename>.mp3</filename>-filer nÃ¥r man har skrevet
+    <command>music123</command>, kan man lÃ¦gge en fil med indholdet:
 
 <programlisting>
 #compdef music123
@@ -879,31 +879,31 @@ _files -g '*.(ogg|mp3)'
 </programlisting>
 
     i <filename>/usr/local/share/zsh/site-functions/</filename>.  <!--
-    Hvor lægger man personlige funktioner? - HCG --> Den første linje
-    fortæller at denne funktion skal bruges når det er argumenter til
-    <command>music123</command> der fuldstændiggøres, og den anden
-    linje at kun filer der passer til det angivne mønster skal bruges.
+    Hvor lÃ¦gger man personlige funktioner? - HCG --> Den fÃ¸rste linje
+    fortÃ¦ller at denne funktion skal bruges nÃ¥r det er argumenter til
+    <command>music123</command> der fuldstÃ¦ndiggÃ¸res, og den anden
+    linje at kun filer der passer til det angivne mÃ¸nster skal bruges.
    </para>
 
    <para>
     Man kan naturligvis bladre tilbage gennem sine gamle kommandoer
-    med pil op/ned, og ændre i en kommando inden man udfører den
-    igen. Til dette formål kan man både få Emacs- og
+    med pil op/ned, og Ã¦ndre i en kommando inden man udfÃ¸rer den
+    igen. Til dette formÃ¥l kan man bÃ¥de fÃ¥ Emacs- og
     vi-tastebindinger, hvis en <literal>EDITOR</literal>- eller
-    <literal>VISUAL</literal>-variabel er sat til en af tingene vælger
+    <literal>VISUAL</literal>-variabel er sat til en af tingene vÃ¦lger
     Zsh automatisk de tilsvarende tastebindinger.
    </para>
 
    <para>
-    Der er eksempler på hvordan de fire brugerdefinerede filer kan se
+    Der er eksempler pÃ¥ hvordan de fire brugerdefinerede filer kan se
     ud i bogens eksempler (<ulink
     url="http://&linuxbogurl;/unix/eksempler/shells/zsh/">&linuxbogurl;/unix/eksempler/shells/zsh/</ulink>).
     <!-- Jacob burde kommentere disse -->
-    <!-- Er det ikke bedre at en anden rydder op i dem først? -->
+    <!-- Er det ikke bedre at en anden rydder op i dem fÃ¸rst? -->
    </para>
 
    <para>
-    Zshs hjemmeside findes på SunSite.dk, hvor man også kan finde en
+    Zshs hjemmeside findes pÃ¥ SunSite.dk, hvor man ogsÃ¥ kan finde en
     brugsanvisning: <ulink
     url="http://zsh.sunsite.dk/Guide/">http://zsh.sunsite.dk/Guide/</ulink>.
    </para>
@@ -913,24 +913,24 @@ _files -g '*.(ogg|mp3)'
 <title>Bourne Shell (sh)</title>
 
 <para>
-En af de ældste kommandofortolkere til UNIX-familien er Bourne Shell
+En af de Ã¦ldste kommandofortolkere til UNIX-familien er Bourne Shell
 (<command>sh</command>). Den har den fordel, at alle
 UNIX-maskiner har den installeret, og den dermed er egnet til at
 lave portabel kode.  Som kommandofortolker er Bourne Shell
-imidlertid ret så skrabet og har slet ikke de smarte egenskaber,
+imidlertid ret sÃ¥ skrabet og har slet ikke de smarte egenskaber,
 der findes i de nyere kommandofortolkere.
 </para>
 <para>
-På Linux systemer er det ofte bash, som opfører sig sig som sh,
-når den bliver startet med det navn (fx. gennem et link). Det
-kalder man, at den kører i <emphasis> posix </emphasis> modus.
-I så fald aktiverer den ikke de "smarte features": completion,
+PÃ¥ Linux systemer er det ofte bash, som opfÃ¸rer sig sig som sh,
+nÃ¥r den bliver startet med det navn (fx. gennem et link). Det
+kalder man, at den kÃ¸rer i <emphasis> posix </emphasis> modus.
+I sÃ¥ fald aktiverer den ikke de "smarte features": completion,
 kommando-editor og history.
 </para>
 
 <para>
 Ligesom <command>bash</command>, <command>zsh</command> og
-<command>ksh</command> sættes miljø-variable med export.
+<command>ksh</command> sÃ¦ttes miljÃ¸-variable med export.
 <screen>
 <prompt>[tyge@hven ~]$</prompt> <userinput>sh</userinput>
 <prompt>sh-2.05$</prompt> <userinput>dd=3</userinput>
@@ -944,17 +944,17 @@ Ligesom <command>bash</command>, <command>zsh</command> og
 </sect1>
 
 <sect1 id="videre-med-shells">
-<title>Læs videre om emnet</title>
+<title>LÃ¦s videre om emnet</title>
 <para>
-Der er udgivet masser af bøger om kommandofortolkere &ndash; i høj grad fra
-forlaget O'Reilly &ndash; se mere på <ulink
+Der er udgivet masser af bÃ¸ger om kommandofortolkere &ndash; i hÃ¸j grad fra
+forlaget O'Reilly &ndash; se mere pÃ¥ <ulink
 url="http://www.oreilly.com">http://www.oreilly.com</ulink>.  
-Bøgerne kan f.eks. købes fra Polyteknisk boghandel i Lyngby eller andre
+BÃ¸gerne kan f.eks. kÃ¸bes fra Polyteknisk boghandel i Lyngby eller andre
 velassorterede boghandlere.
 </para>
 
 <para>
-På internettet kan følgende steder være af interesse:
+PÃ¥ internettet kan fÃ¸lgende steder vÃ¦re af interesse:
 </para>
 
 <itemizedlist mark="bullet">
@@ -980,7 +980,7 @@ På internettet kan følgende steder være af interesse:
 
  <!--  Forslag til redaktionel linje:
  <para>
-  I resten af bogen vil vi gå ud fra at man bruger Zsh som kommandofortolker.
+  I resten af bogen vil vi gÃ¥ ud fra at man bruger Zsh som kommandofortolker.
  </para>
  -->
 </chapter>

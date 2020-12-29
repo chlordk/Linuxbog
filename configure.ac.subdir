@@ -106,8 +106,8 @@ fi
 dnl ======================================================================
 dnl Check krav til HTML udgaven
 dnl ======================================================================
-AC_CHECK_PROG(DB2HTML, db2html, ja, nej - det er ikke muligt at lave HTML udgaven)
-if test "xja" != "x$DB2HTML"; then
+AC_CHECK_PROG(docbook2html, docbook2html, ja, nej - det er ikke muligt at lave HTML udgaven)
+if test "xja" != "x$docbook2html"; then
   TARGET_HTML=nej
 else
   dnl Har vi tidy installeret?

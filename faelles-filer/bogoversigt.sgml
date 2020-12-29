@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 
-<title>Linux-bøgerne</title>
+<title>Linux-bÃ¸gerne</title>
 
 <para>
- Bogen er en del af en serie, som kan findes på 
+ Bogen er en del af en serie, som kan findes pÃ¥ 
  <ulink url="http://www.linuxbog.dk/">http://www.linuxbog.dk/</ulink>
 </para>
 
@@ -11,29 +11,29 @@
   <itemizedlist mark="bullet">
    <listitem>
     <para>
-     <emphasis>Linux &ndash; Friheden til at vælge installation</emphasis> &ndash;
+     <emphasis>Linux &ndash; Friheden til at vÃ¦lge installation</emphasis> &ndash;
      Om at installere Linux.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux &ndash; Friheden til at lære Unix</emphasis> &ndash; Om
-     hvordan man bruger Linux' (og Unix') kommandolinjeværktøjer.
+     <emphasis>Linux &ndash; Friheden til at lÃ¦re Unix</emphasis> &ndash; Om
+     hvordan man bruger Linux' (og Unix') kommandolinjevÃ¦rktÃ¸jer.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux &ndash; Friheden til at vælge grafisk brugergrænseflade</emphasis> &ndash;
-     Om alle de grafiske brugergrænseflader, der findes til Linux.
+     <emphasis>Linux &ndash; Friheden til at vÃ¦lge grafisk brugergrÃ¦nseflade</emphasis> &ndash;
+     Om alle de grafiske brugergrÃ¦nseflader, der findes til Linux.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux &ndash; Friheden til at vælge programmer</emphasis> &ndash;
-     Om de programmer du kan få til Linux.
+     <emphasis>Linux &ndash; Friheden til at vÃ¦lge programmer</emphasis> &ndash;
+     Om de programmer du kan fÃ¥ til Linux.
     </para>
    </listitem>
 
@@ -47,7 +47,7 @@
    <listitem> 
     <para>
      <emphasis>Linux &ndash; Friheden til at programmere</emphasis> &ndash;
-     Programmering på Linux
+     Programmering pÃ¥ Linux
     </para>
    </listitem>
 
@@ -67,7 +67,7 @@
 
    <listitem> 
     <para>
-     <emphasis>Linux &ndash; Friheden til sikkerhed på
+     <emphasis>Linux &ndash; Friheden til sikkerhed pÃ¥
      internettet</emphasis> &ndash; Om at sikre dit Linuxsystem mod indbrud
      fra internettet.
     </para>
@@ -76,7 +76,7 @@
    <listitem>
     <para>
      <emphasis>Linux &ndash; Friheden til egen webserver</emphasis> &ndash; Om at
-     sætte en webserver med databaser, CGI-programmer og andet godt
+     sÃ¦tte en webserver med databaser, CGI-programmer og andet godt
      op.
     </para>
    </listitem>
@@ -91,31 +91,31 @@
 
    <listitem> 
     <para>
-     <emphasis>Linux &ndash; Friheden til at vælge
-     kontorprogrammer</emphasis> &ndash; Kontorfunktioner på et
+     <emphasis>Linux &ndash; Friheden til at vÃ¦lge
+     kontorprogrammer</emphasis> &ndash; Kontorfunktioner pÃ¥ et
      Linux/KDE/OpenOffice.org-system.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux &ndash; Friheden til at vælge IT-løsning</emphasis> &ndash;
+     <emphasis>Linux &ndash; Friheden til at vÃ¦lge IT-lÃ¸sning</emphasis> &ndash;
      Om muligheder, fordele og ulemper ved at bruge Linux i sin
-     IT-løsning.
+     IT-lÃ¸sning.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux &ndash; Friheden til at vælge OpenOffice.org</emphasis> &ndash;
-     Om at bruge OpenOffice.org, både på Linux og på andre styresystemer.
+     <emphasis>Linux &ndash; Friheden til at vÃ¦lge OpenOffice.org</emphasis> &ndash;
+     Om at bruge OpenOffice.org, bÃ¥de pÃ¥ Linux og pÃ¥ andre styresystemer.
     </para>
    </listitem>
 
    <listitem>
     <para>
-     <emphasis>Linux &ndash; Friheden til at vælge digital signatur</emphasis> &ndash;
-     Digital signatur på Linux.
+     <emphasis>Linux &ndash; Friheden til at vÃ¦lge digital signatur</emphasis> &ndash;
+     Digital signatur pÃ¥ Linux.
     </para>
    </listitem>
   </itemizedlist>

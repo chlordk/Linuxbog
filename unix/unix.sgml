@@ -4,10 +4,10 @@
 <chapter id="basal-unix">
  <title>Basal Unix</title>
 
- <!-- her bør der nok lige komme en introduktion til kapitlet -->
+ <!-- her bÃ¸r der nok lige komme en introduktion til kapitlet -->
 
  <sect1 id="filtraet">
-  <title>Hvad ligger hvor på en Linux-maskine</title>
+  <title>Hvad ligger hvor pÃ¥ en Linux-maskine</title>
 
   <indexterm>
    <primary>filer</primary>
@@ -15,45 +15,45 @@
   </indexterm>
 
   <para>
-   En af de ting der karakteriserer Unix (og måske i endnu højere grad
-   Linux) er en idé om at alle ressourcer der er tilgængelige på
-   systemet skal kunne betragtes på samme måde - som filer. Det gælder
-   både egentlige filer på harddiske i computeren, selve harddisken
-   (praktisk når den skal formatteres), systemets virtuelle konsoller,
+   En af de ting der karakteriserer Unix (og mÃ¥ske i endnu hÃ¸jere grad
+   Linux) er en idÃ© om at alle ressourcer der er tilgÃ¦ngelige pÃ¥
+   systemet skal kunne betragtes pÃ¥ samme mÃ¥de - som filer. Det gÃ¦lder
+   bÃ¥de egentlige filer pÃ¥ harddiske i computeren, selve harddisken
+   (praktisk nÃ¥r den skal formatteres), systemets virtuelle konsoller,
    hukommelsen i computeren, tilsluttede apparater, etc. I Linux er
-   selv opsætningsparametre til kernen og kernens status tilgængelige
-   som filer. De eneste væsentlige ressourcer der ikke er tilgængelige
-   som regulære filer i Linux er netværkskortene.
+   selv opsÃ¦tningsparametre til kernen og kernens status tilgÃ¦ngelige
+   som filer. De eneste vÃ¦sentlige ressourcer der ikke er tilgÃ¦ngelige
+   som regulÃ¦re filer i Linux er netvÃ¦rkskortene.
   </para>
 
   <para>
-   Når filer har så stor betydning i Unix, er det vigtigt at vide lidt
+   NÃ¥r filer har sÃ¥ stor betydning i Unix, er det vigtigt at vide lidt
    om hvor de forskellige filer findes henne i systemet.
   </para>
 
   <para>
-   Linux har en meget velorganiseret måde at gemme forskellige filer.
-   Den bygger primært på at man fordeler filer efter funktion og kun
-   sekundært på hvilke programpakker de tilhører.
+   Linux har en meget velorganiseret mÃ¥de at gemme forskellige filer.
+   Den bygger primÃ¦rt pÃ¥ at man fordeler filer efter funktion og kun
+   sekundÃ¦rt pÃ¥ hvilke programpakker de tilhÃ¸rer.
    Der er kataloger til delte biblioteker, nogle til programmer, og
-   andre kataloger til brugerdata.  Dette afsnit bygger på <!--
-   MANGLER: Henvisning til FHS --> »Linux File-System Hierarchy
-   Standard« (FHS) der er en standard som de forlag der udgiver
-   linuxdistributioner har aftalt, for at det skal være lettere for
-   programhuse og individuelle programmører at pakke én udgave at et
-   program der vil virke på alle de forskellige linuxdistributioner
+   andre kataloger til brugerdata.  Dette afsnit bygger pÃ¥ <!--
+   MANGLER: Henvisning til FHS --> Â»Linux File-System Hierarchy
+   StandardÂ« (FHS) der er en standard som de forlag der udgiver
+   linuxdistributioner har aftalt, for at det skal vÃ¦re lettere for
+   programhuse og individuelle programmÃ¸rer at pakke Ã©n udgave at et
+   program der vil virke pÃ¥ alle de forskellige linuxdistributioner
    (der overholder FHS).
   </para>
 
   <table>
-   <title>Oversigt over filtræet.</title>
+   <title>Oversigt over filtrÃ¦et.</title>
 
-   <indexterm><primary>Filtræet</primary></indexterm>
+   <indexterm><primary>FiltrÃ¦et</primary></indexterm>
 
 <tgroup cols="2" align="char">
 <thead>
 <row>
-<entry>Filtræ
+<entry>FiltrÃ¦
 </entry>
 
 <entry>
@@ -72,49 +72,49 @@ Forklaring
 
 <row>
 <entry><filename>/bin</filename></entry> 
-<entry>Her er de mest nødvendige systemkommandoer gemt.</entry> 
+<entry>Her er de mest nÃ¸dvendige systemkommandoer gemt.</entry> 
 </row>
 
 <row>
 <entry><filename>/boot</filename></entry> 
 <entry>Dette katalog er reserveret til systemkernen,
-men nogle Linux-distributioner vælger at placere kernen i roden, dvs.
+men nogle Linux-distributioner vÃ¦lger at placere kernen i roden, dvs.
 <filename>/</filename>.</entry>
 </row>
 
 <row>
 <entry><filename>/dev</filename></entry> 
 <entry>Indeholder alle device-filer, dvs. adgang til alle enheder
-såsom harddiske, cd-rom-drev, diskette, mus, tastatur og printer
-går igennem dette .</entry>
+sÃ¥som harddiske, cd-rom-drev, diskette, mus, tastatur og printer
+gÃ¥r igennem dette .</entry>
 </row>
 
 <row>
 <entry><filename>/etc</filename></entry> <entry>Dette katalog
-indeholder systemopsætningsfilerne, såvel som filerne, der er
-ansvarlige for systemets opstart, og grafiksystemets opsætning.</entry>
+indeholder systemopsÃ¦tningsfilerne, sÃ¥vel som filerne, der er
+ansvarlige for systemets opstart, og grafiksystemets opsÃ¦tning.</entry>
 </row>
 
 <row>
 <entry><filename>/home</filename></entry> 
 <entry>Dette er kataloget for alle brugerkonti. <!-- Ja, Linux giver
-mulighed for, at mange personer kan arbejde på den samme
+mulighed for, at mange personer kan arbejde pÃ¥ den samme
 computer samtidig &ndash; uden at blande dem sammen. --> Linux er et
 flerbrugerstyresystem.  Vi kan anbefale, at man opretter en bruger til de mest
 normale jobs og <emphasis>kun</emphasis> bruger root til
 administration, da du som root ved en fejl kan komme til at slette
-vigtige filer, hvilket ville være umuligt som almindelig bruger.
+vigtige filer, hvilket ville vÃ¦re umuligt som almindelig bruger.
 </entry>
 </row>
 
 <row>
 <entry><filename>/lib</filename></entry> 
 <entry>Indeholder systemets delte
-filer. Linux sparer hukommelse ved at lægge
+filer. Linux sparer hukommelse ved at lÃ¦gge
 kode, som bruges af mange programmer, ind i en fil, kaldet "shared
-library"<!-- &ndash; svarende til DLL'er i Windows-->. På
-den måde vil der kun eksistere én kopi af filen i hukommelsen,
-når den bliver brugt.
+library"<!-- &ndash; svarende til DLL'er i Windows-->. PÃ¥
+den mÃ¥de vil der kun eksistere Ã©n kopi af filen i hukommelsen,
+nÃ¥r den bliver brugt.
 </entry>
 </row>
 
@@ -125,8 +125,8 @@ når den bliver brugt.
        Er reserveret til installation af valgfrie
        programpakker.  SuSE placerer store
        programpakker som KDE og StarOffice i
-       <filename>/opt</filename>, så hvis du installerer SuSE skal du
-       derfor sørge for, at dette katalog har en del plads.
+       <filename>/opt</filename>, sÃ¥ hvis du installerer SuSE skal du
+       derfor sÃ¸rge for, at dette katalog har en del plads.
       </entry>
      </row>
 
@@ -134,11 +134,11 @@ når den bliver brugt.
       <entry><filename>/lost+found</filename></entry>
 
       <entry>
-       <!-- Du har måske prøvet at bruge Norton Utilities til at genskabe
-       en fil, som er tabt i en defekt del af harddisken. Vær mere
+       <!-- Du har mÃ¥ske prÃ¸vet at bruge Norton Utilities til at genskabe
+       en fil, som er tabt i en defekt del af harddisken. VÃ¦r mere
        rolig under Linux. -->  Hvis harddisken laver fejl, vil systemet
-       selv forsøge at genskabe filerne, og hvis det ikke kan finde ud
-       af, hvor i filtræet filen var placeret, vil den blive placeret
+       selv forsÃ¸ge at genskabe filerne, og hvis det ikke kan finde ud
+       af, hvor i filtrÃ¦et filen var placeret, vil den blive placeret
        i <filename>/lost+found</filename>.
       </entry>
      </row>
@@ -148,7 +148,7 @@ når den bliver brugt.
 
       <entry>
        Hvis du vil have adgang til en cd-rom, et ZIP-drev eller en
-       diskette, er det som regel i denne del af filsystemet, du får
+       diskette, er det som regel i denne del af filsystemet, du fÃ¥r
        adgang til dem.
       </entry>
      </row> 
@@ -159,7 +159,7 @@ når den bliver brugt.
 
       <entry>
        Dette katalog indeholder dynamisk opdaterede oplysninger om de
-       kørende programmer og Linux-kernens status.
+       kÃ¸rende programmer og Linux-kernens status.
       </entry>
      </row>
 
@@ -174,8 +174,8 @@ når den bliver brugt.
 
       <entry>
        Her ligger de programmer der generelt kun er brugbare for
-       systemadministratoren og er nødvendige for at systemet
-       fungerer.  <!-- løst oversat fra FHS' beskrivelse af "/sbin",
+       systemadministratoren og er nÃ¸dvendige for at systemet
+       fungerer.  <!-- lÃ¸st oversat fra FHS' beskrivelse af "/sbin",
        "/usr/sbin" og "/usr/local/sbin" -->
       </entry>
      </row>
@@ -184,9 +184,9 @@ når den bliver brugt.
       <entry><filename>/tmp</filename></entry>
 
       <entry>
-       Beregnet til midlertidige filer.  De fleste programmer lægger
+       Beregnet til midlertidige filer.  De fleste programmer lÃ¦gger
        automatisk midlertidige filer her.  Som regel sletter systemet
-       dem, når det starter op.
+       dem, nÃ¥r det starter op.
       </entry>
      </row>
 
@@ -194,11 +194,11 @@ når den bliver brugt.
       <entry><filename>/usr</filename></entry> 
 
       <entry>
-       Her ligger delte data og programmer der ikke ændres og ikke er
+       Her ligger delte data og programmer der ikke Ã¦ndres og ikke er
        specifikke for lige netop den specifikke maskine.  I principet
        skal <filename>/usr</filename> efter at styresystemet er
-       installeret monteres som et filsystem der kun kan læses fra og
-       ikke skrives til.  <!-- løst oversat fra FHS' overordnede
+       installeret monteres som et filsystem der kun kan lÃ¦ses fra og
+       ikke skrives til.  <!-- lÃ¸st oversat fra FHS' overordnede
        beskrivelse af "/usr" -->
       </entry>
      </row>
@@ -208,10 +208,10 @@ når den bliver brugt.
 
       <entry>
        Her kan systemadministratoren installere programmer og data
-       der specifikke for maskinen.  På systemer der overholder
+       der specifikke for maskinen.  PÃ¥ systemer der overholder
        <glossterm linkend="def-linux-standard-base">Linux Standard
        Base</glossterm> vil <filename>/usr/local</filename> ikke blive
-       overskrevet ved systemopgraderinger.  <!-- løst oversat fra
+       overskrevet ved systemopgraderinger.  <!-- lÃ¸st oversat fra
        FHS' beskrivelse af "/usr/local" -->
       </entry>
      </row>
@@ -220,9 +220,9 @@ når den bliver brugt.
       <entry><filename>/var</filename></entry>
 
       <entry>
-       Indeholder datafiler hvis indhold ændres mens systemet er i
-       drift.  Det er for eksempel post- og printerkøer, logfiler og
-       administrative data.  <!-- løst oversat fra FHS' beskrivelse af
+       Indeholder datafiler hvis indhold Ã¦ndres mens systemet er i
+       drift.  Det er for eksempel post- og printerkÃ¸er, logfiler og
+       administrative data.  <!-- lÃ¸st oversat fra FHS' beskrivelse af
        "/var" -->
       </entry>
      </row>
@@ -231,14 +231,14 @@ når den bliver brugt.
   </table>
 
   <para>
-   Der kan være yderligere dele af filtræet, såsom en Windows-disk som
+   Der kan vÃ¦re yderligere dele af filtrÃ¦et, sÃ¥som en Windows-disk som
    man ofte giver tilgang til via <filename>/dos</filename> eller
    <filename>/dosc</filename>.
   </para>
 
 
 <para>
-Læs i øvrigt 
+LÃ¦s i Ã¸vrigt 
 <ulink url="http://www.pathname.com/fhs/announce-2.0.html">http://www.pathname.com/fhs/announce-2.0.html</ulink>
 for mere information om filers placering.
 </para>
@@ -282,24 +282,24 @@ for mere information om filers placering.
 
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>cat</tertiary>
 </indexterm>
 
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>less</tertiary>
 </indexterm>
 
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>more</tertiary>
 </indexterm>
 
   <para>
-   Indtil nu har du arbejdet med filer, men du har stadig ikke set på
+   Indtil nu har du arbejdet med filer, men du har stadig ikke set pÃ¥
    deres indhold. Indholdet af tekstfiler kan let vises. Kommandoen
    <command>cat</command> viser indholdet af en fil, f.eks. kan du se
    indholdet af <filename>passwd</filename> ved at skrive:
@@ -326,21 +326,21 @@ tyge:x:501:501:Tyge Brahe&comma;,&comma;,:/home/tyge:/bin/bash
 
 <para>
 <command>cat</command> er, som du ser, meget let at bruge, men
-kommandoen har en dårlig side: Hvis filens indhold fylder mere end en
-skærmside, kommer filen alt for hurtigt over skærmen, og bagefter ser du
-kun den sidste side (dvs. det antal linjer, som kan vises på din
-skærm). Du kan dog se nogle få sider tilbage ved at bruger Shift+PageUp.
-<!--  er det ikke afhængigt af ens (virtuelle) konsol?  -->
+kommandoen har en dÃ¥rlig side: Hvis filens indhold fylder mere end en
+skÃ¦rmside, kommer filen alt for hurtigt over skÃ¦rmen, og bagefter ser du
+kun den sidste side (dvs. det antal linjer, som kan vises pÃ¥ din
+skÃ¦rm). Du kan dog se nogle fÃ¥ sider tilbage ved at bruger Shift+PageUp.
+<!--  er det ikke afhÃ¦ngigt af ens (virtuelle) konsol?  -->
 Kommandoerne <command>less</command> og
 <command>more</command> er derfor mere velegnede, da det er muligt
 at bladre frem og tilbage i filen. Kommandoen viser en side ad gangen,
-og du kan bladre frem ved at trykke på <keycap>f</keycap>
-(eng. "forward") eller mellemrum og tilbage ved at trykke på
+og du kan bladre frem ved at trykke pÃ¥ <keycap>f</keycap>
+(eng. "forward") eller mellemrum og tilbage ved at trykke pÃ¥
 <keycap>b</keycap> (eng. "backward"), og i <command>less</command>
-kan pil op og ned også anvendes. Det er også muligt at søge ved at 
+kan pil op og ned ogsÃ¥ anvendes. Det er ogsÃ¥ muligt at sÃ¸ge ved at 
 taste <keycap>/</keycap> efterfulgt af den tekst man leder efter og
-<keycap>return</keycap>.  Søgningen gentages ved
-tryk på <keycap>n</keycap> (eng. "next"). Man afslutter både <command>less</command> og <command>more</command> ved at 
+<keycap>return</keycap>.  SÃ¸gningen gentages ved
+tryk pÃ¥ <keycap>n</keycap> (eng. "next"). Man afslutter bÃ¥de <command>less</command> og <command>more</command> ved at 
 trykke <keycap>q</keycap> (eng. "quit").
 </para>
 </sect1>
@@ -360,12 +360,12 @@ trykke <keycap>q</keycap> (eng. "quit").
 
   <indexterm>
    <primary>filer</primary>
-   <secondary>omdøbe</secondary>
+   <secondary>omdÃ¸be</secondary>
   </indexterm>
 
   <indexterm>
    <primary>kataloger</primary>
-   <secondary>omdøbe</secondary>
+   <secondary>omdÃ¸be</secondary>
   </indexterm>
 
   <indexterm>
@@ -377,11 +377,11 @@ trykke <keycap>q</keycap> (eng. "quit").
   </indexterm>
 
   <indexterm>
-   <primary>omdøbe filer</primary>
+   <primary>omdÃ¸be filer</primary>
   </indexterm>
 
   <indexterm>
-   <primary>omdøbe kataloger</primary>
+   <primary>omdÃ¸be kataloger</primary>
   </indexterm>
 
   <para>
@@ -396,13 +396,13 @@ trykke <keycap>q</keycap> (eng. "quit").
 
    <indexterm>
     <primary>Kommandooversigt</primary>
-    <secondary>Grundlæggende kommandobeskrivelse</secondary>
+    <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>mv</tertiary>
    </indexterm>
 
    Du har allerede set, hvordan du kan kopiere filer og se indholdet
-   af dem. Nu kan det tænkes, at du finder ud af, at en fil skal have
-   et andet navn, dvs. den skal omdøbes. Til det formål har du
+   af dem. Nu kan det tÃ¦nkes, at du finder ud af, at en fil skal have
+   et andet navn, dvs. den skal omdÃ¸bes. Til det formÃ¥l har du
    kommandoen <command>mv</command> (eng. "move"):
 
 <screen>
@@ -413,11 +413,11 @@ trykke <keycap>q</keycap> (eng. "quit").
 -rw-rw-r--   1 tyge    tyge         652 Jul 14 22:34 megetNyFil
 </screen>
 
-   Først tager vi med <command>cp</command> en kopi af filen
+   FÃ¸rst tager vi med <command>cp</command> en kopi af filen
    <filename>passwd</filename> som vi kalder
-   <filename>nyFil</filename>.  Bagefter omdøber vi
+   <filename>nyFil</filename>.  Bagefter omdÃ¸ber vi
    <filename>nyFil</filename> til <filename>megetNyFil</filename>.
-   Som kommandoens navn antyder, kan den mere end bare omdøbe filer;
+   Som kommandoens navn antyder, kan den mere end bare omdÃ¸be filer;
    den kan flytte dem til andre steder i filsystemet.
   </para>
 
@@ -459,11 +459,11 @@ drwxrwxr-x   2 tyge    tyge        1024 Jul 14 22:34 MitKatalog
 
    <indexterm>
     <primary>Kommandooversigt</primary>
-    <secondary>Grundlæggende kommandobeskrivelse</secondary>
+    <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>rm</tertiary>
    </indexterm>
 
-   Nu kan det tænkes, at du vil slette filen
+   Nu kan det tÃ¦nkes, at du vil slette filen
    <filename>megetNyFil</filename>. Kommandoen <command>rm</command>
    er lige det, du mangler <command>rm</command> (eng. "remove"):
 
@@ -478,18 +478,18 @@ drwxrwxr-x   2 tyge    tyge        1024 Jul 14 22:34 MitKatalog
   </para>
 
   <para>
-   Du skal være meget forsigtig med at bruge <command>mv</command> og
+   Du skal vÃ¦re meget forsigtig med at bruge <command>mv</command> og
    <command>rm</command>, idet der ikke er nogen mulighed for at
    fortryde.  Hvis du vil blive spurgt, om det er rigtigt, at du vil
-   flytte/slette, kan du bruge tilvalget <literal>-i</literal>, så det
-   ovenstående eksempel bliver til:
+   flytte/slette, kan du bruge tilvalget <literal>-i</literal>, sÃ¥ det
+   ovenstÃ¥ende eksempel bliver til:
 
 <screen>
 <prompt>[tyge@hven MitKatalog]$ </prompt><userinput>rm -i megetNyFil</userinput>
 rm: remove almindelig fil 'megetNyFil'? 
 </screen>
 
-   Her kan du så svare <keycap>j</keycap> for ja, og
+   Her kan du sÃ¥ svare <keycap>j</keycap> for ja, og
    <command>n</command> for nej.
   </para>
 
@@ -507,32 +507,32 @@ rm: remove almindelig fil 'megetNyFil'?
 
    <indexterm>
     <primary>Kommandooversigt</primary>
-    <secondary>Grundlæggende kommandobeskrivelse</secondary>
+    <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>alias</tertiary>
    </indexterm>
 
    <para>
-    Det kan være praktisk at lave en genvej til en kommando med nogle
-    bestemte tilvalg (et alias), så man ikke bliver nødt til at huske
-    på tilvalgene hver gang man bruger kommandoen.  Det er for
-    eksempel en god idé at lave aliaser svarende til <command>rm
-    -i</command> og <command>mv -i</command> som man lægger ind i
-    stedet for <command>rm</command> og <command>mv</command>, så man
+    Det kan vÃ¦re praktisk at lave en genvej til en kommando med nogle
+    bestemte tilvalg (et alias), sÃ¥ man ikke bliver nÃ¸dt til at huske
+    pÃ¥ tilvalgene hver gang man bruger kommandoen.  Det er for
+    eksempel en god idÃ© at lave aliaser svarende tilÂ <command>rm
+    -i</command> og <command>mv -i</command> som man lÃ¦gger ind i
+    stedet for <command>rm</command> og <command>mv</command>, sÃ¥ man
     altid bliver spurgt inden man kommer til at slette noget ved at
     skrive <command>rm en_fil</command> eller lignende.
    </para>
 
    <para>
-    <command>alias rm='rm -i'</command> gør for eksempel at når du
-    senere skriver <command>rm et-eller-andet</command>, så laver
+    <command>alias rm='rm -i'</command> gÃ¸r for eksempel at nÃ¥r du
+    senere skriver <command>rm et-eller-andet</command>, sÃ¥ laver
     kommandofortolkeren det om til <command>rm -i
-    et-eller-andet</command> før det bliver udført.
+    et-eller-andet</command> fÃ¸r det bliver udfÃ¸rt.
    </para>
 
    <para>
-    Det kan også være rart at kunne køre <command>ls</command> med
+    Det kan ogsÃ¥ vÃ¦re rart at kunne kÃ¸re <command>ls</command> med
     tilvalget <literal>-l</literal> let.  Typisk laver man til det
-    formål aliaset <command>ll</command>:
+    formÃ¥l aliaset <command>ll</command>:
 <screen>
 <prompt>[tyge@hven MitKatalog]$ </prompt><userinput>alias ll='ls -l'</userinput>
 <prompt>[tyge@hven MitKatalog]$ </prompt><userinput>ll</userinput>
@@ -544,7 +544,7 @@ megetNyFil
 
    <para>
     Hvis du vil have Bash til at huske dine kommandogenveje fra gang
-    til gang, bør du skrive dem ind i filen <filename>~/.bashrc</filename>:
+    til gang, bÃ¸r du skrive dem ind i filen <filename>~/.bashrc</filename>:
 <programlisting>
 alias rm='rm -i'
 alias mv='mv -i'
@@ -554,12 +554,12 @@ alias ll='ls -l'
   </note>
 
   <para>
-   I visse tilfælde opstår der filer med i havelåger (#), mellemrum og
+   I visse tilfÃ¦lde opstÃ¥r der filer med i havelÃ¥ger (#), mellemrum og
    andre specielle tegn i.  Hvis man vil slette dem, kan man med
    fordel skrive navnene i citationstegn:
 <screen>
-<prompt>[tyge@hven MitKatalog]$ </prompt><userinput>rm -i '#en sær fil#'</userinput>
-rm: remove almindelig fil '#en sær fil#'? 
+<prompt>[tyge@hven MitKatalog]$ </prompt><userinput>rm -i '#en sÃ¦r fil#'</userinput>
+rm: remove almindelig fil '#en sÃ¦r fil#'? 
 </screen>
   </para>
 
@@ -584,12 +584,12 @@ rm: remove almindelig fil '#en sær fil#'?
 
    <indexterm>
     <primary>Kommandooversigt</primary>
-    <secondary>Grundlæggende kommandobeskrivelse</secondary>
+    <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>touch</tertiary>
    </indexterm>
 
-   Du kan også oprette nye (tomme) filer med kommandoen
-   <command>touch</command>, som tillige ændrer tidsstemplet på filen,
+   Du kan ogsÃ¥ oprette nye (tomme) filer med kommandoen
+   <command>touch</command>, som tillige Ã¦ndrer tidsstemplet pÃ¥ filen,
    hvis den allerede var der i forvejen:
 
 <screen>
@@ -601,9 +601,9 @@ rm: remove almindelig fil '#en sær fil#'?
   </para>
 
   <para>
-   Hvis du så venter et par minutter og udfører
-   <command>touch</command> igen, så vil du se, at tidsstemplet
-   ændres: <!-- (brug pil-op et par gange) -->
+   Hvis du sÃ¥ venter et par minutter og udfÃ¸rer
+   <command>touch</command> igen, sÃ¥ vil du se, at tidsstemplet
+   Ã¦ndres: <!-- (brug pil-op et par gange) -->
 
 <screen>
 <prompt>[tyge@hven MitKatalog]$ </prompt> <userinput>touch myXYZoptioner.txt</userinput>
@@ -619,7 +619,7 @@ rm: remove almindelig fil '#en sær fil#'?
    </indexterm>
 
    <indexterm>
-    <primary>lænker</primary>
+    <primary>lÃ¦nker</primary>
    </indexterm>
 
    <indexterm>
@@ -637,24 +637,24 @@ rm: remove almindelig fil '#en sær fil#'?
 
    <indexterm>
     <primary>Kommandooversigt</primary>
-    <secondary>Grundlæggende kommandobeskrivelse</secondary>
+    <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>ln</tertiary>
    </indexterm>
 
-   Endelig skal vi også se på hvordan man kan lave henvisninger (eng.
+   Endelig skal vi ogsÃ¥ se pÃ¥ hvordan man kan lave henvisninger (eng.
    "links").  Hvis du har brug for at en fil, for eksempel
-   <filename>myXYZoptioner.txt</filename> også optræder med et andet
-   navn, så kan du altid lave en symbolsk henvisning (eng. "symbolic
+   <filename>myXYZoptioner.txt</filename> ogsÃ¥ optrÃ¦der med et andet
+   navn, sÃ¥ kan du altid lave en symbolsk henvisning (eng. "symbolic
    link") til filen fra det andet navn:
 
 <screen>
 <prompt>[tyge@hven MitKatalog]$ </prompt><userinput>ln -s myXYZoptioner.txt o.txt</userinput>
 </screen>
 
-   Her satte vi <filename>o.txt</filename> til at være en symbolsk
+   Her satte vi <filename>o.txt</filename> til at vÃ¦re en symbolsk
    henvisning til <filename>myXYZoptioner.txt</filename>.  Det betyder
-   at hvis du nu giver et program besked om at gøre noget ved filen
-   <filename>o.txt</filename>, så vil det i virkeligheden være filen
+   at hvis du nu giver et program besked om at gÃ¸re noget ved filen
+   <filename>o.txt</filename>, sÃ¥ vil det i virkeligheden vÃ¦re filen
    <filename>myXYZoptioner.txt</filename> programmet arbejder med.
   </para>
 
@@ -669,9 +669,9 @@ lrwxrwxrwx  1 tyge tyge  4 jul 15 20:35 o.txt -> myXYZoptioner.txt
   </para>
 
   <para>
-   Endelig kan det nævnes at man ud over symbolske henvisninger også
+   Endelig kan det nÃ¦vnes at man ud over symbolske henvisninger ogsÃ¥
    kan laves direkte henvisninger (eng. "hard links").  Effekten er
-   langt hen ad vejen den samme, men direkte henvisninger er begrænset
+   langt hen ad vejen den samme, men direkte henvisninger er begrÃ¦nset
    til at fungere indenfor samme filsystem og er bundet til selve
    filerne og ikke til deres navne.
   </para>
@@ -682,10 +682,10 @@ lrwxrwxrwx  1 tyge tyge  4 jul 15 20:35 o.txt -> myXYZoptioner.txt
     <primary>rename</primary>
    </indexterm>
 
-   En smart kommando til at ændre filnavne, er
-   <command>rename</command>, som ofte, men ikke altid, findes på Unix
-   og Linux-systemer.  Skal du ændre filnavne systematisk, f.eks. alle
-   ".htm"-filer til ".html", så kan du bruge:
+   En smart kommando til at Ã¦ndre filnavne, er
+   <command>rename</command>, som ofte, men ikke altid, findes pÃ¥ Unix
+   og Linux-systemer.  Skal du Ã¦ndre filnavne systematisk, f.eks. alle
+   ".htm"-filer til ".html", sÃ¥ kan du bruge:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>rename htm html *</userinput>
 </screen>
@@ -698,8 +698,8 @@ lrwxrwxrwx  1 tyge tyge  4 jul 15 20:35 o.txt -> myXYZoptioner.txt
   <title>Jokertegn, omdirigering og kanaler</title>
 
   <para>
-   Vi vil i dette afsnit se på et par af systemets mere smarte
-   funktioner, som gør livet lettere for dig som bruger.
+   Vi vil i dette afsnit se pÃ¥ et par af systemets mere smarte
+   funktioner, som gÃ¸r livet lettere for dig som bruger.
   </para>
 
   <sect2 id="joker">
@@ -721,15 +721,15 @@ lrwxrwxrwx  1 tyge tyge  4 jul 15 20:35 o.txt -> myXYZoptioner.txt
 
    <para>
     Forestil dig, at du har mange filer, som du gerne vil slette. Du
-    kan naturligvis skrive <command>rm den_ene_fil den_næste_fil den
+    kan naturligvis skrive <command>rm den_ene_fil den_nÃ¦ste_fil den
     tredje_fil</command> (osv.) med hvert enkelt navn, men bare med
-    5-10 filer bliver du hurtigt træt af det.  Redningen er
+    5-10 filer bliver du hurtigt trÃ¦t af det.  Redningen er
     jokertegnene <literal>*</literal> og <literal>?</literal>.
    </para>
 
    <para>
     Lad os antage, at du har tre filer i et katalog, og at du gerne
-    vil slette dem alle. For øvelsens skyld opretter vi først filerne
+    vil slette dem alle. For Ã¸velsens skyld opretter vi fÃ¸rst filerne
     med <command>touch</command>-kommandoen og sletter dem derefter.
     Nedenfor ser du hvordan:
 
@@ -762,23 +762,23 @@ lrwxrwxrwx  1 tyge tyge  4 jul 15 20:35 o.txt -> myXYZoptioner.txt
     Asterisken (<literal>*</literal>) betyder helt generelt nul eller
     flere tegn i et filnavn.  For eksempel betyder
     <literal>a*b</literal> alle filer, der begynder med
-    <literal>a</literal> og slutter på <literal>b</literal>,
+    <literal>a</literal> og slutter pÃ¥ <literal>b</literal>,
     hvilket vil inkludere filerne <filename>ab</filename>,
     <filename>aDuErGodb</filename>, men ikke en fil med navnet
     <filename>abe</filename>.
    </para>
 
    <para>
-    Ligesom asterisken fungerer spørgsmålstegn
-    (<literal>?</literal>) også som jokertegn.  Et spørgsmålstegn
-    står for et (og netop et) vilkårligt tegn i et filnavn.
+    Ligesom asterisken fungerer spÃ¸rgsmÃ¥lstegn
+    (<literal>?</literal>) ogsÃ¥ som jokertegn.  Et spÃ¸rgsmÃ¥lstegn
+    stÃ¥r for et (og netop et) vilkÃ¥rligt tegn i et filnavn.
    </para>
 
    <example id="unix-jokertegn-asterisk-og-spoergsmaalstegn">
     <title>Kombination af flere jokertegn</title>
 
     <para>
-     Som et eksempel på hvordan jokertegnene kan kombineres med
+     Som et eksempel pÃ¥ hvordan jokertegnene kan kombineres med
      hinanden beder vi <command>ls</command> om at give os en liste
      med alle de filer i kataloget <filename>/usr/bin</filename>, hvis
      tredje bogstav er et z:
@@ -792,17 +792,17 @@ lrwxrwxrwx  1 tyge tyge  4 jul 15 20:35 o.txt -> myXYZoptioner.txt
 
    <para>
     Da det er kommandofortolkeren og ikke de enkelte kommandoer der
-    tager sig af at fortolke jokertegnene, kan man bruge præcist de
-    samme mønstre til at angive samlinger af filer til alle
-    programmer på systemet.
+    tager sig af at fortolke jokertegnene, kan man bruge prÃ¦cist de
+    samme mÃ¸nstre til at angive samlinger af filer til alle
+    programmer pÃ¥ systemet.
    </para>
 
 <!--
 <para>
-Det er værd at bemærke, at jokertegn ekspanderes af 
+Det er vÃ¦rd at bemÃ¦rke, at jokertegn ekspanderes af 
 kommandofortolkeren &ndash; <emphasis>ikke</emphasis> af
 applikationen. Det har bl.a. den store fordel, at jokertegn altid
-fungerer &ndash; og fungerer konsistent på tværs af applikationer.
+fungerer &ndash; og fungerer konsistent pÃ¥ tvÃ¦rs af applikationer.
 </para>
 -->
 
@@ -810,7 +810,7 @@ fungerer &ndash; og fungerer konsistent på tværs af applikationer.
 Et meget simpelt eksempel: Et katalog indeholder 3 filer:
 <filename>fil1</filename>, <filename>fil2</filename> og
 <filename>ccc</filename>. Skriver du: <command>ls f*</command>, vil
-kommandofortolkeren først ekspandere f* og derefter kalde
+kommandofortolkeren fÃ¸rst ekspandere f* og derefter kalde
 <command>ls</command> med: <command>ls fil1 fil2
 </command>. Output fra <command>ls f*</command> er blot: 
 
@@ -821,7 +821,7 @@ ccc   fil1   fil2
 <prompt>[tyge@hven MitKatalog]$ </prompt><userinput>ls f*</userinput>
 fil1   fil2
 </screen>
-og <command>ls</command> laver således et yderst banalt arbejde.
+og <command>ls</command> laver sÃ¥ledes et yderst banalt arbejde.
 </para>
 
    <para>
@@ -836,11 +836,11 @@ og <command>ls</command> laver således et yderst banalt arbejde.
 
 Men der er flere muligheder i dette. Et eksempel: For at se forskellen
 mellem <filename>fil1</filename> og <filename>fil2</filename> kan
-du skrive: <command>diff fil1 fil2</command>. Men du kan også nøjes
-med at skrive: <command>diff fil?</command> og så lade 
+du skrive: <command>diff fil1 fil2</command>. Men du kan ogsÃ¥ nÃ¸jes
+med at skrive: <command>diff fil?</command> og sÃ¥ lade 
 kommandofortolkeren regne ud at 
 <literal>f*</literal> betyder <literal>fil1 fil2</literal>. 
-Da de to filer er ens (de er begge tomme), så 
+Da de to filer er ens (de er begge tomme), sÃ¥ 
 er der ingen forskel, og derfor intet at vise:
 
 <screen>
@@ -850,7 +850,7 @@ er der ingen forskel, og derfor intet at vise:
    </para>
 
    <para>
-    Somme tider kan denne konsekvente ekspansion af jokertegn dog være
+    Somme tider kan denne konsekvente ekspansion af jokertegn dog vÃ¦re
     en ulempe.  For eksempel:  Et katalog indeholder 2 filer:
 
 <screen>
@@ -869,7 +869,7 @@ dogme95.zip      film_index.html
      <secondary>unzip</secondary>
     </indexterm>
 
-    Du kan også bruge zip-filer under Unix, og du kan se indholdet af
+    Du kan ogsÃ¥ bruge zip-filer under Unix, og du kan se indholdet af
     zip-filen ved f.eks. at skrive:
 
 <screen>
@@ -888,8 +888,8 @@ Length Method Size Ratio Date    Time   CRC-32   Name
 <para>
 Nu vil vi pakke <filename>festen.html</filename> ud af zip-filen. Det
 er den eneste fil i zip-filen, der starter med <filename>f</filename>,
-så under DOS kunne man blot skrive: <command>unzip d*
-f*</command>. Men prøver man det under Unix, går det galt:  
+sÃ¥ under DOS kunne man blot skrive: <command>unzip d*
+f*</command>. Men prÃ¸ver man det under Unix, gÃ¥r det galt:  
 </para>
 
 <screen>
@@ -900,36 +900,36 @@ caution: filename not matched:  film_index.html
 
 <para>
 Hvorfor det? Fordi der i kataloget i forvejen ligger en fil, der
-matcher <filename>f*</filename>, så vil kommandofortolkeren ekspandere
-<emphasis>både</emphasis> <filename>d*</filename>  og
+matcher <filename>f*</filename>, sÃ¥ vil kommandofortolkeren ekspandere
+<emphasis>bÃ¥de</emphasis> <filename>d*</filename>  og
 <filename>f*</filename> og kalde <command>unzip</command> med:
 <command>unzip dogme95.zip film_index.html</command>. 
 </para>
 
 <para>
-Du bliver som minimum nødt til at skrive: <command>unzip d*
+Du bliver som minimum nÃ¸dt til at skrive: <command>unzip d*
 fe*</command>. Der er ingen fil i kataloget, der matcher
-<filename>fe*</filename>, så kommandofortolkeren vil kun ekspandere
+<filename>fe*</filename>, sÃ¥ kommandofortolkeren vil kun ekspandere
 <filename>d*</filename> og kalde unzip med: <command>unzip dogme95.zip
 fe*</command>. Det overlades nu til <command>unzip</command> at ekspandere
 <filename>fe*</filename>.
 </para>
 
 <para>
-Alternativt kan man sætte en '\' foran stjernen og derved
-fortælle kommandofortolkeren at stjernen ikke skal ekspanderes.
-Altså: <command>unzip d* f\*</command>
+Alternativt kan man sÃ¦tte en '\' foran stjernen og derved
+fortÃ¦lle kommandofortolkeren at stjernen ikke skal ekspanderes.
+AltsÃ¥: <command>unzip d* f\*</command>
 </para>
 
 <para>
-Se også næste afsnit om regulære udtryk.
+Se ogsÃ¥ nÃ¦ste afsnit om regulÃ¦re udtryk.
 </para>
 
 <para>
 <indexterm><primary>?</primary></indexterm>
-Det skal også nævnes, at hvis du kun vil finde et tegn, så brug et
-spørgsmålstegn. Vil du f.eks. finde alle filer aaa, baa, caa osv. men
-ikke caaa, så kan du bruge følgende
+Det skal ogsÃ¥ nÃ¦vnes, at hvis du kun vil finde et tegn, sÃ¥ brug et
+spÃ¸rgsmÃ¥lstegn. Vil du f.eks. finde alle filer aaa, baa, caa osv. men
+ikke caaa, sÃ¥ kan du bruge fÃ¸lgende
 
 <screen>
 <prompt>[tyge@hven MitKatalog]$</prompt> <userinput>touch aaa baa caa caaa</userinput>
@@ -941,25 +941,25 @@ aaa   baa   caa
    </para>
 
    <note id="unix-globbing-og-regexp">
-    <title>"Globbing" og regulære udtryk</title>
+    <title>"Globbing" og regulÃ¦re udtryk</title>
 
     <para>
      Jokertegnene <literal>?</literal> og <literal>*</literal> er en
-     lille del af et større system til at danne mønstre for filnavne.
+     lille del af et stÃ¸rre system til at danne mÃ¸nstre for filnavne.
      Dette system kaldes "globbing".  Du kan finde en detaljeret
-     gennemgang af hvordan man bruger "globbing" i bøgerne »Unix in a
-     Nutshell« og »Linux in a Nutshell«.
+     gennemgang af hvordan man bruger "globbing" i bÃ¸gerne Â»Unix in a
+     NutshellÂ« og Â»Linux in a NutshellÂ«.
     </para>
 
     <para>
      Det er vigtigt ikke at komme til at blande "globbing" sammen med
-     det system man i Unix bruger til at danne mønstre for tekst i al
-     almindelighed &ndash; regulære udtryk (eng. "regular
-     expressions").  Regulære udtryk er et væsentligt stærkere system
-     end "globbing", men de bruges altså sædvanligvis ikke til mønstre
+     det system man i Unix bruger til at danne mÃ¸nstre for tekst i al
+     almindelighed &ndash; regulÃ¦re udtryk (eng. "regular
+     expressions").  RegulÃ¦re udtryk er et vÃ¦sentligt stÃ¦rkere system
+     end "globbing", men de bruges altsÃ¥ sÃ¦dvanligvis ikke til mÃ¸nstre
      for filnavne.
 
-     <!--  Er det fordi regulære udtryk er en nyere idé end globbing?  -->
+     <!--  Er det fordi regulÃ¦re udtryk er en nyere idÃ© end globbing?  -->
     </para>
    </note>
   </sect2>
@@ -968,21 +968,21 @@ aaa   baa   caa
    <title>"Globbing"</title>
 
    <indexterm>
-    <primary>globbing (mønstre for filnavne)</primary>
+    <primary>globbing (mÃ¸nstre for filnavne)</primary>
    </indexterm>
    
    <para>
     Jokertegnene <literal>?</literal> og <literal>*</literal> (omtalt
-    i <xref linkend="joker"/>) er de grundlæggende elementer i
+    i <xref linkend="joker"/>) er de grundlÃ¦ggende elementer i
     "globbing".
    </para>
 
    <para>
-    På kommandolinjen i for eksempel Bash kan man bruge noget der minder om
-    regulære udtryk der kaldes "globbing".  Med
+    PÃ¥ kommandolinjen i for eksempel Bash kan man bruge noget der minder om
+    regulÃ¦re udtryk der kaldes "globbing".  Med
     "globbing" kan du f.eks. liste alle dine filer, der slutter med
     bogstavet a ved at skrive <command>ls *[a]</command>.  For at
-    liste filer der <emphasis>ikke</emphasis> slutter på a skrives
+    liste filer der <emphasis>ikke</emphasis> slutter pÃ¥ a skrives
     <command>ls *[^a]</command>.  Det er vigtigt at skelne regex og
     globbing fra hinanden.
    </para>
@@ -1002,12 +1002,12 @@ aaa   baa   caa
      <tbody>
       <row>
        <entry>*</entry>
-       <entry>Svarer til nul eller flere vilkårlige tegn.</entry>
+       <entry>Svarer til nul eller flere vilkÃ¥rlige tegn.</entry>
       </row>
 
       <row>
        <entry>?</entry>
-       <entry>Svarer til netop ét vilkårligt tegn</entry>
+       <entry>Svarer til netop Ã©t vilkÃ¥rligt tegn</entry>
       </row>
 
       <row>
@@ -1015,8 +1015,8 @@ aaa   baa   caa
        <entry>
         Svarer til et af tegnene <literal>a</literal>,
         <literal>b</literal>, <literal>c</literal> eller
-        <literal>d</literal>.  Men pas på.  Nogle systemer kan
-        ignorere forskelle mellem store og små bogstaver og regne med
+        <literal>d</literal>.  Men pas pÃ¥.  Nogle systemer kan
+        ignorere forskelle mellem store og smÃ¥ bogstaver og regne med
         enten det danske eller det latinske alfabet.
        </entry>
       </row>
@@ -1031,10 +1031,10 @@ aaa   baa   caa
       </row>
 
       <row>
-       <entry>{Skåne,Sjælland,Hven}</entry>
+       <entry>{SkÃ¥ne,SjÃ¦lland,Hven}</entry>
        <entry>
-        Svarer til netop én af strengene <literal>Skåne</literal>,
-        <literal>Sjælland</literal> og <literal>Hven</literal>.
+        Svarer til netop Ã©n af strengene <literal>SkÃ¥ne</literal>,
+        <literal>SjÃ¦lland</literal> og <literal>Hven</literal>.
        </entry>
       </row>
 
@@ -1044,17 +1044,17 @@ aaa   baa   caa
        <entry>
         <para>
          <!-- Tak Ole Tange. Tak, det er rigeligt! /chlor --> Svarer
-         til nul eller flere vilkårlige tegn, efterfulgt af strengen
-         <literal>foo</literal>.  Så to vilkårlige tegn efterfulgt af
+         til nul eller flere vilkÃ¥rlige tegn, efterfulgt af strengen
+         <literal>foo</literal>.  SÃ¥ to vilkÃ¥rlige tegn efterfulgt af
          strengen <literal>ba</literal> og et af tegnene
-         <literal>r</literal> eller <literal>z</literal>.  Dernæst
+         <literal>r</literal> eller <literal>z</literal>.  DernÃ¦st
          en af strengene <literal>fubar</literal> eller
          <literal>qux</literal> efterfulgt af ingen eller flere
-         vilkårlige tegn og så strengen <literal>quux</literal> til
+         vilkÃ¥rlige tegn og sÃ¥ strengen <literal>quux</literal> til
          sidst.  Med dette udtryk ses det (let) at man kan finde
          filnavnene <filename>foo++barquxquux</filename> og
-         <filename>XYZfoo77bazfubarYESquux</filename> i én og samme
-         søgning.
+         <filename>XYZfoo77bazfubarYESquux</filename> i Ã©n og samme
+         sÃ¸gning.
         </para>
        </entry>
       </row>
@@ -1064,23 +1064,23 @@ aaa   baa   caa
   </sect2>
 
   <sect2 id="regexp">
-   <title>Regulære udtryk</title>
+   <title>RegulÃ¦re udtryk</title>
 
    <indexterm>
-    <primary>regulære udtryk</primary>
+    <primary>regulÃ¦re udtryk</primary>
    </indexterm>
 
    <para>
     Mange programmer (blandt andre <command>ed</command>,
     <command>egrep</command>, Emacs, Perl, PHP,
     <command>sed</command>, <command>slocate</command> og
-    <command>vi</command>) understøtter et meget effektivt system til
-    søg-og-erstat af tekst efter angivne mønstre.  Dette system kaldes
-    <emphasis>regulære udtryk</emphasis> (eng. "regular expressions").
+    <command>vi</command>) understÃ¸tter et meget effektivt system til
+    sÃ¸g-og-erstat af tekst efter angivne mÃ¸nstre.  Dette system kaldes
+    <emphasis>regulÃ¦re udtryk</emphasis> (eng. "regular expressions").
    </para>
 
    <table id="unix-regulaere-udtryk-oversigt">
-    <title>Oversigt over regulære udtryk</title>
+    <title>Oversigt over regulÃ¦re udtryk</title>
 
     <tgroup cols="2" align="char">
      <thead>
@@ -1093,12 +1093,12 @@ aaa   baa   caa
      <tbody>
       <row>
        <entry>.*</entry>
-       <entry>Svarer til nul eller flere vilkårlige tegn.</entry>
+       <entry>Svarer til nul eller flere vilkÃ¥rlige tegn.</entry>
       </row>
 
       <row>
        <entry>.</entry>
-       <entry>Svarer til netop ét vilkårligt tegn</entry>
+       <entry>Svarer til netop Ã©t vilkÃ¥rligt tegn</entry>
       </row>
 
       <row>
@@ -1106,8 +1106,8 @@ aaa   baa   caa
        <entry>
         Svarer til et af tegnene <literal>a</literal>,
         <literal>b</literal>, <literal>c</literal> eller
-        <literal>d</literal>.  Men pas på.  Nogle systemer kan
-        ignorere forskelle mellem store og små bogstaver og regne med
+        <literal>d</literal>.  Men pas pÃ¥.  Nogle systemer kan
+        ignorere forskelle mellem store og smÃ¥ bogstaver og regne med
         enten det danske eller det latinske alfabet.
        </entry>
       </row>
@@ -1122,10 +1122,10 @@ aaa   baa   caa
       </row>
 
       <row>
-       <entry>(Skåne|Sjælland|Hven)</entry>
+       <entry>(SkÃ¥ne|SjÃ¦lland|Hven)</entry>
        <entry>
-        Svarer til netop én strengene <literal>Skåne</literal>,
-        <literal>Sjælland</literal> og <literal>Hven</literal>.
+        Svarer til netop Ã©n strengene <literal>SkÃ¥ne</literal>,
+        <literal>SjÃ¦lland</literal> og <literal>Hven</literal>.
        </entry>
       </row>
 
@@ -1135,17 +1135,17 @@ aaa   baa   caa
        <entry>
         <para>
          <!-- Tak Ole Tange. Tak, det er rigeligt! /chlor --> Svarer
-         til nul eller flere vilkårlige tegn, efterfulgt af strengen
-         <literal>foo</literal>.  Så to vilkårlige tegn efterfulgt af
+         til nul eller flere vilkÃ¥rlige tegn, efterfulgt af strengen
+         <literal>foo</literal>.  SÃ¥ to vilkÃ¥rlige tegn efterfulgt af
          strengen <literal>ba</literal> og et af tegnene
-         <literal>r</literal> eller <literal>z</literal>.  Dernæst
+         <literal>r</literal> eller <literal>z</literal>.  DernÃ¦st
          strengen en af strengene <literal>fubar</literal> eller
          <literal>qux</literal> efterfulgt af nul eller flere
-         vilkårlige tegn og så strengen <literal>quux</literal> til
+         vilkÃ¥rlige tegn og sÃ¥ strengen <literal>quux</literal> til
          sidst.  Med dette udtryk ses det (let) at man kan finde
          filnavnene <filename>foo++barquxquux</filename> og
-         <filename>XYZfoo77bazfubarYESquux</filename> i én og samme
-         søgning.
+         <filename>XYZfoo77bazfubarYESquux</filename> i Ã©n og samme
+         sÃ¸gning.
         </para>
        </entry>
       </row>
@@ -1153,10 +1153,10 @@ aaa   baa   caa
     </tgroup>
    </table>
 
-<!-- Nedenstående er fra Claus Sørensens referat efter
+<!-- NedenstÃ¥ende er fra Claus SÃ¸rensens referat efter
  Ole Tanges foredrag 2000-05-09 -->
 <table id="regex-def">
-<title>Definition af regulære udtryk</title>
+<title>Definition af regulÃ¦re udtryk</title>
 <tgroup cols="2" align="char">
 <thead><row>
  <entry>RegEx</entry>
@@ -1171,25 +1171,25 @@ aaa   baa   caa
 
 <row>
  <entry>RE1RE2</entry>
- <entry>To forskellige regulære udtryk efter hinanden</entry>
+ <entry>To forskellige regulÃ¦re udtryk efter hinanden</entry>
 </row>
 
 <row>
  <entry>RE*</entry>
- <entry>Regulære udtryk skal passe nul eller flere gange</entry>
+ <entry>RegulÃ¦re udtryk skal passe nul eller flere gange</entry>
 </row>
 
 <row>
  <entry>RE?</entry>
- <entry>Regulære udtryk skal passe nul eller én gang. De regulære udtryk 
-        som følger POSIX-standarden benyttes dog "RE\?". Se f.eks. 
-        nedenstående eksempel med <command>slocate</command>.
+ <entry>RegulÃ¦re udtryk skal passe nul eller Ã©n gang. De regulÃ¦re udtryk 
+        som fÃ¸lger POSIX-standarden benyttes dog "RE\?". Se f.eks. 
+        nedenstÃ¥ende eksempel med <command>slocate</command>.
 </entry>
 </row>
 
 <row>
  <entry>RE+</entry>
- <entry>Regulære udtryk skal passe én eller flere gange</entry>
+ <entry>RegulÃ¦re udtryk skal passe Ã©n eller flere gange</entry>
 </row>
 
 <row>
@@ -1219,16 +1219,16 @@ aaa   baa   caa
 </table>
 
 <para>
-For at gøre det nemmere at skrive og læse regulære
-udtryk, har man indført nogle forkortelser.
+For at gÃ¸re det nemmere at skrive og lÃ¦se regulÃ¦re
+udtryk, har man indfÃ¸rt nogle forkortelser.
 Den "rigtige" syntax for at matche bogstavet 'a',
 er ved at skrive '[a]', men her kan man i stedet
-blot skrive 'a' (uden anførselstegn).
+blot skrive 'a' (uden anfÃ¸rselstegn).
 </para>
 
 <!-- forkortelser -->
 <table id="regex-fork">
-<title>Forkortelser af regulære udtryk</title>
+<title>Forkortelser af regulÃ¦re udtryk</title>
 <tgroup cols="2" align="char">
 <thead><row>
  <entry>RegEx</entry>
@@ -1238,7 +1238,7 @@ blot skrive 'a' (uden anførselstegn).
 
 <row>
  <entry>a = a{1} = [a] = [a]{1}</entry>
- <entry>Matcher tegnet 'a' én gang</entry>
+ <entry>Matcher tegnet 'a' Ã©n gang</entry>
 </row>
 
 <row>
@@ -1253,7 +1253,7 @@ blot skrive 'a' (uden anførselstegn).
 
 <row>
  <entry>[abcd] = [a-d]</entry>
- <entry>Matcher en række tegn</entry>
+ <entry>Matcher en rÃ¦kke tegn</entry>
 </row>
 
 <row>
@@ -1296,12 +1296,12 @@ blot skrive 'a' (uden anførselstegn).
 </table>
 
 <para>
-Et simpelt eksempel på brug af ovenstående, kunne
-være at matche en datoer i filen <filename>regex</filename>.
+Et simpelt eksempel pÃ¥ brug af ovenstÃ¥ende, kunne
+vÃ¦re at matche en datoer i filen <filename>regex</filename>.
 Herunder ses en del af fil, hvor nogle linjer kun
 har en dato, og andre dato og en tekst.
-Datoen er skrevet i ISO-8601 formatet, som også
-kan udtrykkes som YYYY-MM-DD (ÅÅÅÅ-MM-DD).
+Datoen er skrevet i ISO-8601 formatet, som ogsÃ¥
+kan udtrykkes som YYYY-MM-DD (&Aring;&Aring;&Aring;&Aring;-MM-DD).
 </para>
 
 <programlisting>
@@ -1311,8 +1311,8 @@ kan udtrykkes som YYYY-MM-DD (ÅÅÅÅ-MM-DD).
 </programlisting>
 
 <para>
-For at få listen over alle linjer der ikke indeholder
-en kommentar, skrives så:
+For at fÃ¥ listen over alle linjer der ikke indeholder
+en kommentar, skrives sÃ¥:
 </para>
 
 <screen>
@@ -1322,12 +1322,12 @@ en kommentar, skrives så:
 </screen>
 
 <para>
-Ovenstående giver nok ikke helt det ønskede resultat,
-i tilfælde af at der er skrevet noget i filen der er en ugyldig dato.
-Mere rigtigt vil det derfor være at matche datoerne.
-Da der kan forekomme datoer i kommentarer, så skal
-et match starte først på linjen, hvilket matches med '^'.
-Dernæst skal første tegn være et tal.
+OvenstÃ¥ende giver nok ikke helt det Ã¸nskede resultat,
+i tilfÃ¦lde af at der er skrevet noget i filen der er en ugyldig dato.
+Mere rigtigt vil det derfor vÃ¦re at matche datoerne.
+Da der kan forekomme datoer i kommentarer, sÃ¥ skal
+et match starte fÃ¸rst pÃ¥ linjen, hvilket matches med '^'.
+DernÃ¦st skal fÃ¸rste tegn vÃ¦re et tal.
 </para>
 
 <screen>
@@ -1353,8 +1353,8 @@ eller lidt mere overskueligt:
 </screen>
 
 <para>
-Et lidt mere præcist dato-match der både tjekker
-år, måned og dag bliver så:
+Et lidt mere prÃ¦cist dato-match der bÃ¥de tjekker
+Ã¥r, mÃ¥ned og dag bliver sÃ¥:
 </para>
 
 <screen>
@@ -1362,8 +1362,8 @@ Et lidt mere præcist dato-match der både tjekker
 </screen>
 
 <para>
-En mere løs form, hvor der kun matches tegn og bindestreger,
-der er nem at læse, kunne være:
+En mere lÃ¸s form, hvor der kun matches tegn og bindestreger,
+der er nem at lÃ¦se, kunne vÃ¦re:
 </para>
 
 <screen>
@@ -1371,8 +1371,8 @@ der er nem at læse, kunne være:
 </screen>
 
 <para>
-Vil man kun have de linjer hvor der alene står en dato,
-indsættes et '$'-tegn der angiver slutning af linje.
+Vil man kun have de linjer hvor der alene stÃ¥r en dato,
+indsÃ¦ttes et '$'-tegn der angiver slutning af linje.
 </para>
 
 <screen>
@@ -1382,10 +1382,10 @@ indsættes et '$'-tegn der angiver slutning af linje.
 
 <para>
 Det modsatte match hvor der kun vises linjer med dato og kommentar,
-kan så fås ved at angive at der skal være et eller flere tegn efter
-datoen. Det kan gøres ved at indsætte '.+'.
-Ikke alle programmer forstår '+', så man kan også skrive '..*'
-for at få det samme resultat.
+kan sÃ¥ fÃ¥s ved at angive at der skal vÃ¦re et eller flere tegn efter
+datoen. Det kan gÃ¸res ved at indsÃ¦tte '.+'.
+Ikke alle programmer forstÃ¥r '+', sÃ¥ man kan ogsÃ¥ skrive '..*'
+for at fÃ¥ det samme resultat.
 </para>
 
 <screen>
@@ -1394,9 +1394,9 @@ for at få det samme resultat.
 </screen>
 
 <para>
-I datoer anvendes ret få tal, da der for eksempel kun er 12 måneder,
-og maksimum 31 dage i en måned. Hvis man dertil også kun
-ønsker årstal imellem 2000 og 2099, kan dette skrives som:
+I datoer anvendes ret fÃ¥ tal, da der for eksempel kun er 12 mÃ¥neder,
+og maksimum 31 dage i en mÃ¥ned. Hvis man dertil ogsÃ¥ kun
+Ã¸nsker Ã¥rstal imellem 2000 og 2099, kan dette skrives som:
 </para>
 
 <screen>
@@ -1406,9 +1406,9 @@ og maksimum 31 dage i en måned. Hvis man dertil også kun
 </screen>
 
 <para>
-Da der kun er 12 måneder, kan dette matches lidt mere præcist
-ved at tage højde for at andet tal kun kan være 0-9 hvis første
-tal er et 0. Er første tal 1, kan andet tal kun være 0-2.
+Da der kun er 12 mÃ¥neder, kan dette matches lidt mere prÃ¦cist
+ved at tage hÃ¸jde for at andet tal kun kan vÃ¦re 0-9 hvis fÃ¸rste
+tal er et 0. Er fÃ¸rste tal 1, kan andet tal kun vÃ¦re 0-2.
 </para>
 
 <screen>
@@ -1418,27 +1418,27 @@ tal er et 0. Er første tal 1, kan andet tal kun være 0-2.
 </screen>
 
 <para>
-De ovenstående eksempler viser så dels hvordan man kan skrive
-forskelligt og få det samme output, og dels at man meget nemt
-kan komme til at matche upræcist.
-Netop med datoer er det meget komplekst at lave det fuldstændige
-match, der også tager højde for skudår, så mindre kan i mange
-tilfælde gøre det.
+De ovenstÃ¥ende eksempler viser sÃ¥ dels hvordan man kan skrive
+forskelligt og fÃ¥ det samme output, og dels at man meget nemt
+kan komme til at matche uprÃ¦cist.
+Netop med datoer er det meget komplekst at lave det fuldstÃ¦ndige
+match, der ogsÃ¥ tager hÃ¸jde for skudÃ¥r, sÃ¥ mindre kan i mange
+tilfÃ¦lde gÃ¸re det.
 </para>
 
 <para>
-Et meget brugt regulært udtryk i tekst-programmer,
-er udtrykket der bytter om på to ord.
-Som eksempel kunne opgaven være at bytte "Linus Torvalds"
+Et meget brugt regulÃ¦rt udtryk i tekst-programmer,
+er udtrykket der bytter om pÃ¥ to ord.
+Som eksempel kunne opgaven vÃ¦re at bytte "Linus Torvalds"
 om til "Torvalds, Linus" i hele dokumentet.
-Der skal så laves en søgning der dels matcher hvert ord,
-men også 'fanger' ordene og lægger dem ind i variable.
-Her bruges () til at 'fange' ordet og efterfølgende
+Der skal sÃ¥ laves en sÃ¸gning der dels matcher hvert ord,
+men ogsÃ¥ 'fanger' ordene og lÃ¦gger dem ind i variable.
+Her bruges () til at 'fange' ordet og efterfÃ¸lgende
 kan 'fangsterne' findes i nummererede variable 1, 2, 3 osv.
 </para>
 
 <example id="regex-diff">
-<title>Notation af regulære udtryk i forskellige programmer</title>
+<title>Notation af regulÃ¦re udtryk i forskellige programmer</title>
 
 <para>
 <emphasis>Perl</emphasis>:
@@ -1482,21 +1482,21 @@ sed 's/\(Linus\) \(Torvalds\)/\2, \1/'
 </example>
 
 <para>
-Der er altså en lille forskel i de forskellige programmer
-på brugen af regulære udtryk, men princippet er det samme.
+Der er altsÃ¥ en lille forskel i de forskellige programmer
+pÃ¥ brugen af regulÃ¦re udtryk, men princippet er det samme.
 </para>
 
 <!-- Eksempel -->
 
 <para>
 Et lille praktisk og anvendeligt eksempel er at finde
-alle de filer på dine diske som enten ender på 
+alle de filer pÃ¥ dine diske som enten ender pÃ¥ 
 '.htm' eller '.html'.
-I regulære udtryk betyder '.' alle tegn undtaget \n
-så der skal en '\' foran.
-Med 'l\?' angives det, at der enten skal være et 'l' eller intet tegn.
-'$' angiver slutning på filnavnet (altså linjen).
-Med <filename>slocate</filename> gøres dette således:
+I regulÃ¦re udtryk betyder '.' alle tegn undtaget \n
+sÃ¥ der skal en '\' foran.
+Med 'l\?' angives det, at der enten skal vÃ¦re et 'l' eller intet tegn.
+'$' angiver slutning pÃ¥ filnavnet (altsÃ¥ linjen).
+Med <filename>slocate</filename> gÃ¸res dette sÃ¥ledes:
 </para>
 
 <screen>
@@ -1504,8 +1504,8 @@ Med <filename>slocate</filename> gøres dette således:
 </screen>
 
 <para>
-Et eksempel på et regulært udtryk kunne være at finde
-alle brugernavne på systemet, som har brugergruppe-privilegier
+Et eksempel pÃ¥ et regulÃ¦rt udtryk kunne vÃ¦re at finde
+alle brugernavne pÃ¥ systemet, som har brugergruppe-privilegier
 under 100.
 <filename>/etc/passwd</filename> indeholder oplysningerne.
 </para>
@@ -1517,8 +1517,8 @@ halt:*:7:0:halt:/sbin:/sbin/halt
 </programlisting>
 
 <para>
-Brugernavn 'halt' tilhører gruppe '0' som angivet i fjerde kolonne.
-I Perl kunne kommandoen se således ud:
+Brugernavn 'halt' tilhÃ¸rer gruppe '0' som angivet i fjerde kolonne.
+I Perl kunne kommandoen se sÃ¥ledes ud:
 </para>
 
 <screen>
@@ -1526,28 +1526,28 @@ I Perl kunne kommandoen se således ud:
 </screen>
 
 <para>
-Idéen i ovenstående er at gå tre kolonner frem, og se om der
-står et eller to tegn imellem kolon.
+IdÃ©en i ovenstÃ¥ende er at gÃ¥ tre kolonner frem, og se om der
+stÃ¥r et eller to tegn imellem kolon.
 Hvis udtrykket matches skal det printes ud.
 '/' er skille-tegnet.
-Der skal matches fra første tegn på linjen '^'.
+Der skal matches fra fÃ¸rste tegn pÃ¥ linjen '^'.
 '[^:]+:' betyder match et eller flere tegn som ikke
-er kolon, frem til næste kolon.
-Første match vil så være 'halt:'.
+er kolon, frem til nÃ¦ste kolon.
+FÃ¸rste match vil sÃ¥ vÃ¦re 'halt:'.
 Dette kolonne-match er gentaget tre gange.
 '..?:' matcher et eller to tegn, efterfulgt af kolon.
-Da der kun står tal i denne kolonne, er det kun '0'-'9'
+Da der kun stÃ¥r tal i denne kolonne, er det kun '0'-'9'
 og '10'-'99' der vil blive listet.
 </para>
 
 <para>
-Skal man matche det samme mange gange, måske flere end
+Skal man matche det samme mange gange, mÃ¥ske flere end
 tre, kan man bruge gentagelsesoperatoren {n},
 hvor n er et range.
-I førnævnte eksempel blev blokken '[^:]+:' gentaget
+I fÃ¸rnÃ¦vnte eksempel blev blokken '[^:]+:' gentaget
 tre gange. Da det er en blok skal der parenteser omkring
-før det virker: '([^:]+:){3}'.
-Den færdige linje ser nu således ud:
+fÃ¸r det virker: '([^:]+:){3}'.
+Den fÃ¦rdige linje ser nu sÃ¥ledes ud:
 </para>
 
 <screen>
@@ -1555,11 +1555,11 @@ Den færdige linje ser nu således ud:
 </screen>
 
 <para>
-'.' matcher ethvert tegn og vil man være sikker på at
+'.' matcher ethvert tegn og vil man vÃ¦re sikker pÃ¥ at
 det kun er tal der bliver matchet, skal man skrive '[0-9]' i
 stedet for '.'.
-I Perl er '[0-9]' også forkortet til '\d' (eng: decimal number) 
-så udtrykket kunne også se således ud:
+I Perl er '[0-9]' ogsÃ¥ forkortet til '\d' (eng: decimal number) 
+sÃ¥ udtrykket kunne ogsÃ¥ se sÃ¥ledes ud:
 </para>
 
 <screen>
@@ -1572,12 +1572,12 @@ Ekstraopgaven er '[^:]?:' og '[^:]*:'.
 </para>
 
 <para>
-Beskrivelse af regulære udtryk kan findes i manualsiderne med kommandoen
+Beskrivelse af regulÃ¦re udtryk kan findes i manualsiderne med kommandoen
 <command>man 7 regex</command>.
 </para>
 
 <para>
-Læs mere om regulære udtryk på
+LÃ¦s mere om regulÃ¦re udtryk pÃ¥
 <ulink url="http://zez.org/article/articleview/11/1/">http://zez.org/article/articleview/11/1/</ulink>
 </para>
 
@@ -1596,15 +1596,15 @@ Læs mere om regulære udtryk på
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>&gt;</tertiary>
 </indexterm>
 
 <para>
-Det er ikke altid hensigtsmæssigt at få outputtet fra en
-kommando skrevet direkte på skærmen. Hvis du skriver
-<command>ls /usr/bin</command>, vil du forstå hvorfor. Derfor er
-det muligt at omdirigere output (eng. "redirect"). Til det formål
+Det er ikke altid hensigtsmÃ¦ssigt at fÃ¥ outputtet fra en
+kommando skrevet direkte pÃ¥ skÃ¦rmen. Hvis du skriver
+<command>ls /usr/bin</command>, vil du forstÃ¥ hvorfor. Derfor er
+det muligt at omdirigere output (eng. "redirect"). Til det formÃ¥l
 bruger du tegnet <command>&gt;</command> til at omdirigere outputtet til en
 fil.</para>
 
@@ -1614,21 +1614,21 @@ fil.</para>
 </screen>
 
 <para>
-Andre gange har man brug for at tilføje nye linjer til en fil, hvilket 
-sker ved at benytte to større-end-tegn efter hinanden 
-<command>&gt;&gt;</command>. Dette bruges især til logfiler.
+Andre gange har man brug for at tilfÃ¸je nye linjer til en fil, hvilket 
+sker ved at benytte to stÃ¸rre-end-tegn efter hinanden 
+<command>&gt;&gt;</command>. Dette bruges isÃ¦r til logfiler.
 </para>
 
 <screen>
 <prompt>[tyge@hven MitKatalog]$ </prompt> <userinput>date &gt;&gt; tidsstempel</userinput>
 <prompt>[tyge@hven MitKatalog]$ </prompt> <userinput>date &gt;&gt; tidsstempel</userinput>
 <prompt>[tyge@hven MitKatalog]$ </prompt> <userinput>cat tidsstempel</userinput>
-lør jul 29 17:03:29 CEST 2000
-lør jul 29 17:03:31 CEST 2000
+lÃ¸r jul 29 17:03:29 CEST 2000
+lÃ¸r jul 29 17:03:31 CEST 2000
 </screen>
 
 <para>
-Tilsvarende kan nogle programmer og kommandoer fødes med
+Tilsvarende kan nogle programmer og kommandoer fÃ¸des med
 indholdet af en fil ved at bruge <command>&lt;</command>
 </para>
 
@@ -1637,14 +1637,14 @@ indholdet af en fil ved at bruge <command>&lt;</command>
 </screen>
 
 <para>
-Hvilket dog i tilfældet med <command>cat</command> er det samme 
+Hvilket dog i tilfÃ¦ldet med <command>cat</command> er det samme 
 som <command>cat usrbin.dir</command>.
 </para>
 
 <para>
-Du kan også sende skreven tekst ind til et program som forventer
-tastetryk. Nedenstående lille program svarer "y" på et spørgsmål som
-"Interaktivkommando", beder brugeren at svare på.
+Du kan ogsÃ¥ sende skreven tekst ind til et program som forventer
+tastetryk. NedenstÃ¥ende lille program svarer "y" pÃ¥ et spÃ¸rgsmÃ¥l som
+"Interaktivkommando", beder brugeren at svare pÃ¥.
 </para>
 
 
@@ -1680,15 +1680,15 @@ EOF
 
    <indexterm>
     <primary>kommandooversigt</primary>
-    <secondary>grundlæggende kommandobeskrivelse</secondary>
+    <secondary>grundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>| (kanal)</tertiary>
    </indexterm>
 
 <para>
-Som du så i det foregående afsnit, kan du omdirigere uddata til en
-fil.  Nu kan du med rette spørge hvorfor du skal omdirigere til en
-fil, hvis du kun skal se på den én gang? Svaret på dit spørgsmål er
-ligefremt: Det behøver du heller ikke. Du kan nemlig anvende en
+Som du sÃ¥ i det foregÃ¥ende afsnit, kan du omdirigere uddata til en
+fil.  Nu kan du med rette spÃ¸rge hvorfor du skal omdirigere til en
+fil, hvis du kun skal se pÃ¥ den Ã©n gang? Svaret pÃ¥ dit spÃ¸rgsmÃ¥l er
+ligefremt: Det behÃ¸ver du heller ikke. Du kan nemlig anvende en
 kanal.  I Linux betyder det, at uddata fra et
 program bruges som inddata til et andet.  Lad os give et lille
 eksempel:
@@ -1699,15 +1699,15 @@ eksempel:
 </para>
 
 <para>
-Den lodrette streg (<command>|</command>) sætter en kanal op, så
+Den lodrette streg (<command>|</command>) sÃ¦tter en kanal op, sÃ¥
 uddata fra <command>ls /usr/bin</command> kanaliseres videre og
 bruges som inddata til <command>less</command>. Det er naturligvis
-muligt at sætte en hel række kanaler op efter hinanden og på den
-måde slippe for en masse midlertidige filer.
+muligt at sÃ¦tte en hel rÃ¦kke kanaler op efter hinanden og pÃ¥ den
+mÃ¥de slippe for en masse midlertidige filer.
 </para>
 
    <para>
-    På amerikansk kaldes denne slags kanaler for »pipes«.
+    PÃ¥ amerikansk kaldes denne slags kanaler for Â»pipesÂ«.
    </para>
   </sect2>
 
@@ -1720,16 +1720,16 @@ måde slippe for en masse midlertidige filer.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>grep</tertiary>
 </indexterm>
 <para>Ofte vil du fra kommandoer som <command>cat</command>,
-<command>ls</command> og <command>find</command> få alt for meget
-information, og oftest ved du godt, at det kun er en begrænset del af
+<command>ls</command> og <command>find</command> fÃ¥ alt for meget
+information, og oftest ved du godt, at det kun er en begrÃ¦nset del af
 de viste linjer tekst, du er interesseret i. Hvis du f.eks. kun
 skal bruge de linjer af <filename>/etc/passwd</filename>, der indeholder
 navnet "tyge", kan du bruge <command>grep</command> til at
-begrænse outputtet med.
+begrÃ¦nse outputtet med.
 </para>
 
 <screen>
@@ -1738,7 +1738,7 @@ tyge:x:501:501:Tyge Brahe,,,,:/home/tyge:/bin/bash
 </screen>
 
 <para>
-Du kan også bruge de forskellige i kombination. Eksemplet her 
+Du kan ogsÃ¥ bruge de forskellige i kombination. Eksemplet her 
 finder filer i <filename>/usr/bin</filename> som begynder med p 
 og indeholder ordet mail i filnavnet. 
 </para>
@@ -1752,7 +1752,7 @@ procmail
 </screen>
 
 <para>
-Hvilket også kunne have være gjort med kommandoen 
+Hvilket ogsÃ¥ kunne have vÃ¦re gjort med kommandoen 
 <command>ls /usr/bin | grep ^p.*mail</command>
 </para>
 
@@ -1769,12 +1769,12 @@ Hvilket også kunne have være gjort med kommandoen
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>ps</tertiary>
 </indexterm>
 <para>
-Når du starter et program op, bliver det til et kørende
-program. Et kørende program kaldes i Unix-sammenhænge for en
+NÃ¥r du starter et program op, bliver det til et kÃ¸rende
+program. Et kÃ¸rende program kaldes i Unix-sammenhÃ¦nge for en
 proces (eng. "process"). Hver proces har en unik indikator, som er et
 heltal. Vi kalder denne indikator for PID, hvilket kommer af det engelske
 "Process IDentifier".
@@ -1783,7 +1783,7 @@ heltal. Vi kalder denne indikator for PID, hvilket kommer af det engelske
 <sect2 id="ps">
 <title>ps viser processer</title>
 <para>
-Hvis du vil se hvilke programmer du har kørende, kan du bruge
+Hvis du vil se hvilke programmer du har kÃ¸rende, kan du bruge
 kommandoen <command>ps</command>. <command>ps</command> er en
 forkortelse for "process".
 </para>
@@ -1798,26 +1798,26 @@ forkortelse for "process".
 </screen>
 
 <para>
-Ovenstående dialog viser, at der er et kørende program
+OvenstÃ¥ende dialog viser, at der er et kÃ¸rende program
 (<command>ps</command>) og to sovende
 (<command>/bin/login</command> og <command>bash</command>). At et
-program er kørende, ser du ved, at der under
-<filename>STAT</filename> står et "R" (for "running"), mens et sovende
+program er kÃ¸rende, ser du ved, at der under
+<filename>STAT</filename> stÃ¥r et "R" (for "running"), mens et sovende
 program i status-feltet har et "S" (for "sleeping"). En sovende
 proces er en proces, som er blevet startet, men ikke er aktiv, og
-nu står og venter på at blive aktiveret. Feltet, hvor der står
+nu stÃ¥r og venter pÃ¥ at blive aktiveret. Feltet, hvor der stÃ¥r
 <filename>TTY</filename>, viser, fra hvilken terminal programmet blev
 startet. I Linux kan du skifte mellem flere virtuelle konsoller, og
 hver virtuel konsol opfattes som en terminal.</para>
 
 <para>
-Det skal nævnes at <command>ps</command> kun viser processer med samme
+Det skal nÃ¦vnes at <command>ps</command> kun viser processer med samme
 tty (samme terminal) som <command>ps</command>, og du kan anvende
 <command>ps aux</command> til at se alle processer.
 </para>
 
 <para>
-Vil du se <emphasis>alt</emphasis> hvad der kører på maskinen og
+Vil du se <emphasis>alt</emphasis> hvad der kÃ¸rer pÃ¥ maskinen og
 se hvilke programmer, der kalder hinanden, da kan
 </para>
 
@@ -1841,14 +1841,14 @@ tyge 4197 0.0  0.7  2672 1408 pts/1 S    23:33  0:00  |   |                   \_
 I eksemplet er vist en "syg" konstruktion, hvor sidste linje viser at man har startet
 <command>csh</command> op i <command>sh</command>, som igen er startet
 op i <command>bash</command>, som igen...  Vil man vide hvilke af
-processerne der indeholder et søgeord &ndash; f.eks. ens eget login-navn, da
+processerne der indeholder et sÃ¸geord &ndash; f.eks. ens eget login-navn, da
 kan man filtere med
-<command>ps auxfww | grep SØGEORD</command>.
+<command>ps auxfww | grep S&Oslash;GEORD</command>.
 </para>
 </sect2>
 
 <sect2 id="top">
-<title>Få et bedre overblik ved at bruge top</title>
+<title>FÃ¥ et bedre overblik ved at bruge top</title>
 <indexterm>
 <primary>top</primary>
 </indexterm>
@@ -1858,27 +1858,27 @@ kan man filtere med
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>top</tertiary>
 </indexterm>
-<para>Som du så i foregående afsnit, kan <command>ps</command>
-bruges til at få et overblik over, hvilke processer du har
-kørende. Problemet er, at du kun får et statisk billede. Hvis du
+<para>Som du sÃ¥ i foregÃ¥ende afsnit, kan <command>ps</command>
+bruges til at fÃ¥ et overblik over, hvilke processer du har
+kÃ¸rende. Problemet er, at du kun fÃ¥r et statisk billede. Hvis du
 er interesseret i et mere dynamisk billede af din computers processer,
 kan du bruge programmet <command>top</command>. <command>top</command>
-opdaterer skærmen hvert femte sekund. Ved at trykke på "i" skifter
+opdaterer skÃ¦rmen hvert femte sekund. Ved at trykke pÃ¥ "i" skifter
 du mellem "non-idle"-modus og almindelig modus. I "non-idle"-modus ser du
 kun de processer, som er aktive, mens du i almindelig modus ser alle.
-Du afslutter <command>top</command> ved at trykke på
+Du afslutter <command>top</command> ved at trykke pÃ¥
 "q".</para>
 
 <para><command>top</command> leverer mange oplysninger, og derfor er
-det spændende at bruge programmet. Endvidere er det værd at
-læse programmets man-page.</para>
+det spÃ¦ndende at bruge programmet. Endvidere er det vÃ¦rd at
+lÃ¦se programmets man-page.</para>
 </sect2>
 
 <sect2 id="baggrunden">
-<title>At køre programmer i baggrunden</title>
+<title>At kÃ¸re programmer i baggrunden</title>
 <indexterm><primary>Baggrundsprocesser</primary></indexterm>
 <indexterm>
  <primary>fg</primary>
@@ -1895,7 +1895,7 @@ læse programmets man-page.</para>
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>fg</tertiary>
 </indexterm>
 <indexterm>
@@ -1907,26 +1907,26 @@ læse programmets man-page.</para>
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>bg</tertiary>
 </indexterm>
 <para>
-Alle de kommandoer, vi har præsenteret dig for i dette
-kapitel, har taget meget kort tid at udføre. Antag, at du ønsker
-at køre et program eller kommando, som tager en time at udføre. Hvis
-du nu startede programmet op på kommandolinjen, kunne du ikke
-udføre andre kommandoer i en time, da du ikke kunne komme til at
-taste nye kommandoer ind. Det er naturligvis ikke så smart, især
-ikke da Linux er et ægte multitasking styresystem!</para>
+Alle de kommandoer, vi har prÃ¦senteret dig for i dette
+kapitel, har taget meget kort tid at udfÃ¸re. Antag, at du Ã¸nsker
+at kÃ¸re et program eller kommando, som tager en time at udfÃ¸re. Hvis
+du nu startede programmet op pÃ¥ kommandolinjen, kunne du ikke
+udfÃ¸re andre kommandoer i en time, da du ikke kunne komme til at
+taste nye kommandoer ind. Det er naturligvis ikke sÃ¥ smart, isÃ¦r
+ikke da Linux er et Ã¦gte multitasking styresystem!</para>
 
 <para>
-Du kan løse dit ventetidsproblem ved at udføre
-programmet eller kommandoen i baggrunden. For at udføre et program i
-baggrunden sætter vi et <command>&amp;</command> efter kommandoen.
-Et program der tager noget tid at køre, hvis du har mange filer,
+Du kan lÃ¸se dit ventetidsproblem ved at udfÃ¸re
+programmet eller kommandoen i baggrunden. For at udfÃ¸re et program i
+baggrunden sÃ¦tter vi et <command>&amp;</command> efter kommandoen.
+Et program der tager noget tid at kÃ¸re, hvis du har mange filer,
 er <command>updatedb</command>. <command>updatedb</command> opretter
 den database der bruges af <command>locate</command>, og det tager
-typisk lang tid at køre denne kommando.
+typisk lang tid at kÃ¸re denne kommando.
 </para>
 
 <screen>
@@ -1946,23 +1946,23 @@ typisk lang tid at køre denne kommando.
 </screen>
 
 <para>
-Programmet eller kommandoen kører nu samtidig
-med at du kan indtaste og udføre nye kommandoer. Grunden til vi
-siger, at programmet kører i baggrunden er, at du ikke sidder med
-det ved din konsol (som vi så kalder for forgrunden).
-Så mens <command>updatedb</command> kører i baggrunden, kan vi
-så kører kommandoen <command>ps</command> og se processen.
+Programmet eller kommandoen kÃ¸rer nu samtidig
+med at du kan indtaste og udfÃ¸re nye kommandoer. Grunden til vi
+siger, at programmet kÃ¸rer i baggrunden er, at du ikke sidder med
+det ved din konsol (som vi sÃ¥ kalder for forgrunden).
+SÃ¥ mens <command>updatedb</command> kÃ¸rer i baggrunden, kan vi
+sÃ¥ kÃ¸rer kommandoen <command>ps</command> og se processen.
 Efter at have tastet en del andre kommandoer, her illustreret
 ved <command>cat /proc/loadavg</command>, er <command>updatedb</command>
-færdig med at køre, og kommer ud og skriver "Done".
-Her er det så baggrundsprocess nummer [1] der er færdig med at køre.
-<command>&amp;</command>-kommandoen bruges på direkte fra
+fÃ¦rdig med at kÃ¸re, og kommer ud og skriver "Done".
+Her er det sÃ¥ baggrundsprocess nummer [1] der er fÃ¦rdig med at kÃ¸re.
+<command>&amp;</command>-kommandoen bruges pÃ¥ direkte fra
 kommandolinjen og inde i shell-scripts.
 </para>
 
 <para>
-Glemte du <command>&amp;</command> sidst på kommandolinjen, så kan du
-trykke Ctrl-z og så har du suspenderet jobbet (eng. "suspended"). Med
+Glemte du <command>&amp;</command> sidst pÃ¥ kommandolinjen, sÃ¥ kan du
+trykke Ctrl-z og sÃ¥ har du suspenderet jobbet (eng. "suspended"). Med
 <command>fg</command> 
 (eng. "foreground") og <command>bg</command> (eng. "background") kan
 du styre hvad der er aktivt.
@@ -1978,9 +1978,9 @@ du styre hvad der er aktivt.
 </screen>
 
 <para>
-Har du fået sat et job igang i baggrunden, som du gerne
-vil stoppe, skal du først tilbage til programmet med
-<command>fg</command>. Tast dernæst Ctrl-c for at stoppe
+Har du fÃ¥et sat et job igang i baggrunden, som du gerne
+vil stoppe, skal du fÃ¸rst tilbage til programmet med
+<command>fg</command>. Tast dernÃ¦st Ctrl-c for at stoppe
 programmet.
 </para>
 
@@ -1994,13 +1994,13 @@ updatedb
 </screen>
 
 <para>
-Ctrl-z kan med fordel bruges mange steder. Det kunne være indefra
+Ctrl-z kan med fordel bruges mange steder. Det kunne vÃ¦re indefra
 dit post-program eller din tekst-editor.
-Situationen er at du sidder og er igang med at skrive et script, og så
-vil du lige prøve det. Efter afprøvning vil du tilbage samme sted
-i editoren, og stå det samme sted med markøren.
-Herunder er vist at editoren startes. Så tastes Ctrl-z og scriptet
-afprøves, hvilket giver en fejl.
+Situationen er at du sidder og er igang med at skrive et script, og sÃ¥
+vil du lige prÃ¸ve det. Efter afprÃ¸vning vil du tilbage samme sted
+i editoren, og stÃ¥ det samme sted med markÃ¸ren.
+Herunder er vist at editoren startes. SÃ¥ tastes Ctrl-z og scriptet
+afprÃ¸ves, hvilket giver en fejl.
 Til slut tilbage til editoren med kommandoen <command>fg</command>.
 </para>
 
@@ -2013,15 +2013,15 @@ entest: line 4: syntax error: unexpected end of file
 </screen>
 
 <para>
-Det er muligt at have flere programmer kørende i baggrunden samtidigt.
-Det kan hurtigt blive lidt uoverskueligt at gøre det, men det vil i
-nogle tilfælde være en fordel.
-For overskueligehedens skyld anvendes i det følgende blot kommandoen
-<command>sleep</command>, der holder en pause på nogle sekunder
-for så at returnerer til prompten.
+Det er muligt at have flere programmer kÃ¸rende i baggrunden samtidigt.
+Det kan hurtigt blive lidt uoverskueligt at gÃ¸re det, men det vil i
+nogle tilfÃ¦lde vÃ¦re en fordel.
+For overskueligehedens skyld anvendes i det fÃ¸lgende blot kommandoen
+<command>sleep</command>, der holder en pause pÃ¥ nogle sekunder
+for sÃ¥ at returnerer til prompten.
 Ved at starte <command>sleep 100</command> og <command>sleep 200</command>
-skulle det være lidt nemmere at følge med i hvilket program man vender
-tilbage til. Herunder starter vi så de to kommandoer, og vender så
+skulle det vÃ¦re lidt nemmere at fÃ¸lge med i hvilket program man vender
+tilbage til. Herunder starter vi sÃ¥ de to kommandoer, og vender sÃ¥
 tilbage til 
 </para>
 
@@ -2035,7 +2035,7 @@ sleep 200
 </screen>
 
 <para>
-Ovenstående er helt som ønsket, hvis det altså er process 2 man vil
+OvenstÃ¥ende er helt som Ã¸nsket, hvis det altsÃ¥ er process 2 man vil
 tilbage til.
 Hvis man i stedet vil tilbage til process 1, skal kommandoen
 <command>%1</command> bruges, hvilket angiver baggrundsprocess
@@ -2052,9 +2052,9 @@ sleep 100
 </screen>
 
 <para>
-Og selvfølgelig kan man starte flere programmer samtidigt på
-kommandolinjen og lægge dem alle i baggrunden, så de
-stadig kører samtidigt.
+Og selvfÃ¸lgelig kan man starte flere programmer samtidigt pÃ¥
+kommandolinjen og lÃ¦gge dem alle i baggrunden, sÃ¥ de
+stadig kÃ¸rer samtidigt.
 </para>
 
 <screen>
@@ -2066,8 +2066,8 @@ stadig kører samtidigt.
 
 <para>
 Er du startet op i grafisk tilstand og gerne vil starte et
-grafisk program, men ikke lige vil flytte hånden over til musen
-og bruge menuerne, så er det:
+grafisk program, men ikke lige vil flytte hÃ¥nden over til musen
+og bruge menuerne, sÃ¥ er det:
 </para>
 
 <screen>
@@ -2077,7 +2077,7 @@ og bruge menuerne, så er det:
 </sect2><!-- id="baggrunden" -->
 
 <sect2 id="koerflere">
-<title>Kør flere programmer efter hinanden</title>
+<title>KÃ¸r flere programmer efter hinanden</title>
 <indexterm><primary>Start flere programmer efter hinanden</primary></indexterm>
 <indexterm><primary>;</primary></indexterm>
 <indexterm><primary>&amp;&amp;</primary></indexterm>
@@ -2085,10 +2085,10 @@ og bruge menuerne, så er det:
 <indexterm><primary>md5sum</primary></indexterm>
 
 <para>
-Ofte har man brug for at køre flere programmer efter hinanden flere gange
-på kommandolinjen.
-Nu kan man jo blot taste pil op et par gange, og køre kommandoen igen.
-Som eksempel er det følgende to kommandoer vi vil kører gentagende gange.
+Ofte har man brug for at kÃ¸re flere programmer efter hinanden flere gange
+pÃ¥ kommandolinjen.
+Nu kan man jo blot taste pil op et par gange, og kÃ¸re kommandoen igen.
+Som eksempel er det fÃ¸lgende to kommandoer vi vil kÃ¸rer gentagende gange.
 </para>
 
 <screen>
@@ -2099,10 +2099,10 @@ Som eksempel er det følgende to kommandoer vi vil kører gentagende gange.
 </screen>
 
 <para>
-Ovenstående kunne løses ved at lave et script med disse to linjer,
-men det er lidt meget at gøre ud af det, når scriptet ikke senere skal bruges til noget.
-I stedet kan man sætte et <command>;</command> (semikolon) imellem,
-og derved først køre det ene program, efterfulgt af det andet.
+OvenstÃ¥ende kunne lÃ¸ses ved at lave et script med disse to linjer,
+men det er lidt meget at gÃ¸re ud af det, nÃ¥r scriptet ikke senere skal bruges til noget.
+I stedet kan man sÃ¦tte et <command>;</command> (semikolon) imellem,
+og derved fÃ¸rst kÃ¸re det ene program, efterfulgt af det andet.
 </para>
 
 <screen>
@@ -2112,11 +2112,11 @@ og derved først køre det ene program, efterfulgt af det andet.
 </screen>
 
 <para>
-I ovenstående eksempel sker der nok ikke nogen fejl &ndash; tror vi.
-Nu kunne man være så uheldig at filen <filename>foo</filename>
-var skrivebeskytte, hvilket gør at der ikke bliver skrevet nye data til filen.
-Dette beyder så at det ikke giver mening efterfølgende at køre <command>md5sum</command>.
-Først et eksempel på hvor galt det kan gå.
+I ovenstÃ¥ende eksempel sker der nok ikke nogen fejl &ndash; tror vi.
+Nu kunne man vÃ¦re sÃ¥ uheldig at filen <filename>foo</filename>
+var skrivebeskytte, hvilket gÃ¸r at der ikke bliver skrevet nye data til filen.
+Dette beyder sÃ¥ at det ikke giver mening efterfÃ¸lgende at kÃ¸re <command>md5sum</command>.
+FÃ¸rst et eksempel pÃ¥ hvor galt det kan gÃ¥.
 </para>
 
 <screen>
@@ -2130,11 +2130,11 @@ bash: foo: Permission denied
 </screen>
 
 <para>
-Problemet er at kommandoen <command>md5sum</command> bliver kørt, til
-trods for at det gik galt med den forgående kommando.
+Problemet er at kommandoen <command>md5sum</command> bliver kÃ¸rt, til
+trods for at det gik galt med den forgÃ¥ende kommando.
 Som vist bliver der hele tiden udregnet den samme md5-sum, hvilket ikke var meningen.
-Dette kan løses ved i stedet at bruge kommandoen <command>&amp;&amp;</command>.
-Derved bliver den næste kommando kun kørt, hvis den første gik godt.
+Dette kan lÃ¸ses ved i stedet at bruge kommandoen <command>&amp;&amp;</command>.
+Derved bliver den nÃ¦ste kommando kun kÃ¸rt, hvis den fÃ¸rste gik godt.
 </para>
 
 <screen>
@@ -2144,9 +2144,9 @@ bash: foo: Permission denied
 </screen>
 
 <para>
-Et mere praktisk eksempel på ovenstående vil være at kompilere en Linux-kerne.
-Først <command>make dep</command>, så <command>make</command>, så osv. osv.
-Men de efterfølgende kommandoer må kun køres hvis den forgående gik godt.
+Et mere praktisk eksempel pÃ¥ ovenstÃ¥ende vil vÃ¦re at kompilere en Linux-kerne.
+FÃ¸rst <command>make dep</command>, sÃ¥ <command>make</command>, sÃ¥ osv. osv.
+Men de efterfÃ¸lgende kommandoer mÃ¥ kun kÃ¸res hvis den forgÃ¥ende gik godt.
 </para>
 
 <screen>
@@ -2155,10 +2155,10 @@ Men de efterfølgende kommandoer må kun køres hvis den forgående gik godt.
 </screen>
 
 <para>
-Eksemplet med <command>make</command> vil man både bruge på kommandolinjen
+Eksemplet med <command>make</command> vil man bÃ¥de bruge pÃ¥ kommandolinjen
 og i shell-scripts.
 Et andet eksempel som typisk kun ville blive brugt i shell-scripts,
-kunne være først at teste om en fil eksiterer, og i herefter gøre noget
+kunne vÃ¦re fÃ¸rst at teste om en fil eksiterer, og i herefter gÃ¸re noget
 med den.
 </para>
 
@@ -2168,9 +2168,9 @@ med den.
 </programlisting>
 
 <para>
-Mange syntes ikke om den måde at skrive det på,
-og det er nok også nemmere at læse det,
-hvis der i stedet står:
+Mange syntes ikke om den mÃ¥de at skrive det pÃ¥,
+og det er nok ogsÃ¥ nemmere at lÃ¦se det,
+hvis der i stedet stÃ¥r:
 </para>
 
 <programlisting>
@@ -2182,13 +2182,13 @@ fi
 
 <para>
 Kommandoen <command>[</command> er blot et symlink til <command>test</command>.
-Læs om den under <command>man test</command>.
+LÃ¦s om den under <command>man test</command>.
 </para>
 
 </sect2><!-- id="koerflere" -->
 
 <sect2 id="subshell">
-<title>Start en sub-shell på kommandolinjen</title>
+<title>Start en sub-shell pÃ¥ kommandolinjen</title>
 <indexterm>
  <primary>( )</primary>
 </indexterm>
@@ -2197,15 +2197,15 @@ Læs om den under <command>man test</command>.
 </indexterm>
 
    <para>
-    Når man starter en ny kommandofortolker, får man nye omgivelser
-    (eng. environment) som programmet køres i.  Dette ses når man har et
-    kommandofortolkerprogram hvor systemvariable ændres eller tilføjes, eller
-    der skiftes til et andet katalog.  Når programmet er færdigt med at køre,
-    er alt tilbage ved det gamle.  Til tider kan det være nemmere ikke at
-    skulle oprette et program først, men blot skrive det hele direkte på
-    kommandolinjen.  Først et lille simpelt eksempel som et program, der
-    først skifter til kataloget <filename>/tmp</filename> og dernæst lister
-    filerne.  Tricket er, at når programmet er færdigt med at køre, står vi
+    NÃ¥r man starter en ny kommandofortolker, fÃ¥r man nye omgivelser
+    (eng. environment) som programmet kÃ¸res i.  Dette ses nÃ¥r man har et
+    kommandofortolkerprogram hvor systemvariable Ã¦ndres eller tilfÃ¸jes, eller
+    der skiftes til et andet katalog.  NÃ¥r programmet er fÃ¦rdigt med at kÃ¸re,
+    er alt tilbage ved det gamle.  Til tider kan det vÃ¦re nemmere ikke at
+    skulle oprette et program fÃ¸rst, men blot skrive det hele direkte pÃ¥
+    kommandolinjen.  FÃ¸rst et lille simpelt eksempel som et program, der
+    fÃ¸rst skifter til kataloget <filename>/tmp</filename> og dernÃ¦st lister
+    filerne.  Tricket er, at nÃ¥r programmet er fÃ¦rdigt med at kÃ¸re, stÃ¥r vi
     igen i samme katalog som vi kaldte programmet fra.
 
 <programlisting>
@@ -2215,7 +2215,7 @@ cd /tmp ; ls
    </para>
 
    <para>
-    For at gøre det samme på kommandolinjen skal der blot paranteser omkring:
+    For at gÃ¸re det samme pÃ¥ kommandolinjen skal der blot paranteser omkring:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>(cd /tmp ; ls)</userinput>
@@ -2223,9 +2223,9 @@ cd /tmp ; ls
    </para>
 
    <para>
-    Det eneste "ødelæggende" der skete ved ovenstående, var at der blev
-    skiftet til et andet katalog, men det kunne også være en variabel der
-    blev ændret:
+    Det eneste "Ã¸delÃ¦ggende" der skete ved ovenstÃ¥ende, var at der blev
+    skiftet til et andet katalog, men det kunne ogsÃ¥ vÃ¦re en variabel der
+    blev Ã¦ndret:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>(cd /tmp ; PATH=. ; min_test)</userinput>
@@ -2233,19 +2233,19 @@ cd /tmp ; ls
    </para>
 
 <para>
-Et mere praktisk eksempel der er besværligt at løse uden brug af "()",
+Et mere praktisk eksempel der er besvÃ¦rligt at lÃ¸se uden brug af "()",
 kan illustreres ved noget hvor der skal holdes en pause.
-Som vist før kan man blot udskifte det som står imellem paranteserne
-med et script, hvilket i det følgende ikke er praktisk.
+Som vist fÃ¸r kan man blot udskifte det som stÃ¥r imellem paranteserne
+med et script, hvilket i det fÃ¸lgende ikke er praktisk.
 </para>
 
 <para>
 Vil man gerne vide lidt om hvordan en web-server er sat op,
-kan dette gøres med <command>telnet</command> og brug af HTTP-protokollen.
-Først åbnes en forbindelse til port 80.
-Når man får en forbindelse, indtastes HEAD-kommandoen og så venter man indtil
+kan dette gÃ¸res med <command>telnet</command> og brug af HTTP-protokollen.
+FÃ¸rst Ã¥bnes en forbindelse til port 80.
+NÃ¥r man fÃ¥r en forbindelse, indtastes HEAD-kommandoen og sÃ¥ venter man indtil
 der kommer et svar.
-Manuelt gøres det således:
+Manuelt gÃ¸res det sÃ¥ledes:
 </para>
 
 <screen>
@@ -2266,13 +2266,13 @@ Connection closed by foreign host.
 </screen>
 
 <para>
-Bemærk at efter <command>HEAD</command> skal der tastes ENTER to gange.
-Her kunne man være fristet til at kanalisere HEAD-kommandoen direkte til
-<command>telnet</command>, men det går ikke da forbindelsen bliver lukket
+BemÃ¦rk at efter <command>HEAD</command> skal der tastes ENTER to gange.
+Her kunne man vÃ¦re fristet til at kanalisere HEAD-kommandoen direkte til
+<command>telnet</command>, men det gÃ¥r ikke da forbindelsen bliver lukket
 inden der kommer ouput retur fra web-serveren.
-En lille pause på et par sekunder med <command>sleep</command> løser problemet,
-men så skal kommandoen indkapsles med ().
-Det færdige eksempel er så:
+En lille pause pÃ¥ et par sekunder med <command>sleep</command> lÃ¸ser problemet,
+men sÃ¥ skal kommandoen indkapsles med ().
+Det fÃ¦rdige eksempel er sÃ¥:
 </para>
 
 <screen>
@@ -2280,7 +2280,7 @@ Det færdige eksempel er så:
 </screen>
 
 <para>
-Som før nævnt, kan det der står i parantes skrives i et script:
+Som fÃ¸r nÃ¦vnt, kan det der stÃ¥r i parantes skrives i et script:
 </para>
 
 <programlisting>
@@ -2296,47 +2296,47 @@ sleep 2
 <indexterm><primary>&lt;( )</primary></indexterm>
 <indexterm><primary>Process Substitution</primary></indexterm>
 <indexterm><primary>Output til fil</primary></indexterm>
-<indexterm><primary>Temporær fil</primary></indexterm>
+<indexterm><primary>TemporÃ¦r fil</primary></indexterm>
 <para>
 Man kommer til tider ud for at man bliver 
-nødt til at oprette midlertidige filer, der senere
+nÃ¸dt til at oprette midlertidige filer, der senere
 skal bruges af et andet program.
 Nogle programmer kan kun tage filer som input,
-og hvis output kommer fra en proces, skal der gøres noget andet.
+og hvis output kommer fra en proces, skal der gÃ¸res noget andet.
 Disse midlertidige filer skal til slut slettes,
 hvilket ofte ikke er noget problem.
 Med kommandoen <command>&lt;()</command> kan man
-undgå dette midlertidige trin.
+undgÃ¥ dette midlertidige trin.
 </para>
 
 <para>
-Programmer såsom <command>tar</command>, <command>diff</command>
-og <command>comm</command> skal bruge filer som input på
+Programmer sÃ¥som <command>tar</command>, <command>diff</command>
+og <command>comm</command> skal bruge filer som input pÃ¥
 kommandolinjen.
-Er input til disse programmer så noget der kommer fra en proces,
+Er input til disse programmer sÃ¥ noget der kommer fra en proces,
 vil man typisk gemme dette i en midlertidig fil.
-Her er et eksempel på hvordan det kunne se ud med et shell-script:
+Her er et eksempel pÃ¥ hvordan det kunne se ud med et shell-script:
 </para>
 
 <programlisting>
 #! /bin/sh
 # Find filer der skal tages backup af:
 find | egrep "\.c$" > temp
-# 'tar' filerne nævnt i 'temp'
+# 'tar' filerne nÃ¦vnt i 'temp'
 tar cvf backup.tar -T temp
 # Ryd op
 rm -f temp
 </programlisting>
 
 <para>
-Ovenstående program er måske overskueligt, men man skal
+OvenstÃ¥ende program er mÃ¥ske overskueligt, men man skal
 stadig huske at fjerne midlertidige filer, og man skal
-finde på et godt midlertidigt navn til sin
+finde pÃ¥ et godt midlertidigt navn til sin
 <filename>temp</filename>-fil.
 I stedet for at oprette en midlertidig fil, kan man tage
 output fra <command>find</command> og lave dette om til
 noget der for <command>tar</command> ligner en fil.
-Med <command>&lt;()</command> (processubstituering) bliver det så:
+Med <command>&lt;()</command> (processubstituering) bliver det sÃ¥:
 </para>
 
 <screen>
@@ -2345,11 +2345,11 @@ Med <command>&lt;()</command> (processubstituering) bliver det så:
 
 <para>
 <command>tar</command> opfatter <command>&lt;()</command> som en fil, og behandler
-den på denne måde.
-Lad os lige prøve at se om ikke systemet selv kan forklare hvad
+den pÃ¥ denne mÃ¥de.
+Lad os lige prÃ¸ve at se om ikke systemet selv kan forklare hvad
 en <command>&lt;()</command> er.
-Hvis nu <command>&lt;()</command> er en fil, så ville man kunne
-skrive filnavnet ud på skærmen.
+Hvis nu <command>&lt;()</command> er en fil, sÃ¥ ville man kunne
+skrive filnavnet ud pÃ¥ skÃ¦rmen.
 </para>
 
 <screen>
@@ -2359,9 +2359,9 @@ skrive filnavnet ud på skærmen.
 
    <para>
     Her ses at der bare oprettes noget der ligner en midlertidig fil et
-    eller andet sted, som <command>bash</command> selv holder styr på.
-    Hvis man så har to gange <command>&lt;()</command> på kommandolinjen,
-    kan <command>bash</command> stadig håndtere det:
+    eller andet sted, som <command>bash</command> selv holder styr pÃ¥.
+    Hvis man sÃ¥ har to gange <command>&lt;()</command> pÃ¥ kommandolinjen,
+    kan <command>bash</command> stadig hÃ¥ndtere det:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>echo &lt;(true) &lt;(true)</userinput>
@@ -2372,7 +2372,7 @@ skrive filnavnet ud på skærmen.
    <para>
     <command>&lt;()</command> ser ud som en fil, men er rent faktisk
     en <emphasis>kanal</emphasis>, hvilket er mere effektivt end at
-    bruge en fil.  Følgende kommandoer giver lidt yderligere
+    bruge en fil.  FÃ¸lgende kommandoer giver lidt yderligere
     information:
 
 <screen>
@@ -2390,12 +2390,12 @@ Change: Fri Jul 25 20:16:21 2002
    </para>
 
    <para>
-    Ovenstående eksempel med <command>tar</command> kan selvfølgelig
-    løses på mange andre måder, hvor <command>&lt;()</command> ikke er
-    nødvendigt. Til gengæld skulle det lille eksempel være nemmere at
-    forstå.  Et mere drilsk eksempel kan laves med
+    OvenstÃ¥ende eksempel med <command>tar</command> kan selvfÃ¸lgelig
+    lÃ¸ses pÃ¥ mange andre mÃ¥der, hvor <command>&lt;()</command> ikke er
+    nÃ¸dvendigt. Til gengÃ¦ld skulle det lille eksempel vÃ¦re nemmere at
+    forstÃ¥.  Et mere drilsk eksempel kan laves med
     <command>comm</command>, der er et program til at sammenligne
-    filer.  Ved almindelig brug anvendes det således:
+    filer.  Ved almindelig brug anvendes det sÃ¥ledes:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>comm fil-1 fil-2</userinput>
@@ -2403,9 +2403,9 @@ Change: Fri Jul 25 20:16:21 2002
    </para>
 
    <para>
-    Nu kan man være så uheldig at de filer der skal undersøges er
+    Nu kan man vÃ¦re sÃ¥ uheldig at de filer der skal undersÃ¸ges er
     uddata fra for eksempel <command>grep</command>.  Uden brug af
-    <command>&lt;()</command> kunne et shell-script se således ud:
+    <command>&lt;()</command> kunne et shell-script se sÃ¥ledes ud:
 
 <programlisting>
 #! /bin/sh
@@ -2433,7 +2433,7 @@ rm -f fil-1 fil-2
   </sect2>
 
   <sect2 id="kill">
-   <title>Dræb en proces</title>
+   <title>DrÃ¦b en proces</title>
 
    <indexterm>
     <primary>stop</primary>
@@ -2456,15 +2456,15 @@ rm -f fil-1 fil-2
 
    <indexterm>
     <primary>Kommandooversigt</primary>
-    <secondary>Grundlæggende kommandobeskrivelse</secondary>
+    <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>kill</tertiary>
    </indexterm>
 
    <para>
-    Nu kan det ske, at du har fået startet et program, som du bliver
-    træt af. Du vil altså gerne afbryde det, inden det er kørt
-    færdigt. Unix-verdenen er barsk, for man taler ikke om at afbryde
-    en proces, men om at slå den ihjel (eng. "kill"). Når du vil slå
+    Nu kan det ske, at du har fÃ¥et startet et program, som du bliver
+    trÃ¦t af. Du vil altsÃ¥ gerne afbryde det, inden det er kÃ¸rt
+    fÃ¦rdigt. Unix-verdenen er barsk, for man taler ikke om at afbryde
+    en proces, men om at slÃ¥ den ihjel (eng. "kill"). NÃ¥r du vil slÃ¥
     en proces ihjel, kan du bruge kommandoen
     <command>kill</command>. Som argument til <command>kill</command>
     giver du PID. Nedenfor er vist et eksempel.
@@ -2486,8 +2486,8 @@ rm -f fil-1 fil-2
    </para>
 
    <para>
-    Det skal også nævnes, at enkelte gange kan en proces være kørt
-    helt i skoven, og så må du tage kraftigere skyts i brug. I stedet
+    Det skal ogsÃ¥ nÃ¦vnes, at enkelte gange kan en proces vÃ¦re kÃ¸rt
+    helt i skoven, og sÃ¥ mÃ¥ du tage kraftigere skyts i brug. I stedet
     for <command>kill PROCESNUMMER</command> kan du bruge
     <command>kill -9 PROCESNUMMER</command>.  Forskellen er at
     <command>kill</command> som standard sender en besked til
@@ -2507,7 +2507,7 @@ rm -f fil-1 fil-2
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>env</tertiary>
 </indexterm>
 <indexterm><primary>export</primary></indexterm>
@@ -2517,11 +2517,11 @@ rm -f fil-1 fil-2
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>export</tertiary>
 </indexterm>
 <indexterm><primary>systemvariable</primary></indexterm>
-<indexterm><primary>miljø-variable</primary></indexterm>
+<indexterm><primary>miljÃ¸-variable</primary></indexterm>
 <indexterm><primary>environment-variable</primary></indexterm>
 <indexterm><primary>variable</primary></indexterm>
 <indexterm><primary>$</primary></indexterm>
@@ -2536,8 +2536,8 @@ rm -f fil-1 fil-2
 
 <para>
 I Unix (og dermed Linux) bruger man ofte systemvariable (eng. "environment
-variables") til at gemme vigtig opsætningsinformation for de enkelte
-programmer eller for hele systemets virkemåde. Prøv f.eks. at
+variables") til at gemme vigtig opsÃ¦tningsinformation for de enkelte
+programmer eller for hele systemets virkemÃ¥de. PrÃ¸v f.eks. at
 skrive:
 </para>
 
@@ -2552,13 +2552,13 @@ PAGER=less
 </screen>
 
 <para>
-Der kom mange linjer, som alle er formateret "VARIABEL=VÆRDI".
-Linjen "PWD" betyder f.eks. at jeg nu står i kataloget
+Der kom mange linjer, som alle er formateret "VARIABEL=V&AElig;RDI".
+Linjen "PWD" betyder f.eks. at jeg nu stÃ¥r i kataloget
 <filename>/home/tyge/linuxbog</filename>. De fleste er sat af
-systemet, mens brugeren kan vælge at tilføje nye eller overskrive de
+systemet, mens brugeren kan vÃ¦lge at tilfÃ¸je nye eller overskrive de
 eksisterende. Typisk vil dette ske i <filename>~/.profile</filename>
 hvis brugeren anvender <command>bash</command>-shellen. Lad os se om
-det er tilfældet:
+det er tilfÃ¦ldet:
 </para>
 
 <screen>
@@ -2567,7 +2567,7 @@ SHELL=/bin/bash
 </screen>
 
 <para>
-En nem måde at se alle variable på er at skrive:
+En nem mÃ¥de at se alle variable pÃ¥ er at skrive:
 </para>
 
 <screen>
@@ -2588,13 +2588,13 @@ $HISTSIZE        $MAILCHECK       $RANDOM          $sourced
 </screen>
 
 <para>
-Man kan også se <command>set</command> eller
-<command>printenv</command> for flere eksempler på bash-variable.
+Man kan ogsÃ¥ se <command>set</command> eller
+<command>printenv</command> for flere eksempler pÃ¥ bash-variable.
 </para>
 
 <para>
-Skal man så bruge den variabel i en udprintning, f.eks. på skærmen,
-anvendes $VARIABEL til at tilgå værdien:
+Skal man sÃ¥ bruge den variabel i en udprintning, f.eks. pÃ¥ skÃ¦rmen,
+anvendes $VARIABEL til at tilgÃ¥ vÃ¦rdien:
 </para>
 
 <indexterm>
@@ -2606,7 +2606,7 @@ anvendes $VARIABEL til at tilgå værdien:
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>echo</tertiary>
 </indexterm>
 
@@ -2616,34 +2616,34 @@ Jeg bruger /bin/bash
 </screen>
 
 <para>
-Vil du sætte systemvariable, så er syntaksen <command>export VARIABEL=VÆRDI</command>.
+Vil du sÃ¦tte systemvariable, sÃ¥ er syntaksen <command>export VARIABEL=V&AElig;RDI</command>.
 </para>
 
 <para>
-Lad os se på et par af de meget anvendte variable.
+Lad os se pÃ¥ et par af de meget anvendte variable.
 $HOME (eller $USER) Beskriver stien til en brugers hjemmekatalog. Ofte
 er denne sat til <filename>/home/BRUGERNAVN</filename>
 </para>
 
 <para>
  <literal>$PATH</literal> er en liste med de kataloger kommandofortolkeren
- skal gennemsøge for at finde et program, hvis man ikke eksplicit angiver den
+ skal gennemsÃ¸ge for at finde et program, hvis man ikke eksplicit angiver den
  fulde sti til det. Ofte har en normal bruger ikke "<filename>/sbin</filename>"
  i sin <literal>$PATH</literal> mens systemadministratoren har.
 </para>
 
 <para>
 For at rette i $PATH se <filename>/etc/profile</filename> hvis
-ændringerne skal gælde alle brugere. Man kan også skrive "export
-PATH=$PATH:/home/mig/bin" Hvis man gerne vil have at ens shell også
-skal søge efter de programmer man har lagt i
+Ã¦ndringerne skal gÃ¦lde alle brugere. Man kan ogsÃ¥ skrive "export
+PATH=$PATH:/home/mig/bin" Hvis man gerne vil have at ens shell ogsÃ¥
+skal sÃ¸ge efter de programmer man har lagt i
 <filename>/home/mig/bin</filename>.
 </para>
 
 <para>
 $DISPLAY angiver hvilken X-server man vil have at et program skal vises
-på. Når du starter X, binder skærmen sig til 0:0 normalt på Ctrl + Alt
-+ F7, man kan starte en ny X-server på 0:1 (F8) med <command>startx --
+pÃ¥. NÃ¥r du starter X, binder skÃ¦rmen sig til 0:0 normalt pÃ¥ Ctrl + Alt
++ F7, man kan starte en ny X-server pÃ¥ 0:1 (F8) med <command>startx --
 :1</command> hvis man har lyst til det.
 </para>
 
@@ -2698,11 +2698,11 @@ for en omtale af nogle af de editorer der findes til Linux/Unix i tekstmodus.
 <title>Flere Unix-kommandoer</title>
 
 <para>
-I dette appendiks vil vi gennemgå en række Unix/Linux-kommandoer.
+I dette appendiks vil vi gennemgÃ¥ en rÃ¦kke Unix/Linux-kommandoer.
 Gennemgangen er overfladisk, men du kan finde flere
 oplysninger i programmernes brugsanvisninger. Desuden er 
 <ulink url="http://www.sslug.dk/artikler/begyndertips.html">http://www.sslug.dk/artikler/begyndertips.html</ulink>
-et godt sted at få mere information.
+et godt sted at fÃ¥ mere information.
 </para>
 
 <sect2 id="Unixapp-redirect">
@@ -2710,7 +2710,7 @@ et godt sted at få mere information.
 
 
 <para>
-Linux (som Unix) arbejder med følgende input/output terminologi:
+Linux (som Unix) arbejder med fÃ¸lgende input/output terminologi:
 </para>
 <indexterm>
  <primary>stdout</primary>
@@ -2724,24 +2724,24 @@ Linux (som Unix) arbejder med følgende input/output terminologi:
     <para>Standard input (<filename>stdin</filename>). Normalt tastaturet.</para>
   </listitem>
   <listitem>
-    <para>Standard output(<filename>stdout</filename>). Normalt skærmen.</para>
+    <para>Standard output(<filename>stdout</filename>). Normalt skÃ¦rmen.</para>
   </listitem>
   <listitem>
-    <para>Standard error (<filename>stderr</filename>). Normalt skærmen.</para>
+    <para>Standard error (<filename>stderr</filename>). Normalt skÃ¦rmen.</para>
   </listitem>
 </itemizedlist>
 </para>
 
 <para>
-Vi har før været inde på, at <filename>stdout</filename> kan omdirigeres med <command>&gt;</command>.
+Vi har fÃ¸r vÃ¦ret inde pÃ¥, at <filename>stdout</filename> kan omdirigeres med <command>&gt;</command>.
 <command>cat fil1 fil2 &gt; fil3</command> vil samle indholdet af filerne
 <filename>fil1</filename> og <filename>fil2</filename> i filen
 <filename>fil3</filename>.
 </para>
 
 <para>
-Da måden, du omdirigerer på, er afhængig af valg af kommandofortolker,
-er det en god idé at undersøge dette nu. Prøv med:
+Da mÃ¥den, du omdirigerer pÃ¥, er afhÃ¦ngig af valg af kommandofortolker,
+er det en god idÃ© at undersÃ¸ge dette nu. PrÃ¸v med:
 </para>
 
 
@@ -2751,26 +2751,26 @@ er det en god idé at undersøge dette nu. Prøv med:
 
 
 <para>
-Svaret skulle gerne være <command>bash</command>, <command>zsh</command>,
-<command>csh</command> eller <command>tcsh</command>. Det kan være, at du
-anvender en anden skal &ndash; der findes mange. Hvis det er tilfældet, kan du se i
+Svaret skulle gerne vÃ¦re <command>bash</command>, <command>zsh</command>,
+<command>csh</command> eller <command>tcsh</command>. Det kan vÃ¦re, at du
+anvender en anden skal &ndash; der findes mange. Hvis det er tilfÃ¦ldet, kan du se i
 brugsanvisningen for den aktuelle kommandofortolker (<command>man SKALLENS_NAVN</command>).
 </para>
 
 <para>
 Hvis du selv starter en ny skal (enten fra kommandolinjen eller i et program),
-er det ikke sikkert, at ovenstående metode virker. Prøv derfor at skrive
-<command>ps</command>.  En liste over de kørende processer vil da
-blive udskrevet til skærmen. Den nederste proces, der ender på "sh",
+er det ikke sikkert, at ovenstÃ¥ende metode virker. PrÃ¸v derfor at skrive
+<command>ps</command>.  En liste over de kÃ¸rende processer vil da
+blive udskrevet til skÃ¦rmen. Den nederste proces, der ender pÃ¥ "sh",
 angiver din skal &ndash; normalt.
 </para>
 
 <para>
-Fælles for Bourne-Again Shell (<command>bash</command>) og C-Shell er
-følgende: Lad os antage, at filen <filename>fil3</filename> indeholder
-information, vi ønsker at bevare. Vi vil tilføje (append) indholdet af
+FÃ¦lles for Bourne-Again Shell (<command>bash</command>) og C-Shell er
+fÃ¸lgende: Lad os antage, at filen <filename>fil3</filename> indeholder
+information, vi Ã¸nsker at bevare. Vi vil tilfÃ¸je (append) indholdet af
 <filename>fil1</filename> og <filename>fil2</filename> til
-<filename>fil3</filename>. Det gøres ved:
+<filename>fil3</filename>. Det gÃ¸res ved:
 </para>
 
 <screen>
@@ -2786,12 +2786,12 @@ information, vi ønsker at bevare. Vi vil tilføje (append) indholdet af
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>sendmail</tertiary>
 </indexterm>
 <para>
-Indholdet af en fil kan også anvendes som argument(er)
-til en kommando. F.eks. vil følgende kommando sende indholdet af filen
+Indholdet af en fil kan ogsÃ¥ anvendes som argument(er)
+til en kommando. F.eks. vil fÃ¸lgende kommando sende indholdet af filen
 <filename>megenRos</filename> til SSLUG's webmastere:
 </para>
 
@@ -2802,18 +2802,18 @@ til en kommando. F.eks. vil følgende kommando sende indholdet af filen
 <para>
 Linux skelner (som Unix) mellem normale uddata
 (<filename>stdout</filename>) og fejluddata (<filename>stderr</filename>).
-Til tider kan det være rart kun at omdirigere det ene sæt meddelelser.
+Til tider kan det vÃ¦re rart kun at omdirigere det ene sÃ¦t meddelelser.
 </para>
 
 <para>
-Specielt for <command>bash</command> gælder følgende: Omdirigering af
+Specielt for <command>bash</command> gÃ¦lder fÃ¸lgende: Omdirigering af
 <filename>stdout</filename> (1) og <filename>stderr</filename> (2) i
 <command>bash</command> er forholdsvis simpel.
 </para>
 
 <para>
 Hvis kun fejlmeddelelserne fra en kommando &ndash; her <command>ls</command> -
-ønskes:
+Ã¸nskes:
 </para>
 
 <screen>
@@ -2821,7 +2821,7 @@ Hvis kun fejlmeddelelserne fra en kommando &ndash; her <command>ls</command> -
 </screen>
 
 <para>
-Hvis kun <filename>stdout</filename> ønskes vist og fejlmeddelelserne
+Hvis kun <filename>stdout</filename> Ã¸nskes vist og fejlmeddelelserne
 skal sendes til en fil:
 </para>
 
@@ -2830,7 +2830,7 @@ skal sendes til en fil:
 </screen>
 
 <para>
-Og endelig, hvis du ønsker at akkumulere fejlmeddelelser i en fil, kan
+Og endelig, hvis du Ã¸nsker at akkumulere fejlmeddelelser i en fil, kan
 <command>&gt;&gt;</command> anvendes &ndash; f.eks.
 </para>
 
@@ -2840,7 +2840,7 @@ Og endelig, hvis du ønsker at akkumulere fejlmeddelelser i en fil, kan
 
 <para>
 De to skaller <command>csh</command> og <command>tcsh</command>
-adskiller sig fra <command>bash</command> på følgende måder. Når du omdirigerer med
+adskiller sig fra <command>bash</command> pÃ¥ fÃ¸lgende mÃ¥der. NÃ¥r du omdirigerer med
 <command>&gt;</command> eller <command>&gt;&gt;</command>, er det kun
 <filename>stdout</filename>, der omdirigeres. Hvis
 <filename>stderr</filename> skal med, skal du anvende
@@ -2854,7 +2854,7 @@ alene, men med lidt krumspring lykkedes det alligevel:
 </screen>
 
 <para>
-Ovenstående kommando sender både <filename>stderr</filename> og
+OvenstÃ¥ende kommando sender bÃ¥de <filename>stderr</filename> og
 <filename>stdout</filename> til filen <filename>fil1</filename>.
 </para>
 </sect2>
@@ -2884,14 +2884,14 @@ Ovenstående kommando sender både <filename>stderr</filename> og
  <secondary>finger</secondary>
 </indexterm>
 <para>
-Hvis du ønsker at vide, hvilke brugere der er logget på samme computer
-som dig, bruger du kommandoen <command>who</command>. Du vil så få en
+Hvis du Ã¸nsker at vide, hvilke brugere der er logget pÃ¥ samme computer
+som dig, bruger du kommandoen <command>who</command>. Du vil sÃ¥ fÃ¥ en
 liste med brugere, der har logget ind, og fra hvilken (virtuel) terminal
-de er koblet til. Denne kommando har ikke den store værdi, med mindre
-du arbejder i et flerbruger-system. Arbejder du i et større netværk,
-kan det være, at <command>rwho</command> virker. <command>rwho</command>
-viser dig, hvem der er logget ind på hvilke computere i netværket.
-Dette kræver dog at både klient og server kører rwho-dæmonen.
+de er koblet til. Denne kommando har ikke den store vÃ¦rdi, med mindre
+du arbejder i et flerbruger-system. Arbejder du i et stÃ¸rre netvÃ¦rk,
+kan det vÃ¦re, at <command>rwho</command> virker. <command>rwho</command>
+viser dig, hvem der er logget ind pÃ¥ hvilke computere i netvÃ¦rket.
+Dette krÃ¦ver dog at bÃ¥de klient og server kÃ¸rer rwho-dÃ¦monen.
 </para>
 
 <screen>
@@ -2905,13 +2905,13 @@ katja    pts/5    Dec 21 17:31 (k5.sslug)
 
 <para>
 Dette viser at brugeren tyge er logget ind via konsollen tty1, og har
-sidenhen (kl. 17:26) åbnet tre terminalvinduer &ndash; under X. Brugeren
-katja er også logget ind på maskinen kl. 17:31 fra maskinen "k5.sslug"
-og har kun et terminal-vindue (pts/5) åbent.
+sidenhen (kl. 17:26) Ã¥bnet tre terminalvinduer &ndash; under X. Brugeren
+katja er ogsÃ¥ logget ind pÃ¥ maskinen kl. 17:31 fra maskinen "k5.sslug"
+og har kun et terminal-vindue (pts/5) Ã¥bent.
 </para>
 
 <para>
-Man kan få mere information end blot antal terminaler ved at skrive 
+Man kan fÃ¥ mere information end blot antal terminaler ved at skrive 
 </para>
 
 <screen>                 
@@ -2928,11 +2928,11 @@ tyge  pts/6    -        5:33pm  1.00s  0.25s  0.04s  w
 
 
 <para>
-Man får igen samme information om de to brugere som er logget ind, men
-der er mere information her. Man kan også se hvor lang tid de enkelte
-terminalvinduer har været urørte under "IDLE" og under "WHAT" kan man
-se om der kører et program i den enkelte terminal. I terminalen pts/0
-kører der eksempelvis pine &ndash; dvs. et e-post program.
+Man fÃ¥r igen samme information om de to brugere som er logget ind, men
+der er mere information her. Man kan ogsÃ¥ se hvor lang tid de enkelte
+terminalvinduer har vÃ¦ret urÃ¸rte under "IDLE" og under "WHAT" kan man
+se om der kÃ¸rer et program i den enkelte terminal. I terminalen pts/0
+kÃ¸rer der eksempelvis pine &ndash; dvs. et e-post program.
 </para>
 
 <para>
@@ -2945,17 +2945,17 @@ k6.sslug!tyge     pts/6    Dec 21 17:33
 </screen>
 
 <para>
-Resultatet er at man får maskin-navnet "k6.sslug" på den maskine man
-sidder ved og dernæst kommer brugernavnet. Det er meget nyttigt hvis
+Resultatet er at man fÃ¥r maskin-navnet "k6.sslug" pÃ¥ den maskine man
+sidder ved og dernÃ¦st kommer brugernavnet. Det er meget nyttigt hvis
 man f.eks. anvender DHCP eller logger meget ind fra en maskine til
-mange andre over netværket.
+mange andre over netvÃ¦rket.
 </para>
 
 <para>
-Det næste vi ser på er finger, som giver lidt ekstra
+Det nÃ¦ste vi ser pÃ¥ er finger, som giver lidt ekstra
 informationer. Man skriver "finger BRUGERNAVN" for at se information
-om BRUGERNAVN. Man får information tilbage om brugeren er logget ind
-på maskinen og man kan også se brugerens rigtige navn under
+om BRUGERNAVN. Man fÃ¥r information tilbage om brugeren er logget ind
+pÃ¥ maskinen og man kan ogsÃ¥ se brugerens rigtige navn under
 "Name:"-feltet.
 
 <screen>
@@ -2971,33 +2971,33 @@ No Plan.
 </para>
 
    <para>
-    Hvis man vil have en oversigt over alle der er logget ind på systemet
-    kan det klares ved blot at køre <command>finger</command> uden nogle
+    Hvis man vil have en oversigt over alle der er logget ind pÃ¥ systemet
+    kan det klares ved blot at kÃ¸re <command>finger</command> uden nogle
     kommandolinjetilvalg.
    </para>
 
 <para>
-Finger læser filerne; <filename>~/.plan</filename> og
+Finger lÃ¦ser filerne; <filename>~/.plan</filename> og
 <filename>~/.project</filename>. Er man systemadministrator (root) kan
-<command>last</command> og <command>lastlog</command> også give
+<command>last</command> og <command>lastlog</command> ogsÃ¥ give
 seneste login information.
 </para>
 
 <para>
-Nu har vi set et par forskellige måder til at få information om
-hvilke brugere som anvender maskinen. En nem måde at få kontakt til
-en anden bruger på maskinen er at anvende "talk" (dette kræver at
-talk-dæmonen er installeret og startet). Men "talk BRUGERNAVN" kan
-man få en ICQ-lignende chat-session i gang hvor skærmen deles i
-to. Er brugeren logget ind i flere terminaler kan man anføre et
+Nu har vi set et par forskellige mÃ¥der til at fÃ¥ information om
+hvilke brugere som anvender maskinen. En nem mÃ¥de at fÃ¥ kontakt til
+en anden bruger pÃ¥ maskinen er at anvende "talk" (dette krÃ¦ver at
+talk-dÃ¦monen er installeret og startet). Men "talk BRUGERNAVN" kan
+man fÃ¥ en ICQ-lignende chat-session i gang hvor skÃ¦rmen deles i
+to. Er brugeren logget ind i flere terminaler kan man anfÃ¸re et
 ekstra argument til kommandoen "talk BRUGERNAVN TERMINAL", hvor
 terminal en af de terminaler, som BRUGERNAVN anvender &ndash; ovenfor kan
-brugeren "katja" findes på pty/5.
+brugeren "katja" findes pÃ¥ pty/5.
 </para>
 </sect2>
 
 <sect2 id="Unixapp-find">
-<title>Søg og du skal finde</title>
+<title>SÃ¸g og du skal finde</title>
 <indexterm><primary>find</primary></indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
@@ -3005,13 +3005,13 @@ brugeren "katja" findes på pty/5.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>find</tertiary>
 </indexterm>
 <para>
 <command>find</command> bruges til at finde filer med. Syntaksen er:
 <command>find</command> hvorfra hvad [handling]. Ikke alle
-Linux/Unix-varianter kræver 3. argument. Lad os se nærmere på argumenterne.
+Linux/Unix-varianter krÃ¦ver 3. argument. Lad os se nÃ¦rmere pÃ¥ argumenterne.
 </para>
 
 <itemizedlist mark="bullet">
@@ -3056,15 +3056,15 @@ Linux/Unix-varianter kræver 3. argument. Lad os se nærmere på argumenterne.
     <programlisting>-print</programlisting> udskriver, hvor filen er fundet
   </para></listitem>
   <listitem><para>
-    <programlisting>-ls</programlisting> udfører <command>ls -l</command> på
-    søgeresultatet
+    <programlisting>-ls</programlisting> udfÃ¸rer <command>ls -l</command> pÃ¥
+    sÃ¸geresultatet
   </para></listitem>
   <listitem><para>
-    <programlisting>-exec cmd {}\;</programlisting> udfører kommandoen
-    <command>cmd</command> på søgeresultatet.
+    <programlisting>-exec cmd {}\;</programlisting> udfÃ¸rer kommandoen
+    <command>cmd</command> pÃ¥ sÃ¸geresultatet.
   </para></listitem>
   <listitem><para>
-    <programlisting>-ok</programlisting> som <programlisting>exec</programlisting> men spørger først.
+    <programlisting>-ok</programlisting> som <programlisting>exec</programlisting> men spÃ¸rger fÃ¸rst.
   </para></listitem>
   </itemizedlist>
 </para>
@@ -3072,8 +3072,8 @@ Linux/Unix-varianter kræver 3. argument. Lad os se nærmere på argumenterne.
 </itemizedlist>
 
 <para>
-Som et sødt lille eksempel på hvor smart <command>find</command> er,
-så kan vi tælle det totale antal af linjer i en række HTML-tekstfiler, der
+Som et sÃ¸dt lille eksempel pÃ¥ hvor smart <command>find</command> er,
+sÃ¥ kan vi tÃ¦lle det totale antal af linjer i en rÃ¦kke HTML-tekstfiler, der
 ligger spredt i nogle underbiblioteker.
 </para>
 
@@ -3085,7 +3085,7 @@ ligger spredt i nogle underbiblioteker.
 
 
 <sect2 id="Unixapp-touch">
-<title>Hvordan ændres datomærkningen?</title>
+<title>Hvordan Ã¦ndres datomÃ¦rkningen?</title>
 
 <indexterm>
  <primary>touch</primary>
@@ -3096,18 +3096,18 @@ ligger spredt i nogle underbiblioteker.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>touch</tertiary>
 </indexterm>
 <para>
 Kommandoen <command>touch</command> anvendes til at oprette tomme
-filer eller til at ændre tidspunktet for sidste modifikation.
+filer eller til at Ã¦ndre tidspunktet for sidste modifikation.
 </para>
 
 <para>
 Lad os antage, at filen <filename>minFil</filename> eksisterer, og
-filen <filename>minIkkeEksisterendeFil</filename> ikke gør, da vil
-<command>touch minFil</command> sætte tiden for sidste modifikation af
+filen <filename>minIkkeEksisterendeFil</filename> ikke gÃ¸r, da vil
+<command>touch minFil</command> sÃ¦tte tiden for sidste modifikation af
 filen til det aktuelle klokkeslet. Kommandoen <command>touch
 minIkkeEksisterendeFil</command> vil oprette en tom fil med
 navnet <filename>minIkkeEksisterendeFil</filename>.
@@ -3127,18 +3127,18 @@ navnet <filename>minIkkeEksisterendeFil</filename>.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>file</tertiary>
 </indexterm>
 <para>
-Kommandoen <command>file</command> forsøger at gætte, hvilken filtype
+Kommandoen <command>file</command> forsÃ¸ger at gÃ¦tte, hvilken filtype
 der er givet som argument. Hvis <command>file</command> tror, at det er
-en ascii-fil, vil <command>file</command> læse de 512 første tegn og
-forsøge at gætte programmeringssproget.
+en ascii-fil, vil <command>file</command> lÃ¦se de 512 fÃ¸rste tegn og
+forsÃ¸ge at gÃ¦tte programmeringssproget.
 </para>
 
 <para>
-<command>file</command> gætter desværre forkert fra tid til anden og
+<command>file</command> gÃ¦tter desvÃ¦rre forkert fra tid til anden og
 kan f.eks. ikke genkende filer, der indeholder programmer, som er
 skrevet i Pascal eller Lisp.
 </para>
@@ -3155,7 +3155,7 @@ skrevet i Pascal eller Lisp.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>date</tertiary>
 </indexterm>
 <para>
@@ -3165,7 +3165,7 @@ det aktuelle klokkeslet.
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt> <userinput>date</userinput>
- lør jan 16 17:50:55 CET 1999
+ lÃ¸r jan 16 17:50:55 CET 1999
 </screen>
 <indexterm>
  <primary>cal</primary>
@@ -3180,20 +3180,20 @@ det aktuelle klokkeslet.
 </indexterm>
 <para>
 <command>cal</command> er en hel lille kalender.
-Uden argument udskrives kalenderen for den aktuelle måned.
-Med et argument (tal) regnes argumentet for et årstal. Vær i øvrigt
-opmærksom på, at <command>cal</command> er År 2000-klar,
-dvs. <command>cal 99</command> udskriver kalenderen for år 99, mens <command>cal
+Uden argument udskrives kalenderen for den aktuelle mÃ¥ned.
+Med et argument (tal) regnes argumentet for et Ã¥rstal. VÃ¦r i Ã¸vrigt
+opmÃ¦rksom pÃ¥, at <command>cal</command> er &Aring;r 2000-klar,
+dvs. <command>cal 99</command> udskriver kalenderen for Ã¥r 99, mens <command>cal
 1999</command> skriver kalenderen for 1999.
 </para>
 
 <para>
-Med 2 argumenter regnes det første som måned og det andet som
-årstal. Det er værd at bemærke, at <command>cal</command> antager, at
+Med 2 argumenter regnes det fÃ¸rste som mÃ¥ned og det andet som
+Ã¥rstal. Det er vÃ¦rd at bemÃ¦rke, at <command>cal</command> antager, at
 skiftet fra den julianske kalender til den gregorianske kalender skete 
 i september 1752, hvilket passer til engelske forhold 
 (i katolske lande skete det i 1582
-og i Danmark i år 1700).
+og i Danmark i Ã¥r 1700).
 </para>
 
 <screen>
@@ -3225,30 +3225,30 @@ Su Mo Tu We Th Fr Sa
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>sort</tertiary>
 </indexterm>
 
   <para>
    <command>sort</command> sorterer en fil linje for
-   linje. <command>sort</command> kan også flette flere filer samtidig
+   linje. <command>sort</command> kan ogsÃ¥ flette flere filer samtidig
    med at indholdet sorteres. Omdirigering af <command>sort</command>
    til en fil er mulig med tilvalget "-o". <command>sort fil1 fil2
    &gt; fil1</command> vil give et pudsigt resultat: Da
    <filename>stdout</filename> omdirigeres til
    <filename>fil1</filename>, som eksisterer i forvejen, slettes
    <filename>fil1</filename>, og en ny, tom <filename>fil1</filename>
-   oprettes. Når <filename>fil1</filename> og
+   oprettes. NÃ¥r <filename>fil1</filename> og
    <filename>fil2</filename> flettes og sorteres, vil
-   <filename>fil1</filename> være tom. Derfor vil kun indholdet af
+   <filename>fil1</filename> vÃ¦re tom. Derfor vil kun indholdet af
    <filename>fil2</filename> komme med i <filename>fil1</filename> -
-   kryptisk &ndash; prøv selv! Husk blot, at <command>sort</command> er den
+   kryptisk &ndash; prÃ¸v selv! Husk blot, at <command>sort</command> er den
    eneste (standard) kommando, hvor <filename>stdout</filename>
    omdirigeres med tilvalget "-o".
 </para>
 
 <para>
-Men <command>sort</command> kan mere: En fil kan være inddelt i
+Men <command>sort</command> kan mere: En fil kan vÃ¦re inddelt i
 poster, f.eks. filen <filename>navne</filename>.
 </para>
 <screen>
@@ -3260,11 +3260,11 @@ poster, f.eks. filen <filename>navne</filename>.
 </screen>
 
 <para>
-Lad os illustrere <command>sort</command> ved en række eksempler.
-<command>sort +1 navne</command> vil sortere på efternavn (første felt
+Lad os illustrere <command>sort</command> ved en rÃ¦kke eksempler.
+<command>sort +1 navne</command> vil sortere pÃ¥ efternavn (fÃ¸rste felt
 er felt 0). <command>sort +2-n navne</command> vil sortere numerisk
-på hattestørrelse. <command>sort -r navne</command> vil sortere i
-omvendt rækkefølge.
+pÃ¥ hattestÃ¸rrelse. <command>sort -r navne</command> vil sortere i
+omvendt rÃ¦kkefÃ¸lge.
 </para>
 <screen>
 <prompt>[tyge@hven ~]$ </prompt> <userinput>sort +2 -n -r navne</userinput>
@@ -3281,7 +3281,7 @@ omvendt rækkefølge.
 
 <para>
 <command>diff</command> udskriver forskellen mellem to filer. Lad os
-se på filerne <filename>fil1</filename> og <filename>fil2</filename>.
+se pÃ¥ filerne <filename>fil1</filename> og <filename>fil2</filename>.
 </para>
 <indexterm>
  <primary>diff</primary>
@@ -3292,7 +3292,7 @@ se på filerne <filename>fil1</filename> og <filename>fil2</filename>.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>diff</tertiary>
 </indexterm>
 <screen>
@@ -3305,21 +3305,21 @@ se på filerne <filename>fil1</filename> og <filename>fil2</filename>.
   Bjarne
 <prompt>[tyge@hven ~]$ </prompt> <userinput>diff fil1 fil2 </userinput>
   2,3c2
-  &lt; Poul   (oversat: ud går Poul)
-  &lt; Bent   (oversat: ud går Bent)
+  &lt; Poul   (oversat: ud gÃ¥r Poul)
+  &lt; Bent   (oversat: ud gÃ¥r Bent)
   &gt; Bjarne (oversat: ind kom Bjarne)
 </screen>
 
 <example id="ex-diff-dir">
 <title>diff mellem hele katalog-strukturer</title>
 <para>
-Kommandoen <command>diff</command> er faktisk ret smart. Man kan endda få 
+Kommandoen <command>diff</command> er faktisk ret smart. Man kan endda fÃ¥ 
 den til at finde alle rettelser lavet mellem to kataloger, hvor der laves
-rekursiv søgning. Har man f.eks. katalogerne 
+rekursiv sÃ¸gning. Har man f.eks. katalogerne 
 <filename>tux-ny</filename> og
 <filename>tux</filename> og skal vide hvad der er lavet om fra 
 <filename>tux</filename> til
-<filename>tux-ny</filename>, så skriver man 
+<filename>tux-ny</filename>, sÃ¥ skriver man 
 </para>
 
 <screen>
@@ -3331,15 +3331,15 @@ diff -ur --new-file tux/README tux-ny/README
 -Dette katalog indeholder tekster svarende til
 -bogen, hvis vi har ment dette er relevant.
 
- Seneste bøger kan findes på
+ Seneste bÃ¸ger kan findes pÃ¥
  &linuxbogurl;
 </screen>
 
 <para>
-Parameteren <literal>u</literal> giver en pænere diff-fil med en
+Parameteren <literal>u</literal> giver en pÃ¦nere diff-fil med en
 rimelig syntaks (unified diff). Parameteren <literal>r</literal>
-betyder rekursiv søgning ned i katalog-strukturen og endelig så er 
-<literal>--new-file</literal> med for at sørge for at nye filer også
+betyder rekursiv sÃ¸gning ned i katalog-strukturen og endelig sÃ¥ er 
+<literal>--new-file</literal> med for at sÃ¸rge for at nye filer ogsÃ¥
 kommer med.
 </para>
 
@@ -3347,7 +3347,7 @@ kommer med.
 </sect2>
 
   <sect2 id="patch">
-   <title>Lappe på filer</title>
+   <title>Lappe pÃ¥ filer</title>
 
    <indexterm>
     <primary>lapper</primary>
@@ -3364,16 +3364,16 @@ kommer med.
 
    <indexterm>
     <primary>Kommandooversigt</primary>
-    <secondary>Grundlæggende kommandobeskrivelse</secondary>
+    <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
     <tertiary>patch</tertiary>
    </indexterm>
 
    <para>
-    Vi fortsætter ud fra <xref linkend="ex-diff-dir"/>.  Hvad der nu er smart er
+    Vi fortsÃ¦tter ud fra <xref linkend="ex-diff-dir"/>.  Hvad der nu er smart er
     at en anden bruger, <literal>tyge</literal>, der har den gamle
     katalog-struktur <filename>tux</filename>, og denne skal opgraderes med
-    ændringerne fra brugeren <literal>tyge</literal>. Først gemmer
-    <literal>tyge</literal> ændringerne i en fil, <filename>lap</filename> og
+    Ã¦ndringerne fra brugeren <literal>tyge</literal>. FÃ¸rst gemmer
+    <literal>tyge</literal> Ã¦ndringerne i en fil, <filename>lap</filename> og
     sender denne til <literal>tyge</literal>:
 
 <screen>
@@ -3382,8 +3382,8 @@ kommer med.
    </para>
 
    <para>
-    Brugeren <literal>tyge</literal> kan derefter tage filen og køre
-    <command>patch</command> for at få opdateret underkataloget
+    Brugeren <literal>tyge</literal> kan derefter tage filen og kÃ¸re
+    <command>patch</command> for at fÃ¥ opdateret underkataloget
     <filename>tux</filename>:
 
 <screen>
@@ -3393,8 +3393,8 @@ patching file tux/README
    </para>
 
    <para>
-    Nye filer skabes og slettede filer forsvinder automatisk. Det er på
-    denne måde rettelser og tilføjelser (lapper) til Linux-kernen distribueres.
+    Nye filer skabes og slettede filer forsvinder automatisk. Det er pÃ¥
+    denne mÃ¥de rettelser og tilfÃ¸jelser (lapper) til Linux-kernen distribueres.
    </para>
   </sect2>
 
@@ -3408,7 +3408,7 @@ patching file tux/README
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>uniq</tertiary>
 </indexterm>
 
@@ -3422,7 +3422,7 @@ patching file tux/README
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>cmp</tertiary>
 </indexterm>
 
@@ -3432,7 +3432,7 @@ patching file tux/README
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>wc</tertiary>
 </indexterm>
 
@@ -3452,21 +3452,21 @@ hvilket illustreres nedenfor.
 </screen>
 
 <para>
-<command>cmp</command> sammenligner filer og stopper læsningen af
-filerne, når <command>cmp</command> finder en forskel.
+<command>cmp</command> sammenligner filer og stopper lÃ¦sningen af
+filerne, nÃ¥r <command>cmp</command> finder en forskel.
 </para>
 
 <para>
-<command>wc</command> står for Word Count, og som navnet antyder,
-tæller den ord i en fil. <command>wc</command> har nogle tilvalg:
+<command>wc</command> stÃ¥r for Word Count, og som navnet antyder,
+tÃ¦ller den ord i en fil. <command>wc</command> har nogle tilvalg:
 "-l", "-w" og "-c" for Lines, Words og Characters.
 </para>
 
 <para>
  Vil du vide, hvor mange linjer en fil indeholder, skriver du
- <command>wc -l fil</command>. <command>wc</command> er særlig god
+ <command>wc -l fil</command>. <command>wc</command> er sÃ¦rlig god
  sammen med andre kommandoer og <command>|</command> (kanaler),
- f.eks. vil nedenstående kommando tælle op, hvor mange filer, der er i
+ f.eks. vil nedenstÃ¥ende kommando tÃ¦lle op, hvor mange filer, der er i
  kataloget <filename>/usr/bin</filename>
 </para>
 
@@ -3484,12 +3484,12 @@ Eller hvis du vil vide, hvor mange kataloger der er i
   23
 </screen>
 
-Forklaringen er som følger: <command>find /etc</command> finder alle filer og
-kataloger under <filename>/etc</filename>.  Tilvalget <literal>-type d</literal> gør at kun kataloger bliver vist.  Og tilvalget <literal>-maxdepth 1</literal>
-gør at søgningen bliver begrænset til <filename>/etc</filename> (ellers ville
-<filename>/etc</filename>s underkataloger og underkatalogers underkataloger også
-blive gennegået).  Uddata fra <command>find</command> kommer som standard
-med et filnavn per linje.  <command>wc -l</command> tæller
+Forklaringen er som fÃ¸lger: <command>find /etc</command> finder alle filer og
+kataloger under <filename>/etc</filename>.  Tilvalget <literal>-type d</literal> gÃ¸r at kun kataloger bliver vist.  Og tilvalget <literal>-maxdepth 1</literal>
+gÃ¸r at sÃ¸gningen bliver begrÃ¦nset til <filename>/etc</filename> (ellers ville
+<filename>/etc</filename>s underkataloger og underkatalogers underkataloger ogsÃ¥
+blive gennegÃ¥et).  Uddata fra <command>find</command> kommer som standard
+med et filnavn per linje.  <command>wc -l</command> tÃ¦ller
 antallet af linjer den modtager.
 </para>
 </sect2>
@@ -3503,7 +3503,7 @@ antallet af linjer den modtager.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>tail</tertiary>
 </indexterm>
 <indexterm><primary>head</primary></indexterm>
@@ -3513,38 +3513,38 @@ antallet af linjer den modtager.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>head</tertiary>
 </indexterm>
   <para>
    <command>tail</command> &ndash; uden tilvalg &ndash; udskriver de 10 sidste
    linjer af en fil, "-5" vil udskrive de 5 sidste linjer, og "+8" vil
-   udskrive fra og med linje 8 i en fil. Lad os se på et eksempel.
+   udskrive fra og med linje 8 i en fil. Lad os se pÃ¥ et eksempel.
   </para>
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt> <userinput>cat sang</userinput>
-    Jeg bærer med smil min byrde,
-    jeg drager med sang mit læs;
+    Jeg bÃ¦rer med smil min byrde,
+    jeg drager med sang mit lÃ¦s;
     jeg er som den vilde hyrde,
-    der genner sit kvæg på græs.
+    der genner sit kvÃ¦g pÃ¥ grÃ¦s.
 <prompt>[tyge@hven ~]$ </prompt> <userinput>tail -2 sang</userinput>
     jeg er som den vilde hyrde,
-    der genner sit kvæg på græs.
+    der genner sit kvÃ¦g pÃ¥ grÃ¦s.
 </screen>
 
    <para>
-    <command>tail</command> har et meget nyttig "f"-tilvalg. Den får
-    <command>tail</command> til løbende at vise de sidste 10 linjer af
+    <command>tail</command> har et meget nyttig "f"-tilvalg. Den fÃ¥r
+    <command>tail</command> til lÃ¸bende at vise de sidste 10 linjer af
     en fil, f.eks. vil du med <command>tail -f
-    /var/log/messages</command> kunne følge med i, hvad alle
-    system-dæmoner og lignende rapporterer.
+    /var/log/messages</command> kunne fÃ¸lge med i, hvad alle
+    system-dÃ¦moner og lignende rapporterer.
    </para>
 
    <para>
     <command>head</command> svarer til <command>tail</command>, men i
     stedet for slutningen af en fil, er det begyndelsen.
-    <command>head</command> &ndash; uden tilvalg &ndash; udskriver de 10 første
+    <command>head</command> &ndash; uden tilvalg &ndash; udskriver de 10 fÃ¸rste
     linjer af en fil. Tilvalg kan gives som for
     <command>tail</command>.
    </para>
@@ -3562,7 +3562,7 @@ antallet af linjer den modtager.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>cut</tertiary>
 </indexterm>
 
@@ -3575,31 +3575,31 @@ antallet af linjer den modtager.
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>paste</tertiary>
 </indexterm>
 
   <para>
    <command>cut</command> tager det, du specificerer i tilvalg, ud af
-    en linje, dvs. -cx-y: tager fra tegn nr. x til tegn nr. y på hver
-    linje i den specificerede fil. Er der kun ét tal, tages kun dette
+    en linje, dvs. -cx-y: tager fra tegn nr. x til tegn nr. y pÃ¥ hver
+    linje i den specificerede fil. Er der kun Ã©t tal, tages kun dette
     tegn ud.  -fx-y er som for c, men her drejer det sig om felter, og
     -d'X' angiver felt-separatoren.
 </para>
 
 <para>
-Vil du se, hvilke brugere der har adgang til systemet, så prøv:
+Vil du se, hvilke brugere der har adgang til systemet, sÃ¥ prÃ¸v:
 <command>cat /etc/passwd | cut -d':' -f1</command>
 </para>
 
 <para>
 <command>paste</command> samler filer lodret, hvor
-<command>cat</command> samler (kan samle) filer vandret. Lad os se på
-følgende eksempel. Du ønsker nu at samle to filer,
-<filename>navne</filename> og <filename>iq</filename>, således at
-linje 1 fra <filename>navne</filename> efterfølges af linje 1 fra
-<filename>iq</filename> (uden at dette dog skulle være konkluderende,
-for såvidt angår de tilfældige sammenstillinger af for- og efternavne
+<command>cat</command> samler (kan samle) filer vandret. Lad os se pÃ¥
+fÃ¸lgende eksempel. Du Ã¸nsker nu at samle to filer,
+<filename>navne</filename> og <filename>iq</filename>, sÃ¥ledes at
+linje 1 fra <filename>navne</filename> efterfÃ¸lges af linje 1 fra
+<filename>iq</filename> (uden at dette dog skulle vÃ¦re konkluderende,
+for sÃ¥vidt angÃ¥r de tilfÃ¦ldige sammenstillinger af for- og efternavne
 samt tal).
 </para>
 
@@ -3624,7 +3624,7 @@ samt tal).
 </sect2>
 
 <sect2 id="Unixapp-tr">
-<title>Søg og du skal erstatte</title>
+<title>SÃ¸g og du skal erstatte</title>
 <indexterm>
  <primary>tr</primary>
 </indexterm>
@@ -3634,21 +3634,21 @@ samt tal).
 </indexterm>
 <indexterm>
  <primary>Kommandooversigt</primary>
- <secondary>Grundlæggende kommandobeskrivelse</secondary>
+ <secondary>GrundlÃ¦ggende kommandobeskrivelse</secondary>
  <tertiary>tr</tertiary>
 </indexterm>
 <para>
-<command>tr</command> erstatter det første argument med det andet.
-<command>tr</command> er en lidt speciel sag. Den forventer, at få
-input fra <filename>stdin</filename>. Derfor må du bruge følgende
-fremgangsmåde, hvis du vil erstatte noget i <filename>fil1</filename>,
-og skrive indholdet til <filename>fil2</filename>. Hvis du ønsker, at
-alle små tegn skal erstattes med store, skulle følgende kunne lade sig
-gøre:
+<command>tr</command> erstatter det fÃ¸rste argument med det andet.
+<command>tr</command> er en lidt speciel sag. Den forventer, at fÃ¥
+input fra <filename>stdin</filename>. Derfor mÃ¥ du bruge fÃ¸lgende
+fremgangsmÃ¥de, hvis du vil erstatte noget i <filename>fil1</filename>,
+og skrive indholdet til <filename>fil2</filename>. Hvis du Ã¸nsker, at
+alle smÃ¥ tegn skal erstattes med store, skulle fÃ¸lgende kunne lade sig
+gÃ¸re:
 </para>
 
 <screen>
-<prompt>[tyge@hven ~]$ </prompt> <userinput>tr '[a-z,æ,ø,å]' '[A-Z,Æ,Ø,Å]' &lt; fil1 &gt; fil2</userinput>
+<prompt>[tyge@hven ~]$ </prompt> <userinput>tr '[a-z,Ã¦,Ã¸,Ã¥]' '[A-Z,&AElig;,&Oslash;,&Aring;]' &lt; fil1 &gt; fil2</userinput>
 </screen>
 
 </sect2>
@@ -3663,9 +3663,9 @@ gøre:
 </indexterm>
 <indexterm><primary>xargs</primary></indexterm>
 En af de meget nyttige kommandoer er <command>xargs</command>, som kan 
-bruges som kobling mellem en kommando der giver en række filnavne, hvor
-der skal udføres en speciel kommando på hver af de filer. Som eksempel
-kan vi prøve at få antal linier i alle filer der ender på 
+bruges som kobling mellem en kommando der giver en rÃ¦kke filnavne, hvor
+der skal udfÃ¸res en speciel kommando pÃ¥ hver af de filer. Som eksempel
+kan vi prÃ¸ve at fÃ¥ antal linier i alle filer der ender pÃ¥ 
 <filename>.sgml</filename>.
 </para>
 
@@ -3677,7 +3677,7 @@ unix.sgml
 </screen>
 
 <para>
-Hvis man prøver at kanalisere filnavnet ind i <command>wc</command>, så går det
+Hvis man prÃ¸ver at kanalisere filnavnet ind i <command>wc</command>, sÃ¥ gÃ¥r det
 galt
 </para>
 
@@ -3700,16 +3700,16 @@ bruger vi <command>xargs</command>
 </screen>
 
 <para>
-Programmet <command>xargs</command> får her filnavnene ind, og kører en kommando for 
+Programmet <command>xargs</command> fÃ¥r her filnavnene ind, og kÃ¸rer en kommando for 
 <emphasis>hver</emphasis> af strengene. Argumentet <literal>-i=</literal>
-betyder at i den efterfølgende kommandoer skal lig-med (=) erstattes med en af de tekst-strenge 
+betyder at i den efterfÃ¸lgende kommandoer skal lig-med (=) erstattes med en af de tekst-strenge 
 (her er det et filnavn). Kommandoen er her <command>wc --lines =</command>, som viser antal 
 linier i filnavnet <filename>=</filename>, dvs. det som kommer fra <command>ls</command>-kommandoen.
 </para>
 
 <para>
-Der der i det nuværende katalog er tre filer, så er det nemt at vise hvad der egentlig bliver udført
-at ovenstående <command>xargs</command>-kommando:
+Der der i det nuvÃ¦rende katalog er tre filer, sÃ¥ er det nemt at vise hvad der egentlig bliver udfÃ¸rt
+at ovenstÃ¥ende <command>xargs</command>-kommando:
 </para>
 
 <screen>
@@ -3720,7 +3720,7 @@ wc --lines unix.sgml
 
 
 <para>
-Det skal nævnes at anvendelsen af lig-med i eksemplet ikke er essentiel. Man kan også anvende
+Det skal nÃ¦vnes at anvendelsen af lig-med i eksemplet ikke er essentiel. Man kan ogsÃ¥ anvende
 et andet special-tegn.
 </para>
 
@@ -3779,7 +3779,7 @@ et andet special-tegn.
  <entry>find</entry> 
  <entry>Find fil(er). Anvend f.eks. <command>find /usr -name "*.gif"</command>
       til at finde alle filer under biblioteket <filename>/usr</filename>, der ender
-      på <filename>.gif</filename>. Prøv også <command>locate FILNAVN</command>.
+      pÃ¥ <filename>.gif</filename>. PrÃ¸v ogsÃ¥ <command>locate FILNAVN</command>.
  </entry>
 </row>
 
@@ -3791,7 +3791,7 @@ et andet special-tegn.
 
 <row>
  <entry>who</entry>
- <entry>Viser hvem der er logget ind på maskinen.</entry>
+ <entry>Viser hvem der er logget ind pÃ¥ maskinen.</entry>
 </row>
 
 <row>
@@ -3807,12 +3807,12 @@ et andet special-tegn.
 <row>
  <entry>echo</entry>
  <entry>Kommandoen <command>echo "TEKST"</command>
-      skriver teksten på skærmen.</entry>
+      skriver teksten pÃ¥ skÃ¦rmen.</entry>
 </row>
 
 <row>
  <entry>chown</entry>
- <entry>Ændrer ejerskabet af filer.</entry>
+ <entry>&AElig;ndrer ejerskabet af filer.</entry>
 </row>
 
 <row>
@@ -3823,27 +3823,27 @@ et andet special-tegn.
 <!-- her fra -->
 <!--row>
  <entry>xhost</entry>
- <entry>Anvendes til at tillade/begrænse andre maskiner at
-      koble til maskinens X-server, dvs. om de må vise grafik
-      på skærmen. Anvend <command>xhost +</command> til at tillade alle
-      maskiner at vise grafik på maskinen. Anvend tilsvarende
+ <entry>Anvendes til at tillade/begrÃ¦nse andre maskiner at
+      koble til maskinens X-server, dvs. om de mÃ¥ vise grafik
+      pÃ¥ skÃ¦rmen. Anvend <command>xhost +</command> til at tillade alle
+      maskiner at vise grafik pÃ¥ maskinen. Anvend tilsvarende
       <command>xhost -maskinnavn</command> til at forhindre, at den
-      pågældende maskine viser grafik.
+      pÃ¥gÃ¦ldende maskine viser grafik.
  </entry>
 </row-->
 
 <row>
  <entry>lpr</entry>
  <entry>Print ordre. Anvend <command>lpr -Pprinternavn filnavn</command>
-      for at printe på printeren <command>printernavn</command>. De enkelte
+      for at printe pÃ¥ printeren <command>printernavn</command>. De enkelte
       printere er defineret i filen <filename>/etc/printcap</filename>.
-      De aktuelle printere kan være såvel lokale som netprintere.
+      De aktuelle printere kan vÃ¦re sÃ¥vel lokale som netprintere.
  </entry>
 </row>
 
 <row>
  <entry>lpq</entry>
- <entry>Printerkø forespørgsel. Anvend <command>lpq -Plp</command> til
+ <entry>PrinterkÃ¸ forespÃ¸rgsel. Anvend <command>lpq -Plp</command> til
       at vise, hvor langt printeren <command>lp</command> er med at
       printe ud.
  </entry>
@@ -3878,8 +3878,8 @@ et andet special-tegn.
       anvender <filename>.gz</filename> som
       slutning af filnavn. Tilsvarende findes
       <command>gunzip</command> til at pakke ud.
-      Normalt ses også filtypen <filename>.tgz</filename>,
-      som er en <filename>tar</filename> fil, hvor der efterfølgende er anvendt
+      Normalt ses ogsÃ¥ filtypen <filename>.tgz</filename>,
+      som er en <filename>tar</filename> fil, hvor der efterfÃ¸lgende er anvendt
       <command>gzip</command>.
  </entry>
 </row>
@@ -3890,8 +3890,8 @@ et andet special-tegn.
       anvender <filename>.bz2</filename> som
       slutning af filnavn. Tilsvarende findes
       <command>bunzip2</command> til at pakke ud.
-      Normalt ses også filtypen <filename>.tar.bz2</filename>,
-      som er en <filename>tar</filename> fil, hvor der efterfølgende er anvendt
+      Normalt ses ogsÃ¥ filtypen <filename>.tar.bz2</filename>,
+      som er en <filename>tar</filename> fil, hvor der efterfÃ¸lgende er anvendt
       <command>bzip2</command>.
  </entry>
 </row>
@@ -3905,22 +3905,22 @@ et andet special-tegn.
 <row>
  <entry>free</entry>
  <entry>Viser, hvor meget hukommelse der er
-      brugt, og hvor meget der er til rådighed.
+      brugt, og hvor meget der er til rÃ¥dighed.
  </entry>
 </row>
 
 <row>
  <entry>df</entry>
  <entry>Viser, hvor meget diskplads der er
-      brugt, og hvor meget der er til rådighed
-      på samtlige diske.
+      brugt, og hvor meget der er til rÃ¥dighed
+      pÃ¥ samtlige diske.
  </entry>
 </row>
 
 <row>
  <entry>du</entry>
  <entry>Viser status over, hvor meget diskplads
-      der er brugt under det sted, hvor du står i filtræet.
+      der er brugt under det sted, hvor du stÃ¥r i filtrÃ¦et.
  </entry>
 </row>
 
@@ -3933,11 +3933,11 @@ et andet special-tegn.
 <row>
  <entry>ssh</entry>
  <entry><command>ssh saltholm.sslug.dk date</command> 
- betyder, at du udfører kommandoen
-<command>date</command> på maskinen
+ betyder, at du udfÃ¸rer kommandoen
+<command>date</command> pÃ¥ maskinen
 <literal>saltholm.sslug.dk</literal>, dvs. en anden Unix-maskine.
-Linux kan udføre kommandoer på andre maskiner og så vise
-grafik (og tekst) på din egen maskine.
+Linux kan udfÃ¸re kommandoer pÃ¥ andre maskiner og sÃ¥ vise
+grafik (og tekst) pÃ¥ din egen maskine.
 </entry>
 </row>
 
@@ -3946,8 +3946,8 @@ grafik (og tekst) på din egen maskine.
   <command>telnet</command>
  </entry>
  <entry>
-  Opretter en ukrypteret netværksforbindelse til en anden maskine.  Nyttig
-  til afprøvning og fejlsøgning af netværksforbindelser.
+  Opretter en ukrypteret netvÃ¦rksforbindelse til en anden maskine.  Nyttig
+  til afprÃ¸vning og fejlsÃ¸gning af netvÃ¦rksforbindelser.
  </entry>
 </row>
 
@@ -3956,8 +3956,8 @@ grafik (og tekst) på din egen maskine.
   <command>ping</command>
  </entry>
  <entry>
-  Undersøger om der er forbindelse til en anden maskine.  Nyttig
-  til afprøvning og fejlsøgning af netværksforbindelser.
+  UndersÃ¸ger om der er forbindelse til en anden maskine.  Nyttig
+  til afprÃ¸vning og fejlsÃ¸gning af netvÃ¦rksforbindelser.
  </entry>
 </row>
 
@@ -3966,8 +3966,8 @@ grafik (og tekst) på din egen maskine.
   <command>traceroute</command>
  </entry>
  <entry>
-  Viser hvilke maskiner forbindelsen til en anden maskine går over.  Nyttig
-  til afprøvning og fejlsøgning af netværksforbindelser.
+  Viser hvilke maskiner forbindelsen til en anden maskine gÃ¥r over.  Nyttig
+  til afprÃ¸vning og fejlsÃ¸gning af netvÃ¦rksforbindelser.
  </entry>
 </row>
 
@@ -3983,18 +3983,18 @@ grafik (og tekst) på din egen maskine.
 <indexterm><primary>Shell script</primary></indexterm>
 
 <para>
-Skal man udføre mange kommandoer efter hinanden eller
-vil man have en anden bruger til at gøre det, 
-kan det med fordel betale sig at lære at skrive shell scripts.
+Skal man udfÃ¸re mange kommandoer efter hinanden eller
+vil man have en anden bruger til at gÃ¸re det, 
+kan det med fordel betale sig at lÃ¦re at skrive shell scripts.
 I <xref linkend="koerflere"/> blev vist hvordan man afvikler
-flere kommandoer efter hinanden på kommando-linjen, men er det mere kompliceret
-eller der er 20 kommandoer, så vil et shell script med
+flere kommandoer efter hinanden pÃ¥ kommando-linjen, men er det mere kompliceret
+eller der er 20 kommandoer, sÃ¥ vil et shell script med
 fordel kunne bruges.
 </para>
 
 <para>
-I dette kapitel har vi medtaget nogle få almindelige kommandoer.
-En mere udførlig gennemgang findes på:
+I dette kapitel har vi medtaget nogle fÃ¥ almindelige kommandoer.
+En mere udfÃ¸rlig gennemgang findes pÃ¥:
 <ulink url="http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html">http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html</ulink> .
 </para>
 
@@ -4007,14 +4007,14 @@ En mere udførlig gennemgang findes på:
    </indexterm>
  
    <para>
-    Alle kommandoer man kan udføre på kommandolinjen, kan også udføres i et
-    kommandofortolkerprogram (eng. »shell script«).  Et
+    Alle kommandoer man kan udfÃ¸re pÃ¥ kommandolinjen, kan ogsÃ¥ udfÃ¸res i et
+    kommandofortolkerprogram (eng. Â»shell scriptÂ«).  Et
     kommandofortolkerprogram er blot en tekstfil der starter med at angive
-    hvilken kommandofortolker der skal bruges til at køre det.  Resten af
+    hvilken kommandofortolker der skal bruges til at kÃ¸re det.  Resten af
     tekstfilen indeholder kommandoer til kommandofortolkeren.  For at
-    styresystemet skal betragte filen som et program, skal den gøres kørbar
+    styresystemet skal betragte filen som et program, skal den gÃ¸res kÃ¸rbar
     (med <command>chmod</command>).  Her er der et simpelt eksempel, der bare
-    skriver »Hej med dig.«:
+    skriver Â»Hej med dig.Â«:
 
 <programlisting>
 #! /bin/sh
@@ -4023,30 +4023,30 @@ echo Hej med dig.
    </para>
 
    <para>
-    Hvis de to linjer står i filen "<filename>hej</filename>", så gør du den
-    kørbar med kommandoen:
+    Hvis de to linjer stÃ¥r i filen "<filename>hej</filename>", sÃ¥ gÃ¸r du den
+    kÃ¸rbar med kommandoen:
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>chmod +x hej</userinput>
 </screen>
    </para>
 
    <para>
-    Når du har gjort filen kørbar, så er den et program og kan køres som
-    enhver anden kommando (næsten):
+    NÃ¥r du har gjort filen kÃ¸rbar, sÃ¥ er den et program og kan kÃ¸res som
+    enhver anden kommando (nÃ¦sten):
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>./hej</userinput>
 Hej med dig.
 </screen>
 
-    <literal>./</literal> fortæller din kommandofortolker at det er et program
-    der ligger i det katalog du står i, og ikke et kommandofortolkeren skal
+    <literal>./</literal> fortÃ¦ller din kommandofortolker at det er et program
+    der ligger i det katalog du stÃ¥r i, og ikke et kommandofortolkeren skal
     lede efter i kommandostien (systemvariablen "<literal>PATH</literal>").
    </para>
 
    <para>
-    Hvis du bare udfører kommandoen i filen "<filename>hej</filename>" direkte
-    på kommandolinjen får du samme resultat:
+    Hvis du bare udfÃ¸rer kommandoen i filen "<filename>hej</filename>" direkte
+    pÃ¥ kommandolinjen fÃ¥r du samme resultat:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>echo Hej med dig.</userinput>
@@ -4057,17 +4057,17 @@ Hej med dig.
    <para>
     I dette eksempel valgte vi at bruge "<filename>/bin/sh</filename>" som
     fortolker til programmet.  Alternativt kunne fortolkeren blandt andet
-    have været <filename>/bin/bash</filename>,
-    <filename>/usr/bin/gnuplot</filename> (så ville
-    "<command>echo</command>"-kommandoen dog ikke blive forstået) eller
+    have vÃ¦ret <filename>/bin/bash</filename>,
+    <filename>/usr/bin/gnuplot</filename> (sÃ¥ ville
+    "<command>echo</command>"-kommandoen dog ikke blive forstÃ¥et) eller
     <filename>/bin/zsh</filename>.  Henvisningen til fortolkeren
-    <emphasis>skal</emphasis> skrives på første linje i filen.
+    <emphasis>skal</emphasis> skrives pÃ¥ fÃ¸rste linje i filen.
    </para>
 
    <para>
-    Bemærk de første 4 tegn i filen er "<command>#! /</command>".  Det er
-    Unix-koden for at der bruges en fortolker til at køre dette program.  I
-    dette tilfælde er det så <command>sh</command> der er placeret i
+    BemÃ¦rk de fÃ¸rste 4 tegn i filen er "<command>#! /</command>".  Det er
+    Unix-koden for at der bruges en fortolker til at kÃ¸re dette program.  I
+    dette tilfÃ¦lde er det sÃ¥ <command>sh</command> der er placeret i
     kataloget <filename>/bin/</filename>.
    </para>
   </example><!-- shell-hello -->
@@ -4076,9 +4076,9 @@ Hej med dig.
 <title>Flere kommandoer</title>
 <indexterm><primary>Shell script</primary><secondary>flere kommandoer</secondary></indexterm>
 <para>
-Et af formålene med scripts er at køre flere kommandoer.
-Har man kun to kommandoer der skal køres, og det kun er dig selv der skal
-køre dem, kan man blot køre dem efter hinanden på kommando-linjen
+Et af formÃ¥lene med scripts er at kÃ¸re flere kommandoer.
+Har man kun to kommandoer der skal kÃ¸res, og det kun er dig selv der skal
+kÃ¸re dem, kan man blot kÃ¸re dem efter hinanden pÃ¥ kommando-linjen
 ved at angive et ; imellem kommandoerne.
 </para>
 
@@ -4089,7 +4089,7 @@ Hej, verden
 </screen>
 
 <para>
-I et shell-script kan dette så enten skrives som:
+I et shell-script kan dette sÃ¥ enten skrives som:
 </para>
 
 <programlisting>
@@ -4108,18 +4108,18 @@ echo "Hej, verden"
 </programlisting>
 
 <para>
-Bemærk at <emphasis>;</emphasis> blot betyder det samme som en ny linje
+BemÃ¦rk at <emphasis>;</emphasis> blot betyder det samme som en ny linje
 med en ny kommando.
-I de følgende eksempler vil ; blive brugt flittigt, men det er egentlig
-kun for at få scriptet til at se pænere ud og blive mere læseligt.
+I de fÃ¸lgende eksempler vil ; blive brugt flittigt, men det er egentlig
+kun for at fÃ¥ scriptet til at se pÃ¦nere ud og blive mere lÃ¦seligt.
 </para>
 
 <para>
-Hvor ; kan bruges til at skrive flere kommandoer på den samme linje,
-kan det lige nævnes at \ kan bruges til at dele en meget lang linje op i flere
-linjer, så den bliver mere læselig.
-Dette kræver at \ står til sidst på linjen, og der må ikke være et mellemrum
-eller andet tegn efterfølgende.
+Hvor ; kan bruges til at skrive flere kommandoer pÃ¥ den samme linje,
+kan det lige nÃ¦vnes at \ kan bruges til at dele en meget lang linje op i flere
+linjer, sÃ¥ den bliver mere lÃ¦selig.
+Dette krÃ¦ver at \ stÃ¥r til sidst pÃ¥ linjen, og der mÃ¥ ikke vÃ¦re et mellemrum
+eller andet tegn efterfÃ¸lgende.
 </para>
 
 <programlisting>
@@ -4129,11 +4129,11 @@ echo "Hello, " \
 </programlisting>
 
 <para>
-I de følgende afsnit vil blive brugt lidt mere besværlige
-funktioner. Når det scriptet ikke vil som du vil, kan det
-ofte hjælpe lidt ved at få skrevet ud hvad der sker undervejs.
-Indsæt <command>set -x</command> for at se hvilke kommandoer
-der bliver udført.
+I de fÃ¸lgende afsnit vil blive brugt lidt mere besvÃ¦rlige
+funktioner. NÃ¥r det scriptet ikke vil som du vil, kan det
+ofte hjÃ¦lpe lidt ved at fÃ¥ skrevet ud hvad der sker undervejs.
+IndsÃ¦t <command>set -x</command> for at se hvilke kommandoer
+der bliver udfÃ¸rt.
 </para>
 
 <programlisting>
@@ -4161,8 +4161,8 @@ Hello, world
 
    <para>
     I shell script kommer man tit ud for at skulle bruge den samme
-    værdi eller tekst flere gange. Her kan man med fordel bruge en
-    variabel til at gemme værdien i.  Variabelnavne kan både skrives
+    vÃ¦rdi eller tekst flere gange. Her kan man med fordel bruge en
+    variabel til at gemme vÃ¦rdien i.  Variabelnavne kan bÃ¥de skrives
     med majuskler og minuskler, men de fleste skriver kun
     variabelnavne med majuskler.
 
@@ -4175,11 +4175,11 @@ echo $VERSION
    </para>
 
    <para>
-    Skal der være bogstaver eller tal lige efter variablen, er det
-    nemmest at sætte et par {} omkring.  Hvis ikke der sættes {}
-    omkring variablen, vil fortolkeren opfatte den efterfølgende tekst
+    Skal der vÃ¦re bogstaver eller tal lige efter variablen, er det
+    nemmest at sÃ¦tte et par {} omkring.  Hvis ikke der sÃ¦ttes {}
+    omkring variablen, vil fortolkeren opfatte den efterfÃ¸lgende tekst
     som en del af variablens navn.  Alternativt kunne man skrive to
-    linjer, men det kan til tider ikke lade sig gøre.
+    linjer, men det kan til tider ikke lade sig gÃ¸re.
 
 <programlisting>
 #! /bin/sh
@@ -4189,7 +4189,7 @@ echo "Dette er version ${VERSION}beta af programmet."
    </para>
 
    <para>
-    Længden af en streng fås med <emphasis>${#NAVN}</emphasis>.
+    LÃ¦ngden af en streng fÃ¥s med <emphasis>${#NAVN}</emphasis>.
 
 <programlisting>
 #! /bin/sh
@@ -4198,50 +4198,50 @@ echo "\$PATH indeholder ${#PATH} tegn"
    </para>
 
    <para>
-    Er en variabel ikke nødvendigvis allerede blevet tildelt en værdi,
-    kan man angive en standardværdi
-    (<literal>${VARIABELNAVN:-STANDARDVÆRDI}</literal>) eller tildele
-    den en standardværdi
-    (<literal>${VARIABELNAVN:=STANDARDVÆRDI}</literal>):
+    Er en variabel ikke nÃ¸dvendigvis allerede blevet tildelt en vÃ¦rdi,
+    kan man angive en standardvÃ¦rdi
+    (<literal>${VARIABELNAVN:-STANDARDV&AElig;RDI}</literal>) eller tildele
+    den en standardvÃ¦rdi
+    (<literal>${VARIABELNAVN:=STANDARDV&AElig;RDI}</literal>):
 
 <programlisting>
 #! /bin/sh
-unset FLOPPY # $FLOPPY har ingen værdi nu.
+unset FLOPPY # $FLOPPY har ingen vÃ¦rdi nu.
 echo "Data skrives til ${FLOPPY:-/dev/fd0}"
 echo "\$FLOPPY er stadig tom: '$FLOPPY'"
-echo "Hvis \$FLOPPY er tom, så tilskriv: '${FLOPPY:=/dev/fd0}'"
-echo "Nu har \$FLOPPY en værdi: '$FLOPPY'"
+echo "Hvis \$FLOPPY er tom, sÃ¥ tilskriv: '${FLOPPY:=/dev/fd0}'"
+echo "Nu har \$FLOPPY en vÃ¦rdi: '$FLOPPY'"
 </programlisting>
    </para>
 
    <para>
-    Og når scriptet køres:
+    Og nÃ¥r scriptet kÃ¸res:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>./hello</userinput>
 Data skrives til /dev/fd0
 $FLOPPY er stadig tom: ''
-Hvis $FLOPPY er tom, så tilskriv: '/dev/fd0'
-Nu har $FLOPPY en værdi: '/dev/fd0'
+Hvis $FLOPPY er tom, sÃ¥ tilskriv: '/dev/fd0'
+Nu har $FLOPPY en vÃ¦rdi: '/dev/fd0'
 </screen>
    </para>
 
    <para>
     Som et mere praktisk eksempel, kan vi skrive et program der enten
-    monterer en diskette fra det første diskettedrev
+    monterer en diskette fra det fÃ¸rste diskettedrev
     (<filename>/dev/df0</filename>) eller fra det diskettedrev
-    programmet får på kommandolinjen:
+    programmet fÃ¥r pÃ¥ kommandolinjen:
 <programlisting>
 #! /bin/sh
 # Et mere praktisk eksempel hvor der enten bruges
 # kommando-parameter eller default:
-# (Du skal selvfølgelig selv slette 'echo')
+# (Du skal selvfÃ¸lgelig selv slette 'echo')
 echo mount ${1:-/dev/fd0} /mnt/floppy
 </programlisting>
    </para>
 
    <para>
-    Vi afprøver det her både med og uden en kommandolinjeparameter:
+    Vi afprÃ¸ver det her bÃ¥de med og uden en kommandolinjeparameter:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>./hello</userinput>
@@ -4252,25 +4252,25 @@ mount /dev/fd1 /mnt/floppy
    </para>
 
    <para>
-    Variable kan splittes og manipuleres på forskellige måder med de
-    indbyggede kommandoer.  Nogle foretrækker de eksterne programmer
-    såsom <command>cut</command> og <command>sed</command>, men de
+    Variable kan splittes og manipuleres pÃ¥ forskellige mÃ¥der med de
+    indbyggede kommandoer.  Nogle foretrÃ¦kker de eksterne programmer
+    sÃ¥som <command>cut</command> og <command>sed</command>, men de
     indbyggede kommandoer kan ofte klare opgaven.  Skal man have fat i
-    en del af en tekststreng, kan dette gøres med
-    ${VAR:&lt;start&gt;:&lt;antal&gt;}, første tegn starter ved 0
+    en del af en tekststreng, kan dette gÃ¸res med
+    ${VAR:&lt;start&gt;:&lt;antal&gt;}, fÃ¸rste tegn starter ved 0
     (nul):
 
 <programlisting>
 #! /bin/sh
 TEKST=abcdef
 echo "Skriv kun 'bcd': ${TEKST:1:3}"
-echo "Man kan også regne: ${TEKST:1:10-7}"
+echo "Man kan ogsÃ¥ regne: ${TEKST:1:10-7}"
 </programlisting>
    </para>
 
    <para>
     Skal en del af en variabel udskiftes med noget andet, bruges en
-    substituering.  Herunder er det de først forekommende 3 tegn 'bcd'
+    substituering.  Herunder er det de fÃ¸rst forekommende 3 tegn 'bcd'
     der udskiftes med 1 tegn 'X':
 
 <programlisting>
@@ -4287,7 +4287,7 @@ Udskift 'bcd' med 'X': aXefabcdef
 
    <para>
     Skal alle forekomster af et eller flere tegn udskiftes bruges
-    »//«:
+    Â»//Â«:
 
 <programlisting>
 #! /bin/sh
@@ -4302,10 +4302,10 @@ Udskift alle 'bcd' med 'X': aXefaXef
    </para>
 
    <para>
-    Den første del af en tekst-streng kan slettes ved brug af '#'.
+    Den fÃ¸rste del af en tekst-streng kan slettes ved brug af '#'.
     Den tekst der skal fjernes, kan evt. matches ved brug af globbing,
-    på samme måde som man kan liste filer med <command>ls</command>:
-    *?[].  Dette kan for eksempel bruges til at slette den første del af
+    pÃ¥ samme mÃ¥de som man kan liste filer med <command>ls</command>:
+    *?[].  Dette kan for eksempel bruges til at slette den fÃ¸rste del af
     hostname.
 
 <programlisting>
@@ -4323,7 +4323,7 @@ Uden maskinnavn: sslug.dk
 
 <para>
 Rigtig smart bliver det ved brug af globbing,
-hvor man kan fjerne alt frem til det første punktum.
+hvor man kan fjerne alt frem til det fÃ¸rste punktum.
 </para>
 
 <programlisting>
@@ -4339,25 +4339,25 @@ Uden maskinnavn: sslug.dk
 </screen>
 
 <para>
-En mere 'grådig' variant kan fjerne frem til
+En mere 'grÃ¥dig' variant kan fjerne frem til
 den sidste forekomst af punktum.
-Her er det så '##' der skal bruges.
+Her er det sÃ¥ '##' der skal bruges.
 </para>
 
 <programlisting>
 #! /bin/sh
 echo "Fuldt hostname: ${HOSTNAME}"
-echo "Uden maskinnavn og domæne: ${HOSTNAME##*.}"
+echo "Uden maskinnavn og domÃ¦ne: ${HOSTNAME##*.}"
 </programlisting>
 
 <screen>
 <prompt>[tyge@hven ~]$</prompt> <userinput>./hello</userinput>
 Fuldt hostname: hven.sslug.dk
-Uden maskinnavn og domæne: dk
+Uden maskinnavn og domÃ¦ne: dk
 </screen>
 
 <para>
-På samme måde som den første del af en tekst-streng
+PÃ¥ samme mÃ¥de som den fÃ¸rste del af en tekst-streng
 kan fjernes, kan den sidste del fjernes med %.
 </para>
 
@@ -4374,7 +4374,7 @@ Uden TLD: hven.sslug
 </screen>
 
 <para>
-Og den mere 'grådige' variant,
+Og den mere 'grÃ¥dige' variant,
 hvor kun maskinnavn er tilbage ved brug af %%.
 </para>
 
@@ -4395,7 +4395,7 @@ Et andet praktisk eksempel hvor den sidste del
 af tekst-streng skal fjernes, er ved filnavne.
 Har man en bunke filer der skal konverteres fra
 fx 'gif' til 'jpg', men beholde det samme filnavn,
-kan en lille løkke klare det.
+kan en lille lÃ¸kke klare det.
 </para>
 
 <programlisting>
@@ -4407,7 +4407,7 @@ done
 </programlisting>
 
 <para>
-Og kør scriptet:
+Og kÃ¸r scriptet:
 </para>
 
 <screen>
@@ -4418,11 +4418,11 @@ Konverterer axel.gif til axel.jpg
 
 <para>
 Skal man splitte en tekststreng der er adskildt af et tegn,
-kan det gøres på flere måder.
-Nogle vil nok foretrække den mere behændige kommando
-<command>cut</command>, men det kan gøres direkte
+kan det gÃ¸res pÃ¥ flere mÃ¥der.
+Nogle vil nok foretrÃ¦kke den mere behÃ¦ndige kommando
+<command>cut</command>, men det kan gÃ¸res direkte
 med de indbyggede kommandoer i shell.
-I det forgående er beskrevet hvordan ${X#*.} kan slette
+I det forgÃ¥ende er beskrevet hvordan ${X#*.} kan slette
 starten af en tekst der matcher <emphasis>#*.</emphasis>.
 Kommandoen ${X%%.*} sletter den sidste del der matcher
 <emphasis>%%.*</emphasis>.
@@ -4431,22 +4431,22 @@ splittes ved for eksempel tegnet punktum.
 </para>
 
 <screen>
-<prompt>[tyge@hven ~]$</prompt> <userinput>echo "Første del: ${HOSTNAME%%.*}"</userinput>
-Første del: hven
+<prompt>[tyge@hven ~]$</prompt> <userinput>echo "FÃ¸rste del: ${HOSTNAME%%.*}"</userinput>
+FÃ¸rste del: hven
 <prompt>[tyge@hven ~]$</prompt> <userinput>echo "Resten: ${HOSTNAME#*.}"</userinput>
 Resten: sslug.dk
 </screen>
 
 <para>
-Nu mangler vi så blot at gå ind i en løkke,
+Nu mangler vi sÃ¥ blot at gÃ¥ ind i en lÃ¸kke,
 indtil alle dele adskildt af '.' er skrevet ud.
-Til det formål skal vi bruge kommandoen
+Til det formÃ¥l skal vi bruge kommandoen
 <emphasis>while</emphasis>, hvilket vi kommer tilbage til.
-Ved det sidste element i listen går det galt,
+Ved det sidste element i listen gÃ¥r det galt,
 for da er der ikke noget punktum tilbage der kan slettes.
-Derfor kan løkken stoppes når både <emphasis>REST</emphasis>
+Derfor kan lÃ¸kken stoppes nÃ¥r bÃ¥de <emphasis>REST</emphasis>
 og <emphasis>DEL</emphasis> er ens.
-Sådan kan det gøres:
+SÃ¥dan kan det gÃ¸res:
 </para>
 
 <programlisting>
@@ -4456,13 +4456,13 @@ DEL=""
 while [ "$REST" != "$DEL" ]; do
         echo "Rest: '$REST'"
         DEL=${REST%%.*}  # slet bagfra til sidste forkomne punktum
-        REST=${REST#*.}  # slet frem til og med første punktum
+        REST=${REST#*.}  # slet frem til og med fÃ¸rste punktum
         echo "Del : '$DEL'"
 done
 </programlisting>
 
 <para>
-Og kør scriptet:
+Og kÃ¸r scriptet:
 </para>
 
 <screen>
@@ -4477,11 +4477,11 @@ Del : 'dk'
 
 <para>
 Hvis du lige fjerne den linje der skriver $REST ud,
-så er det nok noget nær det du gerne vil have.
+sÃ¥ er det nok noget nÃ¦r det du gerne vil have.
 </para>
 
 <para>
-Læs mere om streng-manipulering med
+LÃ¦s mere om streng-manipulering med
 <command>man bash</command> under "Parameter Expansion".
 </para>
 
@@ -4491,49 +4491,49 @@ Læs mere om streng-manipulering med
 <title>Parametre til script</title>
 <indexterm><primary>Shell script</primary><secondary>parametre</secondary></indexterm>
 <para>
-De fleste kommandoer eller programmer i UNIX kan startes med parametre på
-kommando-linjen, og få programmet til at opfører sig lidt anderledes.
+De fleste kommandoer eller programmer i UNIX kan startes med parametre pÃ¥
+kommando-linjen, og fÃ¥ programmet til at opfÃ¸rer sig lidt anderledes.
 Parametre nummeres fra 1 og opefter, hvor ${0} er programmet selv.
 </para>
 
 <programlisting>
 #! /bin/sh
 echo "Dette program hedder: ${0}"
-echo "Første parameter: ${1}"
+echo "FÃ¸rste parameter: ${1}"
 echo "Anden parameter: ${2}"
 </programlisting>
 
 <para>
-Programmet kan så afprøves:
+Programmet kan sÃ¥ afprÃ¸ves:
 </para>
 
 <screen>
 <prompt>[tyge@hven ~]$</prompt> <userinput>./hello Hello world</userinput>
 Dette program hedder: ./hello
-Første parameter: Hello
+FÃ¸rste parameter: Hello
 Anden parameter: world
 </screen>
 
 <para>
-Skal du vide hvor mange parametere der er på kommando-linjen,
-ligger denne værdi i den specielle variabel $#.
+Skal du vide hvor mange parametere der er pÃ¥ kommando-linjen,
+ligger denne vÃ¦rdi i den specielle variabel $#.
 </para>
 
 <programlisting>
 #! /bin/sh
 echo "Antal parametre: $#"
-echo "Første parameter: $1"
+echo "FÃ¸rste parameter: $1"
 echo "Anden parameter: $2"
 </programlisting>
 
 <para>
-Alle parametre til et script kan skrives ud på flere forskellige måder.
+Alle parametre til et script kan skrives ud pÃ¥ flere forskellige mÃ¥der.
 Med <command>$*</command> skrives alle parametre ud, 
 adskilt af indholdet af den specielle variabel <emphasis>IFS</emphasis>.
-Med <command>$@</command> skrives alle parametre ud som enkeltstående
+Med <command>$@</command> skrives alle parametre ud som enkeltstÃ¥ende
 strenge.
-For at prøve de følgende eksempler, skal der to parametre på når du kalder
-scriptet, hvoraf det ene skal være en tekst med to ord og " omkring.
+For at prÃ¸ve de fÃ¸lgende eksempler, skal der to parametre pÃ¥ nÃ¥r du kalder
+scriptet, hvoraf det ene skal vÃ¦re en tekst med to ord og " omkring.
 </para>
 
 <programlisting>
@@ -4552,15 +4552,15 @@ Alle parametre er adskilt af mellemrum: Hej Linus Torvalds
 </screen>
 
 <para>
-Et program der kører under Linux har tildelt et
+Et program der kÃ¸rer under Linux har tildelt et
 <emphasis>proces-id</emphasis> &ndash; et nummer.
 Det er de numre som ses med for eksempel <command>ps</command>
 og <command>pstree -p</command>.
-Skal man stoppe et program der kører, kan det
-gøres ved brug af dette proces-id.
-Proces-id på det script der kører,
+Skal man stoppe et program der kÃ¸rer, kan det
+gÃ¸res ved brug af dette proces-id.
+Proces-id pÃ¥ det script der kÃ¸rer,
 findes i variablen <emphasis>$$</emphasis>.
-Denne værdi kan gives videre til et andet program
+Denne vÃ¦rdi kan gives videre til et andet program
 eller script, men i dette eksempel vil vi blot stoppe
 scriptet selv.
 </para>
@@ -4568,14 +4568,14 @@ scriptet selv.
 <programlisting>
 #! /bin/sh
 echo "Dette script har proces-id: $$"
-echo "Det kan også ses med 'ps' kommandoen:"
+echo "Det kan ogsÃ¥ ses med 'ps' kommandoen:"
 ps | grep $$
 kill $$
 </programlisting>
 
 <para>
-Starter man et program i baggrunden, så man har
-to programmer kørende samtidigt, kan det være
+Starter man et program i baggrunden, sÃ¥ man har
+to programmer kÃ¸rende samtidigt, kan det vÃ¦re
 interessant pludseligt at stoppe programmet
 i baggrunden.
 Proces-id for baggrundsprogrammer findes i
@@ -4587,14 +4587,14 @@ Proces-id for baggrundsprogrammer findes i
 # Start et program i baggrunden der tager tid
 sleep 10 &amp;
 echo "'sleep' har proces-id: $!"
-echo "Det kan også ses med 'ps' kommandoen:"
+echo "Det kan ogsÃ¥ ses med 'ps' kommandoen:"
 ps | grep $!
 kill $!
 </programlisting>
 
 <para>
 For mere information om de specielle variable,
-se da <command>man bash</command> og søg efter
+se da <command>man bash</command> og sÃ¸g efter
 "<emphasis>Special Parameters</emphasis>" .
 </para>
 
@@ -4604,49 +4604,49 @@ se da <command>man bash</command> og søg efter
 <title>if</title>
 <indexterm><primary>Shell script</primary><secondary>if</secondary></indexterm>
 <para>
-Betingelser for et program eller et script er næsten uundgåeligt.
+Betingelser for et program eller et script er nÃ¦sten uundgÃ¥eligt.
 Den mest brugte kontrol-struktur er <command>if</command>,
-som i den simpleste form ser således ud, hvor kommandoer der
-skal udføres er rykket ind for at gøre det mere læseligt:
+som i den simpleste form ser sÃ¥ledes ud, hvor kommandoer der
+skal udfÃ¸res er rykket ind for at gÃ¸re det mere lÃ¦seligt:
 </para>
 
 <programlisting>
 #! /bin/sh
 if true; then
-	echo "Værdien er sand"
+	echo "VÃ¦rdien er sand"
 	echo "Man kan skrive flere linjer her"
 fi
 </programlisting>
 
 <para>
-Først skal det bemærkes at <command>true</command> ikke er en specielt
+FÃ¸rst skal det bemÃ¦rkes at <command>true</command> ikke er en specielt
 indbygget kommando i fortolkeren. <command>true</command> er et program
-der kaldes, og hvis det returnerer 0, er værdien sand.
-<command>if</command> har selvfølgelig også en <command>else</command>.
+der kaldes, og hvis det returnerer 0, er vÃ¦rdien sand.
+<command>if</command> har selvfÃ¸lgelig ogsÃ¥ en <command>else</command>.
 </para>
 
 <programlisting>
 #! /bin/sh
 if true; then
-	echo "Værdien er sand"
+	echo "VÃ¦rdien er sand"
 else
-	echo "Værdien er falsk"
+	echo "VÃ¦rdien er falsk"
 fi
 </programlisting>
 
 <para>
-I <xref linkend="shell-flere-kom"/> blev ; nævnt som et tegn der
+I <xref linkend="shell-flere-kom"/> blev ; nÃ¦vnt som et tegn der
 bruges til at adskille kommandoer.
 Som det ses herover, er der sat et ; ind foran <command>then</command>,
-hvilket lige så godt kunne stå på næste linje.
-De fleste der skriver shell-scripts foretrækker dog at skrive det
-på ovenstående måde, selvom det ved første øjekast ser lidt
+hvilket lige sÃ¥ godt kunne stÃ¥ pÃ¥ nÃ¦ste linje.
+De fleste der skriver shell-scripts foretrÃ¦kker dog at skrive det
+pÃ¥ ovenstÃ¥ende mÃ¥de, selvom det ved fÃ¸rste Ã¸jekast ser lidt
 underligt ud med en ; efter ].
 </para>
 
 <para>
-Parametren til <command>if</command> er altså et program der kaldes,
-og så udføres enten kommandoerne efter <command>then</command>
+Parametren til <command>if</command> er altsÃ¥ et program der kaldes,
+og sÃ¥ udfÃ¸res enten kommandoerne efter <command>then</command>
 eller efter <command>else</command>.
 </para>
 
@@ -4668,18 +4668,18 @@ Til test for om noget er sandt eller falsk,
 bruges slet og ret programmet <command>test</command>.
 I shell-scripts vil man dog ofte ikke skrive <command>test</command>,
 men derimod bruge det symbolske link <command>[</command>.
-Når man bruger [ sammen med if, tror mange til at starte med,
-at [ er en del af kommandoen til if, men det er altså et selvstændigt
+NÃ¥r man bruger [ sammen med if, tror mange til at starte med,
+at [ er en del af kommandoen til if, men det er altsÃ¥ et selvstÃ¦ndigt
 program.
-Når man har valgt at lave et symbolsk link til test,
-skyldes det blot at det er mere læseligt med [.
-Prøv kommandoen <command>ls -l /usr/bin/[</command> .
+NÃ¥r man har valgt at lave et symbolsk link til test,
+skyldes det blot at det er mere lÃ¦seligt med [.
+PrÃ¸v kommandoen <command>ls -l /usr/bin/[</command> .
 </para>
 
 <para>
 En meget brugt kommando med [,
-er at undersøge om en fil eksisterer.
-Dette gøres med parametren '-e'.
+er at undersÃ¸ge om en fil eksisterer.
+Dette gÃ¸res med parametren '-e'.
 </para>
 
 <programlisting>
@@ -4692,28 +4692,28 @@ fi
 </programlisting>
 
 <para>
-Er det kun hvis filen ikke findes, at der skal gøres noget,
+Er det kun hvis filen ikke findes, at der skal gÃ¸res noget,
 bruges not-kommandoen <command>!</command>.
 </para>
 
 <programlisting>
 #! /bin/sh
 if [ ! -e foo ]; then
-	echo "Åh-nej, filen 'foo' findes ikke."
+	echo "&Aring;h-nej, filen 'foo' findes ikke."
 fi
 </programlisting>
 
 <para>
-Bemærk at der i ovenstående eksempel er brugt en hel del
+BemÃ¦rk at der i ovenstÃ¥ende eksempel er brugt en hel del
 mellemrum ved <command>if [ ! -e foo ]</command> .
-<emphasis>Alle</emphasis> disse mellemrum skal være der,
-ellers kommer der mange underlige fejl der er svære at få øje på.
+<emphasis>Alle</emphasis> disse mellemrum skal vÃ¦re der,
+ellers kommer der mange underlige fejl der er svÃ¦re at fÃ¥ Ã¸je pÃ¥.
 I andre programmeringssprog vil du nok undlade nogle af
-mellemrumene, men ingen kan undværes i dette eksempel.
+mellemrumene, men ingen kan undvÃ¦res i dette eksempel.
 </para>
 
 <para>
-<command>test</command> har et væld af muligheder, hvor
+<command>test</command> har et vÃ¦ld af muligheder, hvor
 vi kun viser de mest brugte her.
 For yderligere information om [ kaldes <command>man test</command> .
 </para>
@@ -4721,19 +4721,19 @@ For yderligere information om [ kaldes <command>man test</command> .
 <programlisting>
 #! /bin/sh
 if [ -z "$1" ]; then
-	echo "Fejl! Første parameter findes ikke (zero)."
+	echo "Fejl! FÃ¸rste parameter findes ikke (zero)."
 fi
 
 if [ ! -z "$1" ]; then
-	echo "Første parameter findes, og er: $1"
+	echo "FÃ¸rste parameter findes, og er: $1"
 fi
 
 if [ -n "$1" ]; then
-	echo "Første parameter findes (non-zero), og er: $1"
+	echo "FÃ¸rste parameter findes (non-zero), og er: $1"
 fi
 
 if [ -x foo ]; then
-	echo "Programmet 'foo' findes, og du kan køre det."
+	echo "Programmet 'foo' findes, og du kan kÃ¸re det."
 fi
 
 TEKST="Ja"
@@ -4753,21 +4753,21 @@ if [ $NUMMER -lt 4 ]; then
 fi
 
 if [ $NUMMER -gt 0 -a $NUMMER -lt 4 ]; then
-	echo "\$NUMMER er større end 0 og mindre end 4"
+	echo "\$NUMMER er stÃ¸rre end 0 og mindre end 4"
 fi
 
 if [ $# -le 2 ]; then
-	echo "Der er 2 eller færre parametre på kommando-linjen"
+	echo "Der er 2 eller fÃ¦rre parametre pÃ¥ kommando-linjen"
 fi
 </programlisting>
 
 <para>
-[ kan også bruges i en mere kort form,
-hvis det kun er en enkelt kommando der efterfølgende
-skal udføres.
-Ved at sætte &amp;&amp; ind, køres den anden kommando,
-hvis første kommando var sand.
-Læs mere om &amp;&amp; i <xref linkend="koerflere"/>.
+[ kan ogsÃ¥ bruges i en mere kort form,
+hvis det kun er en enkelt kommando der efterfÃ¸lgende
+skal udfÃ¸res.
+Ved at sÃ¦tte &amp;&amp; ind, kÃ¸res den anden kommando,
+hvis fÃ¸rste kommando var sand.
+LÃ¦s mere om &amp;&amp; i <xref linkend="koerflere"/>.
 </para>
 
 <programlisting>
@@ -4776,7 +4776,7 @@ Læs mere om &amp;&amp; i <xref linkend="koerflere"/>.
 </programlisting>
 
 <para>
-Læs mere om ovenstående parametre til [ i
+LÃ¦s mere om ovenstÃ¥ende parametre til [ i
 <command>man test</command>, eller <command>man bash</command>
 under "CONDITIONAL EXPRESSIONS".
 </para>
@@ -4787,22 +4787,22 @@ under "CONDITIONAL EXPRESSIONS".
 <title>Case</title>
 <indexterm><primary>Shell script</primary><secondary>case</secondary></indexterm>
 <para>
-Skal man undersøge mange forskellige tekst-strenge,
+Skal man undersÃ¸ge mange forskellige tekst-strenge,
 kan det nemt blive uoverskueligt med <command>if</command>-kommandoer.
-Med <command>case</command> kan man nemt undersøge en hel række
-og gøre noget forskelligt ved hver situation.
-Herunder et simpelt eksempel der undersøger hvilket
-HOSTNAME der er på systemet.
+Med <command>case</command> kan man nemt undersÃ¸ge en hel rÃ¦kke
+og gÃ¸re noget forskelligt ved hver situation.
+Herunder et simpelt eksempel der undersÃ¸ger hvilket
+HOSTNAME der er pÃ¥ systemet.
 </para>
 
 <programlisting>
 #! /bin/sh
 case $HOSTNAME in
 	(hven.sslug.dk)
-		echo "Vi er på Hven"
+		echo "Vi er pÃ¥ Hven"
 		;;
 	(saltholm.sslug.dk)
-		echo "Vi er på Saltholm"
+		echo "Vi er pÃ¥ Saltholm"
 		;;
 	(*)
 		echo "Vi er et andet sted: $HOSTNAME"
@@ -4811,7 +4811,7 @@ esac
 </programlisting>
 
 <para>
-Ved kørsel på dit system får du nok et andet svar, fx:
+Ved kÃ¸rsel pÃ¥ dit system fÃ¥r du nok et andet svar, fx:
 </para>
 
 <screen>
@@ -4820,7 +4820,7 @@ Vi er et andet sted: peberholm.sslug.dk
 </screen>
 
 <para>
-I stedet for at matche teksten helt præcist, kan man
+I stedet for at matche teksten helt prÃ¦cist, kan man
 bruge <emphasis>globbing</emphasis> som med filnavne:
 </para>
 
@@ -4828,13 +4828,13 @@ bruge <emphasis>globbing</emphasis> som med filnavne:
 #! /bin/sh
 case $1 in
 	(ventilatore)
-		echo "Match på 'ventilatore'"
+		echo "Match pÃ¥ 'ventilatore'"
 		;;
 	(ventil*)
-		echo "Match på 'ventil*': $1"
+		echo "Match pÃ¥ 'ventil*': $1"
 		;;
 	(ven*)
-		echo "Match på 'ven*': $1"
+		echo "Match pÃ¥ 'ven*': $1"
 		;;
 	(*)
 		echo "Ingen match: $1"
@@ -4843,16 +4843,16 @@ esac
 </programlisting>
 
 <para>
-Herefter kan forskellige ord så prøves af:
+Herefter kan forskellige ord sÃ¥ prÃ¸ves af:
 </para>
 
 <screen>
 <prompt>[tyge@hven ~]$</prompt> <userinput>./hello</userinput>
 Ingen match:
 <prompt>[tyge@hven ~]$</prompt> <userinput>./hello ventilator</userinput>
-Match på 'ventil*': ventilator
+Match pÃ¥ 'ventil*': ventilator
 <prompt>[tyge@hven ~]$</prompt> <userinput>./hello vender</userinput>
-Match på 'ven*': vender
+Match pÃ¥ 'ven*': vender
 <prompt>[tyge@hven ~]$</prompt> <userinput>./hello world</userinput>
 Ingen match: world
 </screen>
@@ -4880,11 +4880,11 @@ i <xref linkend="shell-while"/> der er kombineret med <command>while</command>.
 <para>
 Man kan komme ud for at skulle bruge output fra et program
 til et andet program.
-Dette kan gøres enten ved bruge af <command>`kommando`</command>
+Dette kan gÃ¸res enten ved bruge af <command>`kommando`</command>
 eller <command>$(kommando)</command>.
-De to måder at gøre det på, udfører det samme.
-En simpel forklaring på hvornår processubstituering med fordel
-kan bruges, er hvis man først skal finde en fil og dernæst
+De to mÃ¥der at gÃ¸re det pÃ¥, udfÃ¸rer det samme.
+En simpel forklaring pÃ¥ hvornÃ¥r processubstituering med fordel
+kan bruges, er hvis man fÃ¸rst skal finde en fil og dernÃ¦st
 vil vide hvor stor filen er.
 </para>
 
@@ -4896,7 +4896,7 @@ vil vide hvor stor filen er.
 </screen>
 
 <para>
-Nu gør vi det samme, men denne gang 'gribes' output
+Nu gÃ¸r vi det samme, men denne gang 'gribes' output
 fra which, og bruges som parameter til ls.
 </para>
 
@@ -4907,7 +4907,7 @@ fra which, og bruges som parameter til ls.
 
 <para>
 Og sidder du ved et fremmed tastatur hvor det ikke lige
-er til at finde tegnet <command>`</command>, så brug <command>$()</command>.
+er til at finde tegnet <command>`</command>, sÃ¥ brug <command>$()</command>.
 </para>
 
 <screen>
@@ -4918,7 +4918,7 @@ er til at finde tegnet <command>`</command>, så brug <command>$()</command>.
 <para>
 I shell scripts ser man ofte at output fra et andet 
 program bliver gemt i en variabel.
-Det kunne være et filnavn der er dannet ud fra dags dato.
+Det kunne vÃ¦re et filnavn der er dannet ud fra dags dato.
 </para>
 
 <programlisting>
@@ -4943,13 +4943,13 @@ Mere information om kommando erstatning findes i
 </sect2><!-- shell-psubst -->
 
 <sect2 id="shell-for">
-<title>For-løkker</title>
-<indexterm><primary>Shell script</primary><secondary>for-løkker</secondary></indexterm>
+<title>For-lÃ¸kker</title>
+<indexterm><primary>Shell script</primary><secondary>for-lÃ¸kker</secondary></indexterm>
 <para>
-For-løkker kan udføres på flere måder i shell scripts.
-Det kan være en liste af ord, liste af filnavne eller et 
+For-lÃ¸kker kan udfÃ¸res pÃ¥ flere mÃ¥der i shell scripts.
+Det kan vÃ¦re en liste af ord, liste af filnavne eller et 
 matematisk udtryk.
-Den simpleste måde er en liste af ord.
+Den simpleste mÃ¥de er en liste af ord.
 </para>
 
 <programlisting>
@@ -4967,8 +4967,8 @@ Han hedder Axel
 </screen>
 
 <para>
-En liste af ord kan også stamme fra et andet program,
-hvor hvert ord så behandles for sig.
+En liste af ord kan ogsÃ¥ stamme fra et andet program,
+hvor hvert ord sÃ¥ behandles for sig.
 Kommandoen <command>date</command> giver som udganspunkt
 en liste af ord og tal.
 </para>
@@ -4991,9 +4991,9 @@ Del-streng: 31
 </screen>
 
 <para>
-For-løkker kan også bruges med fil-navne.
-Har man en masse filer der skal gøres noget med,
-skal man stå i katalog hvor filerne er, og så
+For-lÃ¸kker kan ogsÃ¥ bruges med fil-navne.
+Har man en masse filer der skal gÃ¸res noget med,
+skal man stÃ¥ i katalog hvor filerne er, og sÃ¥
 lave en globbing med for eksempel <emphasis>*.html</emphasis>.
 </para>
 
@@ -5001,13 +5001,13 @@ lave en globbing med for eksempel <emphasis>*.html</emphasis>.
 #! /bin/sh
 for FIL in *.html; do
 	echo "Filnavn er: $FIL"
-	# Her gøres noget med filen.
+	# Her gÃ¸res noget med filen.
 	lynx -dump $FIL | lpr -o page-left=36
 done
 </programlisting>
 
 <para>
-Når der så er filerne <filename>index.html</filename> og <filename>tyge.html</filename>
+NÃ¥r der sÃ¥ er filerne <filename>index.html</filename> og <filename>tyge.html</filename>
 bliver resultatet:
 </para>
 
@@ -5018,15 +5018,15 @@ Filnavn er: tyge.html
 </screen>
 
 <para>
-Er det udvalgt liste af filer der skal gøres noget med,
-fx kopieres eller installeres, kan man skrive det pænt
+Er det udvalgt liste af filer der skal gÃ¸res noget med,
+fx kopieres eller installeres, kan man skrive det pÃ¦nt
 og organiseret.
 </para>
 
 <programlisting>
 #! /bin/sh
-# Husk: \ til sidst på linjen, betyder at teksten
-# fortsætter på næste linje.
+# Husk: \ til sidst pÃ¥ linjen, betyder at teksten
+# fortsÃ¦tter pÃ¥ nÃ¦ste linje.
 FILER="\
 index.html \
 tyge.html \
@@ -5047,7 +5047,7 @@ Filnavn er: otto.html
 </screen>
 
 <para>
-En for-løkke kan selvfølgelig også være en simpel talrække.
+En for-lÃ¸kke kan selvfÃ¸lgelig ogsÃ¥ vÃ¦re en simpel talrÃ¦kke.
 Herunder udskrives blot tallene 1 til og med 4.
 </para>
 
@@ -5059,7 +5059,7 @@ done
 </programlisting>
 
 <para>
-En anden måde man kan lave lange talrækker er ved brug
+En anden mÃ¥de man kan lave lange talrÃ¦kker er ved brug
 af kommandoen <command>seq</command>.
 Herunder udskrives blot tallene 1 til og med 4.
 </para>
@@ -5098,13 +5098,13 @@ Resultat:
 </sect2><!-- shell-for -->
 
 <sect2 id="shell-while">
-<title>Løkke, while</title>
+<title>LÃ¸kke, while</title>
 <indexterm><primary>Shell script</primary><secondary>while</secondary></indexterm>
 <indexterm><primary>while</primary></indexterm>
 
 <para>
-<command>while</command> bruges til at blive ved med at udføre nogle
-kommandoer, sålænge en betingelse er opfyldt.
+<command>while</command> bruges til at blive ved med at udfÃ¸re nogle
+kommandoer, sÃ¥lÃ¦nge en betingelse er opfyldt.
 Et simpelt eksempel der blot skriver det samme hele tiden:
 </para>
 
@@ -5118,7 +5118,7 @@ done
 
 <para>
 Et mere avanceret eksempel der tager parametre fra
-kommandolinjen og gør noget forskelligt med hver
+kommandolinjen og gÃ¸r noget forskelligt med hver
 parameter:
 </para>
 
@@ -5127,11 +5127,11 @@ parameter:
 while [ $# -gt 0 ]; do
 	case $1 in
 		--help)
-			echo "Her er hjælpen"
+			echo "Her er hjÃ¦lpen"
 			exit 0
 			;;
 		-f)
-			# Næste parameter er filnavn
+			# NÃ¦ste parameter er filnavn
 			# Det hentes frem med 'shift'
 			shift
 			FIL=$1
@@ -5146,7 +5146,7 @@ done
 </programlisting>
 
 <para>
-Ovenstående eksempel er inspireret af shell-scriptet
+OvenstÃ¥ende eksempel er inspireret af shell-scriptet
 <filename>/sbin/mkbootdisk</filename>.
 </para>
 
@@ -5157,8 +5157,8 @@ Ovenstående eksempel er inspireret af shell-scriptet
 <indexterm><primary>Shell script</primary><secondary>regne</secondary></indexterm>
 
 <para>
-Ved brug af dobbelt-paranteser kan regneoperationer udføres
-direkte, og det er ikke nødvendigt at bruge <command>$</command>
+Ved brug af dobbelt-paranteser kan regneoperationer udfÃ¸res
+direkte, og det er ikke nÃ¸dvendigt at bruge <command>$</command>
 foran variable.
 Er er nogle eksempler:
 </para>
@@ -5202,13 +5202,13 @@ skriv "Hello"
 <indexterm><primary>Shell script</primary><secondary>read</secondary></indexterm>
 <indexterm><primary>read</primary></indexterm>
 <para>
-En nem måde at lave interaktive programmer er ved hjælp af 
+En nem mÃ¥de at lave interaktive programmer er ved hjÃ¦lp af 
 shell-kommandoen <command>read</command>.
-Med <command>read</command> kan man indlæse input fra brugeren
-i en variabel, der så efterfølgende kan bruges i scriptet.
-En simpel måde at bruge <command>read</command> er ved
-at lave et ophold i et script, hvor brugeren så enten kan
-vælge at taste Enter eller Ctrl-C.
+Med <command>read</command> kan man indlÃ¦se input fra brugeren
+i en variabel, der sÃ¥ efterfÃ¸lgende kan bruges i scriptet.
+En simpel mÃ¥de at bruge <command>read</command> er ved
+at lave et ophold i et script, hvor brugeren sÃ¥ enten kan
+vÃ¦lge at taste Enter eller Ctrl-C.
 </para>
 
 <programlisting>
@@ -5220,7 +5220,7 @@ rm -f hello.world
 
 <para>
 <command>read</command> har mulighed for selv at skrive
-en ledetekst, og så bliver scriptet lige en linje mindre:
+en ledetekst, og sÃ¥ bliver scriptet lige en linje mindre:
 </para>
 
 <programlisting>
@@ -5230,9 +5230,9 @@ rm -f hello.world
 </programlisting>
 
 <para>
-<command>read</command> er nok mest brugt til at indlæse
-input fra brugeren, og det kan gøres så simpelt på en 
-kommandolinje hvor der indlæses til variablen "NAVN":
+<command>read</command> er nok mest brugt til at indlÃ¦se
+input fra brugeren, og det kan gÃ¸res sÃ¥ simpelt pÃ¥ en 
+kommandolinje hvor der indlÃ¦ses til variablen "NAVN":
 </para>
 
 <screen>
@@ -5243,7 +5243,7 @@ Tycho
 </screen>
 
 <para>
-Ovenstående ser ud på samme måde i et script:
+OvenstÃ¥ende ser ud pÃ¥ samme mÃ¥de i et script:
 </para>
 
 <programlisting>
@@ -5253,10 +5253,10 @@ echo "Navnet er: $NAVN"
 </programlisting>
 
 <para>
-Man kan undlade at angive hvilken variabel der skal indlæses
+Man kan undlade at angive hvilken variabel der skal indlÃ¦ses
 til, og i stedet bruge den som <command>read</command> selv
-sætter. Navnet på den er <literal>REPLY</literal>.
-Scriptet kunne så se således ud:
+sÃ¦tter. Navnet pÃ¥ den er <literal>REPLY</literal>.
+Scriptet kunne sÃ¥ se sÃ¥ledes ud:
 </para>
 
 <programlisting>
@@ -5267,22 +5267,22 @@ echo "Navnet er: $REPLY"
 
 <para>
 En anden parameter man kan give <command>read</command> er hvor
-mange tegn der skal indlæses.
-Det gøres med parametren <command>-n #</command>.
-Det kunne for eksempel bruges på følgende simple måde:
+mange tegn der skal indlÃ¦ses.
+Det gÃ¸res med parametren <command>-n #</command>.
+Det kunne for eksempel bruges pÃ¥ fÃ¸lgende simple mÃ¥de:
 </para>
 
 <programlisting>
 #! /bin/sh
-read -n 1 -p "Tast en vilkårlig tast for at forsætte"
+read -n 1 -p "Tast en vilkÃ¥rlig tast for at forsÃ¦tte"
 </programlisting>
 
 <para>
-<command>read</command> giver en returkode ved kørsel.
+<command>read</command> giver en returkode ved kÃ¸rsel.
 Hvis man afslutter indtastning med Enter er returkoden
 "0" og afslutter man med Ctrl-D er den "1".
 "0" svarer til "true" og "1" til false, og det kan kombineres 
-med for eksempel while. Se følgende eksempel:
+med for eksempel while. Se fÃ¸lgende eksempel:
 </para>
 
 <programlisting>
@@ -5294,14 +5294,14 @@ done
 </programlisting>
 
 <para>
-I ovenstående eksempel er det reelt EOF (End-Of-File) der
-får løkken til at stoppe.
-Dette kan også bruges hvis input kommer fra et andet
+I ovenstÃ¥ende eksempel er det reelt EOF (End-Of-File) der
+fÃ¥r lÃ¸kken til at stoppe.
+Dette kan ogsÃ¥ bruges hvis input kommer fra et andet
 program. I eksemplet kommer input fra <command>ls</command>
-og kanaler så over til <command>read</command>.
+og kanaler sÃ¥ over til <command>read</command>.
 Det ser nok ud til at det er <command>while</command> der
-modtager input, men det er altså <command>read</command>
-der udføre indlæsningen.
+modtager input, men det er altsÃ¥ <command>read</command>
+der udfÃ¸re indlÃ¦sningen.
 </para>
 
 <programlisting>
@@ -5312,8 +5312,8 @@ done
 </programlisting>
 
 <para>
-<command>read</command> kan også indlæse data fra
-første linje i en fil.
+<command>read</command> kan ogsÃ¥ indlÃ¦se data fra
+fÃ¸rste linje i en fil.
 </para>
 
 <programlisting>
@@ -5323,15 +5323,15 @@ echo $FIRSTLINE
 </programlisting>
 
 <para>
-Her har nu været gennemgået eksempler som har beskrevet
+Her har nu vÃ¦ret gennemgÃ¥et eksempler som har beskrevet
 hvordan <command>read</command> kan bruges til de mest
 almindelige ting.
-Skal det være mere "poppet" med farver og styring
-af skærmposition, så kan det gøres med ANSI-koder.
+Skal det vÃ¦re mere "poppet" med farver og styring
+af skÃ¦rmposition, sÃ¥ kan det gÃ¸res med ANSI-koder.
 For at bruge ANSI-koder skal man sende en ESCAPE til
 terminalen. Det er vist herunder med <emphasis>^[</emphasis>,
-hvilket kan fås i editoren <command>vi</command> ved først
-at tast Ctrl-V og så Esc.
+hvilket kan fÃ¥s i editoren <command>vi</command> ved fÃ¸rst
+at tast Ctrl-V og sÃ¥ Esc.
 </para>
 
 <programlisting>
@@ -5342,7 +5342,7 @@ echo "<emphasis>^[</emphasis>[0mNavn er: $NAVN"
 
 <para>
 Inden du kaster dig ud i at bruge ANSI-koder er det
-nok klogest at se på programmet <command>dialog</command>
+nok klogest at se pÃ¥ programmet <command>dialog</command>
 som nok kan bruges til mange af de ting du gerne vil.
 </para>
 
@@ -5356,11 +5356,11 @@ som nok kan bruges til mange af de ting du gerne vil.
 <para>
 Vi har vist en masse Linux-kommandoer, men 
 dermed skal du ikke tro, at vi har vist dig alle muligheder i
-Linux.  Dette kapitel yder på ingen måde Linux og Unix retfærdighed.
-Der er meget at lære, men fordelen er, at du hele tiden lærer
-noget nyt, men ikke behøver at være ekspert for at komme i gang. Der
-findes naturligvis et hav af bøger om Unix generelt &ndash; både gode og
-dårlige.
+Linux.  Dette kapitel yder pÃ¥ ingen mÃ¥de Linux og Unix retfÃ¦rdighed.
+Der er meget at lÃ¦re, men fordelen er, at du hele tiden lÃ¦rer
+noget nyt, men ikke behÃ¸ver at vÃ¦re ekspert for at komme i gang. Der
+findes naturligvis et hav af bÃ¸ger om Unix generelt &ndash; bÃ¥de gode og
+dÃ¥rlige.
 </para>
 
 <para>
@@ -5371,27 +5371,27 @@ Vi vil her anbefale tre:
 <listitem>
  <para>
 <emphasis>Unix</emphasis> af Dave Taylor og James C. Armstrong,
-forlaget IDG. Er udkommet i år 2001 på dansk.
+forlaget IDG. Er udkommet i Ã¥r 2001 pÃ¥ dansk.
  </para>
 </listitem>
 <listitem>
  <para>
-Göran
-Andersons bog på svensk (<ulink url="http://www.sslug.dk/gnulinux">http://www.sslug.dk/gnulinux</ulink>)
+GÃ¶ran
+Andersons bog pÃ¥ svensk (<ulink url="http://www.sslug.dk/gnulinux">http://www.sslug.dk/gnulinux</ulink>)
  </para>
 </listitem>
 <listitem> 
  <para>
 <emphasis>Introduktion til Unix</emphasis>
-af Knud Jørgen Kirkegaard og Torben Krog, Teknisk Forlag. </para>
+af Knud JÃ¸rgen Kirkegaard og Torben Krog, Teknisk Forlag. </para>
 </listitem>
 </itemizedlist>
 
   <para>
-   Desuden kan du måske have glæde af John Ray: <emphasis>Linux på 10
+   Desuden kan du mÃ¥ske have glÃ¦de af John Ray: <emphasis>Linux pÃ¥ 10
    minutter</emphasis> fra IDG, som dog er noget overfladisk. Tilsvarende
-   kan du måske også have glæde af <emphasis>Linux for dummies</emphasis>
-   af Phil Hughes, som er udkommet på IDG. Begge bøger er oversat til dansk.
+   kan du mÃ¥ske ogsÃ¥ have glÃ¦de af <emphasis>Linux for dummies</emphasis>
+   af Phil Hughes, som er udkommet pÃ¥ IDG. Begge bÃ¸ger er oversat til dansk.
   </para>
  </sect1>
 </chapter>

@@ -9,12 +9,12 @@
 
   <para>
    Umiddelbart skulle man ikke mene at et tekst-baseret program som
-   <command>wget</command> kunne være interessant at anvende til at
+   <command>wget</command> kunne vÃ¦re interessant at anvende til at
    hente filer fra internettet. Skal man lave en hel kopi af en
-   hjemmeside med undersider så er det ikke sjovt at lave bare med en
-   browser. Tilsvarende kan det være fedt at hente en del af en
-   ISO-fil på 600 MB over et par omgange og endda selv kunne bestemme
-   hvor meget båndbredde man vil anvende til dette.
+   hjemmeside med undersider sÃ¥ er det ikke sjovt at lave bare med en
+   browser. Tilsvarende kan det vÃ¦re fedt at hente en del af en
+   ISO-fil pÃ¥ 600 MB over et par omgange og endda selv kunne bestemme
+   hvor meget bÃ¥ndbredde man vil anvende til dette.
   </para>
 
   <para>
@@ -26,8 +26,8 @@
   </para>
 
   <para>
-   Skal man senere fortsætte en afbrudt hentning af filen, så kan man
-   fortsætte med:
+   Skal man senere fortsÃ¦tte en afbrudt hentning af filen, sÃ¥ kan man
+   fortsÃ¦tte med:
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>wget -c http://www.server.dk/FILNAVN</userinput>
@@ -36,7 +36,7 @@
 
   <para>
    Vil man lave et spejl (eng. mirror) af en server med alle
-   hjemmesider, så anvendes følgende.
+   hjemmesider, sÃ¥ anvendes fÃ¸lgende.
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>wget -np --mirror http://www.server.dk/</userinput>
@@ -44,8 +44,8 @@
   </para>
 
   <para>
-   Vil man begrænse den båndbredde som anvendes på at hente f.eks. en
-   ISO-fil, så tilføj parameteren <filename>limit-rate</filename>.
+   Vil man begrÃ¦nse den bÃ¥ndbredde som anvendes pÃ¥ at hente f.eks. en
+   ISO-fil, sÃ¥ tilfÃ¸j parameteren <filename>limit-rate</filename>.
 
 <screen>
 <prompt>[tyge@hven ~]$ </prompt><userinput>wget --limit-rate=RATE http://www.server.dk/fil.iso</userinput>
@@ -53,7 +53,7 @@
   </para>
 
   <para>
-   Se også <command>ncftp</command> for et ligende program til
+   Se ogsÃ¥ <command>ncftp</command> for et ligende program til
    ftp-servere.
   </para>
  </sect1>

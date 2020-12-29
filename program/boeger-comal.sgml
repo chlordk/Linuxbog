@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 
 <sect2 id="boeger-comal">
- <title>Bøger om COMAL</title>
+ <title>BÃ¸ger om COMAL</title>
 
  <indexterm>
   <primary>COMAL</primary>
-  <secondary>bøger</secondary>
+  <secondary>bÃ¸ger</secondary>
  </indexterm>
 
  <itemizedlist mark="bullet" spacing="compact">
   <listitem>
    <para>
-    Leo Højsholt-Poulsen &amp; Frank Bason:
+    Leo HÃ¸jsholt-Poulsen &amp; Frank Bason:
     <emphasis>COMAL for Commodore 64</emphasis>,
     1985,
     Commodore Data A/S,
@@ -20,15 +20,15 @@
 
    <para>
     Den danske brugsanvisning til COMAL-modulet til Commodore 64'eren er en
-    overordentlig god introduktion til programmering i COMAL. Spørgsmålet er
-    blot om det er muligt at få fat i den i dag.
+    overordentlig god introduktion til programmering i COMAL. SpÃ¸rgsmÃ¥let er
+    blot om det er muligt at fÃ¥ fat i den i dag.
    </para>
   </listitem>
 
   <listitem>
    <para>
     Len Lindsay:
-    <emphasis>COMAL HÅNDBOGEN</emphasis>,
+    <emphasis>COMAL H&Aring;NDBOGEN</emphasis>,
     1985,
     Teknisk Forlag A/S.
    </para>

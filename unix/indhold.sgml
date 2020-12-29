@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <bookinfo>
- <title>Linux &ndash; Friheden til at lære Unix</title>
+ <title>Linux &ndash; Friheden til at lÃ¦re Unix</title>
 
  <abbrev>"FTAUNIX"</abbrev>
 
@@ -21,15 +21,15 @@
   <year>2001-2005</year>
 
   <holder>
-   Forfatterne har ophavsret til bogen, men udgiver den under "Åben
-   dokumentlicens (ÅDL) - version 1.0".
+   Forfatterne har ophavsret til bogen, men udgiver den under "&Aring;ben
+   dokumentlicens (&Aring;DL) - version 1.0".
   </holder>
  </copyright>
 
  <abstract>
   <para>
-   I denne bog gennemgås Unix for begyndere, så brugeren kan begå sig
-   på en Linuxmaskine. Desuden gennemgås netværksopsætning for en
+   I denne bog gennemgÃ¥s Unix for begyndere, sÃ¥ brugeren kan begÃ¥ sig
+   pÃ¥ en Linuxmaskine. Desuden gennemgÃ¥s netvÃ¦rksopsÃ¦tning for en
    hjemmebruger.
   </para>
  </abstract>
@@ -47,7 +47,7 @@
 &unix-web;
 &unix-usenet;
 &unix-irc;
-<!--  På vej ud:  --> &unix-networking;
+<!--  PÃ¥ vej ud:  --> &unix-networking;
 &unix-kommandooversigt;
 &unix-kommandoer-pakker;
 &unix-appendixRevHist;

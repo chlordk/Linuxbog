@@ -19,11 +19,11 @@
    <tbody>
     <row>
       <entry>man</entry>
-      <entry>Hjælp til enkelte kommandoer</entry> 
+      <entry>HjÃ¦lp til enkelte kommandoer</entry> 
     </row>
     <row>
       <entry>info</entry>
-      <entry>Hjælp til enkelte kommandoer</entry> 
+      <entry>HjÃ¦lp til enkelte kommandoer</entry> 
     </row>
     <row>
       <entry>apropos</entry>
@@ -42,17 +42,17 @@
   <indexterm><primary>rmdir</primary></indexterm>
   <indexterm><primary>rm</primary></indexterm>
 <table id="unix-kommandoer-filhaandtering">
-  <title>Filhåndteringer</title>
+  <title>FilhÃ¥ndteringer</title>
 
   <tgroup cols="2" align="left">
    <tbody>
     <row>
       <entry>mv</entry>
-      <entry>Flyt og/eller omdøb filer</entry> 
+      <entry>Flyt og/eller omdÃ¸b filer</entry> 
     </row>
     <row>
       <entry>cp</entry>
-      <entry>Kopiér filer og kataloger</entry> 
+      <entry>KopiÃ©r filer og kataloger</entry> 
     </row>
     <row>
       <entry>ln</entry>
@@ -82,7 +82,7 @@
   <indexterm><primary>df</primary></indexterm>
   <indexterm><primary>du</primary></indexterm>
 <table id="unix-kommandoer-filsoegning">
-  <title>Filsøgning</title>
+  <title>FilsÃ¸gning</title>
 
   <tgroup cols="2" align="left">
    <tbody>
@@ -92,23 +92,23 @@
     </row>
     <row>
       <entry>pwd</entry>
-      <entry>Vis nuværende katalog</entry> 
+      <entry>Vis nuvÃ¦rende katalog</entry> 
     </row>
     <row>
       <entry>find</entry>
-      <entry>Søg efter filer og kataloger</entry> 
+      <entry>SÃ¸g efter filer og kataloger</entry> 
     </row>
     <row>
       <entry>locate</entry>
-      <entry>Søg efter filer og kataloger &ndash; i database</entry> 
+      <entry>SÃ¸g efter filer og kataloger &ndash; i database</entry> 
     </row>
     <row>
       <entry>grep</entry>
-      <entry>Søg efter tekst i filer og/eller strøm</entry> 
+      <entry>SÃ¸g efter tekst i filer og/eller strÃ¸m</entry> 
     </row>
     <row>
       <entry>df</entry>
-      <entry>Vis pladsforbrug på filsystemer</entry> 
+      <entry>Vis pladsforbrug pÃ¥ filsystemer</entry> 
     </row>
     <row>
       <entry>du</entry>
@@ -116,7 +116,7 @@
     </row>
     <row>
       <entry>which</entry>
-      <entry>Vis hvor et program ligger (den udgave der vil blive kørt)</entry> 
+      <entry>Vis hvor et program ligger (den udgave der vil blive kÃ¸rt)</entry> 
     </row>
     <row>
       <entry>which</entry>
@@ -147,11 +147,11 @@
     </row>
     <row>
       <entry>chown</entry>
-      <entry>Ændr ejerskab af filer og kataloger</entry> 
+      <entry>&AElig;ndr ejerskab af filer og kataloger</entry> 
     </row>
     <row>
       <entry>chmod</entry>
-      <entry>Ændr adgangsrettigheder til filer og kataloger</entry> 
+      <entry>&AElig;ndr adgangsrettigheder til filer og kataloger</entry> 
     </row>
     <row>
       <entry>w</entry>
@@ -183,32 +183,32 @@
    <tbody>
     <row>
       <entry>echo</entry>
-      <entry>Udskriv til skærm</entry> 
+      <entry>Udskriv til skÃ¦rm</entry> 
     </row>
 
     <row>
       <entry>cat</entry>
-      <entry>Udskriv filer og/eller strøm</entry> 
+      <entry>Udskriv filer og/eller strÃ¸m</entry> 
     </row>
 
     <row>
       <entry>less</entry>
-      <entry>Vis indhold filer og/eller strøm (kan bladre)</entry> 
+      <entry>Vis indhold filer og/eller strÃ¸m (kan bladre)</entry> 
     </row>
 
     <row>
       <entry>more</entry>
-      <entry>Vis indhold filer og/eller strøm (kan bladre)</entry> 
+      <entry>Vis indhold filer og/eller strÃ¸m (kan bladre)</entry> 
     </row>
 
     <row>
       <entry>head</entry>
-      <entry>Vis starten af filer og/eller strøm</entry> 
+      <entry>Vis starten af filer og/eller strÃ¸m</entry> 
     </row>
 
     <row>
       <entry>tail</entry>
-      <entry>Vis slutningen af filer og/eller strøm</entry> 
+      <entry>Vis slutningen af filer og/eller strÃ¸m</entry> 
     </row>
    </tbody>
   </tgroup>
@@ -240,23 +240,23 @@
     </row>
     <row>
       <entry>patch</entry>
-      <entry>Omgør forskelle</entry> 
+      <entry>OmgÃ¸r forskelle</entry> 
     </row>
     <row>
       <entry>cut</entry>
-      <entry>Udvælg søjler</entry> 
+      <entry>UdvÃ¦lg sÃ¸jler</entry> 
     </row>
     <row>
       <entry>wc</entry>
-      <entry>Tæl tegn, ord og linjer</entry> 
+      <entry>TÃ¦l tegn, ord og linjer</entry> 
     </row>
     <row>
       <entry>tr</entry>
-      <entry>Søg og erstat på bogstavniveau</entry> 
+      <entry>SÃ¸g og erstat pÃ¥ bogstavniveau</entry> 
     </row>
     <row>
       <entry>sdiff</entry>
-      <entry>Vis forskel og lav fælles sum af filerne</entry> 
+      <entry>Vis forskel og lav fÃ¦lles sum af filerne</entry> 
     </row>
    </tbody>
   </tgroup>
@@ -318,23 +318,23 @@
 -->
     <row>
       <entry>date</entry>
-      <entry>Vis/sæt dato og klokkeslæt</entry> 
+      <entry>Vis/sÃ¦t dato og klokkeslÃ¦t</entry> 
     </row>
     <row>
       <entry>at</entry>
-      <entry>Kør program på et bestemt senere tidspunkt</entry> 
+      <entry>KÃ¸r program pÃ¥ et bestemt senere tidspunkt</entry> 
     </row>
     <row>
       <entry>batch</entry>
-      <entry>Kør program på et senere tidspunkt</entry> 
+      <entry>KÃ¸r program pÃ¥ et senere tidspunkt</entry> 
     </row>
     <row>
       <entry>mount</entry>
-      <entry>Montér filsystem</entry> 
+      <entry>MontÃ©r filsystem</entry> 
     </row>
     <row>
       <entry>umount</entry>
-      <entry>Afmontér filsystem</entry> 
+      <entry>AfmontÃ©r filsystem</entry> 
     </row>
     <row>
       <entry>cal</entry>
@@ -342,7 +342,7 @@
     </row>
     <row>
       <entry>clear</entry>
-      <entry>Slet skærmbillede</entry> 
+      <entry>Slet skÃ¦rmbillede</entry> 
     </row>
     <row>
       <entry>mc</entry>
@@ -382,7 +382,7 @@
     </row>
     <row>
       <entry>nice</entry>
-      <entry>Justér procesprioritet</entry> 
+      <entry>JustÃ©r procesprioritet</entry> 
     </row>
     <row>
       <entry>shutdown</entry>
@@ -390,7 +390,7 @@
     </row>
     <row>
       <entry>init</entry>
-      <entry>Skift kørselsniveau</entry> 
+      <entry>Skift kÃ¸rselsniveau</entry> 
     </row>
     <row>
       <entry>reboot</entry>
@@ -413,13 +413,13 @@
   <indexterm><primary>ping</primary></indexterm>
   <indexterm><primary>traceroute</primary></indexterm>
 <table id="unix-kommandoer-overvaagning">
-  <title>Overblik (Overvågning)</title>
+  <title>Overblik (OvervÃ¥gning)</title>
 
   <tgroup cols="2" align="left">
    <tbody>
     <row>
       <entry>vmstat 10</entry>
-      <entry>Overblik over proces-kø, swap, IO mv. hvert 10 sekund</entry> 
+      <entry>Overblik over proces-kÃ¸, swap, IO mv. hvert 10 sekund</entry> 
     </row>
     <row>
       <entry>netstat -apn</entry>
@@ -428,7 +428,7 @@
     <row>
       <entry>iostat 4</entry>
       <entry>IO hvert 4 sek. <footnote><para>
-      findes ikke på alle distroer</para></footnote> (installer sysstat)
+      findes ikke pÃ¥ alle distroer</para></footnote> (installer sysstat)
       </entry> 
     </row>
     <row>
@@ -447,13 +447,13 @@
   <indexterm><primary>ping</primary></indexterm>
   <indexterm><primary>traceroute</primary></indexterm>
 <table id="unix-kommandoer-netvaerk">
-  <title>Netværk</title>
+  <title>NetvÃ¦rk</title>
 
   <tgroup cols="2" align="left">
    <tbody>
     <row>
       <entry>ifconfig</entry>
-      <entry>Vis netværksenheder</entry> 
+      <entry>Vis netvÃ¦rksenheder</entry> 
     </row>
     <row>
       <entry>ping</entry>
@@ -488,7 +488,7 @@
     </row>
     <row>
       <entry>scp</entry>
-      <entry>SSH-klient (sikker filoverførsel)</entry> 
+      <entry>SSH-klient (sikker filoverfÃ¸rsel)</entry> 
     </row>
     <row>
       <entry>telnet</entry>
@@ -496,15 +496,15 @@
     </row>
     <row>
       <entry>ftp</entry>
-      <entry>FTP-klient (<emphasis>usikker</emphasis> filoverførsel)</entry> 
+      <entry>FTP-klient (<emphasis>usikker</emphasis> filoverfÃ¸rsel)</entry> 
     </row>
     <row>
       <entry>rsync</entry>
-      <entry>rsync-klient (filoverførsel)</entry> 
+      <entry>rsync-klient (filoverfÃ¸rsel)</entry> 
     </row>
     <row>
       <entry>rcp</entry>
-      <entry>rcp-klient (<emphasis>usikker</emphasis> filoverførsel)</entry> 
+      <entry>rcp-klient (<emphasis>usikker</emphasis> filoverfÃ¸rsel)</entry> 
     </row>
     <row>
       <entry>talk</entry>
@@ -537,15 +537,15 @@
    <tbody>
     <row>
       <entry>a2ps</entry>
-      <entry>Oversæt tekst til Postscript</entry> 
+      <entry>OversÃ¦t tekst til Postscript</entry> 
     </row>
     <row>
       <entry>lpr</entry>
-      <entry>Udskriv filer og/eller strøm</entry> 
+      <entry>Udskriv filer og/eller strÃ¸m</entry> 
     </row>
     <row>
       <entry>lpq</entry>
-      <entry>Vis printerkø</entry> 
+      <entry>Vis printerkÃ¸</entry> 
     </row>
     <row>
       <entry>lprm</entry>

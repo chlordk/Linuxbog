@@ -3,12 +3,12 @@
  <title>Forord</title>
 
  <sect1 id="unixforordet">
-  <title>Lær Unix</title>
+  <title>LÃ¦r Unix</title>
 
   <para>
-   I denne bog tager vi fat på unix-kundskaber. Der er ikke de store
-   forudsætninger for at læse denne bog. Bogen er skabt ud fra "Linux
-   &ndash; Friheden til at vælge" &ndash; version 5.0.
+   I denne bog tager vi fat pÃ¥ unix-kundskaber. Der er ikke de store
+   forudsÃ¦tninger for at lÃ¦se denne bog. Bogen er skabt ud fra "Linux
+   &ndash; Friheden til at vÃ¦lge" &ndash; version 5.0.
   </para>
  </sect1>
 
@@ -24,40 +24,40 @@
   <title>Om forfatterne og bogens historie</title>
 
   <para>
-   Bogen er redigeret af Peter Toft, mens den bygger på store dele af
-   "Linux &ndash; Friheden til at vælge" fra 1998, skrevet af Peter Toft,
-   Kenneth Geisshirt og Snebjørn Andersen. De sidste to har skrevet
+   Bogen er redigeret af Peter Toft, mens den bygger pÃ¥ store dele af
+   "Linux &ndash; Friheden til at vÃ¦lge" fra 1998, skrevet af Peter Toft,
+   Kenneth Geisshirt og SnebjÃ¸rn Andersen. De sidste to har skrevet
    store dele af bogen.
   </para>
  </sect1>
 
  <sect1 id="unix-tak">
-  <title>Vi siger tak for hjælpen</title>
+  <title>Vi siger tak for hjÃ¦lpen</title>
 
   <para>
-   Vi har haft stor glæde af mange SSLUG-medlemmers støtte, rettelser
+   Vi har haft stor glÃ¦de af mange SSLUG-medlemmers stÃ¸tte, rettelser
    og forslag til forbedringer &ndash; bliv ved med dette. Specielt vil vi
-   nævne:
+   nÃ¦vne:
   </para>
 
   <itemizedlist mark="bullet" spacing="compact">
    <listitem><para>Jesper Norskov Kristensen</para></listitem>
    <listitem><para>Rasmus Ory Nielsen</para></listitem>
    <listitem><para>Anders Pedersen</para></listitem>
-   <listitem><para>Frank Nørvig</para></listitem>
+   <listitem><para>Frank NÃ¸rvig</para></listitem>
    <listitem><para>Mads Gige</para></listitem>
   </itemizedlist>
 
   <para>
    Du kan i <xref linkend="unix-apprevhist"/> finde en liste over alle
-   de revisioner, som bogen har været igennem.
+   de revisioner, som bogen har vÃ¦ret igennem.
   </para>
 
   <para>
-   Hvis du har ord du ikke forstår, så kan <ulink
-   url="http://www.whatis.com">http://www.whatis.com</ulink> være
-   interessant.  Her kan du slå mange computerord op dog kun på
-   engelsk.  I øvrigt kan bogens stikordsregister være interessant.
+   Hvis du har ord du ikke forstÃ¥r, sÃ¥ kan <ulink
+   url="http://www.whatis.com">http://www.whatis.com</ulink> vÃ¦re
+   interessant.  Her kan du slÃ¥ mange computerord op dog kun pÃ¥
+   engelsk.  I Ã¸vrigt kan bogens stikordsregister vÃ¦re interessant.
   </para>
  </sect1>
 
@@ -65,20 +65,20 @@
   <title>Typografi</title>
 
   <para>
-   Vi vil afslutte indledningen med at nævne den anvendte typografi.
+   Vi vil afslutte indledningen med at nÃ¦vne den anvendte typografi.
   </para>
 
   <itemizedlist mark="bullet" spacing="compact">
    <listitem>
     <para>
-     Navne på filer og kataloger vises som
+     Navne pÃ¥ filer og kataloger vises som
      <filename>foo.bar</filename>
     </para>
    </listitem>
 
    <listitem>
     <para>
-     Kommandoer, du udfører ved at skrive dem på en kommandolinje,
+     Kommandoer, du udfÃ¸rer ved at skrive dem pÃ¥ en kommandolinje,
      vises som <command>help</command>
     </para>
    </listitem>
@@ -114,10 +114,10 @@ Dette svarer Linux.
   <title>Eksemplerne</title>
 
   <para>
-   Hvis du mangler en kommando til et eksempel på dit system, så kan du i
-   appendiks <xref linkend="unix-appendiks-kommandoer-pakker"/> slå op,
+   Hvis du mangler en kommando til et eksempel pÃ¥ dit system, sÃ¥ kan du i
+   appendiks <xref linkend="unix-appendiks-kommandoer-pakker"/> slÃ¥ op,
    hvilken pakke
-   kommandoen kommer i på forskellige systemer, så du kan bede din
+   kommandoen kommer i pÃ¥ forskellige systemer, sÃ¥ du kan bede din
    systemadministrator om at installere den.
   </para>
  </sect1>

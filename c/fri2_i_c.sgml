@@ -1761,7 +1761,7 @@ int main(int argc, char *argv[])
     conv[155] = 'ø';
     conv[157] = '&Oslash;';
     conv[130] = 'é';
-    conv[144] = 'É';
+    conv[144] = '&Eacute;';
                                   /* fortsæt listen efter behov */
 
     while ( (c=getchar()) != EOF)

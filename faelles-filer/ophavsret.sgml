@@ -4,31 +4,31 @@
 
  <indexterm><primary>ophavsret</primary></indexterm>
  <indexterm><primary>copyright</primary></indexterm>
- <indexterm><primary>ÅDL</primary></indexterm>
+ <indexterm><primary>&Aring;DL</primary></indexterm>
 
  <para>
   Denne bog er skrevet af Linux-brugere til Linux-brugere.  Store dele
   af bogen er skrevet eller redigeret af enkelte forfattere, hvilket
-  er nævnt i revisions-historien til bogen.
+  er nÃ¦vnt i revisions-historien til bogen.
  </para>
 
  <para>
-  Bogen kan findes i opdateret form på <ulink
+  Bogen kan findes i opdateret form pÃ¥ <ulink
   url="http://www.linuxbog.dk/">http://www.linuxbog.dk/</ulink>,
-  mens prøve-udgaver kan findes på <ulink
+  mens prÃ¸ve-udgaver kan findes pÃ¥ <ulink
   url="http://cvs.linuxbog.dk/">http://cvs.linuxbog.dk/</ulink>.
  </para>
 
  <figure>
-  <title>ÅDL</title>
+  <title>&Aring;DL</title>
   <graphic fileref="licens.&magic;" scale="80"></graphic>
  </figure>
 
  <para>
-  Bogen er udgivet under "Åben dokumentlicens (ÅDL) &ndash; version 1.0" som
-  kan læses på <ulink
+  Bogen er udgivet under "&Aring;ben dokumentlicens (&Aring;DL) &ndash; version 1.0" som
+  kan lÃ¦ses pÃ¥ <ulink
   url="http://www.linuxbog.dk/licens.html">http://www.linuxbog.dk/licens.html</ulink>.
-  Du har bl.a. herved frit lov til at kopiere dette værk uændret på
+  Du har bl.a. herved frit lov til at kopiere dette vÃ¦rk uÃ¦ndret pÃ¥
   ethvert medium.
  </para>
 

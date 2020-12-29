@@ -4,21 +4,21 @@
  <title>Usenet</title>
 
  <indexterm>
-  <primary>nyhedslæsere</primary>
+  <primary>nyhedslÃ¦sere</primary>
  </indexterm>
 
  <indexterm>
   <primary>Usenet-klienter</primary>
-  <secondary>nyhedslæsere</secondary>
+  <secondary>nyhedslÃ¦sere</secondary>
  </indexterm>
 
  <indexterm>
   <primary>news readers</primary>
-  <secondary>nyhedslæsere</secondary>
+  <secondary>nyhedslÃ¦sere</secondary>
  </indexterm>
 
  <para>
-  Gennemgang af en række tekstbaserede nyhedslæsere.
+  Gennemgang af en rÃ¦kke tekstbaserede nyhedslÃ¦sere.
  </para>
 
  &unix-usenet-gnus;
