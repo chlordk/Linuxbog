@@ -62,29 +62,29 @@
 
 <!--  Installation:  -->
 
-&distro-adamantix;
+<!-- &distro-adamantix; -->
 &distro-arch-linux;
 &distro-debian;
-&distro-deli;
+<!-- &distro-deli; -->
 &distro-gentoo;
-&distro-lindows;
+<!-- &distro-lindows; -->
 &distro-lfs;
 &distro-mandrake;
-&distro-morphix;
+<!-- &distro-morphix; -->
 &distro-onebase;
 &distro-puppy;
 &distro-redhat;
 &distro-slackware;
-&distro-sot;
+<!-- &distro-sot; -->
 &distro-suse;
-&distro-xandros;
+<!-- &distro-xandros; -->
 
 <!--  Live:  -->
 
 &distro-dsl;
 &distro-dappix;
 &distro-slackware-live;
-&distro-tomsrtbt;
+<!-- &distro-tomsrtbt; -->
 
 <!--  Ikke-Linux:  -->
 
