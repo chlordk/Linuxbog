@@ -113,11 +113,9 @@ stikord.sgml:	$(filter-out version.sgml stikord.sgml ,$(dep_sgml_filer))
 		echo '<!ENTITY magic "png">' > magic.sgml ; \
 	fi
 	make version.sgml
+	jw -V %use-id-as-filename% -V html-index -f docbook -o StikordBuildDir bog.sgml && \
 	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
-	collateindex.pl  -s Symboler -t Stikordsregister -g -i stikord -N >> stikord.sgml && \
-	openjade -V %use-id-as-filename% -V html-index -f docbook -o StikordBuildDir bog.sgml && \
-	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
-	collateindex.pl -s Symboler -t Stikordsregister -g -i stikord >> stikord.sgml StikordBuildDir/HTML.index
+	collateindex.pl -s Symboler -t Stikordsregister -g -i stikord StikordBuildDir/HTML.index >> stikord.sgml
 
 stikord.sgml.clean:
 	rm -f stikord.sgml
