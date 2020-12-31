@@ -13,11 +13,10 @@ medlem af SSLUG så skriv til
 liste over, hvad der er ændret i bogen.
 </para>
 
-
-
 <itemizedlist mark="bullet">
 
 <listitem><para>
+Version 2.7.20040524 - 24. maj 2004:
 Hans Schou har flyttet afsnittet <filename>/README</filename> ind
 i denne bog som et selvstændigt kapitel.
 Se <xref linkend="ftav"/>.
