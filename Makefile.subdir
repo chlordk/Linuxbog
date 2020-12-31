@@ -113,6 +113,7 @@ stikord.sgml:	$(filter-out version.sgml stikord.sgml ,$(dep_sgml_filer))
 		echo '<!ENTITY magic "png">' > magic.sgml ; \
 	fi
 	make version.sgml
+	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
 	jw -V %use-id-as-filename% -V html-index -f docbook -o StikordBuildDir bog.sgml && \
 	echo "<?xml version='1.0' encoding='UTF-8' ?>" > stikord.sgml && \
 	collateindex.pl -s Symboler -t Stikordsregister -g -i stikord StikordBuildDir/HTML.index >> stikord.sgml
@@ -120,7 +121,6 @@ stikord.sgml:	$(filter-out version.sgml stikord.sgml ,$(dep_sgml_filer))
 stikord.sgml.clean:
 	rm -f stikord.sgml
 	rm -Rf StikordBuildDir/
-
 
 ################################################################################
 # Versionsfilen "version.sgml"
@@ -131,8 +131,7 @@ stikord.sgml.clean:
 
 version:=$(shell grep -A2 "<listitem>" apprevhist.sgml | head -n 2 | grep Version | sed 's/.*Version//' | cut -d' ' -f2)
 version.sgml:	apprevhist.sgml
-	grep -A2 "<listitem>" apprevhist.sgml | head -n 2 |\
-	grep Version | sed 's/.*Version//' | cut -d' ' -f2 > version.sgml
+	egrep -o "Version [0-9]+\.[^ ]+" apprevhist.sgml | head -n 1 | cut -d\  -f2 > version.sgml
 
 version.sgml.clean:
 	rm -f version.sgml
