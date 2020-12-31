@@ -254,7 +254,10 @@ $(targetname)-pdf-$(version).pdf.gz: $(dep_sgml_filer) eksempler-sgml-PDF
 	@echo Opsætter PdfBuildDir
 	@rm -rf PdfBuildDir
 	@mkdir PdfBuildDir
-	@cd PdfBuildDir && ln -sf ../*sgml ../*xml ../images/*png .
+	@cd PdfBuildDir && \
+	cp -a ../*.sgml ../*xml ../images/* . ; \
+	sed -i -e 's/encoding=.UTF-8./encoding="ISO-8859-1"/' *.sgml *.xml ; \
+	recode utf-8..latin1 $$(file --mime *.sgml *.xml | grep utf-8 | cut -d: -f1)
 	@echo Bygger PDF fil
 # Ideen er at hvis db2pdf fejler med en fejlkode 9, så køres db2pdf igen - for
 # vi ved ikke hvad fejlkode 9 betyder, men tilsyneladende vil det virke "alligevel".
