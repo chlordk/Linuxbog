@@ -1,7 +1,7 @@
 Dette er README filen til bøgerne "Linux -- Friheden til at vælge".
 
 Indholdet er flyttet over i:
-http://www.linuxbog.dk/dokumentation/bog/ftav.html
+https://linuxbog.dk/dokumentation/ftav.html
 (dokumentation/ftav.sgml)
 
 
@@ -35,9 +35,9 @@ Herunder slettes snart (chlor):
 "Linux -- Friheden til at vælge" er en række bøger om Linux, Unix og
 andre relaterede emner, som er skrevet af en gruppe frivillige,
 fortrinsvis medlemmer af Linux brugergruppen "Skåne-Sjælland Linux
-User Group" (SSLUG; http://www.sslug.dk/).
+User Group" (SSLUG; https://www.sslug.dk/).
 
-FTAV udgives med jævne mellemrum på http://www.linuxbog.dk/ . Her kan
+FTAV udgives med jævne mellemrum på https://linuxbog.dk/ . Her kan
 du downloade færdige udgaver af bøgerne, i flere forskellige
 formater. Nogen formater er velegnet til online brug, f.eks. HTML,
 andre egner sig bedre til tryk, f.eks. PDF.
@@ -45,8 +45,8 @@ Endeligt er kildeteksten til bøgerne, svarende til
 de færdige udgaver også tilgængeligt her.
 
 Udviklingen af bøgerne -- rettelser, opdateringer, mv -- foregår på
-http://cvs.linuxbog.dk/ . Her finder du i princippet det samme som på
-http://www.linuxbog.dk/, men bøgerne indeholder de sidste rettelser
+https://linuxbog.schou.dk/ . Her finder du i princippet det samme som på
+https://linuxbog.dk/, men bøgerne indeholder de sidste rettelser
 (og fejl, unøjagtigheder, mv) som forfatterne har tilføjet. Her findes
 også information om hvordan du kan komme i kontakt med
 forfatterne/udviklerne på bøgerne.
@@ -65,7 +65,7 @@ opsummerer vi et par af de årsager der kan være.
   til fast tryk) end de bliver bygget på linuxbog.dk.
 
 Hvis ikke du har et af ovennævnte behov, burde du kunne "nøjes" med de
-færdigbyggede bøger på cvs.linuxbog.dk, eller www.linuxbog.dk. Hvis du
+færdigbyggede bøger på cvs.linuxbog.dk, eller linuxbog.dk. Hvis du
 vil bygge bøgerne selv, bliver det i det følgende beskrevet hvordan
 dette gøres.
 
