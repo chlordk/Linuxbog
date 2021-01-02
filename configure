@@ -140,9 +140,7 @@ for dir in $SUBDIRS; do
     cp --update Makefile.subdir $dir/Makefile.am
     cp --update configure.ac.subdir $dir/configure.ac
     cp --update linuxbog.spec $dir/linuxbog.spec
-    mkdir -p $dir/misc
-    cp --update misc/insertimagesize $dir/misc/
-    cd $dir && ./bootstrap && cd .. || exit ;
+    ( cd $dir && ./bootstrap )
 done
 # grove: Gad vide hvor meget af dette der er nødvendigt?
 if test "x$SAMLING" != "x" ; then

@@ -211,7 +211,7 @@ else !USE_SOFTLINKS
 	cp images/*.png $(targetshortname)
 endif !USE_SOFTLINKS
 if HAVE_PERL_IMAGE_SIZE
-	(cd $(targetshortname);perl ../misc/insertimagesize)
+	(cd $(targetshortname);perl ../../misc/insertimagesize)
 else !HAVE_PERL_IMAGE_SIZE
 	@echo "Du bør installere Perl-modulet Image::Size - apt install libimage-size-perl"
 endif !HAVE_PERL_IMAGE_SIZE

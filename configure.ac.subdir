@@ -166,6 +166,12 @@ if test "xja" != "x$TAR" ; then
   TARGET_PDF=nej
   AC_MSG_WARN(tar ikke fundet - det er ikke muligt at lave PDF udgaven)
 fi
+dnl Recode
+AC_CHECK_PROG(RECODE, recode, ja, nej - det er ikke muligt at lave PDF udgaven)
+if test "xja" != "x$RECODE"; then
+  TARGET_PDF=nej
+  AC_MSG_WARN([ recode er ikke fundet - kan derfor ikke bygge pdf-filer ])
+fi
 
 dnl ======================================================================
 dnl Lad brugeren vide lidt om hvad der foregår

@@ -9,29 +9,32 @@ closedir(THISDIR);
 
 print $#allhtmlfiles."\n";
 
+print "Inserting image size in:";
 foreach (@allhtmlfiles) {
   $filename = $_;
-  print "Inserting image size in $filename\n";
-
 
   open(IN, $filename) or die;
   open(OUT, ">$filename.tmp") or die;
+  $cnt = 0;
   while(<IN>) {
     $line = $_;
     ($image) = $line =~ /^SRC="(.*)"><\/P$/;
     if (length($image)>0) {
       $ssize = html_imgsize($image);
       print OUT 'SRC="'.$image.'" '.$ssize.'></P'."\n";
+      ++$cnt;
     }
     else {
       print OUT $line;
     }
 
   }
+  if ($cnt) {
+    printf " $filename($cnt)";
+  }
   close(OUT);
   close(IN);
   unlink $filename;
   rename "$filename.tmp", $filename;
 }
-
-
+print "\n";
