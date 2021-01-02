@@ -23,6 +23,11 @@ fi
 for S in *.sgml
 do
 	A=adoc/${S/.sgml/}.adoc
-	echo $S \> $A
-	pandoc --wrap=none -f docbook -t asciidoc $S > $A
+	if [[ $S =~ dato.sgml|magic.sgml|stikord.sgml|version.sgml ]]
+	then
+		echo \- $S
+	else
+		echo $S \> $A
+		pandoc --wrap=none -f docbook -t asciidoc $S > $A
+	fi
 done
