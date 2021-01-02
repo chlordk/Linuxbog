@@ -4,3 +4,11 @@ idx-?.html
 idx-symboler.html
 configureoptions.php
 titleabstract.php
+PdfBuildDir
+StikordBuildDir
+adoc
+sideantal.txt
+html.stamp
+docbook
+*.pdf
+*.pdf.gz
