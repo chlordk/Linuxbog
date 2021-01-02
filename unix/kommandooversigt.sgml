@@ -408,10 +408,6 @@
   </tgroup>
 </table>
 
-
-  <indexterm><primary>ifconfig</primary></indexterm>
-  <indexterm><primary>ping</primary></indexterm>
-  <indexterm><primary>traceroute</primary></indexterm>
 <table id="unix-kommandoer-overvaagning">
   <title>Overblik (Overvågning)</title>
 
